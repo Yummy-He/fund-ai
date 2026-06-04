@@ -6,7 +6,7 @@
 
 AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取历史净值，反复回测（"穿越"到过去用 1 万元逐日决策买卖），积累经验，学会分析基金并给出投资建议。
 
-## 当前状态（v0.2.5 | 2026-06-04）
+## 当前状态（v0.2.7 | 2026-06-04）
 
 - 10 只基金 ~727 条/只净值数据（2023-06 ~ 今）
 - 每只基金独立真实费率（从东方财富 + akshare 抓取）
@@ -23,7 +23,8 @@ AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取
 4. 手续费无最低收费：中国公募基金按百分比收费，无每笔最低 ¥5 这种规则
 5. DeepSeek API：base_url=`https://api.deepseek.com/anthropic`，不支持 cache_control
 6. akshare v1.18+：用 `fund_open_fund_info_em(symbol, indicator, period)` 获取净值
-7. 交易日判断：通过 `akshare.tool_trade_date_hist_sina()` 查询
+7. 交易日判断：三层检测 — tool_trade_date_hist_sina()（格式 YYYY-MM-DD）→ stock_zh_index_daily 上证最新日 → 工作日回退
+8. Wiki 单独仓库：`docs/WIKI.md` 是源，需手动同步到 `https://github.com/Yummy-He/fund-ai.wiki.git` 的 `Home.md`
 
 ## 项目结构
 
@@ -108,3 +109,15 @@ python -m src.cli recommend                       # 投资建议
 | 调回测参数 | `config/default.yaml` → `backtest.*` | push 即生效 |
 | 改提示词 | `config/prompt_templates/*.txt` | push 即生效 |
 | 加数据源 | `src/data/sources/` | 新类 + 注册到 scraper |
+| 改 WIKI | `docs/WIKI.md` | 需同步 push 到 wiki 仓库 |
+
+## Wiki 同步
+
+`docs/WIKI.md` 需手动同步到 GitHub Wiki 仓库：
+
+```bash
+git clone https://github.com/Yummy-He/fund-ai.wiki.git .wiki-temp
+cp docs/WIKI.md .wiki-temp/Home.md
+cd .wiki-temp && git add Home.md && git commit -m "Sync WIKI" && git push
+cd .. && rm -rf .wiki-temp
+```
