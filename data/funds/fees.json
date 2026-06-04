@@ -53,14 +53,14 @@
         "rate": 0.0
       }
     ],
-    "min_subscription": 10.0,
-    "min_auto_invest": 10.0,
-    "min_first_purchase": 10.0,
-    "min_additional_purchase": 10.0,
+    "min_subscription": 1.0,
+    "min_auto_invest": 1.0,
+    "min_first_purchase": 1.0,
+    "min_additional_purchase": 1.0,
     "daily_purchase_limit": null,
     "max_holding_amount": null,
-    "min_redemption_shares": 1.0,
-    "min_retained_shares": 1.0,
+    "min_redemption_shares": 0.01,
+    "min_retained_shares": 0.01,
     "confirmation_days": "T+1"
   },
   "021302": {
@@ -194,33 +194,7 @@
         "rate": 0.015
       }
     ],
-    "redemption_tiers": [
-      {
-        "min_days": 0,
-        "max_days": 7,
-        "rate": 0.015
-      },
-      {
-        "min_days": 7,
-        "max_days": 30,
-        "rate": 0.0075
-      },
-      {
-        "min_days": 30,
-        "max_days": 365,
-        "rate": 0.005
-      },
-      {
-        "min_days": 365,
-        "max_days": 730,
-        "rate": 0.003
-      },
-      {
-        "min_days": 730,
-        "max_days": null,
-        "rate": 0.0
-      }
-    ],
+    "redemption_tiers": [],
     "min_subscription": 10.0,
     "min_auto_invest": 10.0,
     "min_first_purchase": 10.0,
@@ -232,46 +206,10 @@
     "confirmation_days": "T+1"
   },
   "260108": {
-    "management_fee": 0.012,
-    "custody_fee": 0.002,
+    "management_fee": 0.015,
+    "custody_fee": 0.0025,
     "sales_service_fee": 0.0,
-    "subscription_tiers": [
-      {
-        "min_amount": 0.0,
-        "max_amount": 1000000.0,
-        "rate": 0.012
-      },
-      {
-        "min_amount": 1000000.0,
-        "max_amount": 1000000.0,
-        "rate": 0.008
-      },
-      {
-        "min_amount": 1000000.0,
-        "max_amount": 5000000.0,
-        "rate": 0.006
-      },
-      {
-        "min_amount": 5000000.0,
-        "max_amount": 1000.0,
-        "rate": 0.015
-      },
-      {
-        "min_amount": 1000.0,
-        "max_amount": 1000000.0,
-        "rate": 0.012
-      },
-      {
-        "min_amount": 1000000.0,
-        "max_amount": 5000000.0,
-        "rate": 0.01
-      },
-      {
-        "min_amount": 5000000.0,
-        "max_amount": 1000.0,
-        "rate": 0.015
-      }
-    ],
+    "subscription_tiers": [],
     "redemption_tiers": [
       {
         "min_days": 0,
@@ -294,14 +232,14 @@
         "rate": 0.0
       }
     ],
-    "min_subscription": 10.0,
-    "min_auto_invest": 10.0,
-    "min_first_purchase": 10.0,
-    "min_additional_purchase": 10.0,
+    "min_subscription": 1.0,
+    "min_auto_invest": 1.0,
+    "min_first_purchase": 1.0,
+    "min_additional_purchase": 1.0,
     "daily_purchase_limit": null,
     "max_holding_amount": null,
     "min_redemption_shares": 0.01,
-    "min_retained_shares": 1.0,
+    "min_retained_shares": 0.01,
     "confirmation_days": "T+1"
   },
   "166002": {
