@@ -27,10 +27,7 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install aiohttp  # akshare 运行时依赖
-          pip install -e "."
+        run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
       - name: Check if today is a trading day
         id: trading_day

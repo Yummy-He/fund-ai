@@ -31,10 +31,7 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install aiohttp
-          pip install -e "."
+        run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
       - name: Deep learning (20 iterations)
         env:
