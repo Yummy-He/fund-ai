@@ -42,16 +42,34 @@ class TradingCalendar:
         return self._trading_days  # type: ignore
 
     def _load_trading_days(self) -> None:
-        """从 akshare 加载交易日历"""
+        """从 akshare 加载交易日历
+
+        tool_trade_date_hist_sina() 返回的 trade_date 格式是 YYYY-MM-DD。
+        如果今天不在日历范围内（如 2026 年），补充查询上证指数最新交易日。
+        """
         try:
             import akshare as ak
-            # 获取 A 股交易日历
+            # 获取 A 股交易日历（新浪，trade_date 格式 YYYY-MM-DD）
             df = ak.tool_trade_date_hist_sina()
             if "trade_date" in df.columns:
                 days = sorted({
-                    datetime.strptime(str(d), "%Y%m%d").date()
+                    datetime.strptime(str(d), "%Y-%m-%d").date()
                     for d in df["trade_date"]
                 })
+                # 如果日历不包含今天（数据范围可能滞后），用上证指数补充
+                today = date.today()
+                if days and today > days[-1]:
+                    try:
+                        idx = ak.stock_zh_index_daily(symbol="sh000001")
+                        idx_dates = sorted({
+                            datetime.strptime(str(d), "%Y-%m-%d").date()
+                            for d in idx["date"]
+                            if datetime.strptime(str(d), "%Y-%m-%d").date() > days[-1]
+                        })
+                        days.extend(idx_dates)
+                        days = sorted(set(days))
+                    except Exception:
+                        pass
                 self._trading_days = days
                 self._trading_days_set = set(days)
         except Exception:

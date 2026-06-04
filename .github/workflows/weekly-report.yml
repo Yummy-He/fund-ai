@@ -18,6 +18,9 @@ on:
       - "config/**.yaml"
       - "src/**/*.py"
 
+permissions:
+  contents: write
+
 jobs:
   weekly:
     runs-on: ubuntu-latest

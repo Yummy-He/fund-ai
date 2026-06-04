@@ -14,6 +14,9 @@ on:
       - "config/**.yaml"
       - "src/**/*.py"
 
+permissions:
+  contents: write
+
 jobs:
   daily:
     runs-on: ubuntu-latest
@@ -37,14 +40,43 @@ jobs:
         id: trading_day
         shell: python
         run: |
-          import os, akshare as ak
+          import os
           from datetime import date
-          df = ak.tool_trade_date_hist_sina()
-          today_str = date.today().strftime("%Y%m%d")
-          is_td = "true" if today_str in df["trade_date"].values else "false"
+
+          today = date.today()
+          today_dash = today.strftime("%Y-%m-%d")
+          is_td = "false"
+
+          try:
+              import akshare as ak
+
+              # 第一层: 交易日历 (新浪) — trade_date 格式为 YYYY-MM-DD
+              df = ak.tool_trade_date_hist_sina()
+              trade_dates = set(str(d) for d in df["trade_date"])
+              if today_dash in trade_dates:
+                  is_td = "true"
+                  print(f"交易日历命中: {today_dash}")
+
+              # 第二层: 日历未覆盖今天 → 查上证指数最新交易日
+              if is_td == "false":
+                  idx = ak.stock_zh_index_daily(symbol="sh000001")
+                  latest = str(idx["date"].max())
+                  if latest == today_dash:
+                      is_td = "true"
+                      print(f"上证指数确认: 最新交易日={latest}")
+                  else:
+                      print(f"非交易日: 上证最新={latest}, 今天={today_dash}")
+          except Exception as e:
+              print(f"akshare 查询异常: {e}")
+
+          # 第三层: akshare 完全不可用时的回退
+          if is_td == "false":
+              is_td = "true" if today.weekday() < 5 else "false"
+              print(f"回退到工作日判断: weekday={today.weekday()}")
+
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"IS_TRADING_DAY={is_td}\n")
-          print(f"Trading day: {is_td}")
+          print(f"最终结果 - 交易日: {is_td}")
 
       - name: Scrape today's NAV data
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'

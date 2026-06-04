@@ -45,3 +45,4 @@ htmlcov/
 # Project specific - cache
 .cache/
 *.tmp
+.wiki-temp/
