@@ -66,5 +66,5 @@ jobs:
           git config user.email "bot@fund-ai.local"
           git add data/ experiences/ reports/
           git diff --staged --quiet || git commit -m "weekly: learn + report $(date +%Y-W%V)"
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main
           git push
