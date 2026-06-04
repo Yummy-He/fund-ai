@@ -1,0 +1,54 @@
+# 每日数据抓取 + AI 当天决策回测
+# 北京时间 17:30（UTC 09:30），周一至周五
+# 基金净值当天晚间更新，此时大部分已出
+
+name: Daily Scrape & Decision
+
+on:
+  schedule:
+    - cron: "30 9 * * 1-5"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/daily-decision.yml"
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -e "."
+
+      - name: Scrape today's NAV data
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python -m src.cli scrape
+
+      - name: Quick daily review (1 round, recent 60 days, weekly decisions)
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          END_DATE=$(date +%Y-%m-%d)
+          START_DATE=$(date -d "60 days ago" +%Y-%m-%d)
+          python -m src.cli backtest \
+            --start "$START_DATE" \
+            --end "$END_DATE" \
+            --interval 5
+
+      - name: Commit and push
+        run: |
+          git config user.name "fund-ai-bot"
+          git config user.email "bot@fund-ai.local"
+          git add data/ reports/daily/ reports/backtests/
+          git diff --staged --quiet || git commit -m "daily: scrape + review $(date +%Y-%m-%d)"
+          git push
