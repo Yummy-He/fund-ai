@@ -1,0 +1,2178 @@
+[
+  {
+    "id": "f2feed94-d94",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.255091",
+    "scenario": {
+      "date": "2023-08-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.8996,
+      "nav_change_7d": 1.92,
+      "nav_change_30d": -0.79,
+      "nav_change_90d": 2.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 6000.0,
+      "amount_pct": 1037.775,
+      "reasoning": "文体产业股票近30日和90日表现稳健，波动率略高但收益潜力较好，分散配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.61,
+      "return_30d": -6.48,
+      "return_90d": -15.0,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "49bea21d-87e",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.261922",
+    "scenario": {
+      "date": "2023-08-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.8688,
+      "nav_change_7d": 0.06,
+      "nav_change_30d": -1.48,
+      "nav_change_90d": 1.2,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.39847352116436074,
+      "portfolio_return": -1.4238138453421927
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "黄金ETF净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.82,
+      "return_30d": -7.3,
+      "return_90d": -11.96,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "06983b07-2bc",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.269061",
+    "scenario": {
+      "date": "2023-08-14",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.789,
+      "nav_change_7d": -3.4,
+      "nav_change_30d": -3.52,
+      "nav_change_90d": -1.61,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.4042065639251255,
+      "portfolio_return": -2.8219640508456543
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "文体产业股票近90日微涨，波动率较低，持仓比例适中，维持现状以控制风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.33,
+      "return_30d": -5.56,
+      "return_90d": -10.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c3ea7c6b-f3d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.275805",
+    "scenario": {
+      "date": "2023-08-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.7521,
+      "nav_change_7d": -4.56,
+      "nav_change_30d": -3.41,
+      "nav_change_90d": -2.91,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.4058881043345488,
+      "portfolio_return": -3.2245597234259185
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 144.4017,
+      "reasoning": "文体产业股票基金近90日表现相对稳健，波动率较低，利用减仓资金加仓500元以优化组合风险收益比。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.78,
+      "return_30d": -6.16,
+      "return_90d": -9.18,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1e855fb9-b85",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.282585",
+    "scenario": {
+      "date": "2023-08-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6552,
+      "nav_change_7d": -3.78,
+      "nav_change_30d": -5.25,
+      "nav_change_90d": -6.33,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.39063778570115626,
+      "portfolio_return": -4.777516764707852
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "工银文体产业股票表现相对抗跌，波动率适中，继续持有以分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.38,
+      "return_30d": -5.39,
+      "return_90d": -7.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ce31e333-607",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.289360",
+    "scenario": {
+      "date": "2023-08-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5888,
+      "nav_change_7d": -4.87,
+      "nav_change_30d": -8.58,
+      "nav_change_90d": -8.67,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.394805068165703,
+      "portfolio_return": -5.782617804724087
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 56.6273,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.04,
+      "return_30d": -2.34,
+      "return_90d": -6.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8627844c-6a2",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.296136",
+    "scenario": {
+      "date": "2023-08-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6516,
+      "nav_change_7d": 2.34,
+      "nav_change_30d": -8.12,
+      "nav_change_90d": -6.46,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.4209108366580834,
+      "portfolio_return": -4.552231729222076
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 92.2237,
+      "reasoning": "工银文体近7日反弹较强且波动率较低，中期跌幅较小，风险收益比相对较好，小幅加仓以捕捉反弹机会。",
+      "confidence": 0.6,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.18,
+      "return_30d": -5.6,
+      "return_90d": -9.55,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3b9e9c47-be5",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.302897",
+    "scenario": {
+      "date": "2023-09-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6468,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": -8.72,
+      "nav_change_90d": -5.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.3664486087297983,
+      "portfolio_return": -4.1748306216326085
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "工银文体产业股票近期表现稳健，波动率较低，持仓比例合理，继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.54,
+      "return_30d": -6.1,
+      "return_90d": -11.53,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a24a3589-4fa",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.309720",
+    "scenario": {
+      "date": "2023-09-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5712,
+      "nav_change_7d": -2.08,
+      "nav_change_30d": -10.64,
+      "nav_change_90d": -7.51,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.37148264271451903,
+      "portfolio_return": -5.473376243353705
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 93.8756,
+      "reasoning": "文体产业股票近期表现相对稳定，波动率较低，当前持仓比例适中，维持现有仓位等待趋势明朗。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.76,
+      "return_30d": -3.89,
+      "return_90d": -11.08,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b8412fc3-83b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.317058",
+    "scenario": {
+      "date": "2023-09-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5671,
+      "nav_change_7d": -2.5,
+      "nav_change_30d": -9.28,
+      "nav_change_90d": -7.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.31886105179364854,
+      "portfolio_return": -5.7426429758810995
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "工银文体产业股票近期表现相对稳健，波动率较低，当前仓位适中，继续持有观察。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.34,
+      "return_30d": -3.83,
+      "return_90d": -11.08,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d3522490-5b6",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.323897",
+    "scenario": {
+      "date": "2023-09-15",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4918,
+      "nav_change_7d": -2.31,
+      "nav_change_30d": -8.91,
+      "nav_change_90d": -14.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.32313409589948017,
+      "portfolio_return": -6.9890785856611
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 96.1575,
+      "reasoning": "文体产业股票近期表现相对稳健，波动率较低，继续持有观察",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.46,
+      "return_30d": -2.84,
+      "return_90d": -11.16,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "46e19c6a-d92",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.330818",
+    "scenario": {
+      "date": "2023-09-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4671,
+      "nav_change_7d": -2.93,
+      "nav_change_30d": -7.57,
+      "nav_change_90d": -13.53,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2706282828355886,
+      "portfolio_return": -7.640843232985753
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1500.0,
+      "amount_pct": 291.0304,
+      "reasoning": "工银文体产业波动率低、近期跌幅小，相对稳健，加仓以提升组合稳定性并利用现金优化风险收益比。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.53,
+      "return_30d": -5.36,
+      "return_90d": -11.57,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "affa4623-0bf",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.337648",
+    "scenario": {
+      "date": "2023-09-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4659,
+      "nav_change_7d": -1.76,
+      "nav_change_30d": -4.75,
+      "nav_change_90d": -13.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.21557804082592513,
+      "portfolio_return": -7.921976079054967
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 97.1647,
+      "reasoning": "工银文体产业股票波动率较低，回撤可控，当前仓位适中，继续持有以分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.5,
+      "return_30d": -5.78,
+      "return_90d": -10.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cd2d98b6-6d6",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.344489",
+    "scenario": {
+      "date": "2023-09-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4562,
+      "nav_change_7d": 0.56,
+      "nav_change_30d": -7.35,
+      "nav_change_90d": -15.52,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.21647349191492277,
+      "portfolio_return": -8.302860436134415
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "黄金ETF净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": -2.99,
+      "return_90d": -10.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b4339c6b-548",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.351336",
+    "scenario": {
+      "date": "2023-10-11",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4203,
+      "nav_change_7d": -1.46,
+      "nav_change_30d": -5.55,
+      "nav_change_90d": -17.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.21877002510107,
+      "portfolio_return": -9.265448999105521
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 1000.0,
+      "amount_pct": 198.008,
+      "reasoning": "工银文体产业股票相对抗跌，波动率较低，持仓比例合理，继续持有观察。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.62,
+      "return_30d": -0.93,
+      "return_90d": -10.84,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2765352f-c7b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.358166",
+    "scenario": {
+      "date": "2023-10-16",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3806,
+      "nav_change_7d": -2.58,
+      "nav_change_30d": -4.46,
+      "nav_change_90d": -16.45,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2209041276772519,
+      "portfolio_return": -10.142014055067849
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 100.3291,
+      "reasoning": "文体产业股票波动率较低，近期跌幅较小，持仓比例适中，暂不操作。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.46,
+      "return_30d": 1.07,
+      "return_90d": -8.69,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4a94fe08-8e4",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.364948",
+    "scenario": {
+      "date": "2023-10-19",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3417,
+      "nav_change_7d": -5.0,
+      "nav_change_30d": -5.93,
+      "nav_change_90d": -16.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.22417675615469196,
+      "portfolio_return": -11.453799490690217
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "文体产业股票波动率较低，相对稳健，当前仓位适中，继续持有等待市场企稳。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.77,
+      "return_30d": 1.82,
+      "return_90d": -9.18,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cf87c70d-eef",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.371795",
+    "scenario": {
+      "date": "2023-10-24",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3104,
+      "nav_change_7d": -3.62,
+      "nav_change_30d": -6.81,
+      "nav_change_90d": -18.41,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.22661303915450542,
+      "portfolio_return": -12.405746491638492
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 103.6184,
+      "reasoning": "黄金ETF联接净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.42,
+      "return_30d": 2.61,
+      "return_90d": -9.38,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0752aac0-a67",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.378670",
+    "scenario": {
+      "date": "2023-10-27",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3904,
+      "nav_change_7d": 1.81,
+      "nav_change_30d": -2.76,
+      "nav_change_90d": -15.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1650842215940684,
+      "portfolio_return": -10.409366460426064
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 100.6765,
+      "reasoning": "工银文体产业股票波动率较低，近期小幅反弹，中期跌幅可控，维持现有仓位。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.07,
+      "return_30d": -1.28,
+      "return_90d": -9.41,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ade1d783-804",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.385613",
+    "scenario": {
+      "date": "2023-11-01",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3902,
+      "nav_change_7d": 3.32,
+      "nav_change_30d": -2.69,
+      "nav_change_90d": -17.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.16521950045914807,
+      "portfolio_return": -10.482721719298787
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 100.7618,
+      "reasoning": "文体产业股票波动率较低，近期表现相对稳健，持仓比例合理，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.26,
+      "return_30d": -2.8,
+      "return_90d": -13.68,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b92188f5-0fd",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.392482",
+    "scenario": {
+      "date": "2023-11-06",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4611,
+      "nav_change_7d": 1.44,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": -14.46,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.16293693721908262,
+      "portfolio_return": -9.228685328032261
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 98.91,
+      "reasoning": "文体产业基金波动率低，近期回调但长期稳健，当前仓位合理，继续持有以分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.11,
+      "return_30d": -6.33,
+      "return_90d": -17.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1080d54e-f3d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.399316",
+    "scenario": {
+      "date": "2023-11-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4616,
+      "nav_change_7d": 4.45,
+      "nav_change_30d": 1.25,
+      "nav_change_90d": -13.01,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1635328457128695,
+      "portfolio_return": -9.559453114585684
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 158.8373,
+      "reasoning": "文体产业波动率低、近期跌幅较小，相对稳健，加仓500元以平衡组合风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.36,
+      "return_30d": -6.89,
+      "return_90d": -12.65,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3f744d0b-2c0",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.406355",
+    "scenario": {
+      "date": "2023-11-14",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4303,
+      "nav_change_7d": -0.8,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": -11.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.14161416490941783,
+      "portfolio_return": -10.21378399446814
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 100.1342,
+      "reasoning": "工银文体产业股票波动率低、回撤较小，符合稳健配置需求，加仓以提升组合风险调整后收益。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.36,
+      "return_30d": -7.51,
+      "return_90d": -10.76,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b2acc2f0-afd",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.413628",
+    "scenario": {
+      "date": "2023-11-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4177,
+      "nav_change_7d": -0.74,
+      "nav_change_30d": 1.72,
+      "nav_change_90d": -11.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.13027695653183546,
+      "portfolio_return": -10.429286109792756
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "文体产业波动率低，但近30日下跌，趋势不明，维持现有仓位观察。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.54,
+      "return_30d": -7.46,
+      "return_90d": -10.51,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "65beb217-8cf",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.420578",
+    "scenario": {
+      "date": "2023-11-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3583,
+      "nav_change_7d": -4.02,
+      "nav_change_30d": 2.41,
+      "nav_change_90d": -9.82,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.13125155216107245,
+      "portfolio_return": -11.094384730172514
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1100.0,
+      "amount_pct": 223.7455,
+      "reasoning": "工银文体产业股票波动率较低，近期表现相对稳健，当前仓位适中，继续持有观察。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.22,
+      "return_30d": -6.41,
+      "return_90d": -9.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "04506cc4-cdc",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.427370",
+    "scenario": {
+      "date": "2023-11-27",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3352,
+      "nav_change_7d": -3.26,
+      "nav_change_30d": -2.31,
+      "nav_change_90d": -11.92,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1881844157323986,
+      "portfolio_return": -11.554844033057197
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 40.9735,
+      "reasoning": "该基金波动率较低，表现相对稳健，当前仓位适中，继续持有观察。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.97,
+      "return_30d": -5.81,
+      "return_90d": -6.78,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "52e548fe-91c",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.434402",
+    "scenario": {
+      "date": "2023-11-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3138,
+      "nav_change_7d": -2.61,
+      "nav_change_30d": -3.72,
+      "nav_change_90d": -12.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.21147356321142696,
+      "portfolio_return": -11.884967004740412
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 1000.0,
+      "amount_pct": 206.1091,
+      "reasoning": "工银文体产业股票基金波动率较低，表现相对稳健，当前仓位合理，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.87,
+      "return_30d": -1.91,
+      "return_90d": -6.93,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c6ab0d7a-52a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.441407",
+    "scenario": {
+      "date": "2023-12-05",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2396,
+      "nav_change_7d": -4.84,
+      "nav_change_30d": -6.4,
+      "nav_change_90d": -14.73,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2164665546089181,
+      "portfolio_return": -13.91741771071591
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 106.2564,
+      "reasoning": "黄金ETF作为避险资产，在当前市场震荡和波动率上升环境下可分散风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.52,
+      "return_30d": -2.04,
+      "return_90d": -1.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5ee842aa-f78",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.448256",
+    "scenario": {
+      "date": "2023-12-08",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2478,
+      "nav_change_7d": -1.99,
+      "nav_change_30d": -8.23,
+      "nav_change_90d": -11.88,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2174764550668356,
+      "portfolio_return": -14.317161394444575
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 106.5689,
+      "reasoning": "工银文体产业股票近期表现稳健，波动率较低，当前仓位适中，继续持有观察。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.78,
+      "return_30d": -2.79,
+      "return_90d": -2.2,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c4b07344-4dc",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.455163",
+    "scenario": {
+      "date": "2023-12-13",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2102,
+      "nav_change_7d": -2.6,
+      "nav_change_30d": -9.09,
+      "nav_change_90d": -11.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2184291561700374,
+      "portfolio_return": -14.690875857734573
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 107.5454,
+      "reasoning": "文体产业股票近期下跌，但跌幅相对较小，持仓成本较高，等待反弹机会。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.0,
+      "return_30d": -2.1,
+      "return_90d": 3.13,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d6c7fc3b-65d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.461981",
+    "scenario": {
+      "date": "2023-12-18",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1519,
+      "nav_change_7d": -4.8,
+      "nav_change_30d": -10.99,
+      "nav_change_90d": -13.55,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.22146174297807125,
+      "portfolio_return": -15.85905651503381
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "工银文体产业股票近期跌幅相对较小，波动率适中，持仓比例合理，继续持有等待市场反弹。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.82,
+      "return_30d": -2.39,
+      "return_90d": 4.24,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0876f94b-040",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.468961",
+    "scenario": {
+      "date": "2023-12-21",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1677,
+      "nav_change_7d": -1.2,
+      "nav_change_30d": -9.66,
+      "nav_change_90d": -12.56,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.22121878904625716,
+      "portfolio_return": -15.76664857294918
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 218.8327,
+      "reasoning": "文体产业股票基金相对稳健，波动率较低，当前估值合理，小幅加仓以平衡组合风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.79,
+      "return_30d": -1.96,
+      "return_90d": 5.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a37dd2bb-b6c",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.475851",
+    "scenario": {
+      "date": "2023-12-26",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1905,
+      "nav_change_7d": 1.52,
+      "nav_change_30d": -6.51,
+      "nav_change_90d": -10.89,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.10057850661027203,
+      "portfolio_return": -15.349707537510094
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "该基金波动率较低，近期跌幅较小，表现相对稳健，维持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.76,
+      "return_30d": -2.31,
+      "return_90d": 1.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2efacbfa-4b7",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.482707",
+    "scenario": {
+      "date": "2023-12-29",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.27,
+      "nav_change_7d": 3.79,
+      "nav_change_30d": -2.24,
+      "nav_change_90d": -7.58,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09777563918198649,
+      "portfolio_return": -12.92309545373382
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 84.0513,
+      "reasoning": "该基金波动率较高，近期反弹后仍处于下行趋势，适度减仓降低风险敞口。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.15,
+      "return_30d": -6.45,
+      "return_90d": -1.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "37ab0eb2-583",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.489591",
+    "scenario": {
+      "date": "2024-01-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1771,
+      "nav_change_7d": -4.05,
+      "nav_change_30d": -2.79,
+      "nav_change_90d": -11.36,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.14691563798088758,
+      "portfolio_return": -14.95799785707388
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 43.3736,
+      "reasoning": "工银文体产业波动率较低，跌幅相对温和，当前仓位适中，暂持观望。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.13,
+      "return_30d": -9.83,
+      "return_90d": 4.19,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0c8c4f75-d1b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.496594",
+    "scenario": {
+      "date": "2024-01-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1258,
+      "nav_change_7d": -4.45,
+      "nav_change_30d": -5.43,
+      "nav_change_90d": -12.17,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.17357785274695423,
+      "portfolio_return": -16.556174818482706
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 110.9681,
+      "reasoning": "黄金ETF联接作为避险资产，在当前震荡市中可分散风险，且波动率极低，适合小仓位配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.26,
+      "return_30d": -1.15,
+      "return_90d": 5.45,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0ce15618-37f",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.503562",
+    "scenario": {
+      "date": "2024-01-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1746,
+      "nav_change_7d": 1.22,
+      "nav_change_30d": -1.61,
+      "nav_change_90d": -10.34,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.17298487100082946,
+      "portfolio_return": -16.270134398455287
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 109.8756,
+      "reasoning": "工银文体产业波动率较低，近期跌幅较小，作为稳健底仓持有，等待市场方向明确。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.57,
+      "return_30d": -2.13,
+      "return_90d": 4.53,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "98fbd24d-f6a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.510452",
+    "scenario": {
+      "date": "2024-01-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1047,
+      "nav_change_7d": -1.28,
+      "nav_change_30d": -2.19,
+      "nav_change_90d": -10.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11464929561944018,
+      "portfolio_return": -17.801501098781735
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "工银文体产业股票波动率较低，但近期下跌，持有等待市场企稳。",
+      "confidence": 0.6,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.57,
+      "return_30d": 0.18,
+      "return_90d": 5.27,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "98dbc624-da1",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.517760",
+    "scenario": {
+      "date": "2024-01-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0654,
+      "nav_change_7d": -3.93,
+      "nav_change_30d": -5.56,
+      "nav_change_90d": -10.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11617240775567099,
+      "portfolio_return": -18.87918842295006
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 114.2753,
+      "reasoning": "文体产业股票波动率适中，近期跌幅较小，相对稳健，暂时持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.2,
+      "return_30d": 2.85,
+      "return_90d": 7.66,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "167046e2-7ab",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.524791",
+    "scenario": {
+      "date": "2024-01-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0965,
+      "nav_change_7d": -2.1,
+      "nav_change_30d": -4.29,
+      "nav_change_90d": -12.3,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11272896931949544,
+      "portfolio_return": -16.401258195747506
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 155.4002,
+      "reasoning": "文体产业股票近期表现相对稳健，波动率较低，加仓500元以优化组合风险收益比。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -5.92,
+      "return_30d": 1.04,
+      "return_90d": 3.83,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6a8081e4-3c9",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.531744",
+    "scenario": {
+      "date": "2024-01-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9417,
+      "nav_change_7d": -6.57,
+      "nav_change_30d": -14.46,
+      "nav_change_90d": -18.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07868411283128983,
+      "portfolio_return": -19.246722478476695
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 186.3629,
+      "reasoning": "工银文体表现相对稳健，波动率适中，当前持仓合理，暂时持有观望。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.82,
+      "return_30d": 7.81,
+      "return_90d": 13.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4bf6b239-f61",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.538754",
+    "scenario": {
+      "date": "2024-02-02",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.8689,
+      "nav_change_7d": -9.03,
+      "nav_change_30d": -15.5,
+      "nav_change_90d": -21.89,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1182749259022229,
+      "portfolio_return": -21.03989980327284
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 400.0,
+      "amount_pct": 95.9486,
+      "reasoning": "文体产业股票相对抗跌，但市场趋势不明，维持现有仓位观察。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 7.15,
+      "return_30d": 11.41,
+      "return_90d": 15.83,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8f2987fd-a27",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.545668",
+    "scenario": {
+      "date": "2024-02-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9784,
+      "nav_change_7d": 2.95,
+      "nav_change_30d": -6.45,
+      "nav_change_90d": -19.63,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1126539203121711,
+      "portfolio_return": -17.100088713104306
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 158.8238,
+      "reasoning": "该基金近期表现相对稳健，波动率适中，当前仓位合理，暂不调整。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.34,
+      "return_30d": 4.96,
+      "return_90d": 11.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a7a20c75-34a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.552645",
+    "scenario": {
+      "date": "2024-02-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9874,
+      "nav_change_7d": -1.29,
+      "nav_change_30d": -6.41,
+      "nav_change_90d": -15.73,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.13519906999330472,
+      "portfolio_return": -16.20504489741659
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 112.3242,
+      "reasoning": "文体产业股票基金近30日表现相对稳健，波动率较低，加仓以优化组合风险收益比。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.43,
+      "return_30d": 7.95,
+      "return_90d": 9.86,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5e26df34-d56",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.559591",
+    "scenario": {
+      "date": "2024-02-23",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0424,
+      "nav_change_7d": 1.44,
+      "nav_change_30d": -1.38,
+      "nav_change_90d": -12.83,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.12030799133822635,
+      "portfolio_return": -14.527706051620298
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 153.428,
+      "reasoning": "工银文体产业近30日涨幅7.14%，波动率较低，趋势向好，适度加仓以提升组合收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.82,
+      "return_30d": 3.88,
+      "return_90d": 6.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "86401779-78e",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.566549",
+    "scenario": {
+      "date": "2024-02-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0412,
+      "nav_change_7d": 1.3,
+      "nav_change_30d": 2.62,
+      "nav_change_90d": -11.78,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.08542363109765382,
+      "portfolio_return": -15.56200658627693
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 154.6551,
+      "reasoning": "文体产业股票波动率较低且近期表现稳健，加仓500元以增强组合稳定性并提升风险调整后收益。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.67,
+      "return_30d": 4.45,
+      "return_90d": 4.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "66d44ee2-b18",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.573548",
+    "scenario": {
+      "date": "2024-03-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.107,
+      "nav_change_7d": 3.08,
+      "nav_change_30d": 12.74,
+      "nav_change_90d": -5.92,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04825138186415345,
+      "portfolio_return": -14.137174109040643
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.0,
+      "amount_pct": 172.5998,
+      "reasoning": "工银文体产业股票波动率较低，近期表现稳健，加仓以优化风险调整后收益。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.79,
+      "return_30d": 3.91,
+      "return_90d": 2.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5f73cd8d-76e",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.580477",
+    "scenario": {
+      "date": "2024-03-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.067,
+      "nav_change_7d": -1.75,
+      "nav_change_30d": 6.61,
+      "nav_change_90d": -8.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.048247387544921146,
+      "portfolio_return": -14.130065671584271
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 21.7391,
+      "reasoning": "黄金ETF净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.78,
+      "return_30d": 4.83,
+      "return_90d": 4.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6152547a-9ba",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.587463",
+    "scenario": {
+      "date": "2024-03-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2207,
+      "nav_change_7d": 6.01,
+      "nav_change_30d": 10.3,
+      "nav_change_90d": 0.48,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.058579029393459985,
+      "portfolio_return": -12.289430992627022
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 600.0,
+      "amount_pct": 124.9818,
+      "reasoning": "文体产业股票波动率低、趋势稳健，加仓500元以增强组合稳定性并分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.02,
+      "return_30d": -0.77,
+      "return_90d": -1.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3efa825c-116",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.594380",
+    "scenario": {
+      "date": "2024-03-15",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.202,
+      "nav_change_7d": 5.69,
+      "nav_change_30d": 9.37,
+      "nav_change_90d": 0.51,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012377647684438624,
+      "portfolio_return": -13.311476675087905
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "黄金ETF净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.62,
+      "return_30d": -1.41,
+      "return_90d": -1.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b04cc36a-b4b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.601333",
+    "scenario": {
+      "date": "2024-03-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2411,
+      "nav_change_7d": 0.82,
+      "nav_change_30d": 12.05,
+      "nav_change_90d": 3.39,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01230556573237534,
+      "portfolio_return": -12.803683850390444
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 104.0561,
+      "reasoning": "文体产业波动率低、近90日涨幅稳健，加仓可提升组合稳定性并分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.97,
+      "return_30d": -1.94,
+      "return_90d": -1.46,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "23cf7a2e-f0e",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.608409",
+    "scenario": {
+      "date": "2024-03-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1534,
+      "nav_change_7d": -4.61,
+      "nav_change_30d": 5.43,
+      "nav_change_90d": -1.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01244956991164397,
+      "portfolio_return": -13.812283668013734
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 106.5553,
+      "reasoning": "工银文体产业股票近90日表现较好，波动率低，适合在当前震荡市中加仓以提升组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.88,
+      "return_30d": -0.26,
+      "return_90d": -1.34,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "450f1e1d-e6a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.615952",
+    "scenario": {
+      "date": "2024-03-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1545,
+      "nav_change_7d": -3.32,
+      "nav_change_30d": 3.54,
+      "nav_change_90d": -5.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012458224702553833,
+      "portfolio_return": -13.87215870492
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 106.5757,
+      "reasoning": "工银文体产业股票波动率低、近期表现稳定，加仓以提升组合稳定性并分散风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.57,
+      "return_30d": 1.64,
+      "return_90d": -2.17,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "689ab350-d14",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.622964",
+    "scenario": {
+      "date": "2024-04-02",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2405,
+      "nav_change_7d": 2.03,
+      "nav_change_30d": 6.1,
+      "nav_change_90d": 1.31,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012209215772019178,
+      "portfolio_return": -12.115567450361523
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 207.1895,
+      "reasoning": "黄金ETF净值数据缺失，无法评估，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.37,
+      "return_30d": -0.19,
+      "return_90d": -5.84,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8ec7a6b4-eff",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.629893",
+    "scenario": {
+      "date": "2024-04-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2492,
+      "nav_change_7d": 0.39,
+      "nav_change_30d": 7.95,
+      "nav_change_90d": 5.5,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012333666148656922,
+      "portfolio_return": -13.002347633931494
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 104.0323,
+      "reasoning": "文体产业股票波动率较低，近期表现稳健，当前仓位合理，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.6,
+      "return_30d": 2.51,
+      "return_90d": -8.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "edffa068-cf0",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.636938",
+    "scenario": {
+      "date": "2024-04-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1659,
+      "nav_change_7d": -2.48,
+      "nav_change_30d": -2.56,
+      "nav_change_90d": -0.4,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012526923468532106,
+      "portfolio_return": -14.344491471078255
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 350.0,
+      "amount_pct": 74.6762,
+      "reasoning": "文体产业股票波动率较低且近期表现相对稳健，加仓以提升组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.57,
+      "return_30d": 4.52,
+      "return_90d": -3.62,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f8b8f6a4-eea",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.643911",
+    "scenario": {
+      "date": "2024-04-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1645,
+      "nav_change_7d": -2.22,
+      "nav_change_30d": -4.12,
+      "nav_change_90d": 1.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.017871886435861052,
+      "portfolio_return": -12.124553519504481
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 105.1193,
+      "reasoning": "工银文体产业股票近30日和90日表现优于市场，波动率较低，加仓以提升组合风险调整后收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": 2.69,
+      "return_90d": -4.11,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a7938df1-808",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.650936",
+    "scenario": {
+      "date": "2024-04-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.114,
+      "nav_change_7d": -3.5,
+      "nav_change_30d": -3.3,
+      "nav_change_90d": 1.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01789588583404924,
+      "portfolio_return": -12.242399478659935
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 733.36,
+      "amount_pct": 155.8351,
+      "reasoning": "该基金近期持续下跌且波动率高，清仓止损以降低风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.65,
+      "return_30d": 4.24,
+      "return_90d": -1.52,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b12ea437-1eb",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.657957",
+    "scenario": {
+      "date": "2024-04-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1107,
+      "nav_change_7d": -2.23,
+      "nav_change_30d": -3.88,
+      "nav_change_90d": 2.74,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04442579616866215,
+      "portfolio_return": -12.383517332533156
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 230.0,
+      "amount_pct": 48.9497,
+      "reasoning": "文体产业股票基金近30日和90日表现稳健，波动率适中，利用现金加仓以优化组合风险收益比。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.75,
+      "return_30d": 1.78,
+      "return_90d": -5.22,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "774876e4-735",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.665041",
+    "scenario": {
+      "date": "2024-04-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1739,
+      "nav_change_7d": 3.0,
+      "nav_change_30d": 0.4,
+      "nav_change_90d": 13.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024144743869218874,
+      "portfolio_return": -10.252433749668652
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 103.5862,
+      "reasoning": "工银文体产业股票波动率较低，近期表现稳健，当前仓位合理，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.97,
+      "return_30d": -1.27,
+      "return_90d": -7.99,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "06b0f5be-918",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.672193",
+    "scenario": {
+      "date": "2024-05-08",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1927,
+      "nav_change_7d": 0.86,
+      "nav_change_30d": 0.02,
+      "nav_change_90d": 8.91,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024078933051860204,
+      "portfolio_return": -10.007142121581783
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 550.0,
+      "amount_pct": 113.339,
+      "reasoning": "文体产业股票波动率较低，近30日表现稳健，加仓以提升组合稳定性并利用现金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.39,
+      "return_30d": -2.53,
+      "return_90d": -9.79,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e23ce626-f05",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.679248",
+    "scenario": {
+      "date": "2024-05-13",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1832,
+      "nav_change_7d": -1.96,
+      "nav_change_30d": 0.8,
+      "nav_change_90d": 8.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.029348744886437864,
+      "portfolio_return": -9.214788901202919
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 102.7074,
+      "reasoning": "净值数据异常（为0），无法评估投资价值，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.42,
+      "return_30d": -3.08,
+      "return_90d": -10.91,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "067042f0-366",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.689473",
+    "scenario": {
+      "date": "2024-05-16",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.162,
+      "nav_change_7d": -3.89,
+      "nav_change_30d": 1.82,
+      "nav_change_90d": 7.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.029333875482633415,
+      "portfolio_return": -9.168769684816072
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 85.4847,
+      "reasoning": "工银文体近30日涨幅4.67%且波动率低，风险调整后收益较好，适度加仓以优化组合夏普比率。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.05,
+      "return_30d": -1.71,
+      "return_90d": -9.52,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5ef24442-25a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-06-04T15:24:19.699854",
+    "scenario": {
+      "date": "2024-05-21",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1555,
+      "nav_change_7d": -1.03,
+      "nav_change_30d": 1.46,
+      "nav_change_90d": 6.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.029078586734030777,
+      "portfolio_return": -8.371337838031577
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.0,
+      "amount_pct": 136.3443,
+      "reasoning": "该基金近30日涨幅4.39%，波动率低（9.72%），风险调整后收益较好，适度加仓以提升组合稳定性。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.52,
+      "return_30d": -3.38,
+      "return_90d": -9.34,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  }
+]

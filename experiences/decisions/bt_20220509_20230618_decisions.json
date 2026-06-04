@@ -1,0 +1,104 @@
+[
+  {
+    "id": "e4fef010-dbd",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-04T15:25:25.377398",
+    "scenario": {
+      "date": "2023-06-05",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "上证50ETF近期无波动，市场无趋势，观望。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": 1.85,
+      "return_90d": -0.1,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a08daa4a-ee0",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-04T15:25:25.407370",
+    "scenario": {
+      "date": "2023-06-08",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 9500.0,
+      "amount_pct": 425.5414,
+      "reasoning": "中欧兴利债券C波动率最低（6.71%），作为防御性资产，降低组合整体波动。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.54,
+      "return_30d": 1.6,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7f4e334a-666",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-04T15:25:25.437390",
+    "scenario": {
+      "date": "2023-06-13",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.671,
+      "nav_change_7d": 2.89,
+      "nav_change_30d": 3.14,
+      "nav_change_90d": 3.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04124422797968301,
+      "portfolio_return": 0.31706744609551607
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.0092,
+      "reasoning": "中欧兴利债券C波动率低，作为组合稳定器，继续持有。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.93,
+      "return_30d": 1.94,
+      "return_90d": -1.59,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  }
+]
