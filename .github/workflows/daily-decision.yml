@@ -11,6 +11,8 @@ on:
     paths:
       - ".github/workflows/daily-decision.yml"
       - "pyproject.toml"
+      - "config/**.yaml"
+      - "src/**/*.py"
 
 jobs:
   daily:
