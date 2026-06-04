@@ -9,10 +9,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - ".github/workflows/daily-decision.yml"
-      - "pyproject.toml"
-      - "config/**.yaml"
-      - "src/**/*.py"
+      - ".github/TRIGGER"
 
 permissions:
   contents: write

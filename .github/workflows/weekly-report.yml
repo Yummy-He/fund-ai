@@ -13,10 +13,7 @@ on:
         default: "5"
   push:
     paths:
-      - ".github/workflows/weekly-report.yml"
-      - "pyproject.toml"
-      - "config/**.yaml"
-      - "src/**/*.py"
+      - ".github/TRIGGER"
 
 permissions:
   contents: write

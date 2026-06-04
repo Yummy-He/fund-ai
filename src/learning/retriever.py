@@ -90,7 +90,8 @@ class ExperienceRetriever:
         selected = []
         failures = [(e, s) for e, s in scored
                      if hasattr(e, 'outcome') and not e.outcome.was_profitable]
-        successes = [(e, s) for e, s in scored if e not in dict(failures)]
+        failure_ids = {e.id for e, _ in failures}
+        successes = [(e, s) for e, s in scored if e.id not in failure_ids]
 
         # 始终包含一些失败案例（避免只看到成功经验）
         n_failures = min(self.always_include_failures, len(failures))

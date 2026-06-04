@@ -6,7 +6,12 @@
 
 AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取历史净值，反复回测（"穿越"到过去用 1 万元逐日决策买卖），积累经验，学会分析基金并给出投资建议。
 
-## 当前状态（v0.2.7 | 2026-06-04）
+## 当前状态（v0.3.0 | 2026-06-04）
+
+- 经验系统已贯通：learn 每轮回测产生逐条 Experience → `experiences/decisions/`
+- 经验自动裁剪：超过 3000 条时 consolidator 按质量分裁剪到 2000 条
+- 7 维经验检索已激活，AI 决策时有历史经验参考（不再报"经验库为空"）
+- **推送不触发 workflow**：改 `.github/TRIGGER` 才触发。日常 push 不会浪费 CI 资源
 
 - 10 只基金 ~727 条/只净值数据（2023-06 ~ 今）
 - 每只基金独立真实费率（从东方财富 + akshare 抓取）
@@ -26,7 +31,8 @@ AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取
 7. 交易日判断：三层检测 — tool_trade_date_hist_sina()（格式 YYYY-MM-DD）→ stock_zh_index_daily 上证最新日 → 工作日回退
 8. Wiki 单独仓库：`docs/WIKI.md` 是源，需手动同步到 `https://github.com/Yummy-He/fund-ai.wiki.git` 的 `Home.md`
 9. **推送前必须测试**：任何 Python 代码改动，commit 前必须跑语法检查 + 至少 import 测试 + 核心函数单元验证。禁止不经测试直接推送。
-10. 推送冲突：多个 workflow 可能同时运行（push 触发器），每次 push 前要 `git pull --rebase`
+10. **推送前必须 pull + push 前先 pull**：`git pull --rebase -X theirs origin main && git push`。禁止直接 push。
+11. **推送不触发 workflow**：改 `.github/TRIGGER` 文件才触发所有 workflow。日常改代码 push 不会浪费 CI 配额。需要触发时：`echo "trigger: $(date)" > .github/TRIGGER && git add .github/TRIGGER && git commit -m "trigger workflows"`
 
 ## 项目结构
 
@@ -58,7 +64,8 @@ fund-ai/
 │   ├── learning/
 │   │   ├── experience.py      # 经验存储（Experience + ExperienceStore）
 │   │   ├── evaluator.py       # 策略评估（跨回测模式提取）
-│   │   └── retriever.py       # 多因子相似度检索（7维加权）
+│   │   ├── retriever.py       # 多因子相似度检索（7维加权）
+│   │   └── consolidator.py    # 经验裁剪器（超阈值自动裁剪到2000条）
 │   ├── report/
 │   │   └── generator.py       # Markdown 报告生成
 │   └── utils/
@@ -78,10 +85,11 @@ fund-ai/
 │   ├── recommendations/       # 投资建议
 │   └── daily/                 # 每日简报
 ├── docs/WIKI.md               # 操作手册源文件
-└── .github/workflows/         # CI/CD
-    ├── daily-decision.yml     # 每日：判交易日→抓数据→回测
-    ├── weekly-report.yml      # 每周六：学习+周报
-    └── monthly-report.yml     # 每月1日：深度学习+月报
+├── .github/workflows/         # CI/CD
+│   ├── daily-decision.yml     # 每日：判交易日→抓数据→回测
+│   ├── weekly-report.yml      # 每周六：学习+周报
+│   ├── monthly-report.yml     # 每月1日：深度学习+月报
+│   └── TRIGGER                # 工作流触发器：改此文件才触发 push 事件
 ```
 
 ## CLI 命令
@@ -106,12 +114,13 @@ python -m src.cli recommend                       # 投资建议
 
 | 想改什么 | 文件 | 改后 |
 |---------|------|------|
-| 加/减基金 | `config/funds.yaml` | `scrape` → push |
-| 调模型 | `config/default.yaml` → `ai.flash_model/pro_model` | push 即生效 |
-| 调回测参数 | `config/default.yaml` → `backtest.*` | push 即生效 |
-| 改提示词 | `config/prompt_templates/*.txt` | push 即生效 |
+| 加/减基金 | `config/funds.yaml` | `scrape` → push（改 TRIGGER 触发 workflow） |
+| 调模型 | `config/default.yaml` → `ai.flash_model/pro_model` | push 后改 TRIGGER 触发即可生效 |
+| 调回测参数 | `config/default.yaml` → `backtest.*` | push 后改 TRIGGER 触发即可生效 |
+| 改提示词 | `config/prompt_templates/*.txt` | push 后改 TRIGGER 触发即可生效 |
 | 加数据源 | `src/data/sources/` | 新类 + 注册到 scraper |
 | 改 WIKI | `docs/WIKI.md` | 需同步 push 到 wiki 仓库 |
+| 手动触发 workflow | 改 `.github/TRIGGER` | `echo "trigger: $(date)" > .github/TRIGGER` |
 
 ## Wiki 同步
 

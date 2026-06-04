@@ -1,0 +1,7 @@
+# Workflow 手动触发器
+
+修改此文件并推送，即可触发所有 workflow（替代 push 触发）。
+不改动此文件时，推送不会触发任何 workflow。
+workflow 按 schedule 自动运行。
+
+上次触发: 2026-06-04 经验系统 v0.3.0

@@ -141,12 +141,40 @@ class ExperienceStore:
 
         # 更新索引
         self._update_index(exp)
+        self._save_index()
 
     def add_batch(self, experiences: List[Experience]) -> None:
-        """批量添加经验"""
+        """批量添加经验（高性能：按 backtest_id 分组，每文件一次读写）"""
+        from collections import defaultdict
+        grouped = defaultdict(list)
         for exp in experiences:
-            self.add(exp)
+            if not exp.id:
+                exp.id = str(uuid.uuid4())[:12]
+            grouped[exp.backtest_id].append(exp)
+        for bt_id, exps in grouped.items():
+            bt_file = self.decisions_dir / f"{bt_id}_decisions.json"
+            existing = []
+            if bt_file.exists():
+                try:
+                    with open(bt_file, "r", encoding="utf-8") as f:
+                        existing = json.load(f)
+                except json.JSONDecodeError:
+                    pass
+            existing.extend([exp.to_dict() for exp in exps])
+            with open(bt_file, "w", encoding="utf-8") as f:
+                json.dump(existing, f, ensure_ascii=False, indent=2)
+        for exp in experiences:
+            self._update_index(exp)
         self._save_index()
+
+    def replace_all(self, experiences: List[Experience]) -> int:
+        """替换全部经验（consolidation 后写入）。返回写入条数。"""
+        for f in self.decisions_dir.glob("*_decisions.json"):
+            f.unlink()
+        self.index = {"version": 1, "total_experiences": 0, "backtests": [],
+                       "by_fund_type": {}, "last_updated": ""}
+        self.add_batch(experiences)
+        return len(experiences)
 
     def load_all(self) -> List[Experience]:
         """加载所有经验"""
@@ -222,6 +250,7 @@ class ExperienceStore:
         }
 
     def _update_index(self, exp: Experience) -> None:
+        """更新内存中索引计数（不写盘，由调用方负责保存）"""
         self.index["total_experiences"] = self.index.get("total_experiences", 0) + 1
         if exp.backtest_id not in self.index.get("backtests", []):
             self.index.setdefault("backtests", []).append(exp.backtest_id)
@@ -229,7 +258,6 @@ class ExperienceStore:
         self.index.setdefault("by_fund_type", {})
         self.index["by_fund_type"][fund_type] = self.index["by_fund_type"].get(fund_type, 0) + 1
         self.index["last_updated"] = datetime.now().isoformat()
-        self._save_index()
 
     def _save_index(self) -> None:
         with open(self.index_path, "w", encoding="utf-8") as f:

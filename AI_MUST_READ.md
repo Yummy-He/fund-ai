@@ -51,7 +51,10 @@
 5. DeepSeek 不支持 cache_control 和 thinking
 6. akshare 接口列名可能变化，需兼容处理
 7. ETF 和场外基金使用不同的 akshare 接口
-8. 交易日通过 `akshare.tool_trade_date_hist_sina()` 判断
+8. 交易日：三层检测 — tool_trade_date_hist_sina(格式YYYY-MM-DD) → stock_zh_index_daily 上证最新日 → 工作日回退
+9. **推送不触发 workflow**：改 `.github/TRIGGER` 才触发，日常 push 不跑 CI
+10. **push 前必 pull**：`git pull --rebase -X theirs origin main && git push`
+11. 经验系统：learn 回测产生 Experience → `experiences/decisions/`；超 3000 条自动裁剪到 2000
 
 ## 费率系统说明
 

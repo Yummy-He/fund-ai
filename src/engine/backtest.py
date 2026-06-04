@@ -19,6 +19,7 @@ from .ai_client import AIClient
 from .prompt import PromptBuilder
 from ..data.store import FundRepository
 from ..data.models import MarketContext, MarketTrend
+from ..learning.experience import Experience, ScenarioSnapshot, DecisionRecord, OutcomeRecord
 
 logger = logging.getLogger("fund_ai.engine.backtest")
 
@@ -98,14 +99,16 @@ class BacktestEngine:
         self.simulator: Optional[TimeSimulator] = None
         self.decision_maker: Optional[FundDecisionMaker] = None
         self.decisions_made: int = 0
+        self.experience_records: List[dict] = []
 
     def run(
         self,
         start_date: date,
         end_date: date,
         fund_pool: List[str],
-        decision_interval: int = 1,  # 每 N 个交易日做一次决策
+        decision_interval: int = 1,
         require_ai: bool = True,
+        strategy_patterns: Optional[List[dict]] = None,
     ) -> BacktestResult:
         """执行单次回测
 
@@ -139,6 +142,7 @@ class BacktestEngine:
             prompt_builder=self.prompt_builder,
             fund_repo=self.fund_repo,
             experience_retriever=self.experience_retriever,
+            strategy_patterns=strategy_patterns or [],
         )
 
         self.decisions_made = 0
@@ -190,6 +194,10 @@ class BacktestEngine:
                     self.decisions_made += 1
                     days_since_last_decision = 0
 
+                    # 捕获决策上下文（供后续构建经验）
+                    if self.decision_maker and self.decision_maker.last_context:
+                        self.experience_records.append(self.decision_maker.last_context)
+
                 except Exception as e:
                     logger.error(f"日期 {current_date} 决策执行失败: {e}")
 
@@ -229,6 +237,84 @@ class BacktestEngine:
         )
 
         return result
+
+    def _calc_forward_return(self, fund_code: str, from_date: date, days: int) -> float:
+        """计算基金在决策日后 N 天的前向收益率（%）"""
+        current = self.fund_repo.get_nav_on_date(fund_code, from_date)
+        future = self.fund_repo.get_nav_on_date(fund_code, from_date + timedelta(days=days))
+        if current and future and current.nav > 0:
+            return (future.nav - current.nav) / current.nav * 100
+        return 0.0
+
+    def build_experiences(self, backtest_id: str) -> List[Experience]:
+        """从捕获的决策记录构建 Experience 对象列表。必须在 run() 完成后调用。"""
+        from datetime import datetime
+
+        experiences = []
+        for rec in self.experience_records:
+            if not rec.get("orders"):
+                continue
+            context_date = rec["context_date"]
+            market = rec["market"]
+            snapshots = rec.get("fund_snapshots", [])
+            orders = rec["orders"]
+            nav_map = rec.get("nav_map", {})
+            primary = snapshots[0] if snapshots else None
+
+            scenario = ScenarioSnapshot(
+                date=context_date.isoformat(),
+                fund_code=primary.fund_code if primary else (rec.get("fund_pool", [""])[0] if rec.get("fund_pool") else ""),
+                fund_type=primary.fund_type.value if primary else "MIXED",
+                nav_current=nav_map.get(primary.fund_code, 0.0) if primary else 0.0,
+                nav_change_7d=primary.change_7d if primary else 0.0,
+                nav_change_30d=primary.change_30d if primary else 0.0,
+                nav_change_90d=primary.change_90d if primary else 0.0,
+                market_trend=market.market_trend.value,
+                market_volatility=market.market_volatility,
+                cash_ratio=rec.get("cash_ratio", 0.0),
+                portfolio_return=rec.get("portfolio_return", 0.0),
+            )
+
+            trade_orders = [o for o in orders if o.is_trade]
+            primary_action = trade_orders[0].action if trade_orders else "hold"
+            total_amount = sum(o.amount for o in trade_orders)
+            best_reasoning = ""
+            best_confidence = 0.5
+            for o in orders:
+                if o.reasoning and o.confidence >= best_confidence:
+                    best_reasoning, best_confidence = o.reasoning, o.confidence
+
+            decision = DecisionRecord(
+                action=primary_action,
+                amount_rmb=total_amount,
+                amount_pct=round(total_amount / total_val if (total_val := sum(nav_map.values())) > 0 else 0.0, 4),
+                reasoning=best_reasoning[:500] if best_reasoning else "",
+                confidence=best_confidence,
+                model="",
+            )
+
+            ret_7d = ret_30d = ret_90d = 0.0
+            count = 0
+            for fcode, nv in nav_map.items():
+                if nv > 0:
+                    ret_7d += self._calc_forward_return(fcode, context_date, 7)
+                    ret_30d += self._calc_forward_return(fcode, context_date, 30)
+                    ret_90d += self._calc_forward_return(fcode, context_date, 90)
+                    count += 1
+            if count > 0:
+                ret_7d /= count; ret_30d /= count; ret_90d /= count
+
+            outcome = OutcomeRecord(
+                return_7d=round(ret_7d, 2), return_30d=round(ret_30d, 2),
+                return_90d=round(ret_90d, 2), was_profitable=ret_30d > 0,
+                relative_to_benchmark=0.0,
+            )
+
+            experiences.append(Experience(
+                backtest_id=backtest_id, timestamp=datetime.now().isoformat(),
+                scenario=scenario, decision=decision, outcome=outcome,
+            ))
+        return experiences
 
     def run_simple_baseline(
         self,

@@ -43,6 +43,12 @@ class FundDecisionMaker:
         self.repo = fund_repo
         self.retriever = experience_retriever
         self.strategy_patterns = strategy_patterns or []
+        self._last_context: dict = {}
+
+    @property
+    def last_context(self) -> dict:
+        """最近一次决策的完整上下文（供经验记录使用）"""
+        return self._last_context
 
     def decide(
         self,
@@ -63,6 +69,7 @@ class FundDecisionMaker:
             AI 生成的交易订单列表
         """
         # 1. 获取当前日期各基金的快照
+        self._last_context = {}
         nav_map = self._get_current_navs(fund_pool, context_date)
         if not nav_map:
             logger.warning(f"日期 {context_date}: 无有效净值数据，跳过决策")
@@ -134,6 +141,20 @@ class FundDecisionMaker:
 
         # 9. 解析订单
         orders = self._parse_orders(response)
+
+        # 10. 捕获决策上下文（供后续经验记录）
+        total_val = portfolio.total_value()
+        self._last_context = {
+            "context_date": context_date,
+            "market": market,
+            "fund_snapshots": fund_snapshots,
+            "nav_map": nav_map,
+            "cash_ratio": portfolio.cash / total_val if total_val > 0 else 1.0,
+            "portfolio_return": portfolio.total_return_pct(),
+            "fund_pool": fund_pool,
+            "orders": orders,
+        }
+
         logger.debug(
             f"日期 {context_date}: AI 生成 {len(orders)} 条决策 "
             f"(其中交易 {sum(1 for o in orders if o.is_trade)} 条)"

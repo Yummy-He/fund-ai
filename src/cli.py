@@ -288,23 +288,14 @@ def learn(ctx, iterations, funds, seed):
                 experience_retriever=retriever,
             )
 
-            # 注入当前策略模式到决策引擎
-            if engine.decision_maker is None:
-                engine.decision_maker = FundDecisionMaker(
-                    ai_client=ai,
-                    prompt_builder=prompt,
-                    fund_repo=repo,
-                    experience_retriever=retriever,
-                    strategy_patterns=strategy_patterns,
-                )
-
             # 运行回测
             try:
                 result = engine.run(
                     start_date=start_date,
                     end_date=end_date,
                     fund_pool=fund_pool,
-                    decision_interval=3,  # 每3个交易日决策一次降低API调用
+                    decision_interval=3,
+                    strategy_patterns=strategy_patterns,
                 )
             except Exception as e:
                 logger.error(f"回测 {i+1} 失败: {e}")
@@ -319,13 +310,24 @@ def learn(ctx, iterations, funds, seed):
                 f"回撤: {result.max_drawdown:.2f}%"
             )
 
+            # 保存逐条决策经验
+            try:
+                bt_id = f"bt_{start_date.strftime('%Y%m%d')}_{end_date.strftime('%Y%m%d')}"
+                if engine.experience_records:
+                    experiences = engine.build_experiences(bt_id)
+                    if experiences:
+                        exp_store.add_batch(experiences)
+                        console.print(f"  [dim]已保存 {len(experiences)} 条决策经验[/dim]")
+            except Exception as e:
+                logger.warning(f"经验保存失败: {e}")
+
             # AI 总结教训
             try:
                 lessons = engine.decision_maker.generate_lessons(result)
             except Exception:
                 lessons = {"key_lessons": [], "summary": ""}
 
-            # 保存经验
+            # 保存总结
             exp_store.save_summary(
                 backtest_id=f"bt_{start_date}_{end_date}",
                 summary=lessons,
@@ -360,6 +362,19 @@ def learn(ctx, iterations, funds, seed):
     strategy_summary = evaluator.generate_strategy_summary()
     console.print(f"\n[bold]策略总结:[/bold]")
     console.print(strategy_summary)
+
+    # 经验库裁剪（超过阈值时自动触发）
+    total_exp = exp_store.total_count()
+    MAX_EXPERIENCES = 3000
+    if total_exp > MAX_EXPERIENCES:
+        console.print(f"\n[yellow]经验库 ({total_exp} 条) 超过阈值，触发裁剪...[/yellow]")
+        try:
+            from .learning.consolidator import ExperienceConsolidator
+            consolidator = ExperienceConsolidator(store=exp_store, max_experiences=2000)
+            removed = consolidator.consolidate()
+            console.print(f"[green]裁剪完成: 移除 {removed} 条，保留 {exp_store.total_count()} 条[/green]")
+        except Exception as e:
+            logger.warning(f"经验裁剪失败: {e}")
 
     console.print(f"\n[green]✅ 学习完成！报告: reports/backtests/learning_report.md[/green]")
 
