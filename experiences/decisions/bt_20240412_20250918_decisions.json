@@ -1,8 +1,8 @@
 [
   {
-    "id": "e5ba55a9-081",
+    "id": "4529a15a-c77",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.785678",
+    "timestamp": "2026-06-04T15:31:30.717294",
     "scenario": {
       "date": "2024-04-16",
       "fund_code": "166002",
@@ -18,10 +18,10 @@
     },
     "decision": {
       "action": "buy",
-      "amount_rmb": 9500.0,
-      "amount_pct": 836.0468,
-      "reasoning": "中欧新蓝筹混合近90日涨幅8.40%，表现优于同类，波动率较低，风险收益比良好，适合作为核心持仓。",
-      "confidence": 0.75,
+      "amount_rmb": 9000.0,
+      "amount_pct": 792.0444,
+      "reasoning": "中欧新蓝筹近90日涨幅8.40%，波动率较低，作为混合型基金适合作为核心持仓，利用现金逐步建仓。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -34,9 +34,9 @@
     "lesson": ""
   },
   {
-    "id": "4649fb24-943",
+    "id": "6cf1d45d-eef",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.799805",
+    "timestamp": "2026-06-04T15:31:30.735975",
     "scenario": {
       "date": "2024-04-19",
       "fund_code": "166002",
@@ -47,15 +47,15 @@
       "nav_change_90d": 8.58,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04086351371657509,
-      "portfolio_return": -0.8895801743736047
+      "cash_ratio": 0.0935077283758211,
+      "portfolio_return": -0.8638092164689443
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 26.7714,
-      "reasoning": "纳斯达克100近期跌幅较大，波动率高，减仓以降低风险暴露并回收现金。",
-      "confidence": 0.7,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 44.619,
+      "reasoning": "国泰盛益混合C近期表现平稳，波动率适中，当前持仓合理，无需调整。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -68,9 +68,9 @@
     "lesson": ""
   },
   {
-    "id": "38baf94f-d8d",
+    "id": "2977a68c-f52",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.814152",
+    "timestamp": "2026-06-04T15:31:30.754901",
     "scenario": {
       "date": "2024-04-24",
       "fund_code": "166002",
@@ -81,15 +81,15 @@
       "nav_change_90d": 8.1,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.030508194515485546,
-      "portfolio_return": -0.6168654634413724
+      "cash_ratio": 0.0420568055357955,
+      "portfolio_return": 0.34047869870340947
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 44.0149,
-      "reasoning": "国泰盛益混合C近30日涨幅4.75%且90日涨幅9.19%，表现优于其他持仓，加仓以提升组合夏普比率。",
-      "confidence": 0.7,
+      "amount_rmb": 200.0,
+      "amount_pct": 17.6059,
+      "reasoning": "沪深300ETF近期表现平稳，波动率适中，作为指数配置保持现有仓位。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -102,9 +102,9 @@
     "lesson": ""
   },
   {
-    "id": "208c8b46-441",
+    "id": "f2e3a7dc-230",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.828290",
+    "timestamp": "2026-06-04T15:31:30.773683",
     "scenario": {
       "date": "2024-04-29",
       "fund_code": "166002",
@@ -115,15 +115,15 @@
       "nav_change_90d": 14.32,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.02979666821989587,
-      "portfolio_return": 1.7563432805372758
+      "cash_ratio": 0.021590695918998107,
+      "portfolio_return": 2.6831190767322552
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 600.0,
-      "amount_pct": 51.7103,
-      "reasoning": "国泰盛益混合C近30日涨幅6.92%且90日涨幅18.61%，表现远超其他基金，虽然波动率较高但风险调整后收益突出，适度加仓以提升组合夏普比率。",
-      "confidence": 0.75,
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 34.4735,
+      "reasoning": "沪深300ETF跟随市场震荡，波动率较低，作为底仓配置继续持有。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -136,9 +136,9 @@
     "lesson": ""
   },
   {
-    "id": "31fa5dbf-ac7",
+    "id": "236d2ab7-ff8",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.842547",
+    "timestamp": "2026-06-04T15:31:30.792104",
     "scenario": {
       "date": "2024-05-07",
       "fund_code": "166002",
@@ -149,15 +149,15 @@
       "nav_change_90d": 12.68,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03917684959785698,
-      "portfolio_return": 2.9179232477272854
+      "cash_ratio": 0.0020380734061666663,
+      "portfolio_return": 4.2651355721691475
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 250.0,
-      "amount_pct": 21.246,
-      "reasoning": "沪深300ETF波动率低，跟踪指数，作为底仓配置，维持现有仓位。",
-      "confidence": 0.8,
+      "amount_rmb": 300.0,
+      "amount_pct": 25.4952,
+      "reasoning": "沪深300ETF跟随市场震荡，波动率较低，持仓比例合理，暂不操作。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -170,9 +170,9 @@
     "lesson": ""
   },
   {
-    "id": "a0f54895-56a",
+    "id": "7b34e3b2-1aa",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.856769",
+    "timestamp": "2026-06-04T15:31:30.810650",
     "scenario": {
       "date": "2024-05-10",
       "fund_code": "166002",
@@ -183,14 +183,14 @@
       "nav_change_90d": 12.06,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.02444787211372711,
-      "portfolio_return": 3.444585616103759
+      "cash_ratio": 0.011548126366361215,
+      "portfolio_return": 4.99538726315961
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 25.3803,
-      "reasoning": "沪深300ETF跟踪指数，波动率低，当前仓位合理，无需调整。",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.3005,
+      "reasoning": "沪深300ETF跟踪指数，波动率低，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -204,9 +204,9 @@
     "lesson": ""
   },
   {
-    "id": "18d3175b-d87",
+    "id": "4ee79c20-b4e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.870865",
+    "timestamp": "2026-06-04T15:31:30.829067",
     "scenario": {
       "date": "2024-05-15",
       "fund_code": "166002",
@@ -217,14 +217,14 @@
       "nav_change_90d": 11.06,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.014815244538607652,
-      "portfolio_return": 3.002012286961162
+      "cash_ratio": 0.0019749005487994923,
+      "portfolio_return": 5.321759177412605
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 33.5821,
-      "reasoning": "中欧新蓝筹混合波动率低，近期表现稳健，加仓以提升组合稳定性。",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.9777,
+      "reasoning": "沪深300ETF跟随市场震荡，波动率较低，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -238,9 +238,9 @@
     "lesson": ""
   },
   {
-    "id": "c08835a2-0c9",
+    "id": "5b132700-4d0",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.885515",
+    "timestamp": "2026-06-04T15:31:30.847602",
     "scenario": {
       "date": "2024-05-20",
       "fund_code": "166002",
@@ -251,15 +251,15 @@
       "nav_change_90d": 11.34,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.01432930626734479,
-      "portfolio_return": 4.75036069405849
+      "cash_ratio": 0.048588367456700726,
+      "portfolio_return": 6.671622680445144
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 700.0,
-      "amount_pct": 58.1183,
-      "reasoning": "沪深300ETF作为指数基金，波动率低，持仓比例适中，维持现状。",
-      "confidence": 0.8,
+      "amount_rmb": 400.0,
+      "amount_pct": 33.2105,
+      "reasoning": "沪深300ETF作为指数配置核心，波动率低且走势平稳，维持现有仓位。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -272,9 +272,9 @@
     "lesson": ""
   },
   {
-    "id": "6e1fa710-247",
+    "id": "159503cd-05f",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.899683",
+    "timestamp": "2026-06-04T15:31:30.866502",
     "scenario": {
       "date": "2024-05-23",
       "fund_code": "166002",
@@ -285,15 +285,15 @@
       "nav_change_90d": 7.98,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03398602210361694,
-      "portfolio_return": 3.0129383581907314
+      "cash_ratio": 0.01106136212359079,
+      "portfolio_return": 4.8695438264374395
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 8.3886,
-      "reasoning": "沪深300ETF波动率较低，跟踪指数表现稳定，维持现有仓位。",
-      "confidence": 0.8,
+      "amount_rmb": 500.0,
+      "amount_pct": 41.9431,
+      "reasoning": "纳斯达克100ETF近期表现优异，波动率低，继续持有享受收益。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -306,9 +306,9 @@
     "lesson": ""
   },
   {
-    "id": "76392ed6-37d",
+    "id": "79f89b90-e38",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.914002",
+    "timestamp": "2026-06-04T15:31:30.884928",
     "scenario": {
       "date": "2024-05-28",
       "fund_code": "166002",
@@ -319,15 +319,15 @@
       "nav_change_90d": 7.96,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0438193356059937,
-      "portfolio_return": 2.603107459827097
+      "cash_ratio": 0.05889728547976386,
+      "portfolio_return": 4.5888609266461575
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 600.0,
-      "amount_pct": 50.2176,
-      "reasoning": "华安纳斯达克100ETF近30日涨幅6.48%且波动率仅9.29%，风险调整后收益优异，适度加仓以提升组合夏普比率。",
-      "confidence": 0.75,
+      "amount_rmb": 800.0,
+      "amount_pct": 66.9568,
+      "reasoning": "华安纳斯达克100ETF联接近30日涨幅6.48%，波动率仅9.29%，表现稳健且风险较低，加仓以提升组合夏普比率。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -340,9 +340,9 @@
     "lesson": ""
   },
   {
-    "id": "fd915065-e3f",
+    "id": "fc7c3f21-2e7",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.928036",
+    "timestamp": "2026-06-04T15:31:30.903305",
     "scenario": {
       "date": "2024-05-31",
       "fund_code": "166002",
@@ -353,15 +353,15 @@
       "nav_change_90d": 5.15,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05393028357754096,
-      "portfolio_return": 1.8166350285371482
+      "cash_ratio": 0.039809737597388116,
+      "portfolio_return": 3.2410723618950033
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 250.0,
-      "amount_pct": 21.2071,
-      "reasoning": "沪深300ETF波动率低，作为底仓配置稳定，短期横盘无需调整。",
-      "confidence": 0.85,
+      "amount_rmb": 500.0,
+      "amount_pct": 42.4142,
+      "reasoning": "沪深300ETF近期横盘，波动率较低，作为底仓配置，维持现有仓位。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -374,9 +374,9 @@
     "lesson": ""
   },
   {
-    "id": "086444d4-f88",
+    "id": "f02c0273-454",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.942242",
+    "timestamp": "2026-06-04T15:31:30.921758",
     "scenario": {
       "date": "2024-06-05",
       "fund_code": "166002",
@@ -387,15 +387,15 @@
       "nav_change_90d": 5.98,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03879516206272946,
-      "portfolio_return": 2.796322736109232
+      "cash_ratio": 0.029716876827364874,
+      "portfolio_return": 4.502906481083847
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 400.0,
-      "amount_pct": 33.4012,
-      "reasoning": "华安纳斯达克100ETF近30日涨幅5.15%且波动率较低，风险调整后收益优异，适度加仓以提升组合夏普比率。",
-      "confidence": 0.8,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧新蓝筹混合近期表现稳健，波动率较低，持仓比例适中，暂不操作以控制风险。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -408,9 +408,9 @@
     "lesson": ""
   },
   {
-    "id": "b157b41a-1aa",
+    "id": "7f6ea84c-c1e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.956402",
+    "timestamp": "2026-06-04T15:31:30.940330",
     "scenario": {
       "date": "2024-06-11",
       "fund_code": "166002",
@@ -421,15 +421,15 @@
       "nav_change_90d": 4.39,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.019139333137586062,
-      "portfolio_return": 2.041172801609955
+      "cash_ratio": 0.029865022239643064,
+      "portfolio_return": 3.984519920354651
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 700.0,
-      "amount_pct": 58.5245,
-      "reasoning": "纳斯达克100ETF近期涨幅领先，波动率适中，加仓以提升组合收益并利用现金。",
-      "confidence": 0.7,
+      "amount_rmb": 300.0,
+      "amount_pct": 25.0819,
+      "reasoning": "华安纳斯达克100ETF联接近期表现优异，波动率虽高但收益显著，加仓以增强组合收益潜力并分散A股风险。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -442,9 +442,9 @@
     "lesson": ""
   },
   {
-    "id": "b98e373c-9c2",
+    "id": "5ce61603-cfe",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.970697",
+    "timestamp": "2026-06-04T15:31:30.959503",
     "scenario": {
       "date": "2024-06-14",
       "fund_code": "166002",
@@ -455,15 +455,15 @@
       "nav_change_90d": 3.8,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.038664728105586035,
-      "portfolio_return": 2.237884337505384
+      "cash_ratio": 0.019891553041740544,
+      "portfolio_return": 4.592134944630325
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 10.0,
-      "amount_pct": 0.827,
-      "reasoning": "中欧新蓝筹混合近期表现稳健，波动率低，当前仓位合理，继续持有以保持组合稳定性。",
-      "confidence": 0.8,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧新蓝筹混合波动率低且近期表现稳健，当前持仓比例适中，无需调整。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -476,9 +476,9 @@
     "lesson": ""
   },
   {
-    "id": "2c805d1b-882",
+    "id": "948835e8-77d",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.985333",
+    "timestamp": "2026-06-04T15:31:30.978192",
     "scenario": {
       "date": "2024-06-19",
       "fund_code": "166002",
@@ -489,14 +489,14 @@
       "nav_change_90d": 1.02,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03974224789353279,
-      "portfolio_return": 1.969571798163379
+      "cash_ratio": 0.01983442808055015,
+      "portfolio_return": 4.893369829007534
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 8.2294,
-      "reasoning": "沪深300ETF波动率低，作为市场基准配置，当前仓位合理，继续持有。",
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.4589,
+      "reasoning": "纳斯达克100ETF近期表现强劲，波动率可控，适度加仓以增强组合收益潜力。",
       "confidence": 0.8,
       "model": ""
     },
@@ -510,9 +510,9 @@
     "lesson": ""
   },
   {
-    "id": "8aa497f3-0e2",
+    "id": "cd75198a-7e9",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:09.999612",
+    "timestamp": "2026-06-04T15:31:30.996463",
     "scenario": {
       "date": "2024-06-24",
       "fund_code": "166002",
@@ -523,14 +523,14 @@
       "nav_change_90d": 0.74,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05034922664083703,
-      "portfolio_return": 0.34910835953216524
+      "cash_ratio": 0.0005885835016572989,
+      "portfolio_return": 2.7891536708837887
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 313.27,
-      "amount_pct": 26.281,
-      "reasoning": "沪深300ETF作为指数基金，波动率低，当前持仓合理，暂不操作。",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.7785,
+      "reasoning": "华安纳斯达克100ETF联接近30日和90日表现优于市场，波动率适中，小幅加仓以增强组合收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -544,9 +544,9 @@
     "lesson": ""
   },
   {
-    "id": "352173d9-a81",
+    "id": "71b73ace-958",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.013859",
+    "timestamp": "2026-06-04T15:31:31.014611",
     "scenario": {
       "date": "2024-06-27",
       "fund_code": "166002",
@@ -557,15 +557,15 @@
       "nav_change_90d": -1.15,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.02122287446387179,
-      "portfolio_return": -0.08826823357800094
+      "cash_ratio": 0.0005896671364942468,
+      "portfolio_return": 2.600257426062708
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.7062,
-      "reasoning": "华安纳斯达克100ETF联接近30日和90日表现优异，波动率适中，加仓以提升组合风险调整后收益。",
-      "confidence": 0.8,
+      "amount_rmb": 500.0,
+      "amount_pct": 41.7655,
+      "reasoning": "华安纳斯达克100ETF联接近期表现强劲，近30日和90日收益显著，波动率可控，加仓以增强组合收益。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -578,9 +578,9 @@
     "lesson": ""
   },
   {
-    "id": "037a1927-55f",
+    "id": "fa1e4710-2b2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.028125",
+    "timestamp": "2026-06-04T15:31:31.032730",
     "scenario": {
       "date": "2024-07-02",
       "fund_code": "166002",
@@ -591,14 +591,14 @@
       "nav_change_90d": -1.32,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0009966932452998578,
-      "portfolio_return": 0.7472873126531522
+      "cash_ratio": 0.0005861461154117167,
+      "portfolio_return": 3.2165844134324466
     },
     "decision": {
-      "action": "buy",
-      "amount_rmb": 500.0,
-      "amount_pct": 41.423,
-      "reasoning": "沪深300ETF波动率低，作为底仓配置，保持持有。",
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 82.8459,
+      "reasoning": "华安纳斯达克100ETF近30日和90日表现优异，波动率较低，风险调整后收益高，加仓以增强组合收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -612,9 +612,9 @@
     "lesson": ""
   },
   {
-    "id": "762d4b01-0d3",
+    "id": "7f17ebe2-702",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.042628",
+    "timestamp": "2026-06-04T15:31:31.051000",
     "scenario": {
       "date": "2024-07-05",
       "fund_code": "166002",
@@ -625,15 +625,15 @@
       "nav_change_90d": -2.06,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0010006126786233523,
-      "portfolio_return": 0.35265681917573605
+      "cash_ratio": 0.04899714539311327,
+      "portfolio_return": 3.281527105276436
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 1100.0,
-      "amount_pct": 90.7209,
-      "reasoning": "纳斯达克100QDII近期表现强劲，波动率低，加仓可提升组合收益并分散A股风险。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 82.4735,
+      "reasoning": "华安纳斯达克100ETF联接近30日涨幅6.90%，波动率仅8.55%，趋势强劲且风险较低，加仓以提升组合收益并分散A股风险。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -646,9 +646,9 @@
     "lesson": ""
   },
   {
-    "id": "5a6981ad-f2e",
+    "id": "42136448-670",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.056929",
+    "timestamp": "2026-06-04T15:31:31.070042",
     "scenario": {
       "date": "2024-07-10",
       "fund_code": "166002",
@@ -659,15 +659,15 @@
       "nav_change_90d": -0.54,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05029842809239092,
-      "portfolio_return": 0.9060189997191446
+      "cash_ratio": 0.04817992102124085,
+      "portfolio_return": 3.9956042640884335
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 800.0,
-      "amount_pct": 65.4108,
-      "reasoning": "华安纳斯达克100ETF近期表现强劲，波动率低，加仓以提升组合风险调整后收益。",
-      "confidence": 0.9,
+      "amount_rmb": 400.0,
+      "amount_pct": 32.7054,
+      "reasoning": "纳斯达克QDII近30日涨幅8.56%，波动率低但短期涨幅较大，减仓200元锁定部分利润，控制单只基金仓位。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -680,9 +680,9 @@
     "lesson": ""
   },
   {
-    "id": "de81701f-8ef",
+    "id": "51cb43f0-6b8",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.071235",
+    "timestamp": "2026-06-04T15:31:31.088558",
     "scenario": {
       "date": "2024-07-15",
       "fund_code": "166002",
@@ -693,14 +693,14 @@
       "nav_change_90d": 1.25,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.009907989441084186,
-      "portfolio_return": 1.4750920684053381
+      "cash_ratio": 0.04786742795534938,
+      "portfolio_return": 4.256698409931814
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 100.0,
-      "amount_pct": 8.1793,
-      "reasoning": "华安纳斯达克100ETF近90日涨幅显著，波动率适中，利用现金加仓以提升组合收益。",
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 24.5379,
+      "reasoning": "华安纳斯达克100ETF近90日涨幅较大，波动率较高，减仓100元锁定部分利润并降低组合波动。",
       "confidence": 0.8,
       "model": ""
     },
@@ -714,9 +714,9 @@
     "lesson": ""
   },
   {
-    "id": "f990ba5f-a3b",
+    "id": "4ed34786-789",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.086077",
+    "timestamp": "2026-06-04T15:31:31.107438",
     "scenario": {
       "date": "2024-07-18",
       "fund_code": "166002",
@@ -727,15 +727,15 @@
       "nav_change_90d": 0.71,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.00994122884210535,
-      "portfolio_return": 1.135800886953475
+      "cash_ratio": 0.038598808055070793,
+      "portfolio_return": 3.306298845053443
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 33.1565,
-      "reasoning": "中欧新蓝筹混合波动率低，近期表现稳健，当前仓位适中，继续持有。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.4456,
+      "reasoning": "纳斯达克100ETF近90日涨幅15.05%表现强劲，近期回调提供加仓机会，利用现金增持以提升组合收益潜力。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -748,9 +748,9 @@
     "lesson": ""
   },
   {
-    "id": "56f00e01-1be",
+    "id": "7e6a876c-c92",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.100381",
+    "timestamp": "2026-06-04T15:31:31.126049",
     "scenario": {
       "date": "2024-07-23",
       "fund_code": "166002",
@@ -761,15 +761,15 @@
       "nav_change_90d": -2.19,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03029169168452159,
-      "portfolio_return": -0.7842093453463894
+      "cash_ratio": 0.04874797005763401,
+      "portfolio_return": 1.9016790673949437
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 83.7191,
-      "reasoning": "沪深300ETF表现平稳，波动率适中，当前仓位合理，继续持有。",
-      "confidence": 0.9,
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.7438,
+      "reasoning": "沪深300ETF近期小幅回调，作为指数基金波动较低，维持现有仓位。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -782,9 +782,9 @@
     "lesson": ""
   },
   {
-    "id": "0a5653f4-30b",
+    "id": "a0987ba0-983",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.114808",
+    "timestamp": "2026-06-04T15:31:31.144527",
     "scenario": {
       "date": "2024-07-26",
       "fund_code": "166002",
@@ -795,14 +795,14 @@
       "nav_change_90d": -4.89,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.030066109601740283,
-      "portfolio_return": -2.534309241752126
+      "cash_ratio": 0.029533063997852837,
+      "portfolio_return": -0.19660675186652954
     },
     "decision": {
-      "action": "buy",
+      "action": "increase",
       "amount_rmb": 200.0,
       "amount_pct": 17.1471,
-      "reasoning": "沪深300ETF近期跌幅较小，波动率较低，作为指数基金保持稳定配置，继续持有。",
+      "reasoning": "沪深300ETF近期跌幅较小，波动率低，作为底仓配置暂不调整。",
       "confidence": 0.8,
       "model": ""
     },
@@ -816,9 +816,9 @@
     "lesson": ""
   },
   {
-    "id": "534273fc-06e",
+    "id": "bb9505a6-eda",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.129283",
+    "timestamp": "2026-06-04T15:31:31.163617",
     "scenario": {
       "date": "2024-07-31",
       "fund_code": "166002",
@@ -829,14 +829,14 @@
       "nav_change_90d": -4.48,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.02969400943928072,
-      "portfolio_return": -1.3129518013048256
+      "cash_ratio": 0.009160834859963203,
+      "portfolio_return": 1.2462307396866525
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.8923,
-      "reasoning": "沪深300ETF近30日微涨0.04%，波动率17.22%，走势平稳，维持现有仓位。",
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 33.7846,
+      "reasoning": "沪深300ETF近期表现平稳，波动率较低，当前仓位适中，维持持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -850,9 +850,9 @@
     "lesson": ""
   },
   {
-    "id": "4963d5de-b1d",
+    "id": "777115fa-583",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.143622",
+    "timestamp": "2026-06-04T15:31:31.182297",
     "scenario": {
       "date": "2024-08-05",
       "fund_code": "166002",
@@ -863,14 +863,14 @@
       "nav_change_90d": -8.88,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04159019329091803,
-      "portfolio_return": -5.496612789123956
+      "cash_ratio": 0.0303963215749686,
+      "portfolio_return": -3.6890041849406225
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 26.7735,
-      "reasoning": "纳斯达克ETF近期大幅回调，波动率极高，减仓以降低组合风险。",
+      "amount_rmb": 200.0,
+      "amount_pct": 17.849,
+      "reasoning": "沪深300ETF作为指数基金，波动率相对较低，当前持仓合理，维持现状。",
       "confidence": 0.8,
       "model": ""
     },
@@ -884,9 +884,9 @@
     "lesson": ""
   },
   {
-    "id": "626de873-e86",
+    "id": "56d5269f-acd",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.157973",
+    "timestamp": "2026-06-04T15:31:31.200770",
     "scenario": {
       "date": "2024-08-08",
       "fund_code": "166002",
@@ -897,14 +897,14 @@
       "nav_change_90d": -9.54,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.030751124033545928,
-      "portfolio_return": -4.803019962674061
+      "cash_ratio": 0.05054292304600954,
+      "portfolio_return": -2.5086064865210576
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 700.0,
-      "amount_pct": 61.4952,
-      "reasoning": "沪深300ETF波动率适中，近期表现相对稳健，维持现有仓位。",
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "沪深300ETF作为指数基金，近期表现与市场同步，波动率较低，维持现有仓位等待市场企稳。",
       "confidence": 0.8,
       "model": ""
     },
@@ -918,9 +918,9 @@
     "lesson": ""
   },
   {
-    "id": "87b690a6-f0f",
+    "id": "278fa6d9-476",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.172326",
+    "timestamp": "2026-06-04T15:31:31.219310",
     "scenario": {
       "date": "2024-08-13",
       "fund_code": "166002",
@@ -931,14 +931,14 @@
       "nav_change_90d": -8.67,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.10337670003656202,
-      "portfolio_return": -4.210386506393188
+      "cash_ratio": 0.0499706500197258,
+      "portfolio_return": -1.392117211705663
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 25.9668,
-      "reasoning": "沪深300ETF波动率较低，作为底仓配置，维持现有仓位以跟踪市场。",
+      "amount_rmb": 200.0,
+      "amount_pct": 17.3112,
+      "reasoning": "沪深300ETF波动率较低，但近期持续下跌，市场趋势不明，保持现有仓位以控制风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -952,9 +952,9 @@
     "lesson": ""
   },
   {
-    "id": "18406cc0-5be",
+    "id": "f84cbb33-2d7",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.187566",
+    "timestamp": "2026-06-04T15:31:31.238019",
     "scenario": {
       "date": "2024-08-16",
       "fund_code": "166002",
@@ -965,15 +965,15 @@
       "nav_change_90d": -9.93,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09255027104234795,
-      "portfolio_return": -3.842376251121641
+      "cash_ratio": 0.06974787659316012,
+      "portfolio_return": -0.6779799131641084
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 700.0,
-      "amount_pct": 59.8245,
-      "reasoning": "国泰盛益混合C表现相对稳健，波动率较低，暂时持有观望。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.7318,
+      "reasoning": "华安纳斯达克100ETF联接近7日反弹5.19%，表现强势，且90日收益为正，加仓以捕捉趋势，但控制仓位不超过30%。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -986,9 +986,9 @@
     "lesson": ""
   },
   {
-    "id": "620cc27d-c7b",
+    "id": "ddd459f8-91e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.201870",
+    "timestamp": "2026-06-04T15:31:31.257135",
     "scenario": {
       "date": "2024-08-21",
       "fund_code": "166002",
@@ -999,14 +999,14 @@
       "nav_change_90d": -10.53,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.16576483987738233,
-      "portfolio_return": -4.235336320481201
+      "cash_ratio": 0.07950868323263963,
+      "portfolio_return": -0.734112563443905
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 85.2144,
-      "reasoning": "国泰盛益混合C近30日下跌2.94%，波动率较低，仓位较小，持有观察。",
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.6072,
+      "reasoning": "国泰盛益混合C波动率较低，近期跌幅可控，持有观望，避免频繁操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1020,9 +1020,9 @@
     "lesson": ""
   },
   {
-    "id": "6f72b607-1c2",
+    "id": "dd990dd7-586",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.216178",
+    "timestamp": "2026-06-04T15:31:31.275797",
     "scenario": {
       "date": "2024-08-26",
       "fund_code": "166002",
@@ -1033,14 +1033,14 @@
       "nav_change_90d": -10.76,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.16610169718301024,
-      "portfolio_return": -4.881079430879818
+      "cash_ratio": 0.028921402662843817,
+      "portfolio_return": -1.7163851581844574
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 43.0222,
-      "reasoning": "华安纳斯达克100ETF联接近30日表现强势，趋势向好，适度加仓以提升组合收益。",
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "华安纳斯达克100ETF联接近30日上涨2.06%，表现优于其他基金，但波动率较高，暂持。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1054,9 +1054,9 @@
     "lesson": ""
   },
   {
-    "id": "07757ba1-d95",
+    "id": "24a7d2b8-33a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.230500",
+    "timestamp": "2026-06-04T15:31:31.294549",
     "scenario": {
       "date": "2024-08-29",
       "fund_code": "166002",
@@ -1067,14 +1067,14 @@
       "nav_change_90d": -10.53,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.11379982183128516,
-      "portfolio_return": -5.541028379785748
+      "cash_ratio": 0.029086077259569427,
+      "portfolio_return": -2.272830583752675
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 43.3452,
-      "reasoning": "国泰盛益混合C近30日表现稳健，波动率适中，加仓以优化组合风险收益比。",
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 17.3381,
+      "reasoning": "华安纳斯达克100ETF联接近期表现稳健，但波动率较高，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1088,9 +1088,9 @@
     "lesson": ""
   },
   {
-    "id": "0df3b6f7-5b6",
+    "id": "e00de477-bc6",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.244822",
+    "timestamp": "2026-06-04T15:31:31.313139",
     "scenario": {
       "date": "2024-09-03",
       "fund_code": "166002",
@@ -1101,15 +1101,15 @@
       "nav_change_90d": -11.18,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.10365635637213068,
-      "portfolio_return": -5.988262738445574
+      "cash_ratio": 0.008654004428507547,
+      "portfolio_return": -2.992885324328581
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 26.2681,
-      "reasoning": "沪深300ETF波动率较低，作为底仓配置，维持现有仓位。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 43.7802,
+      "reasoning": "国泰盛益混合C近7日和30日表现强劲，波动率较低，加仓以增强组合收益并提升夏普比率。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -1122,9 +1122,9 @@
     "lesson": ""
   },
   {
-    "id": "c6a654d9-14b",
+    "id": "8f3385e7-dcd",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.259404",
+    "timestamp": "2026-06-04T15:31:31.331833",
     "scenario": {
       "date": "2024-09-06",
       "fund_code": "166002",
@@ -1135,14 +1135,14 @@
       "nav_change_90d": -12.23,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09456815697380244,
-      "portfolio_return": -7.559643536581608
+      "cash_ratio": 0.008835797743319104,
+      "portfolio_return": -4.988771315554386
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 26.8557,
-      "reasoning": "沪深300ETF表现稳健，波动率较低，作为指数基金维持现有仓位以平衡组合。",
+      "amount_rmb": 400.0,
+      "amount_pct": 35.8076,
+      "reasoning": "沪深300ETF波动率较低，作为指数基金适合长期持有，当前仓位合理，无需调整。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1156,9 +1156,9 @@
     "lesson": ""
   },
   {
-    "id": "f2550552-ad6",
+    "id": "ea2e4a05-3b4",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.273797",
+    "timestamp": "2026-06-04T15:31:31.350546",
     "scenario": {
       "date": "2024-09-11",
       "fund_code": "166002",
@@ -1169,15 +1169,15 @@
       "nav_change_90d": -10.75,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.08292767398354457,
-      "portfolio_return": -6.678750663108622
+      "cash_ratio": 0.008649360491028591,
+      "portfolio_return": -3.2876475818477773
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 17.5457,
-      "reasoning": "国泰盛益混合C近期表现稳健，30日涨幅1.40%，波动率较低，维持现有仓位。",
-      "confidence": 0.8,
+      "amount_rmb": 700.0,
+      "amount_pct": 61.41,
+      "reasoning": "华安纳斯达克100ETF近30日表现强劲（+3.18%），波动率虽高但趋势向上，小幅加仓以增强组合收益。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -1190,9 +1190,9 @@
     "lesson": ""
   },
   {
-    "id": "fcf812c0-882",
+    "id": "a7ac0042-4f8",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.288632",
+    "timestamp": "2026-06-04T15:31:31.369918",
     "scenario": {
       "date": "2024-09-18",
       "fund_code": "166002",
@@ -1203,15 +1203,15 @@
       "nav_change_90d": -10.38,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0613640856495569,
-      "portfolio_return": -6.803563025336152
+      "cash_ratio": 0.02934827216244204,
+      "portfolio_return": -3.3503579256715965
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 26.3398,
-      "reasoning": "国泰盛益混合C近30日表现稳健，波动率低，加仓以增强组合稳定性并提升风险调整后收益。",
-      "confidence": 0.8,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "国泰盛益混合C近30日表现稳健，波动率低，但仓位较小，暂不调整以控制风险。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -1224,9 +1224,9 @@
     "lesson": ""
   },
   {
-    "id": "cd4ea413-16f",
+    "id": "14a55bc8-7d2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.303021",
+    "timestamp": "2026-06-04T15:31:31.388745",
     "scenario": {
       "date": "2024-09-23",
       "fund_code": "166002",
@@ -1237,15 +1237,15 @@
       "nav_change_90d": -8.7,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05008224210570925,
-      "portfolio_return": -5.836601109174371
+      "cash_ratio": 0.028997345922085173,
+      "portfolio_return": -2.1807027573636333
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 17.2943,
-      "reasoning": "国泰盛益混合C近30日表现优于其他持仓，波动率适中，加仓以提升组合稳定性并分散风险。",
-      "confidence": 0.7,
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 25.9415,
+      "reasoning": "国泰盛益混合C近30日表现优异（+2.52%），波动率低，加仓200元以提升组合收益并优化夏普比率。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -1258,9 +1258,9 @@
     "lesson": ""
   },
   {
-    "id": "3bdbf0e9-b18",
+    "id": "81e354fd-86b",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.317435",
+    "timestamp": "2026-06-04T15:31:31.407611",
     "scenario": {
       "date": "2024-09-26",
       "fund_code": "166002",
@@ -1271,14 +1271,14 @@
       "nav_change_90d": -1.99,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.027094560306730624,
-      "portfolio_return": 0.12763115675592415
+      "cash_ratio": 0.017801524780009733,
+      "portfolio_return": 2.996795086841794
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.4712,
-      "reasoning": "纳斯达克100ETF波动率较低且表现稳定，作为分散化配置继续持有。",
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 24.7068,
+      "reasoning": "沪深300ETF短期涨幅过快，波动率高达27.39%，减仓100元锁定部分利润并控制回撤风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1292,9 +1292,9 @@
     "lesson": ""
   },
   {
-    "id": "9b30531b-0ad",
+    "id": "d71e64a8-09c",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.331971",
+    "timestamp": "2026-06-04T15:31:31.426566",
     "scenario": {
       "date": "2024-10-08",
       "fund_code": "166002",
@@ -1305,15 +1305,15 @@
       "nav_change_90d": 14.34,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.00628527327198818,
-      "portfolio_return": 12.948810660421895
+      "cash_ratio": 0.007127582731173319,
+      "portfolio_return": 13.432566200028722
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.6583,
-      "reasoning": "QDII基金波动率较低，近期表现稳健，作为组合的稳定器继续持有。",
-      "confidence": 0.8,
+      "amount_rmb": 1500.0,
+      "amount_pct": 112.9748,
+      "reasoning": "沪深300指数短期涨幅过高，波动率激增，减仓500元以降低组合风险敞口。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -1326,9 +1326,9 @@
     "lesson": ""
   },
   {
-    "id": "6c6212c6-b8e",
+    "id": "63d7da89-beb",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.346347",
+    "timestamp": "2026-06-04T15:31:31.445476",
     "scenario": {
       "date": "2024-10-11",
       "fund_code": "166002",
@@ -1339,14 +1339,14 @@
       "nav_change_90d": 3.62,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05308498205186962,
-      "portfolio_return": 7.090817798375483
+      "cash_ratio": 0.14407460625224772,
+      "portfolio_return": 9.37735948005862
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 15.6934,
-      "reasoning": "纳斯达克100ETF波动率低且近期表现稳健，加仓以增强组合稳定性并分散风险。",
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "华安纳斯达克100ETF联接波动率低，近期表现稳健，作为分散配置继续持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1360,9 +1360,9 @@
     "lesson": ""
   },
   {
-    "id": "f5b67f4c-a36",
+    "id": "0e52ed4d-87e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.360737",
+    "timestamp": "2026-06-04T15:31:31.464745",
     "scenario": {
       "date": "2024-10-16",
       "fund_code": "166002",
@@ -1373,15 +1373,15 @@
       "nav_change_90d": 2.13,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.034591218054120354,
-      "portfolio_return": 5.949265360149821
+      "cash_ratio": 0.14492422247062225,
+      "portfolio_return": 8.73613624661275
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 1600.0,
-      "amount_pct": 126.4232,
-      "reasoning": "纳斯达克100ETF波动率低（11.39%），近期表现稳定，加仓以提升组合风险调整后收益并分散A股风险。",
-      "confidence": 0.8,
+      "amount_rmb": 300.0,
+      "amount_pct": 23.7044,
+      "reasoning": "纳斯达克100波动率低，近期表现稳健，加仓200元以分散风险并优化组合夏普比率。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -1394,9 +1394,9 @@
     "lesson": ""
   },
   {
-    "id": "151d4dc1-77d",
+    "id": "45a6b85f-a37",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.375646",
+    "timestamp": "2026-06-04T15:31:31.483798",
     "scenario": {
       "date": "2024-10-21",
       "fund_code": "166002",
@@ -1407,14 +1407,14 @@
       "nav_change_90d": 7.48,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.07014655552052605,
-      "portfolio_return": 7.701854847827981
+      "cash_ratio": 0.13368721993087096,
+      "portfolio_return": 10.20873953111317
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 600.0,
       "amount_pct": 46.6396,
-      "reasoning": "纳斯达克100ETF波动率低、表现稳健，当前仓位合理，继续持有作为组合稳定器。",
+      "reasoning": "纳斯达克100ETF波动率低，近期表现稳健，加仓可提升组合稳定性并分散A股风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1428,9 +1428,9 @@
     "lesson": ""
   },
   {
-    "id": "ce803770-bdb",
+    "id": "0923c64f-6e5",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.390171",
+    "timestamp": "2026-06-04T15:31:31.502663",
     "scenario": {
       "date": "2024-10-24",
       "fund_code": "166002",
@@ -1441,15 +1441,15 @@
       "nav_change_90d": 7.92,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.12573516270453425,
-      "portfolio_return": 7.646213275697356
+      "cash_ratio": 0.09714012404067626,
+      "portfolio_return": 9.92882812799895
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 38.9399,
-      "reasoning": "纳斯达克波动率低，表现稳健，加仓以增强组合稳定性并分散风险。",
-      "confidence": 0.85,
+      "amount_rmb": 600.0,
+      "amount_pct": 46.7279,
+      "reasoning": "纳斯达克100ETF波动率低，近期表现稳健，加仓以分散A股风险并优化夏普比率。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -1462,9 +1462,9 @@
     "lesson": ""
   },
   {
-    "id": "a7fe8dbc-7f7",
+    "id": "3226934c-ee4",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.404641",
+    "timestamp": "2026-06-04T15:31:31.521526",
     "scenario": {
       "date": "2024-10-29",
       "fund_code": "166002",
@@ -1475,14 +1475,14 @@
       "nav_change_90d": 6.44,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.11547631377029466,
-      "portfolio_return": 8.203264659120233
+      "cash_ratio": 0.05984588632814757,
+      "portfolio_return": 10.675944603476273
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 1000.0,
-      "amount_pct": 77.3437,
-      "reasoning": "纳斯达克100ETF波动率低且近期表现稳健，加仓以增强组合稳定性并提升风险调整后收益。",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4687,
+      "reasoning": "中欧新蓝筹混合近期表现平稳，波动率适中，当前仓位合理，暂不调整。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1496,9 +1496,9 @@
     "lesson": ""
   },
   {
-    "id": "6cfeb75b-f9d",
+    "id": "39615a56-f8a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.419197",
+    "timestamp": "2026-06-04T15:31:31.540450",
     "scenario": {
       "date": "2024-11-01",
       "fund_code": "166002",
@@ -1509,14 +1509,14 @@
       "nav_change_90d": 8.16,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.02288078455439498,
-      "portfolio_return": 6.526685523054766
+      "cash_ratio": 0.04228666242209847,
+      "portfolio_return": 8.864113087209953
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 39.3147,
-      "reasoning": "国泰盛益混合C近90日表现优异，波动率低，加仓200元以优化风险调整后收益。",
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 31.4517,
+      "reasoning": "沪深300ETF近期回调，但作为核心指数配置，长期持有以分散风险，暂不操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1530,9 +1530,9 @@
     "lesson": ""
   },
   {
-    "id": "7e453324-19e",
+    "id": "1dc33dc1-267",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.433910",
+    "timestamp": "2026-06-04T15:31:31.560048",
     "scenario": {
       "date": "2024-11-06",
       "fund_code": "166002",
@@ -1543,14 +1543,14 @@
       "nav_change_90d": 13.98,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.012871515312727825,
-      "portfolio_return": 9.731768671413228
+      "cash_ratio": 0.005163115369272222,
+      "portfolio_return": 12.43211868841594
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 1000.0,
-      "amount_pct": 76.0746,
-      "reasoning": "国泰盛益混合C波动率低，近90日收益突出，加仓以增强组合稳定性。",
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 30.4298,
+      "reasoning": "中欧新蓝筹混合近期表现平稳，波动率适中，当前仓位合理，暂不操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1564,9 +1564,9 @@
     "lesson": ""
   },
   {
-    "id": "d359b936-011",
+    "id": "58a36662-5d8",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.448485",
+    "timestamp": "2026-06-04T15:31:31.579145",
     "scenario": {
       "date": "2024-11-11",
       "fund_code": "166002",
@@ -1577,14 +1577,14 @@
       "nav_change_90d": 16.61,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.01259299323395793,
-      "portfolio_return": 12.158731010680167
+      "cash_ratio": 0.005019530104266137,
+      "portfolio_return": 15.050609918481658
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "国泰盛益混合C波动率较低，近期表现稳健，当前仓位合理，继续持有。",
+      "reasoning": "国泰盛益混合C近期涨幅相对温和，波动率较低，当前仓位稳定，保持持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1598,9 +1598,9 @@
     "lesson": ""
   },
   {
-    "id": "17442d2b-4f0",
+    "id": "f9297e0c-cf0",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.463071",
+    "timestamp": "2026-06-04T15:31:31.598071",
     "scenario": {
       "date": "2024-11-14",
       "fund_code": "166002",
@@ -1611,15 +1611,15 @@
       "nav_change_90d": 13.9,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.012832351542290637,
-      "portfolio_return": 10.06666518541153
+      "cash_ratio": 0.005107750635819835,
+      "portfolio_return": 13.063467889384448
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "纳斯达克100ETF联接近30日表现较好，波动率相对较低，作为分散化配置继续持有。",
-      "confidence": 0.7,
+      "reasoning": "纳斯达克100ETF近期表现稳健，波动率较低，作为分散化配置的核心持仓，维持不变。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -1632,9 +1632,9 @@
     "lesson": ""
   },
   {
-    "id": "f2cf3414-9fe",
+    "id": "fce5295d-5e9",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.477967",
+    "timestamp": "2026-06-04T15:31:31.617024",
     "scenario": {
       "date": "2024-11-19",
       "fund_code": "166002",
@@ -1645,14 +1645,14 @@
       "nav_change_90d": 13.52,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.012980975157304836,
-      "portfolio_return": 8.806474369684729
+      "cash_ratio": 0.005172064446889729,
+      "portfolio_return": 11.657541380267231
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 700.0,
-      "amount_pct": 53.5627,
-      "reasoning": "沪深300ETF近30日和90日表现稳健，波动率适中，作为核心配置继续持有。",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.3036,
+      "reasoning": "沪深300ETF近期表现平稳，持仓比例合理，维持现状以降低交易成本。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1666,9 +1666,9 @@
     "lesson": ""
   },
   {
-    "id": "74fa1965-3e8",
+    "id": "8ba5966e-681",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.492515",
+    "timestamp": "2026-06-04T15:31:31.635879",
     "scenario": {
       "date": "2024-11-22",
       "fund_code": "166002",
@@ -1679,15 +1679,15 @@
       "nav_change_90d": 11.81,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05954966210458984,
-      "portfolio_return": 7.681788848514061
+      "cash_ratio": 0.0052142835227740585,
+      "portfolio_return": 10.753471206100093
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 300.0,
-      "amount_pct": 23.2013,
-      "reasoning": "华安纳斯达克100ETF联接近30日表现稳健且波动率较低，加仓以增强组合稳定性并提升夏普比率。",
-      "confidence": 0.75,
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4675,
+      "reasoning": "华安纳斯达克100ETF联接近期表现稳健，波动率较低，风险调整后收益较好，小幅加仓以增强组合稳定性。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -1700,9 +1700,9 @@
     "lesson": ""
   },
   {
-    "id": "68c88722-d73",
+    "id": "ad5433c3-fc2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.507219",
+    "timestamp": "2026-06-04T15:31:31.654812",
     "scenario": {
       "date": "2024-11-27",
       "fund_code": "166002",
@@ -1713,15 +1713,15 @@
       "nav_change_90d": 12.85,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03129678623464177,
-      "portfolio_return": 8.075446321797662
+      "cash_ratio": 0.005200471645098492,
+      "portfolio_return": 11.047620179661918
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 38.5223,
-      "reasoning": "华安纳斯达克100ETF近30日表现稳健且波动率最低，加仓以提升组合风险调整后收益。",
-      "confidence": 0.75,
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4089,
+      "reasoning": "沪深300ETF跟随市场震荡，持仓比例合理，保持观望等待趋势明朗。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -1734,9 +1734,9 @@
     "lesson": ""
   },
   {
-    "id": "8cb393d5-e56",
+    "id": "59e52288-a49",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.521814",
+    "timestamp": "2026-06-04T15:31:31.674631",
     "scenario": {
       "date": "2024-12-02",
       "fund_code": "166002",
@@ -1747,15 +1747,15 @@
       "nav_change_90d": 14.39,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03085327916349774,
-      "portfolio_return": 9.628999978339706
+      "cash_ratio": 0.005119971416140683,
+      "portfolio_return": 12.793598452411898
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 1000.0,
-      "amount_pct": 75.9059,
-      "reasoning": "华安纳斯达克100ETF近30日涨幅6.33%且波动率仅8.23%，风险调整后收益突出，加仓以提升组合夏普比率。",
-      "confidence": 0.8,
+      "amount_rmb": 500.0,
+      "amount_pct": 37.953,
+      "reasoning": "纳斯达克100ETF波动率低（8.23%），近30日收益+6.33%，风险调整后收益优异，加仓以增强组合稳定性。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -1768,9 +1768,9 @@
     "lesson": ""
   },
   {
-    "id": "5f5c7861-76a",
+    "id": "339adb80-4b9",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.536434",
+    "timestamp": "2026-06-04T15:31:31.694240",
     "scenario": {
       "date": "2024-12-05",
       "fund_code": "166002",
@@ -1781,14 +1781,14 @@
       "nav_change_90d": 15.1,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.076215414826165,
-      "portfolio_return": 9.983185945595507
+      "cash_ratio": 0.005099471225679474,
+      "portfolio_return": 13.247035710658512
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.8404,
-      "reasoning": "华安纳斯达克100ETF联接波动率低、近期表现强劲，加仓以增强组合稳定性和风险调整后收益。",
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.1361,
+      "reasoning": "沪深300ETF作为核心配置，短期震荡但长期看好，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1802,9 +1802,9 @@
     "lesson": ""
   },
   {
-    "id": "1d19fb3b-c0b",
+    "id": "2060ef1c-a9b",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.551037",
+    "timestamp": "2026-06-04T15:31:31.713418",
     "scenario": {
       "date": "2024-12-10",
       "fund_code": "166002",
@@ -1815,14 +1815,14 @@
       "nav_change_90d": 15.94,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03014555161599349,
-      "portfolio_return": 10.54414207430911
+      "cash_ratio": 0.022655091050967486,
+      "portfolio_return": 13.771337056265184
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.5864,
-      "reasoning": "华安纳斯达克100ETF联接近期表现稳健，30日涨幅为正且波动率较低，加仓以提升组合风险调整后收益。",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.0345,
+      "reasoning": "华安纳斯达克100ETF联接近期表现稳健，波动率低，加仓以增强组合稳定性并分散风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1836,9 +1836,9 @@
     "lesson": ""
   },
   {
-    "id": "2d6aed51-fda",
+    "id": "5e6f5a8e-db3",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.565682",
+    "timestamp": "2026-06-04T15:31:31.732480",
     "scenario": {
       "date": "2024-12-13",
       "fund_code": "166002",
@@ -1849,14 +1849,14 @@
       "nav_change_90d": 15.38,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.029973616062942784,
-      "portfolio_return": 11.178248688744606
+      "cash_ratio": 0.004866942450390667,
+      "portfolio_return": 14.548303310068658
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.4719,
-      "reasoning": "华安纳斯达克100ETF近30日上涨3.11%，波动率低，风险调整后收益较好，适度加仓以提升组合夏普比率。",
+      "amount_rmb": 500.0,
+      "amount_pct": 37.4532,
+      "reasoning": "纳斯达克100ETF近30日表现稳健，波动率较低，加仓以增强组合稳定性并提升风险调整后收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -1870,9 +1870,9 @@
     "lesson": ""
   },
   {
-    "id": "7d5aa73b-cff",
+    "id": "a7a34395-05a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.580659",
+    "timestamp": "2026-06-04T15:31:31.751448",
     "scenario": {
       "date": "2024-12-18",
       "fund_code": "166002",
@@ -1883,15 +1883,15 @@
       "nav_change_90d": 13.35,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.002765348018651596,
-      "portfolio_return": 9.358438325698389
+      "cash_ratio": 0.004952699611979832,
+      "portfolio_return": 12.564872428663074
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.9994,
-      "reasoning": "国泰盛益混合C波动率较低，近期表现稳健，当前仓位合理，继续持有。",
-      "confidence": 0.8,
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 30.3995,
+      "reasoning": "国泰盛益混合C近30日和90日表现稳健，波动率较低，加仓以增强组合稳定性。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -1904,9 +1904,9 @@
     "lesson": ""
   },
   {
-    "id": "08f2b08c-8f0",
+    "id": "b1ff13a2-462",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.595170",
+    "timestamp": "2026-06-04T15:31:31.771253",
     "scenario": {
       "date": "2024-12-23",
       "fund_code": "166002",
@@ -1917,15 +1917,15 @@
       "nav_change_90d": 8.89,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.00274928709252446,
-      "portfolio_return": 9.99729405091668
+      "cash_ratio": 0.004899986911255791,
+      "portfolio_return": 13.163567585507899
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.6776,
-      "reasoning": "沪深300ETF近30日和90日表现稳健，波动率适中，作为核心指数配置，继续持有。",
-      "confidence": 0.85,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 37.796,
+      "reasoning": "国泰盛益混合C近30日涨幅+3.85%，波动率仅12.65%，风险调整后收益优于其他基金，加仓以增强组合稳定性。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -1938,9 +1938,9 @@
     "lesson": ""
   },
   {
-    "id": "d44f82a1-c91",
+    "id": "ffc36a87-f9d",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.609790",
+    "timestamp": "2026-06-04T15:31:31.790326",
     "scenario": {
       "date": "2024-12-26",
       "fund_code": "166002",
@@ -1951,15 +1951,15 @@
       "nav_change_90d": 2.32,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.011696352996755333,
-      "portfolio_return": 11.352157472342315
+      "cash_ratio": 0.004840052135531724,
+      "portfolio_return": 14.564881632020244
     },
     "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "沪深300ETF近90日表现稳健，波动率较低，作为指数基金提供市场beta收益，继续持有。",
-      "confidence": 0.85,
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 74.6597,
+      "reasoning": "国泰盛益混合C近30日表现优异(+5.80%)且波动率较低(12.91%)，加仓以增强组合稳定性和收益潜力。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -1972,9 +1972,9 @@
     "lesson": ""
   },
   {
-    "id": "a7dce76f-ff0",
+    "id": "230d4181-a0b",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.624433",
+    "timestamp": "2026-06-04T15:31:31.809279",
     "scenario": {
       "date": "2024-12-31",
       "fund_code": "166002",
@@ -1985,15 +1985,15 @@
       "nav_change_90d": -6.58,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.01202120273698698,
-      "portfolio_return": 8.34308090816232
+      "cash_ratio": 0.0049076912381220555,
+      "portfolio_return": 11.457704541598178
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 30.665,
-      "reasoning": "沪深300ETF近期横盘，波动率低，作为核心配置继续持有。",
-      "confidence": 0.9,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "国泰盛益混合C近30日表现优于其他基金，波动率低，风险调整后收益较好，维持现有仓位。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2006,9 +2006,9 @@
     "lesson": ""
   },
   {
-    "id": "22563366-69c",
+    "id": "9d5bc43f-ad5",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.639178",
+    "timestamp": "2026-06-04T15:31:31.828273",
     "scenario": {
       "date": "2025-01-06",
       "fund_code": "166002",
@@ -2019,14 +2019,14 @@
       "nav_change_90d": -14.24,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.011780486798437757,
-      "portfolio_return": 8.010319311723288
+      "cash_ratio": 0.004935421297523914,
+      "portfolio_return": 10.831470511833794
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 38.6238,
-      "reasoning": "国泰盛益混合C波动率较低（13.79%），近期跌幅相对温和，保持仓位以稳定组合。",
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4495,
+      "reasoning": "沪深300ETF跟随市场回调，但作为指数基金长期配置价值仍在，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2040,9 +2040,9 @@
     "lesson": ""
   },
   {
-    "id": "0fbbc830-17d",
+    "id": "12ca2917-38d",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.653942",
+    "timestamp": "2026-06-04T15:31:31.847223",
     "scenario": {
       "date": "2025-01-09",
       "fund_code": "166002",
@@ -2053,15 +2053,15 @@
       "nav_change_90d": -4.31,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0021687194906999507,
-      "portfolio_return": 7.1665292553771
+      "cash_ratio": 0.004956872400622944,
+      "portfolio_return": 10.351842006515072
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 1000.0,
-      "amount_pct": 77.6705,
-      "reasoning": "纳斯达克100ETF近90日涨幅稳健，波动率适中，加仓以提升组合收益并分散A股风险。",
-      "confidence": 0.85,
+      "amount_rmb": 200.0,
+      "amount_pct": 15.5341,
+      "reasoning": "国泰盛益混合C波动率较低，近期表现相对稳健，当前仓位适中，保持持有。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
@@ -2074,9 +2074,9 @@
     "lesson": ""
   },
   {
-    "id": "18048c02-f48",
+    "id": "ac4f959c-5e6",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.668893",
+    "timestamp": "2026-06-04T15:31:31.866971",
     "scenario": {
       "date": "2025-01-14",
       "fund_code": "166002",
@@ -2087,15 +2087,15 @@
       "nav_change_90d": -2.01,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0021836019315756667,
-      "portfolio_return": 6.436130773659333
+      "cash_ratio": 0.004976703537645922,
+      "portfolio_return": 9.912112679056591
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 1000.0,
-      "amount_pct": 78.0019,
-      "reasoning": "沪深300ETF近期表现平稳，波动率适中，维持现有仓位。",
-      "confidence": 0.8,
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 31.2008,
+      "reasoning": "沪深300ETF近期表现平稳，作为指数配置核心，当前仓位合理，无需调整。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -2108,9 +2108,9 @@
     "lesson": ""
   },
   {
-    "id": "af920f62-e26",
+    "id": "425a8740-f84",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.684061",
+    "timestamp": "2026-06-04T15:31:31.886174",
     "scenario": {
       "date": "2025-01-17",
       "fund_code": "166002",
@@ -2121,15 +2121,15 @@
       "nav_change_90d": -3.86,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0021408254989835657,
-      "portfolio_return": 8.562860848373584
+      "cash_ratio": 0.0048630286114477285,
+      "portfolio_return": 11.864445691190104
     },
     "decision": {
       "action": "increase",
       "amount_rmb": 500.0,
       "amount_pct": 38.3765,
-      "reasoning": "沪深300ETF近期表现平稳，波动率低，维持现有仓位。",
-      "confidence": 0.7,
+      "reasoning": "沪深300ETF近期跟随市场震荡，波动率适中，持仓比例合理，暂不操作。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2142,9 +2142,9 @@
     "lesson": ""
   },
   {
-    "id": "d98e2cce-07f",
+    "id": "1ba74318-18d",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.698791",
+    "timestamp": "2026-06-04T15:31:31.905280",
     "scenario": {
       "date": "2025-01-22",
       "fund_code": "166002",
@@ -2155,14 +2155,14 @@
       "nav_change_90d": -1.97,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.002114832843675693,
-      "portfolio_return": 9.897168204960598
+      "cash_ratio": 0.004798897842303328,
+      "portfolio_return": 13.359362477883952
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.9916,
-      "reasoning": "沪深300ETF近期回调，但作为指数基金长期配置价值仍在，当前仓位合理，不操作。",
+      "amount_rmb": 400.0,
+      "amount_pct": 30.3933,
+      "reasoning": "中欧新蓝筹混合近期表现平稳，波动率适中，当前仓位合理，暂不操作以控制风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2176,9 +2176,9 @@
     "lesson": ""
   },
   {
-    "id": "93c04be1-9ae",
+    "id": "1389d095-c08",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.713537",
+    "timestamp": "2026-06-04T15:31:31.924341",
     "scenario": {
       "date": "2025-01-27",
       "fund_code": "166002",
@@ -2189,14 +2189,14 @@
       "nav_change_90d": -1.13,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.002155790272939134,
-      "portfolio_return": 7.80925383336893
+      "cash_ratio": 0.004878094063962455,
+      "portfolio_return": 11.518964756925834
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 15.4271,
-      "reasoning": "国泰盛益混合C表现平稳，波动率适中，继续持有。",
+      "amount_rmb": 400.0,
+      "amount_pct": 30.8542,
+      "reasoning": "中欧新蓝筹近7日表现较好，波动率适中，当前仓位合理，持有观察。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2210,9 +2210,9 @@
     "lesson": ""
   },
   {
-    "id": "73742b6e-489",
+    "id": "6407d447-835",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.728183",
+    "timestamp": "2026-06-04T15:31:31.943339",
     "scenario": {
       "date": "2025-02-07",
       "fund_code": "166002",
@@ -2223,15 +2223,15 @@
       "nav_change_90d": -1.44,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.020232401635202717,
-      "portfolio_return": 10.338563903485664
+      "cash_ratio": 0.004716746384557624,
+      "portfolio_return": 14.697708100482796
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 30.1618,
-      "reasoning": "中欧新蓝筹混合近期表现强劲，波动率适中，当前仓位合理，继续持有以获取收益。",
-      "confidence": 0.85,
+      "amount_rmb": 200.0,
+      "amount_pct": 15.0809,
+      "reasoning": "沪深300ETF波动率最低，走势稳健，作为底仓持有，等待趋势明朗。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2244,9 +2244,9 @@
     "lesson": ""
   },
   {
-    "id": "c3758abf-828",
+    "id": "f38784fd-d6c",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.742975",
+    "timestamp": "2026-06-04T15:31:31.964797",
     "scenario": {
       "date": "2025-02-12",
       "fund_code": "166002",
@@ -2257,15 +2257,15 @@
       "nav_change_90d": 1.28,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.020019420697107524,
-      "portfolio_return": 11.362570100188568
+      "cash_ratio": 0.02195242624106285,
+      "portfolio_return": 15.750303501622092
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.3653,
-      "reasoning": "国泰盛益混合C近期表现优异，波动率适中，加仓以提升组合收益潜力。",
-      "confidence": 0.7,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "沪深300ETF作为指数基金，波动率最低，持仓稳定，符合分散化原则。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2278,9 +2278,9 @@
     "lesson": ""
   },
   {
-    "id": "e7f693ae-f37",
+    "id": "25db179e-35e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.757711",
+    "timestamp": "2026-06-04T15:31:31.983986",
     "scenario": {
       "date": "2025-02-17",
       "fund_code": "166002",
@@ -2291,14 +2291,14 @@
       "nav_change_90d": 3.11,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.010847164860937855,
-      "portfolio_return": 12.924820121236335
+      "cash_ratio": 0.021676888706715285,
+      "portfolio_return": 17.22161950357855
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "沪深300ETF作为指数基金，波动率低，提供市场beta收益，维持现有仓位。",
+      "reasoning": "沪深300ETF波动率低，作为底仓配置稳定，近期表现平平，暂不操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2312,9 +2312,9 @@
     "lesson": ""
   },
   {
-    "id": "4e9953e6-c34",
+    "id": "5effe298-50f",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.772590",
+    "timestamp": "2026-06-04T15:31:32.003259",
     "scenario": {
       "date": "2025-02-20",
       "fund_code": "166002",
@@ -2325,15 +2325,15 @@
       "nav_change_90d": 4.87,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.010852274139450429,
-      "portfolio_return": 12.871654826149989
+      "cash_ratio": 0.021675723282202918,
+      "portfolio_return": 17.227922082134757
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 900.0,
-      "amount_pct": 66.5626,
-      "reasoning": "沪深300ETF作为指数基金，波动率低，持仓比例适中，维持现状。",
-      "confidence": 0.9,
+      "amount_rmb": 500.0,
+      "amount_pct": 36.9792,
+      "reasoning": "沪深300ETF波动率低，作为底仓配置，维持现有仓位。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2346,9 +2346,9 @@
     "lesson": ""
   },
   {
-    "id": "13db95b3-1dd",
+    "id": "95ab177d-fef",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.787743",
+    "timestamp": "2026-06-04T15:31:32.022348",
     "scenario": {
       "date": "2025-02-25",
       "fund_code": "166002",
@@ -2359,14 +2359,14 @@
       "nav_change_90d": 5.25,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.019735697080029136,
-      "portfolio_return": 10.708739189037916
+      "cash_ratio": 0.06523694372471316,
+      "portfolio_return": 15.594011145302995
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.7156,
-      "reasoning": "沪深300ETF波动率较低，近期表现稳定，作为底仓配置继续持有。",
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.0863,
+      "reasoning": "沪深300ETF波动率低，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2380,9 +2380,9 @@
     "lesson": ""
   },
   {
-    "id": "d61b9a2b-2d2",
+    "id": "df3551b1-52f",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.802672",
+    "timestamp": "2026-06-04T15:31:32.041590",
     "scenario": {
       "date": "2025-02-28",
       "fund_code": "166002",
@@ -2393,14 +2393,14 @@
       "nav_change_90d": 1.61,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.06575680190814522,
-      "portfolio_return": 9.264957118555012
+      "cash_ratio": 0.04850695453340431,
+      "portfolio_return": 13.818730800713547
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.9242,
-      "reasoning": "沪深300ETF波动率较低，作为核心配置保持稳定，暂不调整。",
+      "amount_rmb": 500.0,
+      "amount_pct": 38.207,
+      "reasoning": "沪深300ETF波动率较低，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2414,9 +2414,9 @@
     "lesson": ""
   },
   {
-    "id": "864f97d3-52d",
+    "id": "927f2cc4-612",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.817783",
+    "timestamp": "2026-06-04T15:31:32.061246",
     "scenario": {
       "date": "2025-03-05",
       "fund_code": "166002",
@@ -2427,14 +2427,14 @@
       "nav_change_90d": 3.12,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09319065828523886,
-      "portfolio_return": 9.291149221982323
+      "cash_ratio": 0.0921736438074377,
+      "portfolio_return": 14.143257935855127
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 15.2877,
-      "reasoning": "沪深300ETF波动率较低，表现稳健，作为核心配置继续持有。",
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "沪深300ETF作为指数基金，波动率较低，当前持仓比例适中，持有以分散风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2448,9 +2448,9 @@
     "lesson": ""
   },
   {
-    "id": "794fe68c-e8f",
+    "id": "f6e40696-e8f",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.832763",
+    "timestamp": "2026-06-04T15:31:32.080507",
     "scenario": {
       "date": "2025-03-10",
       "fund_code": "166002",
@@ -2461,15 +2461,15 @@
       "nav_change_90d": 2.85,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.1141049453048623,
-      "portfolio_return": 6.786906633989438
+      "cash_ratio": 0.09420909176538556,
+      "portfolio_return": 11.677119509877684
     },
     "decision": {
       "action": "increase",
       "amount_rmb": 700.0,
       "amount_pct": 54.8125,
-      "reasoning": "沪深300ETF波动率较低，作为底仓配置，暂不调整。",
-      "confidence": 0.8,
+      "reasoning": "国泰盛益混合C近30日涨幅8.10%，表现优于同类，波动率适中，加仓以增强组合收益，但控制仓位不超过30%。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -2482,9 +2482,9 @@
     "lesson": ""
   },
   {
-    "id": "d0411ff3-729",
+    "id": "acd734af-31b",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.847583",
+    "timestamp": "2026-06-04T15:31:32.099395",
     "scenario": {
       "date": "2025-03-13",
       "fund_code": "166002",
@@ -2495,14 +2495,14 @@
       "nav_change_90d": 1.72,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0864459416345668,
-      "portfolio_return": 5.671983762555956
+      "cash_ratio": 0.0680802506641746,
+      "portfolio_return": 10.362402116621087
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 700.0,
-      "amount_pct": 55.3627,
-      "reasoning": "国泰盛益混合C近30日涨幅6.79%，趋势向好，波动率适中，加仓500元以增强组合收益。",
+      "amount_rmb": 400.0,
+      "amount_pct": 31.6358,
+      "reasoning": "国泰盛益混合C近30日涨幅6.79%，近90日涨幅10.80%，表现优于市场，加仓以捕捉趋势，但控制仓位不超过30%。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2516,9 +2516,9 @@
     "lesson": ""
   },
   {
-    "id": "28b3ef00-9da",
+    "id": "cd48f633-541",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.862547",
+    "timestamp": "2026-06-04T15:31:32.118513",
     "scenario": {
       "date": "2025-03-18",
       "fund_code": "166002",
@@ -2529,15 +2529,15 @@
       "nav_change_90d": 5.19,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05683247538905503,
-      "portfolio_return": 7.815366105394713
+      "cash_ratio": 0.06656231551177541,
+      "portfolio_return": 12.834115554037925
     },
     "decision": {
-      "action": "decrease",
+      "action": "increase",
       "amount_rmb": 500.0,
       "amount_pct": 38.7351,
-      "reasoning": "国泰盛益混合C近期涨幅较大，波动率较高，减仓200元锁定部分利润，降低组合波动。",
-      "confidence": 0.7,
+      "reasoning": "国泰盛益混合C近30日涨幅9.16%，90日涨幅16.12%，表现优于其他持仓，波动率可控，加仓以增强组合收益，但控制仓位不超过30%。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -2550,9 +2550,9 @@
     "lesson": ""
   },
   {
-    "id": "86935071-e83",
+    "id": "0a793dd0-254",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.877793",
+    "timestamp": "2026-06-04T15:31:32.137742",
     "scenario": {
       "date": "2025-03-21",
       "fund_code": "166002",
@@ -2563,14 +2563,14 @@
       "nav_change_90d": 1.65,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04756290497149835,
-      "portfolio_return": 7.172052333670181
+      "cash_ratio": 0.02243762442130956,
+      "portfolio_return": 11.553698956777133
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 39.0341,
-      "reasoning": "国泰盛益混合C近90日涨幅12.37%，表现优于市场，加仓300元以增强组合收益。",
+      "amount_rmb": 400.0,
+      "amount_pct": 31.2273,
+      "reasoning": "沪深300ETF波动率较低，近期表现平稳，作为底仓配置继续持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2584,9 +2584,9 @@
     "lesson": ""
   },
   {
-    "id": "85d92353-607",
+    "id": "0a0cdaaa-604",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.892900",
+    "timestamp": "2026-06-04T15:31:32.156772",
     "scenario": {
       "date": "2025-03-26",
       "fund_code": "166002",
@@ -2597,14 +2597,14 @@
       "nav_change_90d": 1.05,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03807592265503179,
-      "portfolio_return": 7.4934986560573265
+      "cash_ratio": 0.0223834580887701,
+      "portfolio_return": 11.6896232068029
     },
     "decision": {
-      "action": "sell",
-      "amount_rmb": 1856.94,
-      "amount_pct": 144.4696,
-      "reasoning": "华安纳斯达克100ETF近30日和90日跌幅较大，波动率高，风险调整后收益较差，清仓止损以降低组合风险。",
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.56,
+      "reasoning": "沪深300ETF近期小幅下跌，但作为指数基金波动可控，仓位适中，继续持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2618,9 +2618,9 @@
     "lesson": ""
   },
   {
-    "id": "a92073a7-328",
+    "id": "499df166-399",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.907722",
+    "timestamp": "2026-06-04T15:31:32.176322",
     "scenario": {
       "date": "2025-03-31",
       "fund_code": "166002",
@@ -2631,14 +2631,14 @@
       "nav_change_90d": 3.38,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.025002471202001192,
-      "portfolio_return": 5.882099387636226
+      "cash_ratio": 0.004359442859022259,
+      "portfolio_return": 10.105812949605241
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 300.0,
-      "amount_pct": 23.7586,
-      "reasoning": "中欧新蓝筹混合波动率低，近期表现稳健，当前仓位合理，继续持有。",
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 31.6781,
+      "reasoning": "国泰盛益混合C近30日和90日表现优异，波动率适中，加仓以增强组合收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2652,9 +2652,9 @@
     "lesson": ""
   },
   {
-    "id": "10163eae-e46",
+    "id": "4837cd41-3d4",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.923263",
+    "timestamp": "2026-06-04T15:31:32.195870",
     "scenario": {
       "date": "2025-04-03",
       "fund_code": "166002",
@@ -2665,15 +2665,15 @@
       "nav_change_90d": 5.95,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.006036687022457016,
-      "portfolio_return": 3.9169561736658034
+      "cash_ratio": 0.0044065639187769136,
+      "portfolio_return": 8.247607158820756
     },
     "decision": {
-      "action": "sell",
-      "amount_rmb": 2749.71,
-      "amount_pct": 222.4648,
-      "reasoning": "纳斯达克100ETF近期持续大跌，波动率高达32.8%，风险收益比恶化，清仓止损以降低组合波动。",
-      "confidence": 0.85,
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 32.3619,
+      "reasoning": "纳斯达克100近期跌幅较大且波动率高，减仓以控制回撤风险并释放现金。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2686,9 +2686,9 @@
     "lesson": ""
   },
   {
-    "id": "88a55d1b-5e2",
+    "id": "10b830bf-2c6",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.938145",
+    "timestamp": "2026-06-04T15:31:32.215036",
     "scenario": {
       "date": "2025-04-09",
       "fund_code": "166002",
@@ -2699,14 +2699,14 @@
       "nav_change_90d": -2.17,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.08069937243395615,
-      "portfolio_return": 0.6750597397243837
+      "cash_ratio": 0.00455100638779101,
+      "portfolio_return": 4.152787232203627
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 200.0,
       "amount_pct": 16.5338,
-      "reasoning": "沪深300指数基金作为核心配置，近期跌幅相对较小，维持现有仓位观察。",
+      "reasoning": "华安纳斯达克100ETF联接波动率极高且近期持续下跌，减仓200元以控制回撤风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2720,9 +2720,9 @@
     "lesson": ""
   },
   {
-    "id": "40d559f5-ff7",
+    "id": "2334a667-708",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.953093",
+    "timestamp": "2026-06-04T15:31:32.234356",
     "scenario": {
       "date": "2025-04-14",
       "fund_code": "166002",
@@ -2733,14 +2733,14 @@
       "nav_change_90d": -0.72,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09917527361801762,
-      "portfolio_return": 1.9852405923614425
+      "cash_ratio": 0.02333838524586859,
+      "portfolio_return": 6.005620094815659
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 41.0509,
-      "reasoning": "纳斯达克ETF波动率极高且中期跌幅大，减仓200元以降低风险敞口。",
+      "amount_rmb": 400.0,
+      "amount_pct": 32.8407,
+      "reasoning": "纳斯达克100ETF波动率极高且近期跌幅较大，减仓200元以降低风险敞口。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2754,9 +2754,9 @@
     "lesson": ""
   },
   {
-    "id": "4d5ada95-e84",
+    "id": "3deb6065-bc7",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.967908",
+    "timestamp": "2026-06-04T15:31:32.253566",
     "scenario": {
       "date": "2025-04-17",
       "fund_code": "166002",
@@ -2767,14 +2767,14 @@
       "nav_change_90d": -1.17,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09040688296790789,
-      "portfolio_return": 0.765714309391551
+      "cash_ratio": 0.023618857646248676,
+      "portfolio_return": 4.619793091155661
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.6396,
-      "reasoning": "沪深300ETF作为指数基金，波动率适中，当前持仓盈利，维持现有仓位。",
+      "amount_rmb": 100.0,
+      "amount_pct": 8.3198,
+      "reasoning": "纳斯达克100ETF波动率极高且近期持续下跌，减仓以控制风险并释放现金。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2788,9 +2788,9 @@
     "lesson": ""
   },
   {
-    "id": "bfac030b-9e0",
+    "id": "9a156378-bf2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.983218",
+    "timestamp": "2026-06-04T15:31:32.273391",
     "scenario": {
       "date": "2025-04-22",
       "fund_code": "166002",
@@ -2801,14 +2801,14 @@
       "nav_change_90d": -2.55,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.10972491210374591,
-      "portfolio_return": 1.252431446400042
+      "cash_ratio": 0.03299309510423599,
+      "portfolio_return": 5.203830954142704
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.5924,
-      "reasoning": "沪深300ETF波动率低，近期表现相对稳健，当前仓位合理，暂不调整。",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.481,
+      "reasoning": "纳斯达克100ETF波动率高达60.63%，近期跌幅显著，减仓以降低组合波动并释放现金。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2822,9 +2822,9 @@
     "lesson": ""
   },
   {
-    "id": "cb2de6b8-4f2",
+    "id": "deff8a0d-600",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:10.998249",
+    "timestamp": "2026-06-04T15:31:32.292913",
     "scenario": {
       "date": "2025-04-25",
       "fund_code": "166002",
@@ -2835,14 +2835,14 @@
       "nav_change_90d": -3.57,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.12674104797479102,
-      "portfolio_return": 3.438580872034327
+      "cash_ratio": 0.02269300152769812,
+      "portfolio_return": 7.56620260306312
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 40.3057,
-      "reasoning": "沪深300ETF波动率极低，作为底仓配置，当前市场震荡下继续持有。",
+      "amount_rmb": 300.0,
+      "amount_pct": 24.1834,
+      "reasoning": "沪深300ETF波动率极低，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2856,9 +2856,9 @@
     "lesson": ""
   },
   {
-    "id": "f9a2f61e-770",
+    "id": "b3b7a64d-b52",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.013214",
+    "timestamp": "2026-06-04T15:31:32.312536",
     "scenario": {
       "date": "2025-04-30",
       "fund_code": "166002",
@@ -2869,14 +2869,14 @@
       "nav_change_90d": -1.2,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.11673868811234715,
-      "portfolio_return": 3.6966779093557673
+      "cash_ratio": 0.013312407010788648,
+      "portfolio_return": 8.019533870517334
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 40.1513,
-      "reasoning": "沪深300ETF波动率极低，近30日小幅下跌，作为底仓配置保持稳定。",
+      "amount_rmb": 300.0,
+      "amount_pct": 24.0908,
+      "reasoning": "沪深300ETF波动率极低，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2890,9 +2890,9 @@
     "lesson": ""
   },
   {
-    "id": "16e3b805-ce0",
+    "id": "49281cc0-8b7",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.028150",
+    "timestamp": "2026-06-04T15:31:32.331900",
     "scenario": {
       "date": "2025-05-08",
       "fund_code": "166002",
@@ -2903,14 +2903,14 @@
       "nav_change_90d": -4.34,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.10529364938097703,
-      "portfolio_return": 5.428145059167819
+      "cash_ratio": 0.003956907234084168,
+      "portfolio_return": 9.934343735171733
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 15.7296,
-      "reasoning": "沪深300ETF波动率最低，走势相对平稳，作为核心配置继续持有。",
+      "amount_rmb": 1000.0,
+      "amount_pct": 78.6479,
+      "reasoning": "沪深300ETF波动率仅6.03%，近期稳步上涨，作为核心配置保持持有。",
       "confidence": 0.85,
       "model": ""
     },
@@ -2924,9 +2924,9 @@
     "lesson": ""
   },
   {
-    "id": "50600f0f-540",
+    "id": "c37c14cc-c26",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.043313",
+    "timestamp": "2026-06-04T15:31:32.351195",
     "scenario": {
       "date": "2025-05-13",
       "fund_code": "166002",
@@ -2937,15 +2937,15 @@
       "nav_change_90d": -4.84,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.12250996536789498,
-      "portfolio_return": 6.9375385210910645
+      "cash_ratio": 0.003837318004142804,
+      "portfolio_return": 11.405934962508619
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.9349,
-      "reasoning": "沪深300ETF近30日上涨4.04%，波动率低，趋势向好，但仓位已适中，继续持有。",
-      "confidence": 0.75,
+      "amount_rmb": 400.0,
+      "amount_pct": 30.5799,
+      "reasoning": "华泰柏瑞沪深300ETF近7日表现优于市场，波动率较低，加仓以增强组合稳定性并提升夏普比率。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
@@ -2958,9 +2958,9 @@
     "lesson": ""
   },
   {
-    "id": "3ac40a40-c63",
+    "id": "855ddd16-862",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.058373",
+    "timestamp": "2026-06-04T15:31:32.371232",
     "scenario": {
       "date": "2025-05-16",
       "fund_code": "166002",
@@ -2971,14 +2971,14 @@
       "nav_change_90d": -5.04,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.11298873872523085,
-      "portfolio_return": 7.071857578363142
+      "cash_ratio": 0.003656224921234307,
+      "portfolio_return": 11.453755930974948
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 300.0,
       "amount_pct": 22.8531,
-      "reasoning": "国泰盛益混合C波动率低（7.64%），近期表现稳健（30日+4.84%，90日+5.24%），加仓以优化组合风险调整后收益。",
+      "reasoning": "国泰盛益混合波动率仅7.64%，近90日表现稳健且正收益，加仓以增强组合稳定性并提升风险调整后收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -2992,9 +2992,9 @@
     "lesson": ""
   },
   {
-    "id": "0ab368a6-e8f",
+    "id": "206df518-0bb",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.073364",
+    "timestamp": "2026-06-04T15:31:32.390735",
     "scenario": {
       "date": "2025-05-21",
       "fund_code": "166002",
@@ -3005,14 +3005,14 @@
       "nav_change_90d": -4.99,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.10343327417902395,
-      "portfolio_return": 7.266392065898926
+      "cash_ratio": 0.012596239875571348,
+      "portfolio_return": 11.7396948536719
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 600.0,
-      "amount_pct": 45.9056,
-      "reasoning": "国泰盛益混合C波动率低且近期表现稳健，加仓以优化组合风险调整后收益。",
+      "amount_rmb": 300.0,
+      "amount_pct": 22.9528,
+      "reasoning": "沪深300ETF近30日表现优于市场，波动率较低，当前持仓比例合理，继续持有观察。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3026,9 +3026,9 @@
     "lesson": ""
   },
   {
-    "id": "b9adba95-1f0",
+    "id": "378a762c-e54",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.088691",
+    "timestamp": "2026-06-04T15:31:32.410129",
     "scenario": {
       "date": "2025-05-26",
       "fund_code": "166002",
@@ -3039,14 +3039,14 @@
       "nav_change_90d": -6.93,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.06673452523566434,
-      "portfolio_return": 6.203110244937197
+      "cash_ratio": 0.0036593527336214082,
+      "portfolio_return": 10.53867430803557
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 23.2146,
-      "reasoning": "国泰盛益混合C波动率低且近90日表现稳健，加仓以增强组合稳定性并分散风险。",
+      "amount_rmb": 1000.0,
+      "amount_pct": 77.382,
+      "reasoning": "国泰盛益混合C波动率仅6.26%，近90日正收益+0.94%，表现稳健，利用减仓资金加仓以增强组合稳定性并提升风险调整后收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3060,9 +3060,9 @@
     "lesson": ""
   },
   {
-    "id": "bc9a18d3-9ac",
+    "id": "747462e6-7c1",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.103713",
+    "timestamp": "2026-06-04T15:31:32.429828",
     "scenario": {
       "date": "2025-05-29",
       "fund_code": "166002",
@@ -3073,14 +3073,14 @@
       "nav_change_90d": -3.66,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05681773460789284,
-      "portfolio_return": 7.086531744642743
+      "cash_ratio": 0.003563251450223388,
+      "portfolio_return": 11.415095326799655
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.9446,
-      "reasoning": "国泰盛益混合C波动率低、近期表现稳健，加仓以增强组合稳定性并优化风险调整后收益。",
+      "amount_rmb": 1000.0,
+      "amount_pct": 76.4818,
+      "reasoning": "国泰盛益混合C近30日和90日表现稳健，波动率极低，加仓以增强组合稳定性并提升夏普比率。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3094,9 +3094,9 @@
     "lesson": ""
   },
   {
-    "id": "f583ef92-32a",
+    "id": "b1dcf04c-855",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.118720",
+    "timestamp": "2026-06-04T15:31:32.449276",
     "scenario": {
       "date": "2025-06-04",
       "fund_code": "166002",
@@ -3107,15 +3107,15 @@
       "nav_change_90d": -6.28,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04690757169359405,
-      "portfolio_return": 8.328228413511079
+      "cash_ratio": 0.0034550022475720024,
+      "portfolio_return": 12.735093088207522
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.6967,
-      "reasoning": "国泰盛益混合C近30日表现稳健（+4.17%），波动率低（9.66%），加仓200元以增强组合稳定性并优化风险调整后收益。",
-      "confidence": 0.8,
+      "amount_rmb": 1000.0,
+      "amount_pct": 75.6556,
+      "reasoning": "沪深300ETF近30日表现优于市场，波动率低，作为指数配置核心，保持持有。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3128,9 +3128,9 @@
     "lesson": ""
   },
   {
-    "id": "f3f0d25a-f4c",
+    "id": "7d7a4340-3c5",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.133857",
+    "timestamp": "2026-06-04T15:31:32.469429",
     "scenario": {
       "date": "2025-06-09",
       "fund_code": "166002",
@@ -3141,15 +3141,15 @@
       "nav_change_90d": -2.6,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03695452928714297,
-      "portfolio_return": 10.363038561710072
+      "cash_ratio": 0.003311540400919493,
+      "portfolio_return": 15.354171700254229
     },
     "decision": {
-      "action": "increase",
+      "action": "decrease",
       "amount_rmb": 1000.0,
       "amount_pct": 75.0143,
-      "reasoning": "华安纳斯达克100ETF近30日和90日表现优异，波动率适中，加仓以提升组合整体夏普比率。",
-      "confidence": 0.8,
+      "reasoning": "沪深300ETF波动率最低，走势稳健，作为底仓配置无需调整。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3162,9 +3162,9 @@
     "lesson": ""
   },
   {
-    "id": "d473d57d-5a9",
+    "id": "565560a1-178",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.148850",
+    "timestamp": "2026-06-04T15:31:32.489056",
     "scenario": {
       "date": "2025-06-12",
       "fund_code": "166002",
@@ -3175,14 +3175,14 @@
       "nav_change_90d": -2.84,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03679294237362415,
-      "portfolio_return": 10.84772996221436
+      "cash_ratio": 0.00323128657805746,
+      "portfolio_return": 15.898107751598017
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 1200.0,
-      "amount_pct": 89.6305,
-      "reasoning": "华安纳斯达克100ETF近30日和90日表现优异，波动率可控，加仓以提升组合风险调整后收益。",
+      "amount_rmb": 500.0,
+      "amount_pct": 37.346,
+      "reasoning": "沪深300ETF波动率低，走势稳健，作为底仓配置，维持现有仓位。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3196,9 +3196,9 @@
     "lesson": ""
   },
   {
-    "id": "8b415932-ef9",
+    "id": "5577dbfb-72d",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.163999",
+    "timestamp": "2026-06-04T15:31:32.508726",
     "scenario": {
       "date": "2025-06-17",
       "fund_code": "166002",
@@ -3209,14 +3209,14 @@
       "nav_change_90d": -2.6,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05538557071644322,
-      "portfolio_return": 9.656974951847715
+      "cash_ratio": 0.0032693633395654317,
+      "portfolio_return": 14.548296137001088
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.5859,
-      "reasoning": "沪深300ETF近期表现平稳，波动率低，作为指数配置保持现有仓位即可。",
+      "amount_rmb": 700.0,
+      "amount_pct": 52.7005,
+      "reasoning": "沪深300ETF波动率低，近期横盘，持仓比例合理，暂不操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3230,9 +3230,9 @@
     "lesson": ""
   },
   {
-    "id": "3e730447-095",
+    "id": "3b0da203-bd0",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.179726",
+    "timestamp": "2026-06-04T15:31:32.528081",
     "scenario": {
       "date": "2025-06-20",
       "fund_code": "166002",
@@ -3243,15 +3243,15 @@
       "nav_change_90d": -0.81,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04673051319736265,
-      "portfolio_return": 8.139495909323886
+      "cash_ratio": 0.047598532336068824,
+      "portfolio_return": 12.913145347705433
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 22.8784,
-      "reasoning": "华安纳斯达克100ETF联接近30日和90日表现强劲，波动率适中，加仓200元以增强组合收益。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 38.1307,
+      "reasoning": "华安纳斯达克100ETF联接近90日涨幅7.16%，趋势向上且波动率适中，加仓以提升组合收益和夏普比率。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -3264,9 +3264,9 @@
     "lesson": ""
   },
   {
-    "id": "50fdea6a-665",
+    "id": "3224a7c6-f0a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.195337",
+    "timestamp": "2026-06-04T15:31:32.547882",
     "scenario": {
       "date": "2025-06-25",
       "fund_code": "166002",
@@ -3277,14 +3277,14 @@
       "nav_change_90d": 1.23,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.036372123284523716,
-      "portfolio_return": 10.81052676574809
+      "cash_ratio": 0.002804206614730165,
+      "portfolio_return": 15.719005259967616
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "沪深300ETF近期小幅上涨，波动率低，作为指数配置核心，当前仓位合理，无需调整。",
+      "reasoning": "中欧新蓝筹混合近期表现稳健，波动率较低，当前仓位适中，继续持有观察。",
       "confidence": 0.85,
       "model": ""
     },
@@ -3298,9 +3298,9 @@
     "lesson": ""
   },
   {
-    "id": "c5ee93eb-52b",
+    "id": "38a458a2-be4",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.210415",
+    "timestamp": "2026-06-04T15:31:32.567738",
     "scenario": {
       "date": "2025-06-30",
       "fund_code": "166002",
@@ -3311,15 +3311,15 @@
       "nav_change_90d": 4.16,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03618333707048079,
-      "portfolio_return": 11.388679626095364
+      "cash_ratio": 0.002791540788802885,
+      "portfolio_return": 16.24404748144605
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "国泰盛益混合C近期表现稳健，波动率低，继续持有以平衡组合。",
-      "confidence": 0.8,
+      "reasoning": "中欧新蓝筹近期表现强劲，波动率低，当前仓位适中，继续持有观察。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -3332,9 +3332,9 @@
     "lesson": ""
   },
   {
-    "id": "3e9488f0-67a",
+    "id": "cc64763c-d2a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.225492",
+    "timestamp": "2026-06-04T15:31:32.587200",
     "scenario": {
       "date": "2025-07-03",
       "fund_code": "166002",
@@ -3345,15 +3345,15 @@
       "nav_change_90d": 5.37,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03599740685439392,
-      "portfolio_return": 11.964013326000005
+      "cash_ratio": 0.0027788413946157457,
+      "portfolio_return": 16.775286502044963
     },
     "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧新蓝筹混合近期涨幅领先，波动率适中，当前仓位合理，继续持有以享受收益。",
-      "confidence": 0.85,
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 72.9453,
+      "reasoning": "沪深300ETF波动率低，走势平稳，作为底仓配置继续持有。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3366,9 +3366,9 @@
     "lesson": ""
   },
   {
-    "id": "9c0f570f-678",
+    "id": "0d2a2d26-fb4",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.240557",
+    "timestamp": "2026-06-04T15:31:32.606755",
     "scenario": {
       "date": "2025-07-08",
       "fund_code": "166002",
@@ -3379,14 +3379,14 @@
       "nav_change_90d": 13.67,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03590521990329035,
-      "portfolio_return": 12.25148186259843
+      "cash_ratio": 0.002701094747565081,
+      "portfolio_return": 17.359822451899397
     },
     "decision": {
       "action": "increase",
       "amount_rmb": 500.0,
       "amount_pct": 36.449,
-      "reasoning": "国泰盛益混合C波动率极低（3.40%），近期收益稳健，加仓可提升组合稳定性并优化夏普比率。",
+      "reasoning": "国泰盛益混合C波动率极低，近期收益稳健，加仓以增强组合稳定性并提升风险调整后收益。",
       "confidence": 0.85,
       "model": ""
     },
@@ -3400,9 +3400,9 @@
     "lesson": ""
   },
   {
-    "id": "1587d86b-cec",
+    "id": "3439eb8b-213",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.255874",
+    "timestamp": "2026-06-04T15:31:32.626467",
     "scenario": {
       "date": "2025-07-11",
       "fund_code": "166002",
@@ -3413,15 +3413,15 @@
       "nav_change_90d": 11.31,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.03577315949619343,
-      "portfolio_return": 12.665870096704058
+      "cash_ratio": 0.002690182644858488,
+      "portfolio_return": 17.835865384772458
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 250.0,
-      "amount_pct": 18.1555,
-      "reasoning": "国泰盛益混合C波动率极低，近期表现稳健，加仓以提升组合稳定性并优化夏普比率。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 14.5244,
+      "reasoning": "沪深300ETF波动率低，持仓稳定，作为底仓配置继续持有。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -3434,9 +3434,9 @@
     "lesson": ""
   },
   {
-    "id": "f013248a-a8e",
+    "id": "72d9f1f7-29e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.271043",
+    "timestamp": "2026-06-04T15:31:32.646309",
     "scenario": {
       "date": "2025-07-16",
       "fund_code": "166002",
@@ -3447,15 +3447,15 @@
       "nav_change_90d": 15.19,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.022130686730309893,
-      "portfolio_return": 14.20405392505474
+      "cash_ratio": 0.0026437903466350757,
+      "portfolio_return": 19.903607486676265
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 21.5986,
-      "reasoning": "沪深300ETF波动率低，走势稳健，作为底仓配置继续持有。",
-      "confidence": 0.8,
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "沪深300ETF波动率低，作为底仓配置稳定，维持现有仓位。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3468,9 +3468,9 @@
     "lesson": ""
   },
   {
-    "id": "0c894e13-6e4",
+    "id": "f4100e1d-7f2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.286682",
+    "timestamp": "2026-06-04T15:31:32.666436",
     "scenario": {
       "date": "2025-07-21",
       "fund_code": "166002",
@@ -3481,15 +3481,15 @@
       "nav_change_90d": 18.34,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.01314563750463412,
-      "portfolio_return": 15.963500454764235
+      "cash_ratio": 0.0025995457126555582,
+      "portfolio_return": 21.944383765487053
     },
     "decision": {
       "action": "increase",
-      "amount_rmb": 1500.0,
-      "amount_pct": 106.1902,
-      "reasoning": "纳斯达克100ETF近90日涨幅领先且波动率低，加仓以提升组合收益并分散A股风险。",
-      "confidence": 0.8,
+      "amount_rmb": 500.0,
+      "amount_pct": 35.3967,
+      "reasoning": "沪深300ETF波动率低，走势稳健，作为底仓配置继续持有。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -3502,9 +3502,9 @@
     "lesson": ""
   },
   {
-    "id": "97b10a12-671",
+    "id": "64b1b543-af0",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.301790",
+    "timestamp": "2026-06-04T15:31:32.685980",
     "scenario": {
       "date": "2025-07-24",
       "fund_code": "166002",
@@ -3515,15 +3515,15 @@
       "nav_change_90d": 19.55,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09818178750533577,
-      "portfolio_return": 17.37832884862175
+      "cash_ratio": 0.002557117172213466,
+      "portfolio_return": 23.967725626588145
     },
     "decision": {
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "沪深300ETF波动率低，走势稳健，作为底仓配置，维持现有仓位。",
-      "confidence": 0.8,
+      "reasoning": "沪深300ETF波动率低，近期表现稳定，作为底仓配置继续持有。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -3536,9 +3536,9 @@
     "lesson": ""
   },
   {
-    "id": "fe4e44ab-92b",
+    "id": "7fbfbf63-449",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.317110",
+    "timestamp": "2026-06-04T15:31:32.705782",
     "scenario": {
       "date": "2025-07-29",
       "fund_code": "166002",
@@ -3549,14 +3549,14 @@
       "nav_change_90d": 22.01,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0973571602477638,
-      "portfolio_return": 18.372537894679482
+      "cash_ratio": 0.0025271822619084765,
+      "portfolio_return": 25.436144744306638
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 34.8131,
-      "reasoning": "纳斯达克100ETF波动率低，近期涨幅稳健，维持现有仓位以分散风险。",
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "国泰盛益混合C波动率低，近期表现良好，当前仓位适中，继续持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3570,9 +3570,9 @@
     "lesson": ""
   },
   {
-    "id": "39dba39e-b01",
+    "id": "f06f4e30-4e3",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.332392",
+    "timestamp": "2026-06-04T15:31:32.725089",
     "scenario": {
       "date": "2025-08-01",
       "fund_code": "166002",
@@ -3583,15 +3583,15 @@
       "nav_change_90d": 20.5,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.09067514576562132,
-      "portfolio_return": 15.96247297937556
+      "cash_ratio": 0.002581955277958066,
+      "portfolio_return": 22.775170703457988
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 300.0,
       "amount_pct": 21.355,
-      "reasoning": "中欧新蓝筹近30日涨幅13.28%表现强劲，但短期涨幅较大，持有观望避免追高。",
-      "confidence": 0.8,
+      "reasoning": "中欧新蓝筹近期表现强劲，30日涨幅达13.28%，波动率适中，当前仓位合理，持有观察。",
+      "confidence": 0.85,
       "model": ""
     },
     "outcome": {
@@ -3604,9 +3604,9 @@
     "lesson": ""
   },
   {
-    "id": "9dd5a13b-23c",
+    "id": "203e96e0-edd",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.347692",
+    "timestamp": "2026-06-04T15:31:32.744644",
     "scenario": {
       "date": "2025-08-06",
       "fund_code": "166002",
@@ -3617,14 +3617,14 @@
       "nav_change_90d": 21.76,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.08045989698026039,
-      "portfolio_return": 18.219317917849256
+      "cash_ratio": 0.010505508287002648,
+      "portfolio_return": 25.362806255588836
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 27.9137,
-      "reasoning": "沪深300ETF波动率较低，近期表现稳健，当前仓位合理，维持持有。",
+      "amount_rmb": 700.0,
+      "amount_pct": 48.8489,
+      "reasoning": "沪深300指数波动率较低，近30日表现稳健，小幅加仓以增强组合稳定性，利用震荡期布局。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3638,9 +3638,9 @@
     "lesson": ""
   },
   {
-    "id": "c46b1dc6-476",
+    "id": "336fb1d5-29b",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.362890",
+    "timestamp": "2026-06-04T15:31:32.764953",
     "scenario": {
       "date": "2025-08-11",
       "fund_code": "166002",
@@ -3651,14 +3651,14 @@
       "nav_change_90d": 22.28,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.08005142038697625,
-      "portfolio_return": 18.510253720498003
+      "cash_ratio": 0.0022820987022448653,
+      "portfolio_return": 25.54233509627351
     },
     "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "沪深300ETF波动率较低，表现稳健，作为底仓配置，维持现有仓位。",
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 34.6851,
+      "reasoning": "沪深300ETF波动率较低，表现稳定，作为底仓配置继续持有。",
       "confidence": 0.9,
       "model": ""
     },
@@ -3672,9 +3672,9 @@
     "lesson": ""
   },
   {
-    "id": "6fb16729-092",
+    "id": "1c489cbd-b97",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.378157",
+    "timestamp": "2026-06-04T15:31:32.784660",
     "scenario": {
       "date": "2025-08-14",
       "fund_code": "166002",
@@ -3685,15 +3685,15 @@
       "nav_change_90d": 28.18,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.07888578682941363,
-      "portfolio_return": 20.261387026052688
+      "cash_ratio": 0.0022397881865882617,
+      "portfolio_return": 27.91388119445548
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 20.4717,
-      "reasoning": "沪深300ETF波动率仅6.55%，表现稳健，加仓以增强组合稳定性并优化风险调整后收益。",
-      "confidence": 0.8,
+      "amount_rmb": 600.0,
+      "amount_pct": 40.9433,
+      "reasoning": "纳斯达克100ETF近期表现平稳，波动率适中，当前仓位合理，暂不操作。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3706,9 +3706,9 @@
     "lesson": ""
   },
   {
-    "id": "47512ecc-3ea",
+    "id": "2fadbdc8-ae6",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.393809",
+    "timestamp": "2026-06-04T15:31:32.803908",
     "scenario": {
       "date": "2025-08-19",
       "fund_code": "166002",
@@ -3719,15 +3719,15 @@
       "nav_change_90d": 32.86,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.06984150982562809,
-      "portfolio_return": 21.194604210014038
+      "cash_ratio": 0.0020113563486596265,
+      "portfolio_return": 30.011770502158964
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 6.8149,
-      "reasoning": "国泰盛益混合表现稳健，波动率适中，当前仓位已较高，暂不操作。",
-      "confidence": 0.8,
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 34.0743,
+      "reasoning": "沪深300ETF波动率低，表现稳健，作为底仓配置，维持现有仓位。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
@@ -3740,9 +3740,9 @@
     "lesson": ""
   },
   {
-    "id": "8576e131-998",
+    "id": "73cfae14-8f8",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.409245",
+    "timestamp": "2026-06-04T15:31:32.823709",
     "scenario": {
       "date": "2025-08-22",
       "fund_code": "166002",
@@ -3753,14 +3753,14 @@
       "nav_change_90d": 38.12,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.07610284257552494,
-      "portfolio_return": 24.33062709000311
+      "cash_ratio": 0.001947662586834765,
+      "portfolio_return": 34.26350219365837
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 600.0,
-      "amount_pct": 40.0994,
-      "reasoning": "沪深300ETF波动率低，走势稳健，当前仓位适中，继续持有作为组合稳定器。",
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 33.4162,
+      "reasoning": "沪深300ETF波动率低，作为底仓配置稳定，当前仓位合理，继续持有。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3774,9 +3774,9 @@
     "lesson": ""
   },
   {
-    "id": "b4455f7b-fce",
+    "id": "36593737-c7e",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.424661",
+    "timestamp": "2026-06-04T15:31:32.843297",
     "scenario": {
       "date": "2025-08-27",
       "fund_code": "166002",
@@ -3787,15 +3787,15 @@
       "nav_change_90d": 43.08,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.07566634811403546,
-      "portfolio_return": 24.922298701415222
+      "cash_ratio": 0.0019283858305974508,
+      "portfolio_return": 35.60564273539498
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 13.2716,
-      "reasoning": "国泰盛益混合C近期表现稳健，波动率适中，当前仓位合理，暂不调整。",
-      "confidence": 0.8,
+      "action": "sell",
+      "amount_rmb": 225.23,
+      "amount_pct": 14.9458,
+      "reasoning": "纳斯达克100ETF近30日涨幅仅0.38%，表现明显弱于其他基金，且波动率较低，减仓以释放资金配置到更具潜力的品种。",
+      "confidence": 0.75,
       "model": ""
     },
     "outcome": {
@@ -3808,9 +3808,9 @@
     "lesson": ""
   },
   {
-    "id": "59a01329-a9c",
+    "id": "9f97fe1c-87a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.440752",
+    "timestamp": "2026-06-04T15:31:32.863005",
     "scenario": {
       "date": "2025-09-01",
       "fund_code": "166002",
@@ -3821,14 +3821,14 @@
       "nav_change_90d": 57.65,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.05782470135278642,
-      "portfolio_return": 28.533549968583706
+      "cash_ratio": 0.00362091024331812,
+      "portfolio_return": 41.8980216226407
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 32.3635,
-      "reasoning": "纳斯达克100ETF波动率低，走势平稳，作为海外分散配置继续持有。",
+      "amount_rmb": 3000.0,
+      "amount_pct": 194.181,
+      "reasoning": "纳斯达克100ETF波动率仅13.52%，近期表现稳健，加仓以增强组合稳定性并分散A股风险。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3842,9 +3842,9 @@
     "lesson": ""
   },
   {
-    "id": "eee3c00c-569",
+    "id": "ca801334-331",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.455956",
+    "timestamp": "2026-06-04T15:31:32.883068",
     "scenario": {
       "date": "2025-09-04",
       "fund_code": "166002",
@@ -3855,14 +3855,14 @@
       "nav_change_90d": 41.87,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.0516822927922084,
-      "portfolio_return": 24.27688079881622
+      "cash_ratio": 0.07596630760997031,
+      "portfolio_return": 36.42627009345107
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 6.627,
-      "reasoning": "国泰盛益混合C近期表现稳健，波动率可控，持仓合理，暂时持有。",
+      "amount_rmb": 500.0,
+      "amount_pct": 33.1352,
+      "reasoning": "波动率低，近期表现稳健，加仓以优化风险调整后收益。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3876,9 +3876,9 @@
     "lesson": ""
   },
   {
-    "id": "c1adb83f-7fe",
+    "id": "aef0453f-026",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.471206",
+    "timestamp": "2026-06-04T15:31:32.902885",
     "scenario": {
       "date": "2025-09-09",
       "fund_code": "166002",
@@ -3889,14 +3889,14 @@
       "nav_change_90d": 43.92,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.058508202868739874,
-      "portfolio_return": 26.82690250107524
+      "cash_ratio": 0.06691725397021137,
+      "portfolio_return": 39.407991908227
     },
     "decision": {
-      "action": "decrease",
+      "action": "increase",
       "amount_rmb": 300.0,
       "amount_pct": 19.6,
-      "reasoning": "华安纳斯达克100ETF波动率低（10.22%），近期表现稳健（7d+2.50%），加仓以增强组合稳定性并分散风险。",
+      "reasoning": "国泰盛益混合C近期表现稳健，持仓比例已较高，暂不操作。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3910,9 +3910,9 @@
     "lesson": ""
   },
   {
-    "id": "96c91076-2f5",
+    "id": "46540f94-fa2",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.486883",
+    "timestamp": "2026-06-04T15:31:32.922315",
     "scenario": {
       "date": "2025-09-12",
       "fund_code": "166002",
@@ -3923,14 +3923,14 @@
       "nav_change_90d": 53.15,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04921855677816839,
-      "portfolio_return": 29.989876980397185
+      "cash_ratio": 0.0439985543150018,
+      "portfolio_return": 43.15924916315604
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 600.0,
-      "amount_pct": 38.2919,
-      "reasoning": "华安纳斯达克100ETF波动率仅7.11%，近90日涨幅9.95%表现稳健，加仓500元以增强组合稳定性并分散风险。",
+      "amount_rmb": 400.0,
+      "amount_pct": 25.5279,
+      "reasoning": "国泰盛益混合C近期表现良好，波动率适中，持仓比例合理，继续持有观察。",
       "confidence": 0.8,
       "model": ""
     },
@@ -3944,9 +3944,9 @@
     "lesson": ""
   },
   {
-    "id": "60f22e85-60c",
+    "id": "d3f618f2-c8a",
     "backtest_id": "bt_20240412_20250918",
-    "timestamp": "2026-06-04T15:32:11.502303",
+    "timestamp": "2026-06-04T15:31:32.942154",
     "scenario": {
       "date": "2025-09-17",
       "fund_code": "166002",
@@ -3957,15 +3957,15 @@
       "nav_change_90d": 53.22,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.01792893456005067,
-      "portfolio_return": 30.67782320803903
+      "cash_ratio": 0.04358423648732872,
+      "portfolio_return": 43.94653906175421
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 300.0,
       "amount_pct": 19.0462,
-      "reasoning": "国泰盛益混合C近期表现良好，波动率适中，当前仓位合理，继续持有。",
-      "confidence": 0.8,
+      "reasoning": "纳斯达克100ETF波动率低，走势平稳，作为组合中的低风险资产继续持有。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {

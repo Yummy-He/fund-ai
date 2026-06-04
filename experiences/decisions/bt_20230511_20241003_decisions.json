@@ -1,0 +1,3674 @@
+[
+  {
+    "id": "c7f17110-b62",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:33.867456",
+    "scenario": {
+      "date": "2023-06-05",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.076,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 9000.0,
+      "amount_pct": 400.2348,
+      "reasoning": "中欧兴利债券C作为债券型基金，震荡市加仓胜率70%平均回报+2.82%，适合作为稳健底仓分散风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": 1.85,
+      "return_90d": -0.1,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "77e5b1b1-b6a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:33.906807",
+    "scenario": {
+      "date": "2023-06-08",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.058,
+      "nav_change_7d": -0.87,
+      "nav_change_30d": -0.87,
+      "nav_change_90d": -0.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.24862186494035096,
+      "portfolio_return": -1.0947810004578606
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 44.7938,
+      "reasoning": "中欧兴利债券C波动率低，震荡市中加仓胜率70%，平均收益+2.82%，增加稳健配置以平衡组合风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.54,
+      "return_30d": 1.6,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b83a18ae-8e8",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:33.945975",
+    "scenario": {
+      "date": "2023-06-13",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.112,
+      "nav_change_7d": 2.38,
+      "nav_change_30d": 1.73,
+      "nav_change_90d": 1.73,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2453218831477171,
+      "portfolio_return": -0.10063641471740993
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.0092,
+      "reasoning": "中欧新蓝筹混合近期涨幅较大，波动率适中，根据震荡市卖出混合类基金的高胜率经验，减仓部分锁定利润。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.93,
+      "return_30d": 1.94,
+      "return_90d": -1.59,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "63c1dfad-040",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:33.985223",
+    "scenario": {
+      "date": "2023-06-16",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.202,
+      "nav_change_7d": 7.05,
+      "nav_change_30d": 6.07,
+      "nav_change_90d": 6.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.23185977805015529,
+      "portfolio_return": 1.3241718661442792
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C作为债券类基金，波动率低，近期收益稳定，继续持有作为组合稳定器。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.9,
+      "return_30d": -0.74,
+      "return_90d": -4.91,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c7b3d7af-ff2",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.025222",
+    "scenario": {
+      "date": "2023-06-21",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.11,
+      "nav_change_7d": -1.31,
+      "nav_change_30d": 1.64,
+      "nav_change_90d": 1.64,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.2341380762442654,
+      "portfolio_return": 0.33822937663007907
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1300.0,
+      "amount_pct": 56.9326,
+      "reasoning": "景顺长城新兴成长混合波动率高，近期涨幅有限，震荡市卖出MIXED基金胜率高达81%，平均收益+3.3%，清仓以降低风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.31,
+      "return_30d": -0.38,
+      "return_90d": -3.57,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6c590c26-142",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.064463",
+    "scenario": {
+      "date": "2023-06-28",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.086,
+      "nav_change_7d": -1.14,
+      "nav_change_30d": 0.48,
+      "nav_change_90d": 0.48,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.10427943160536861,
+      "portfolio_return": -0.21522135469429485
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 43.8216,
+      "reasoning": "华安纳斯达克100ETF联接近期表现强劲，波动率可控，加仓以增强组合收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.78,
+      "return_30d": 2.9,
+      "return_90d": -4.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1d9b911b-310",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.104098",
+    "scenario": {
+      "date": "2023-07-03",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.094,
+      "nav_change_7d": 0.87,
+      "nav_change_30d": 0.87,
+      "nav_change_90d": 0.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.10259147947527417,
+      "portfolio_return": 0.6954968661874227
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1500.0,
+      "amount_pct": 64.7626,
+      "reasoning": "中欧新蓝筹混合近期表现稳健，波动率较低，加仓以提升组合夏普比率。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.32,
+      "return_30d": 0.8,
+      "return_90d": -5.58,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a3d15eb7-db3",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.143651",
+    "scenario": {
+      "date": "2023-07-06",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.056,
+      "nav_change_7d": 0.1,
+      "nav_change_30d": -0.34,
+      "nav_change_90d": -0.96,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.002309534583501927,
+      "portfolio_return": -0.19634187486524754
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 21.837,
+      "reasoning": "华安纳斯达克100ETF联接近期表现强劲，波动率适中，继续持有享受趋势。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.47,
+      "return_30d": 2.68,
+      "return_90d": -4.49,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c2d4a3a4-443",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.183092",
+    "scenario": {
+      "date": "2023-07-11",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.061,
+      "nav_change_7d": -2.09,
+      "nav_change_30d": 0.19,
+      "nav_change_90d": -0.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0023058032312770296,
+      "portfolio_return": -0.03483520476143894
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1500.0,
+      "amount_pct": 65.2236,
+      "reasoning": "华安纳斯达克100ETF联接30日+4.88%且波动率低，作为QDII分散风险，加仓以提升收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": 1.31,
+      "return_90d": -4.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3dfe5e75-02b",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.222807",
+    "scenario": {
+      "date": "2023-07-14",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.12,
+      "nav_change_7d": 3.77,
+      "nav_change_30d": -0.84,
+      "nav_change_90d": 2.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.05193158768515057,
+      "portfolio_return": 0.7190465986007621
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 43.0762,
+      "reasoning": "中欧新蓝筹混合近期表现稳健，波动率低，维持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": -1.19,
+      "return_90d": -5.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a225c769-b5c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.262446",
+    "scenario": {
+      "date": "2023-07-19",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.093,
+      "nav_change_7d": 1.21,
+      "nav_change_30d": -3.24,
+      "nav_change_90d": 0.82,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.051487080005326584,
+      "portfolio_return": 0.6174752863058893
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 17.325,
+      "reasoning": "中欧新蓝筹混合波动率低，近期表现稳健，继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.72,
+      "return_30d": -2.53,
+      "return_90d": -6.08,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "66c3f697-e45",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.302251",
+    "scenario": {
+      "date": "2023-07-24",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.092,
+      "nav_change_7d": -0.19,
+      "nav_change_30d": -0.85,
+      "nav_change_90d": 0.77,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.05198474947863513,
+      "portfolio_return": -0.7305016999094732
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 30.7043,
+      "reasoning": "华安纳斯达克100ETF联接近90日涨幅+6.67%，趋势向上，加仓QDII可分散风险并提升组合收益，类似历史案例盈利。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.72,
+      "return_30d": -2.97,
+      "return_90d": -8.11,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "696419f7-583",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.341951",
+    "scenario": {
+      "date": "2023-07-27",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.187,
+      "nav_change_7d": 4.54,
+      "nav_change_30d": 4.89,
+      "nav_change_90d": 5.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04145186956160559,
+      "portfolio_return": -0.1854429303636789
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 43.0843,
+      "reasoning": "中欧新蓝筹混合近30日涨幅+1.15%，波动率低（7.03%），表现稳定，继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.32,
+      "return_30d": -4.59,
+      "return_90d": -9.79,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "249e6507-ae9",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.381684",
+    "scenario": {
+      "date": "2023-08-01",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.212,
+      "nav_change_7d": 2.17,
+      "nav_change_30d": 7.96,
+      "nav_change_90d": 6.55,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.10006363156835309,
+      "portfolio_return": 1.1106617001880112
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.0,
+      "amount_pct": 12.7129,
+      "reasoning": "中欧兴利债券C波动率低（8.21%），近30日虽小幅下跌（-1.45%），但历史经验显示震荡市加仓BOND类胜率70%，平均收益+2.8%，可逢低加仓。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.81,
+      "return_30d": -4.31,
+      "return_90d": -8.93,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8decb000-10b",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.421900",
+    "scenario": {
+      "date": "2023-08-04",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.21,
+      "nav_change_7d": -0.99,
+      "nav_change_30d": 6.4,
+      "nav_change_90d": 6.45,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09065352183114413,
+      "portfolio_return": 0.5421501105840616
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 29.7385,
+      "reasoning": "中欧兴利债券C波动率低（6.83%），震荡市下加仓债券基金胜率70%，平均收益+2.82%，增强防御性。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.49,
+      "return_30d": -3.91,
+      "return_90d": -9.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "884f3beb-cbb",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.461697",
+    "scenario": {
+      "date": "2023-08-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.187,
+      "nav_change_7d": -0.5,
+      "nav_change_30d": 6.17,
+      "nav_change_90d": 5.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0614385529885938,
+      "portfolio_return": -0.5998725078407916
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1500.0,
+      "amount_pct": 64.4405,
+      "reasoning": "华夏上证50ETF近30日涨幅显著，波动率适中，买入以增加指数配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.87,
+      "return_30d": -4.16,
+      "return_90d": -6.47,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d4039d97-949",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.501834",
+    "scenario": {
+      "date": "2023-08-14",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.129,
+      "nav_change_7d": -2.16,
+      "nav_change_30d": 0.42,
+      "nav_change_90d": 2.55,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01013366768990271,
+      "portfolio_return": -1.6150883856766267
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 13.1027,
+      "reasoning": "中欧兴利债券C近30日和90日表现持续下滑，波动率低但趋势不佳，震荡市中减仓债券型基金胜率59%，平均收益+1.45%，减仓以规避风险。",
+      "confidence": 0.59,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.65,
+      "return_30d": -2.58,
+      "return_90d": -5.32,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cf2392c5-dc4",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.541614",
+    "scenario": {
+      "date": "2023-08-17",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.147,
+      "nav_change_7d": -1.65,
+      "nav_change_30d": 2.68,
+      "nav_change_90d": 3.42,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.040939238572977085,
+      "portfolio_return": -2.7339017822276763
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 17.6375,
+      "reasoning": "债券基金波动率低，在震荡市中胜率较高，且当前仓位偏低，适度加仓以增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.11,
+      "return_30d": -2.62,
+      "return_90d": -3.68,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4516a7eb-720",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.581634",
+    "scenario": {
+      "date": "2023-08-22",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.089,
+      "nav_change_7d": -1.37,
+      "nav_change_30d": -1.18,
+      "nav_change_90d": 0.63,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.041202572188890896,
+      "portfolio_return": -3.428359235474454
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 374.81,
+      "amount_pct": 16.7573,
+      "reasoning": "国泰盛益混合C近90日跌幅-5.39%，表现持续弱势，清仓止损以优化组合。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.01,
+      "return_30d": -2.59,
+      "return_90d": -2.56,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "79a58e53-e1a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.621925",
+    "scenario": {
+      "date": "2023-08-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.095,
+      "nav_change_7d": -0.48,
+      "nav_change_30d": -3.41,
+      "nav_change_90d": 0.92,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.036519444855985815,
+      "portfolio_return": -4.295746435756082
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 31.5805,
+      "reasoning": "中欧兴利债券C波动率极低，历史经验显示震荡市加仓债券胜率70%，平均收益+2.8%，适合作为稳定器。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.22,
+      "return_30d": -0.09,
+      "return_90d": -2.17,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "91e02e1f-754",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.661470",
+    "scenario": {
+      "date": "2023-08-30",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.125,
+      "nav_change_7d": 3.16,
+      "nav_change_30d": -4.32,
+      "nav_change_90d": 2.36,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025161963448699348,
+      "portfolio_return": -2.349980933236802
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 250.0,
+      "amount_pct": 11.0266,
+      "reasoning": "华夏上证50ETF波动率较低，作为底仓配置继续持有，等待市场趋势明朗。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.1,
+      "return_30d": -3.26,
+      "return_90d": -5.33,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "02673b33-5e0",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.701677",
+    "scenario": {
+      "date": "2023-09-04",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.175,
+      "nav_change_7d": 3.67,
+      "nav_change_30d": -1.58,
+      "nav_change_90d": 5.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.00968706464506112,
+      "portfolio_return": -1.7693960566435452
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 8.7364,
+      "reasoning": "中欧兴利债券C近7日反弹，波动率低，在震荡市对BOND类基金加仓历史胜率70%，平均回报+2.82%，增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.65,
+      "return_30d": -4.17,
+      "return_90d": -7.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d831cbcb-9d2",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.741796",
+    "scenario": {
+      "date": "2023-09-07",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.111,
+      "nav_change_7d": -0.57,
+      "nav_change_30d": -2.9,
+      "nav_change_90d": 2.63,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.009786348894754346,
+      "portfolio_return": -3.430153504003756
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 2091.66,
+      "amount_pct": 93.2507,
+      "reasoning": "农银新能源主题近30日跌幅达-10.64%，波动率高，风险调整后收益极差，清仓止损以控制回撤。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.51,
+      "return_30d": -2.11,
+      "return_90d": -6.86,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ae663d3e-a6e",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.781702",
+    "scenario": {
+      "date": "2023-09-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.118,
+      "nav_change_7d": -1.99,
+      "nav_change_30d": -1.26,
+      "nav_change_90d": -0.94,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.008485694104841592,
+      "portfolio_return": -3.3589709467850484
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 850.0,
+      "amount_pct": 37.8555,
+      "reasoning": "中欧兴利债券C波动率低（6.40%），历史经验显示震荡市加仓债券基金胜率70%，平均回报+2.82%，适合增持。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.24,
+      "return_30d": -1.92,
+      "return_90d": -6.44,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "974d57a6-89d",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.822131",
+    "scenario": {
+      "date": "2023-09-15",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.1,
+      "nav_change_7d": -0.05,
+      "nav_change_30d": -0.9,
+      "nav_change_90d": -4.63,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.013779377796026672,
+      "portfolio_return": -4.381298631450863
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.5598,
+      "reasoning": "中欧兴利债券C波动率低，在震荡市中加仓胜率高达70%，平均30日回报+2.82%，增加债券配置以降低组合波动。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.02,
+      "return_30d": -1.55,
+      "return_90d": -6.53,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8de5a377-547",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.861748",
+    "scenario": {
+      "date": "2023-09-20",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.107,
+      "nav_change_7d": -0.33,
+      "nav_change_30d": 0.48,
+      "nav_change_90d": -0.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024344700322802188,
+      "portfolio_return": -5.0074069567965855
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 520.43,
+      "amount_pct": 23.6162,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均收益+2.82%，且当前波动率低，适合增加防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.38,
+      "return_30d": -4.84,
+      "return_90d": -6.43,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f83edb7b-ab1",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.902379",
+    "scenario": {
+      "date": "2023-09-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.101,
+      "nav_change_7d": -1.22,
+      "nav_change_30d": 0.29,
+      "nav_change_90d": 0.77,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04756970100167373,
+      "portfolio_return": -5.2791038067665434
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 18.1907,
+      "reasoning": "华安纳斯达克100ETF联接近7日跌幅-3.00%，短期回调后估值更具吸引力，加仓200元以分散风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.49,
+      "return_30d": -4.92,
+      "return_90d": -6.47,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "698dfec3-124",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.942468",
+    "scenario": {
+      "date": "2023-09-28",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.075,
+      "nav_change_7d": 0.24,
+      "nav_change_30d": -2.31,
+      "nav_change_90d": 1.27,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.047452910649490754,
+      "portfolio_return": -5.572816310040653
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "景顺长城新兴成长混合持仓极少，暂不操作。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": -3.0,
+      "return_90d": -5.84,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "89a4ea32-613",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:34.986417",
+    "scenario": {
+      "date": "2023-10-11",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.062,
+      "nav_change_7d": -0.63,
+      "nav_change_30d": -2.87,
+      "nav_change_90d": -2.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04707306578667025,
+      "portfolio_return": -4.810858701462803
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 210.74,
+      "amount_pct": 9.6305,
+      "reasoning": "景顺长城新兴成长混合持仓极少，且近90日表现持续不佳，清仓以优化组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.79,
+      "return_30d": -0.86,
+      "return_90d": -7.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5bdbf223-795",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.026685",
+    "scenario": {
+      "date": "2023-10-16",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.014,
+      "nav_change_7d": -2.47,
+      "nav_change_30d": -4.1,
+      "nav_change_90d": -3.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06973075341727636,
+      "portfolio_return": -5.526508926396709
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 205.53,
+      "amount_pct": 9.4963,
+      "reasoning": "中欧新蓝筹混合近90日跌幅近10%，震荡市中减仓以降低亏损敞口。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.93,
+      "return_30d": 1.25,
+      "return_90d": -5.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b1dd9972-ed4",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.066486",
+    "scenario": {
+      "date": "2023-10-19",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.957,
+      "nav_change_7d": -5.46,
+      "nav_change_30d": -7.38,
+      "nav_change_90d": -7.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0934219150086331,
+      "portfolio_return": -7.5941527239626705
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 102.78,
+      "amount_pct": 4.8651,
+      "reasoning": "景顺长城新兴成长混合近期跌幅较大，波动率高，且持仓比例极低，清仓止损以简化组合并回收现金。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.84,
+      "return_30d": 2.67,
+      "return_90d": -5.53,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8978f663-24e",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.107180",
+    "scenario": {
+      "date": "2023-10-24",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.953,
+      "nav_change_7d": -3.32,
+      "nav_change_30d": -7.31,
+      "nav_change_90d": -9.96,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.08339005873472141,
+      "portfolio_return": -8.281726544244503
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 544.0600000000001,
+      "amount_pct": 26.0148,
+      "reasoning": "农银新能源主题波动率高达19.32%，近期跌幅显著，清仓以规避进一步风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.5,
+      "return_30d": 3.82,
+      "return_90d": -5.03,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2147be62-183",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.147255",
+    "scenario": {
+      "date": "2023-10-27",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.033,
+      "nav_change_7d": 4.47,
+      "nav_change_30d": -3.1,
+      "nav_change_90d": -8.92,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.033624088022302816,
+      "portfolio_return": -8.547134171102751
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 24.89,
+      "amount_pct": 1.1761,
+      "reasoning": "景顺长城新兴成长混合仓位极低，波动率高，近期表现疲弱，清仓以简化组合并释放现金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.46,
+      "return_30d": 1.21,
+      "return_90d": -4.09,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "af7fc36e-496",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.187563",
+    "scenario": {
+      "date": "2023-11-01",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.094,
+      "nav_change_7d": 5.86,
+      "nav_change_30d": 0.92,
+      "nav_change_90d": -5.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03591512063028472,
+      "portfolio_return": -7.5022120983377505
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 514.43,
+      "amount_pct": 24.0508,
+      "reasoning": "农银新能源主题仓位极低且波动率高，震荡市下卖出混合基金胜率81%，清仓避免潜在损失。",
+      "confidence": 0.81,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.68,
+      "return_30d": -0.74,
+      "return_90d": -7.76,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cfd0acae-157",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.227830",
+    "scenario": {
+      "date": "2023-11-06",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.11,
+      "nav_change_7d": 1.74,
+      "nav_change_30d": 1.69,
+      "nav_change_90d": -2.94,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025956093258030877,
+      "portfolio_return": -5.579185736497184
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 18.3387,
+      "reasoning": "华夏上证50ETF波动率低（6.02%），作为底仓配置，维持现有仓位以稳定组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.75,
+      "return_30d": -4.51,
+      "return_90d": -11.25,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2cf44b5e-738",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.267998",
+    "scenario": {
+      "date": "2023-11-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.09,
+      "nav_change_7d": 0.58,
+      "nav_change_30d": 2.0,
+      "nav_change_90d": -2.56,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.02571857146082393,
+      "portfolio_return": -5.6403477067405765
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 44.9,
+      "amount_pct": 2.066,
+      "reasoning": "景顺长城新兴成长混合仓位极低，仅0.17份，清仓以简化持仓结构，释放少量现金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.23,
+      "return_30d": -4.08,
+      "return_90d": -6.89,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d0cfbb83-8b9",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.308473",
+    "scenario": {
+      "date": "2023-11-14",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.057,
+      "nav_change_7d": -1.81,
+      "nav_change_30d": 0.59,
+      "nav_change_90d": -2.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.030078030797040276,
+      "portfolio_return": -4.5006559802664015
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.09,
+      "amount_pct": 13.7658,
+      "reasoning": "景顺长城新兴成长混合仓位极低（0.09份），清仓以简化组合，避免零散持仓影响管理效率。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.12,
+      "return_30d": -4.85,
+      "return_90d": -6.25,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c4733a64-3a6",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.349121",
+    "scenario": {
+      "date": "2023-11-17",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.045,
+      "nav_change_7d": -1.45,
+      "nav_change_30d": 1.84,
+      "nav_change_90d": -2.85,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.019570626897030617,
+      "portfolio_return": -4.687380719229241
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.05,
+      "amount_pct": 13.7933,
+      "reasoning": "基于震荡市下BOND类基金加仓胜率70%、平均收益+2.82%的经验，中欧兴利债券C波动率低且近期稳健，加仓以增强防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.84,
+      "return_30d": -4.83,
+      "return_90d": -6.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4a3e81ef-1e1",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.389331",
+    "scenario": {
+      "date": "2023-11-22",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.055,
+      "nav_change_7d": -0.92,
+      "nav_change_30d": 5.76,
+      "nav_change_90d": -2.56,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03008108891360439,
+      "portfolio_return": -4.979330411473475
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 9.2291,
+      "reasoning": "景顺长城新兴成长混合仓位极低且近期表现一般，清仓以释放现金用于更优机会。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.22,
+      "return_30d": -4.66,
+      "return_90d": -5.25,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4b30ab8e-cdf",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.429922",
+    "scenario": {
+      "date": "2023-11-27",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.024,
+      "nav_change_7d": -1.7,
+      "nav_change_30d": -0.44,
+      "nav_change_90d": -4.71,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.008884247987142286,
+      "portfolio_return": -5.639147878812492
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 529.95,
+      "amount_pct": 24.6736,
+      "reasoning": "景顺长城新兴成长混合持仓极少，且近期表现不佳，清仓以简化组合。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.35,
+      "return_30d": -3.68,
+      "return_90d": -2.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "11e2ea10-82c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.470090",
+    "scenario": {
+      "date": "2023-11-30",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.032,
+      "nav_change_7d": -1.17,
+      "nav_change_30d": -1.93,
+      "nav_change_90d": -5.05,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012056596391386187,
+      "portfolio_return": -5.812600533430504
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 417.12,
+      "amount_pct": 19.48,
+      "reasoning": "景顺长城新兴成长混合仓位极低，仅剩0.01份，清仓以简化组合管理。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.42,
+      "return_30d": -1.2,
+      "return_90d": -2.98,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "33eafd14-868",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.510584",
+    "scenario": {
+      "date": "2023-12-05",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.936,
+      "nav_change_7d": -4.54,
+      "nav_change_30d": -7.59,
+      "nav_change_90d": -9.62,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.013988714746541038,
+      "portfolio_return": -6.889536735692127
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 609.73,
+      "amount_pct": 29.1493,
+      "reasoning": "景顺长城新兴成长混合近30日跌幅-7.59%，波动率较高，清仓剩余微量仓位以简化持仓。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.12,
+      "return_30d": -1.29,
+      "return_90d": 1.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "52590807-3d8",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.550676",
+    "scenario": {
+      "date": "2023-12-08",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.94,
+      "nav_change_7d": -3.48,
+      "nav_change_30d": -7.53,
+      "nav_change_90d": -7.66,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03615530874136155,
+      "portfolio_return": -6.263662833955823
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1205.38,
+      "amount_pct": 57.4111,
+      "reasoning": "中欧新蓝筹混合近30日跌幅较小（-0.85%），波动率低（10.04%），表现相对稳健，维持现有仓位作为组合稳定器。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.04,
+      "return_30d": -2.24,
+      "return_90d": 0.85,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2cf8cb72-568",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.590968",
+    "scenario": {
+      "date": "2023-12-13",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.89,
+      "nav_change_7d": -2.33,
+      "nav_change_30d": -8.03,
+      "nav_change_90d": -10.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0894118793236761,
+      "portfolio_return": -5.576336451222451
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1400.0,
+      "amount_pct": 66.6984,
+      "reasoning": "债券基金波动率低（6.44%），在震荡市中表现稳健，加仓以优化风险调整后收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.85,
+      "return_30d": -2.2,
+      "return_90d": 3.72,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "45682bd6-d98",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.631556",
+    "scenario": {
+      "date": "2023-12-18",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.866,
+      "nav_change_7d": -3.52,
+      "nav_change_30d": -8.75,
+      "nav_change_90d": -11.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03569091155426247,
+      "portfolio_return": -5.897690356928288
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1002.98,
+      "amount_pct": 48.1665,
+      "reasoning": "农银新能源主题近期跌幅大、波动率高，仓位极低，清仓以释放资金并简化组合，震荡市下卖出混合基金胜率81%。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.45,
+      "return_30d": -3.0,
+      "return_90d": 3.89,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "63492c5f-1b3",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.672093",
+    "scenario": {
+      "date": "2023-12-21",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.867,
+      "nav_change_7d": -0.16,
+      "nav_change_30d": -10.02,
+      "nav_change_90d": -11.39,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03595883406955979,
+      "portfolio_return": -5.774247185869008
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 501.6,
+      "amount_pct": 24.0368,
+      "reasoning": "农银新能源主题仓位极低且近期跌幅较大，清仓以简化组合并释放资金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.05,
+      "return_30d": -2.21,
+      "return_90d": 4.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c797348f-ba5",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.712549",
+    "scenario": {
+      "date": "2023-12-26",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.871,
+      "nav_change_7d": 0.38,
+      "nav_change_30d": -8.69,
+      "nav_change_90d": -10.82,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03619662376773903,
+      "portfolio_return": -5.953432774116191
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.86,
+      "amount_pct": 33.5529,
+      "reasoning": "农银新能源主题仓位极低，波动率高且近期跌幅较大，清仓以释放资金并简化组合。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.42,
+      "return_30d": -0.99,
+      "return_90d": 3.42,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2cbe4c87-058",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.752871",
+    "scenario": {
+      "date": "2023-12-29",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.936,
+      "nav_change_7d": 3.7,
+      "nav_change_30d": -4.16,
+      "nav_change_90d": -6.7,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06729032914532183,
+      "portfolio_return": -4.997860885524769
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.47,
+      "amount_pct": 37.4978,
+      "reasoning": "农银新能源主题波动率高达26.19%，近90日跌幅7.58%，风险较高，清仓以降低组合波动并释放资金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.27,
+      "return_30d": -4.27,
+      "return_90d": 0.66,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d7c1a3e3-f6b",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.793241",
+    "scenario": {
+      "date": "2024-01-04",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.843,
+      "nav_change_7d": -4.8,
+      "nav_change_30d": -4.8,
+      "nav_change_90d": -11.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.014522309501898173,
+      "portfolio_return": -7.218496455637668
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 19.2684,
+      "reasoning": "农银新能源主题仓位极低（0.26份），波动率高（26.23%），清仓以简化组合，避免小仓位干扰。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.82,
+      "return_30d": -5.95,
+      "return_90d": 4.9,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ffe58739-f4c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.833664",
+    "scenario": {
+      "date": "2024-01-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.812,
+      "nav_change_7d": -4.23,
+      "nav_change_30d": -6.6,
+      "nav_change_90d": -12.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.014306363524018815,
+      "portfolio_return": -6.726701842688544
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 19.431,
+      "reasoning": "中欧兴利债券C波动率低（6.24%），近期跌幅较小，加仓200元以增强组合稳定性，符合震荡市加仓BOND类基金的高胜率策略。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.47,
+      "return_30d": 0.52,
+      "return_90d": 5.39,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d86ae1f8-c07",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.873949",
+    "scenario": {
+      "date": "2024-01-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.824,
+      "nav_change_7d": -0.33,
+      "nav_change_30d": -3.49,
+      "nav_change_90d": -10.81,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01422389650237487,
+      "portfolio_return": -6.396836457548997
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.0,
+      "amount_pct": 14.5103,
+      "reasoning": "中欧兴利债券C波动率极低（3.18%），在震荡市中表现稳健，加仓200元以增强组合稳定性并提高夏普比率。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.91,
+      "return_30d": 0.15,
+      "return_90d": 4.82,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ac9b3166-fef",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.914508",
+    "scenario": {
+      "date": "2024-01-17",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.78,
+      "nav_change_7d": -1.87,
+      "nav_change_30d": -4.61,
+      "nav_change_90d": -9.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025116015304768462,
+      "portfolio_return": -7.174697808053261
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.26,
+      "amount_pct": 14.7607,
+      "reasoning": "农银新能源主题波动率极高（23.66%），仓位极低，清仓以简化组合。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.44,
+      "return_30d": 2.05,
+      "return_90d": 5.72,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a1bda85f-b32",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.954628",
+    "scenario": {
+      "date": "2024-01-22",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.797,
+      "nav_change_7d": -1.1,
+      "nav_change_30d": -3.75,
+      "nav_change_90d": -7.99,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024864650869430353,
+      "portfolio_return": -6.132254871424885
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 0.14,
+      "amount_pct": 0.0069,
+      "reasoning": "农银新能源主题波动率极高（27.01%），近期持续下跌，仓位极低，清仓以释放现金并降低组合风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.06,
+      "return_30d": 4.41,
+      "return_90d": 6.85,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "41e9eb76-17a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:35.995391",
+    "scenario": {
+      "date": "2024-01-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.826,
+      "nav_change_7d": 0.61,
+      "nav_change_30d": -2.41,
+      "nav_change_90d": -10.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024500287684642966,
+      "portfolio_return": -4.67941680592865
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.07,
+      "amount_pct": 19.1815,
+      "reasoning": "农银新能源主题仓位极低且近期表现不佳，清仓以释放现金，避免无效持仓。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.18,
+      "return_30d": 2.62,
+      "return_90d": 4.66,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "923cd302-bfe",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.036212",
+    "scenario": {
+      "date": "2024-01-30",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.744,
+      "nav_change_7d": -2.79,
+      "nav_change_30d": -9.92,
+      "nav_change_90d": -16.71,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.003352007785370652,
+      "portfolio_return": -5.70481014329116
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.03,
+      "amount_pct": 49.2267,
+      "reasoning": "农银新能源主题近30日-14.46%且波动率高，仓位极低，清仓以简化组合并避免微小仓位干扰。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.11,
+      "return_30d": 6.83,
+      "return_90d": 10.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2708758f-4d0",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.076886",
+    "scenario": {
+      "date": "2024-02-02",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.715,
+      "nav_change_7d": -5.14,
+      "nav_change_30d": -8.39,
+      "nav_change_90d": -18.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.05650376983782187,
+      "portfolio_return": -5.911114855135311
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1170.02,
+      "amount_pct": 58.4201,
+      "reasoning": "国泰盛益混合C近30日跌幅-14.77%，波动率31.88%，风险极高，不持有。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 5.54,
+      "return_30d": 9.59,
+      "return_90d": 12.75,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "05800a5d-238",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.117653",
+    "scenario": {
+      "date": "2024-02-07",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.851,
+      "nav_change_7d": 7.37,
+      "nav_change_30d": 2.43,
+      "nav_change_90d": -11.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.020460513342927866,
+      "portfolio_return": -4.2997759780305564
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1000.01,
+      "amount_pct": 47.9842,
+      "reasoning": "该基金仓位极低且近期表现不佳，清仓以释放现金，避免无效持仓。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.77,
+      "return_30d": 4.26,
+      "return_90d": 9.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "00ccc348-d34",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.158221",
+    "scenario": {
+      "date": "2024-02-20",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.84,
+      "nav_change_7d": 0.16,
+      "nav_change_30d": 0.71,
+      "nav_change_90d": -10.46,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.020444379615813264,
+      "portfolio_return": -4.2193870726168825
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1039.9,
+      "amount_pct": 49.557,
+      "reasoning": "农银新能源主题近30日跌幅6.41%且波动率36.11%，表现持续落后，清仓止损以释放现金。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.72,
+      "return_30d": 5.55,
+      "return_90d": 9.49,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a9389441-30f",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.199369",
+    "scenario": {
+      "date": "2024-02-23",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.894,
+      "nav_change_7d": 3.1,
+      "nav_change_30d": 4.99,
+      "nav_change_90d": -7.56,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.02414716195390248,
+      "portfolio_return": -2.465547917441072
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "农银新能源主题仓位为零，且近期表现不佳，暂不买入。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.21,
+      "return_30d": 2.37,
+      "return_90d": 5.68,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "658e3fbe-d13",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.240592",
+    "scenario": {
+      "date": "2024-02-28",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.868,
+      "nav_change_7d": -1.06,
+      "nav_change_30d": 4.42,
+      "nav_change_90d": -8.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024286154873986818,
+      "portfolio_return": -3.0237506619315537
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 32.9156,
+      "reasoning": "基于历史经验，震荡市中BOND类基金加仓胜率70%，平均30日回报+2.82%，且当前波动率低（6.24%），适合增加稳定收益配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.22,
+      "return_30d": 3.13,
+      "return_90d": 5.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3c668831-896",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.281483",
+    "scenario": {
+      "date": "2024-03-04",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.901,
+      "nav_change_7d": 1.06,
+      "nav_change_30d": 10.85,
+      "nav_change_90d": -1.81,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04418663736895542,
+      "portfolio_return": -1.43671322718601
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 18.43,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，震荡市中加仓以增强组合稳定性。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.09,
+      "return_30d": 2.03,
+      "return_90d": 2.58,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "147affc3-1dd",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.322902",
+    "scenario": {
+      "date": "2024-03-07",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.883,
+      "nav_change_7d": -0.74,
+      "nav_change_30d": 3.92,
+      "nav_change_90d": -2.94,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.033918440516072006,
+      "portfolio_return": -1.3168011384056628
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 218.22,
+      "amount_pct": 10.0783,
+      "reasoning": "中欧兴利债券C波动率低，作为组合的稳定器，维持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.7,
+      "return_30d": 2.55,
+      "return_90d": 3.97,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c5bf61aa-b7a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.363921",
+    "scenario": {
+      "date": "2024-03-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.974,
+      "nav_change_7d": 2.92,
+      "nav_change_30d": 7.46,
+      "nav_change_90d": 4.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.055890032935044145,
+      "portfolio_return": -1.0830926339240976
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 45.3198,
+      "reasoning": "中欧兴利债券C近30日涨幅2.36%，波动率仅6.22%，表现稳健且风险低，加仓以提升组合夏普比率并降低整体波动。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.29,
+      "return_30d": -1.12,
+      "return_90d": 0.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c1965408-bc4",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.405738",
+    "scenario": {
+      "date": "2024-03-15",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.954,
+      "nav_change_7d": 4.16,
+      "nav_change_30d": 6.37,
+      "nav_change_90d": 4.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005333463639579107,
+      "portfolio_return": -2.3206595697715238
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1008.54,
+      "amount_pct": 46.2353,
+      "reasoning": "沪深300ETF作为核心配置，当前仓位合理，维持持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.02,
+      "return_30d": -1.09,
+      "return_90d": 0.98,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e0af1531-1dc",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.447143",
+    "scenario": {
+      "date": "2024-03-20",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.957,
+      "nav_change_7d": -0.15,
+      "nav_change_30d": 6.24,
+      "nav_change_90d": 4.82,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.006114730474506492,
+      "portfolio_return": -0.9045103379479225
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 250.0,
+      "amount_pct": 11.3379,
+      "reasoning": "纳斯达克100ETF近期表现稳健，作为分散化配置的核心持仓，维持不变。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.92,
+      "return_30d": -1.89,
+      "return_90d": 0.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4f305bd5-665",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.488332",
+    "scenario": {
+      "date": "2024-03-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.923,
+      "nav_change_7d": -1.74,
+      "nav_change_30d": 1.53,
+      "nav_change_90d": 2.78,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011185960329938361,
+      "portfolio_return": -1.3547180594396742
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 600.0,
+      "amount_pct": 27.5279,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均收益2.82%，且当前波动率低，适合增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.87,
+      "return_30d": 0.18,
+      "return_90d": 0.52,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "adc9449b-009",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.529925",
+    "scenario": {
+      "date": "2024-03-28",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.927,
+      "nav_change_7d": -1.53,
+      "nav_change_30d": 2.28,
+      "nav_change_90d": -0.46,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.02132438311163146,
+      "portfolio_return": -1.5942360659385122
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 600.0,
+      "amount_pct": 27.5624,
+      "reasoning": "农银新能源主题波动率极高且持仓亏损，清仓止损以释放现金，优化组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.53,
+      "return_30d": 1.77,
+      "return_90d": 0.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "447c5e29-423",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.571062",
+    "scenario": {
+      "date": "2024-04-02",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.959,
+      "nav_change_7d": 0.77,
+      "nav_change_30d": 2.94,
+      "nav_change_90d": 4.65,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011095648281380243,
+      "portfolio_return": -1.2728068930439076
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.6627,
+      "reasoning": "震荡市环境下，对BOND类基金加仓胜率70%，平均30日回报+2.82%，且当前波动率低，适合增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.85,
+      "return_30d": 0.47,
+      "return_90d": -1.89,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ac5efa3c-b3d",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.612781",
+    "scenario": {
+      "date": "2024-04-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.9,
+      "nav_change_7d": -3.01,
+      "nav_change_30d": 1.28,
+      "nav_change_90d": 4.74,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011116085158913245,
+      "portfolio_return": -1.4543164376236382
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.8281,
+      "reasoning": "震荡市中债券基金加仓胜率70%，平均收益2.82%，且波动率低，适合增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": 3.64,
+      "return_90d": -2.75,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cda93c9c-4fc",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.654190",
+    "scenario": {
+      "date": "2024-04-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.848,
+      "nav_change_7d": -5.62,
+      "nav_change_30d": -5.71,
+      "nav_change_90d": 1.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011203072926739768,
+      "portfolio_return": -2.219487663240634
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 704.17,
+      "amount_pct": 32.6289,
+      "reasoning": "景顺长城新兴成长混合近30日跌幅较大，波动率高，清仓止损以优化组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.05,
+      "return_30d": 4.99,
+      "return_90d": 0.22,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "466d45e1-2a4",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.695327",
+    "scenario": {
+      "date": "2024-04-17",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.888,
+      "nav_change_7d": 0.53,
+      "nav_change_30d": -3.53,
+      "nav_change_90d": 4.02,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011743694732333766,
+      "portfolio_return": -3.187732954911735
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 801.92,
+      "amount_pct": 36.9606,
+      "reasoning": "农银新能源主题波动率高达28.04%，近期表现不佳，清仓以降低组合风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.11,
+      "return_30d": 4.54,
+      "return_90d": -0.18,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5f91b519-ffa",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.736961",
+    "scenario": {
+      "date": "2024-04-22",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.905,
+      "nav_change_7d": 0.16,
+      "nav_change_30d": -1.35,
+      "nav_change_90d": 6.19,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012072818256660806,
+      "portfolio_return": -4.24458598265699
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1500.9,
+      "amount_pct": 69.7645,
+      "reasoning": "农银新能源主题波动率极高且近期跌幅较大，历史经验显示在震荡市中应卖出弱势MIXED基金，清仓回收现金。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.03,
+      "return_30d": 5.14,
+      "return_90d": 0.78,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "638a84ad-60c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.778438",
+    "scenario": {
+      "date": "2024-04-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.917,
+      "nav_change_7d": 0.89,
+      "nav_change_30d": -1.39,
+      "nav_change_90d": 6.03,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.012004898476382739,
+      "portfolio_return": -3.581632714359875
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 550.43,
+      "amount_pct": 25.4789,
+      "reasoning": "农银新能源主题当前无持仓，波动率高且近期表现不佳，暂不介入，等待更明确信号。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.07,
+      "return_30d": 2.87,
+      "return_90d": -3.04,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "39fc67a4-8b4",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.820097",
+    "scenario": {
+      "date": "2024-04-30",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.974,
+      "nav_change_7d": 2.65,
+      "nav_change_30d": 2.44,
+      "nav_change_90d": 14.5,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.017062044819226466,
+      "portfolio_return": -2.7507413031213583
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.2,
+      "amount_pct": 45.5033,
+      "reasoning": "景顺长城新兴成长混合仓位极低（0.20份），清仓回收现金以简化持仓结构。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.01,
+      "return_30d": 0.19,
+      "return_90d": -5.47,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "73c65916-36d",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.861525",
+    "scenario": {
+      "date": "2024-05-08",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.005,
+      "nav_change_7d": 1.57,
+      "nav_change_30d": 5.58,
+      "nav_change_90d": 9.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06714063886648529,
+      "portfolio_return": -1.0098604551658719
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 13.444,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，震荡市中加仓债券基金可提升组合稳定性，符合高胜率经验。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.43,
+      "return_30d": -1.35,
+      "return_90d": -7.93,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3fc48563-398",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.902771",
+    "scenario": {
+      "date": "2024-05-13",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.995,
+      "nav_change_7d": -1.38,
+      "nav_change_30d": 7.95,
+      "nav_change_90d": 8.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.05665599009294227,
+      "portfolio_return": -0.48252265518065546
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.2682,
+      "reasoning": "债券基金在震荡市中加仓胜率70%，平均回报+2.8%，且该基金波动率低，可提升组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.98,
+      "return_30d": -2.3,
+      "return_90d": -8.49,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "11176c80-48a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.948898",
+    "scenario": {
+      "date": "2024-05-16",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.995,
+      "nav_change_7d": -0.8,
+      "nav_change_30d": 6.23,
+      "nav_change_90d": 8.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0062977368566640565,
+      "portfolio_return": 0.15680630657680011
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 21.2856,
+      "reasoning": "中欧兴利债券C波动率低，震荡市加仓债券基金胜率70%，平均收益+2.82%，性价比高。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.28,
+      "return_30d": -1.9,
+      "return_90d": -8.62,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6f4d9083-c8c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:36.994548",
+    "scenario": {
+      "date": "2024-05-21",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 2.003,
+      "nav_change_7d": 0.6,
+      "nav_change_30d": 6.54,
+      "nav_change_90d": 6.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.006259328387234575,
+      "portfolio_return": 0.7713881586850948
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 550.0,
+      "amount_pct": 23.2446,
+      "reasoning": "债券基金波动率低，震荡市加仓胜率70%，平均收益+2.8%，当前净值小幅回调提供加仓机会。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": -3.42,
+      "return_90d": -8.24,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "23222f88-138",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.040684",
+    "scenario": {
+      "date": "2024-05-24",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.947,
+      "nav_change_7d": -3.09,
+      "nav_change_30d": 1.25,
+      "nav_change_90d": 2.8,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011248522621666292,
+      "portfolio_return": 0.30305742991497026
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.2,
+      "amount_pct": 42.8153,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均收益2.82%，中欧兴利债券C波动率低，适合增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.83,
+      "return_30d": -2.25,
+      "return_90d": -8.12,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "24042d1d-c20",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.087218",
+    "scenario": {
+      "date": "2024-05-29",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.933,
+      "nav_change_7d": -2.72,
+      "nav_change_30d": -1.93,
+      "nav_change_90d": 1.9,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01124721096834554,
+      "portfolio_return": 0.3210656054695573
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.1,
+      "amount_pct": 42.833,
+      "reasoning": "震荡市中债券基金加仓胜率70%，平均收益2.82%，且波动率低，适合增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.03,
+      "return_30d": -3.28,
+      "return_90d": -8.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b20c5c13-933",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.133380",
+    "scenario": {
+      "date": "2024-06-03",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.907,
+      "nav_change_7d": -2.31,
+      "nav_change_30d": -3.39,
+      "nav_change_90d": -0.57,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.011323259189975746,
+      "portfolio_return": -0.26482919036945535
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.05,
+      "amount_pct": 12.9263,
+      "reasoning": "该基金仓位极低，近30日跌幅较大，清仓回收现金，优化组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.31,
+      "return_30d": -2.89,
+      "return_90d": -6.31,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "28d2ab2f-923",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.179474",
+    "scenario": {
+      "date": "2024-06-06",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.903,
+      "nav_change_7d": -0.42,
+      "nav_change_30d": -6.12,
+      "nav_change_90d": 1.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0211672899088456,
+      "portfolio_return": 0.5005694444125219
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 435.11,
+      "amount_pct": 18.6352,
+      "reasoning": "震荡市下对BOND类基金加仓胜率高达70%，平均收益+2.8%，且该基金波动率低，可提升组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.89,
+      "return_30d": -3.55,
+      "return_90d": -7.86,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f025bf18-fcc",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.225667",
+    "scenario": {
+      "date": "2024-06-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.848,
+      "nav_change_7d": -3.35,
+      "nav_change_30d": -7.37,
+      "nav_change_90d": -5.42,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.003855667233239824,
+      "portfolio_return": 1.4692978637306988
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.01,
+      "amount_pct": 42.9805,
+      "reasoning": "景顺长城新兴成长混合近期表现疲弱（30日-7.37%），且仓位极低，清仓以释放资金用于更优机会。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.16,
+      "return_30d": -1.82,
+      "return_90d": -8.47,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "97775068-115",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.271508",
+    "scenario": {
+      "date": "2024-06-17",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.832,
+      "nav_change_7d": -2.6,
+      "nav_change_30d": -8.81,
+      "nav_change_90d": -6.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0038244976177573714,
+      "portfolio_return": 2.3222880662974603
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.01,
+      "amount_pct": 42.7695,
+      "reasoning": "景顺长城新兴成长混合近期表现不佳，且持仓份额极少，清仓以简化组合。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.09,
+      "return_30d": -2.31,
+      "return_90d": -9.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f9fec962-f2e",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.317662",
+    "scenario": {
+      "date": "2024-06-20",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.788,
+      "nav_change_7d": -2.24,
+      "nav_change_30d": -10.73,
+      "nav_change_90d": -7.41,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.003849536774590498,
+      "portfolio_return": 1.682584132392767
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 820.0,
+      "amount_pct": 35.45,
+      "reasoning": "中欧兴利债券C波动率极低（4.51%），作为底仓配置可提升组合稳定性，震荡市下债券基金加仓胜率70%，平均收益+2.82%，置信度较高。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.44,
+      "return_30d": -0.55,
+      "return_90d": -7.98,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7984b64c-b0d",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.363629",
+    "scenario": {
+      "date": "2024-06-25",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.771,
+      "nav_change_7d": -2.32,
+      "nav_change_30d": -9.04,
+      "nav_change_90d": -8.05,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005851403246891513,
+      "portfolio_return": 0.9041459015318104
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 21.8409,
+      "reasoning": "中欧兴利债券C波动率低，震荡市下加仓胜率70%且平均收益+2.8%，符合策略。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.23,
+      "return_30d": -3.13,
+      "return_90d": -6.1,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "75171850-2fe",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.409650",
+    "scenario": {
+      "date": "2024-06-28",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.739,
+      "nav_change_7d": -1.58,
+      "nav_change_30d": -10.04,
+      "nav_change_90d": -9.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005833781452637749,
+      "portfolio_return": 1.208941703853925
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 21.8627,
+      "reasoning": "中欧兴利债券C在震荡市中胜率70%且平均收益+2.82%，加仓以提升组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.63,
+      "return_30d": -2.31,
+      "return_90d": 1.14,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f104d657-ae7",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.456006",
+    "scenario": {
+      "date": "2024-07-03",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.73,
+      "nav_change_7d": -2.64,
+      "nav_change_30d": -9.28,
+      "nav_change_90d": -11.64,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005776643724385032,
+      "portfolio_return": 2.2100159060604163
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 600.0,
+      "amount_pct": 26.1184,
+      "reasoning": "震荡市下BOND类基金加仓胜率70%，平均收益+2.8%，且当前波动率低，可增强组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.54,
+      "return_30d": -3.18,
+      "return_90d": 12.18,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a58dd740-fba",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.501754",
+    "scenario": {
+      "date": "2024-07-08",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.678,
+      "nav_change_7d": -2.67,
+      "nav_change_30d": -10.79,
+      "nav_change_90d": -11.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.015578769850181246,
+      "portfolio_return": 2.0896298133921665
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1320.0,
+      "amount_pct": 58.0199,
+      "reasoning": "华夏上证50ETF波动率低，近30日跌幅较小，作为底仓配置，维持现有仓位。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.77,
+      "return_30d": -2.62,
+      "return_90d": 13.79,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "336b916c-565",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.548033",
+    "scenario": {
+      "date": "2024-07-11",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.71,
+      "nav_change_7d": -0.41,
+      "nav_change_30d": -7.67,
+      "nav_change_90d": -7.47,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06639490680137124,
+      "portfolio_return": 2.2658389636117136
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 21.7045,
+      "reasoning": "QDII基金近30日涨幅+4.95%，90日涨幅+11.88%，表现强势，继续持有享受趋势。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.39,
+      "return_30d": -4.31,
+      "return_90d": 10.52,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7e924796-96a",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.594730",
+    "scenario": {
+      "date": "2024-07-16",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.704,
+      "nav_change_7d": 1.61,
+      "nav_change_30d": -7.49,
+      "nav_change_90d": -9.75,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.017362727497399796,
+      "portfolio_return": 2.658458886714179
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 8.6289,
+      "reasoning": "华安纳斯达克100ETF近期涨幅较大，波动率较高，减仓锁定部分利润。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.71,
+      "return_30d": -4.32,
+      "return_90d": 9.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "786398de-ec0",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.641440",
+    "scenario": {
+      "date": "2024-07-19",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.764,
+      "nav_change_7d": 2.68,
+      "nav_change_30d": -2.22,
+      "nav_change_90d": -6.17,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01753735515416835,
+      "portfolio_return": 0.9519868526033497
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 43.2633,
+      "reasoning": "上证50ETF近30日表现稳健，波动率低，加仓作为低波动底仓配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.16,
+      "return_30d": -4.7,
+      "return_90d": 5.31,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ad806040-6f8",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.687387",
+    "scenario": {
+      "date": "2024-07-24",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.646,
+      "nav_change_7d": -5.35,
+      "nav_change_30d": -7.37,
+      "nav_change_90d": -14.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01750363019784269,
+      "portfolio_return": -1.7100551424423065
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 4.4737,
+      "reasoning": "华夏上证50ETF近30日上涨1.07%，波动率较低（12.13%），作为防御性指数基金继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.28,
+      "return_30d": -2.27,
+      "return_90d": 13.49,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cc177b65-89e",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.733629",
+    "scenario": {
+      "date": "2024-07-29",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.619,
+      "nav_change_7d": -6.69,
+      "nav_change_30d": -6.9,
+      "nav_change_90d": -17.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.02728851829893388,
+      "portfolio_return": -1.7319315785060827
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.0,
+      "amount_pct": 13.4847,
+      "reasoning": "华夏上证50ETF波动率低（10.96%），近期表现相对抗跌，维持现有仓位作为组合稳定器。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.51,
+      "return_30d": -2.68,
+      "return_90d": 14.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2724abf6-21c",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.779842",
+    "scenario": {
+      "date": "2024-08-01",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.622,
+      "nav_change_7d": -1.34,
+      "nav_change_30d": -6.19,
+      "nav_change_90d": -17.83,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01706332265505258,
+      "portfolio_return": -1.625842911446107
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 620.0,
+      "amount_pct": 27.7856,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均回报+2.82%，且该基金波动率低，适合作为防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.5,
+      "return_30d": -1.43,
+      "return_90d": 12.36,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e15b80f0-fbd",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.826629",
+    "scenario": {
+      "date": "2024-08-06",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.631,
+      "nav_change_7d": 1.62,
+      "nav_change_30d": -4.68,
+      "nav_change_90d": -18.65,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0300194249421888,
+      "portfolio_return": -4.125745617598313
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 4.5896,
+      "reasoning": "华安纳斯达克100ETF联接波动率较高且近期跌幅较大，减仓以降低风险敞口。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.18,
+      "return_30d": -0.89,
+      "return_90d": 15.39,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "22919ee7-589",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.872789",
+    "scenario": {
+      "date": "2024-08-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.641,
+      "nav_change_7d": 1.42,
+      "nav_change_30d": -2.15,
+      "nav_change_90d": -18.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.040154808394266626,
+      "portfolio_return": -3.421529365968945
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 510.0,
+      "amount_pct": 23.3158,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均收益+2.8%，且当前波动率低，适合增加防御仓位。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.21,
+      "return_30d": -1.97,
+      "return_90d": 20.56,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "24686cd0-914",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.919475",
+    "scenario": {
+      "date": "2024-08-14",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.601,
+      "nav_change_7d": -2.38,
+      "nav_change_30d": -6.43,
+      "nav_change_90d": -19.75,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04095465399644075,
+      "portfolio_return": -2.8720891240705892
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 9.1379,
+      "reasoning": "华夏上证50ETF波动率低，近期跌幅较小，作为大盘蓝筹配置继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.02,
+      "return_30d": -2.29,
+      "return_90d": 20.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "db6ff8dc-11b",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:37.965590",
+    "scenario": {
+      "date": "2024-08-19",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.596,
+      "nav_change_7d": -2.62,
+      "nav_change_30d": -9.52,
+      "nav_change_90d": -20.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01984468976504225,
+      "portfolio_return": -1.3418699661564095
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 300.0,
+      "amount_pct": 13.489,
+      "reasoning": "中欧兴利债券C波动率低，震荡市加仓胜率70%且平均收益+2.8%，适度加仓以增强防御性收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.15,
+      "return_30d": -3.07,
+      "return_90d": 16.17,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4d956f43-1cb",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.011590",
+    "scenario": {
+      "date": "2024-08-22",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.559,
+      "nav_change_7d": -2.93,
+      "nav_change_30d": -6.98,
+      "nav_change_90d": -19.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0303838607850795,
+      "portfolio_return": -2.650949981533631
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 9.1214,
+      "reasoning": "上证50ETF近7日微涨，波动率适中，持仓比例适中，暂不调整。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.04,
+      "return_30d": -0.98,
+      "return_90d": 18.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3e3f9d3f-9be",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.057934",
+    "scenario": {
+      "date": "2024-08-27",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.542,
+      "nav_change_7d": -2.65,
+      "nav_change_30d": -6.66,
+      "nav_change_90d": -20.23,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.009778667437565012,
+      "portfolio_return": -2.354795332053127
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 200.5,
+      "amount_pct": 9.1455,
+      "reasoning": "该基金近30日表现强劲（+2.53%），但波动率较高（18.66%），当前仓位合理，维持持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.48,
+      "return_30d": 6.68,
+      "return_90d": 15.69,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "eb457502-0a7",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.104454",
+    "scenario": {
+      "date": "2024-08-30",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.581,
+      "nav_change_7d": 1.09,
+      "nav_change_30d": -4.87,
+      "nav_change_90d": -16.88,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.009786635544897204,
+      "portfolio_return": -1.9246727930640555
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1500.0,
+      "amount_pct": 67.7394,
+      "reasoning": "华夏上证50ETF波动率低，近期表现稳定，继续持有。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.36,
+      "return_30d": 8.97,
+      "return_90d": 13.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ad3ee9ef-707",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.151215",
+    "scenario": {
+      "date": "2024-09-04",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.541,
+      "nav_change_7d": 2.05,
+      "nav_change_30d": -5.34,
+      "nav_change_90d": -19.02,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06200851403831704,
+      "portfolio_return": -3.886948820640082
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 18.4173,
+      "reasoning": "中欧兴利债券C波动率低（6.61%），近期表现稳健，加仓以提升组合稳定性并利用震荡市债券加仓的高胜率经验（胜率70%，平均收益+2.8%）。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.95,
+      "return_30d": 17.99,
+      "return_90d": 18.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0b2712d3-2d7",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.197509",
+    "scenario": {
+      "date": "2024-09-09",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.496,
+      "nav_change_7d": -2.54,
+      "nav_change_30d": -8.84,
+      "nav_change_90d": -19.22,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.020573531086771395,
+      "portfolio_return": -5.031981380332054
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 23.3962,
+      "reasoning": "震荡市中BOND类基金加仓胜率70%，平均30日回报+2.82%，当前债券基金波动率低，加仓以提升组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.31,
+      "return_30d": 18.5,
+      "return_90d": 20.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d78b7800-2db",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.244267",
+    "scenario": {
+      "date": "2024-09-12",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.46,
+      "nav_change_7d": -5.44,
+      "nav_change_30d": -10.04,
+      "nav_change_90d": -20.74,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.020309988505164793,
+      "portfolio_return": -3.7996755722452327
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 784.8,
+      "amount_pct": 36.4192,
+      "reasoning": "震荡市环境下，对MIXED类基金卖出胜率高达81%，平均收益+3.33%，且该基金仓位极低，清仓可释放现金并简化组合。",
+      "confidence": 0.81,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.59,
+      "return_30d": 16.12,
+      "return_90d": 21.95,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0d2945b4-99e",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.290932",
+    "scenario": {
+      "date": "2024-09-19",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.45,
+      "nav_change_7d": -0.68,
+      "nav_change_30d": -8.46,
+      "nav_change_90d": -17.94,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.041414287399581855,
+      "portfolio_return": -2.8711134503155518
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1010.0,
+      "amount_pct": 46.4879,
+      "reasoning": "景顺长城新兴成长混合近90日跌幅-17.94%，表现持续弱势，根据历史经验，在震荡市卖出MIXED类基金胜率高达81%，平均收益+3.3%，应果断清仓止损。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 7.47,
+      "return_30d": 16.43,
+      "return_90d": 18.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "75c387d8-416",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.337505",
+    "scenario": {
+      "date": "2024-09-24",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.525,
+      "nav_change_7d": 5.83,
+      "nav_change_30d": -2.49,
+      "nav_change_90d": -14.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.04173346197253414,
+      "portfolio_return": -1.2237799710221589
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 800.0,
+      "amount_pct": 35.8399,
+      "reasoning": "景顺长城新兴成长混合近90日跌幅-14.18%，波动率高达30.16%，表现持续不佳，清仓止损以优化组合。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 15.43,
+      "return_30d": 13.22,
+      "return_90d": 14.79,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5018adeb-6a7",
+    "backtest_id": "bt_20230511_20241003",
+    "timestamp": "2026-06-04T16:37:38.383871",
+    "scenario": {
+      "date": "2024-09-27",
+      "fund_code": "260108",
+      "fund_type": "MIXED",
+      "nav_current": 1.786,
+      "nav_change_7d": 23.34,
+      "nav_change_30d": 18.28,
+      "nav_change_90d": 2.7,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.01094444536903687,
+      "portfolio_return": 2.1315913853730852
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1610.0,
+      "amount_pct": 67.4902,
+      "reasoning": "景顺长城新兴成长混合近期涨幅过大（7日+23.34%），波动率极高（54.09%），风险调整后收益不佳，清仓锁定利润，规避回调风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 6.64,
+      "return_30d": 5.55,
+      "return_90d": 7.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  }
+]

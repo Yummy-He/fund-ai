@@ -1,8 +1,8 @@
 [
   {
-    "id": "e4fef010-dbd",
+    "id": "c277e1b1-927",
     "backtest_id": "bt_20220509_20230618",
-    "timestamp": "2026-06-04T15:25:25.377398",
+    "timestamp": "2026-06-04T15:24:34.217379",
     "scenario": {
       "date": "2023-06-05",
       "fund_code": "040046",
@@ -20,8 +20,8 @@
       "action": "hold",
       "amount_rmb": 0,
       "amount_pct": 0.0,
-      "reasoning": "上证50ETF近期无波动，市场无趋势，观望。",
-      "confidence": 0.7,
+      "reasoning": "黄金ETF联接C净值为0，数据异常，不参与。",
+      "confidence": 0.5,
       "model": ""
     },
     "outcome": {
@@ -34,9 +34,9 @@
     "lesson": ""
   },
   {
-    "id": "a08daa4a-ee0",
+    "id": "732f5435-8ca",
     "backtest_id": "bt_20220509_20230618",
-    "timestamp": "2026-06-04T15:25:25.407370",
+    "timestamp": "2026-06-04T15:24:34.256495",
     "scenario": {
       "date": "2023-06-08",
       "fund_code": "040046",
@@ -54,7 +54,7 @@
       "action": "buy",
       "amount_rmb": 9500.0,
       "amount_pct": 425.5414,
-      "reasoning": "中欧兴利债券C波动率最低（6.71%），作为防御性资产，降低组合整体波动。",
+      "reasoning": "中欧兴利债券C波动率极低（6.71%），作为债券类资产提供稳定性和流动性缓冲。",
       "confidence": 0.75,
       "model": ""
     },
@@ -68,9 +68,9 @@
     "lesson": ""
   },
   {
-    "id": "7f4e334a-666",
+    "id": "858546fd-2b7",
     "backtest_id": "bt_20220509_20230618",
-    "timestamp": "2026-06-04T15:25:25.437390",
+    "timestamp": "2026-06-04T15:24:34.295826",
     "scenario": {
       "date": "2023-06-13",
       "fund_code": "040046",
@@ -81,14 +81,14 @@
       "nav_change_90d": 3.14,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.04124422797968301,
-      "portfolio_return": 0.31706744609551607
+      "cash_ratio": 0.04163233527667777,
+      "portfolio_return": 0.40272716437350026
     },
     "decision": {
-      "action": "buy",
-      "amount_rmb": 500.0,
-      "amount_pct": 22.0092,
-      "reasoning": "中欧兴利债券C波动率低，作为组合稳定器，继续持有。",
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 17.6073,
+      "reasoning": "前海开源黄金ETF联接C净值数据缺失，无法评估，暂不参与。",
       "confidence": 0.9,
       "model": ""
     },
