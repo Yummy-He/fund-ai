@@ -28,14 +28,13 @@ backtest:
   # 交易成本
   commission:
     buy_rate: 0.0015   # 买入费率 0.15%
-    sell_rate: 0.0050  # 卖出费率 0.5%（含赎回费）
-    min_commission: 5.0  # 最低手续费
+    sell_rate: 0.0050  # 卖出费率 0.5%（赎回费）
   # 持仓限制
   constraints:
     max_positions: 10        # 最多持有基金数
     max_single_position_pct: 0.30  # 单只基金最高仓位 30%
     min_cash_reserve: 500.0  # 最低现金保留
-    min_trade_amount: 100.0  # 最低交易金额
+    min_trade_amount: 10.0   # 最低交易金额（基金实际申购起点通常1-10元）
   # 决策频率
   decision_frequency: "daily"  # daily | weekly | biweekly
 

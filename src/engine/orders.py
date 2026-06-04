@@ -45,13 +45,11 @@ class OrderManager:
         constraints: Optional[Constraints] = None,
         buy_rate: float = 0.0015,
         sell_rate: float = 0.0050,
-        min_commission: float = 5.0,
-        fee_manager=None,  # FeeManager (可选，用于动态赎回费率)
+        fee_manager=None,  # FeeManager (可选，用于动态费率)
     ):
         self.constraints = constraints or Constraints()
         self.buy_rate = buy_rate
         self.sell_rate = sell_rate
-        self.min_commission = min_commission
         self.fee_manager = fee_manager
 
     def validate(
@@ -84,7 +82,6 @@ class OrderManager:
                 except Exception:
                     pass
             commission = order.amount * sub_rate
-            commission = max(commission, self.min_commission)
             total_cost = order.amount + commission
             if total_cost > portfolio.cash - self.constraints.min_cash_reserve:
                 violations.append(
@@ -198,7 +195,7 @@ class OrderManager:
                     sub_rate = self.fee_manager.get_fee(order.fund_code).get_subscription_fee(order.amount)
                 except Exception:
                     pass
-            commission = max(order.amount * sub_rate, self.min_commission)
+            commission = order.amount * sub_rate
             return portfolio.buy(
                 fund_code=order.fund_code,
                 amount=order.amount,
@@ -251,10 +248,9 @@ class OrderManager:
         return valid_orders
 
     def _calc_commission(self, amount: float, is_buy: bool) -> float:
-        """计算交易手续费（买入时使用）"""
+        """计算交易手续费（买入时使用）— 纯百分比，无最低收费"""
         rate = self.buy_rate if is_buy else self.sell_rate
-        commission = amount * rate
-        return max(commission, self.min_commission)
+        return amount * rate
 
     def _calc_sell_commission(
         self,
@@ -262,7 +258,7 @@ class OrderManager:
         fund_code: str,
         holding_days: int,
     ) -> float:
-        """计算卖出手续费 — 基于持有天数的动态赎回费率
+        """计算卖出手续费 — 基于持有天数的动态赎回费率（纯百分比，无最低收费）
 
         关键规则:
         - 持有 < 7天: 1.5% 惩罚费率（最重要！AI 会学到不做短线）
@@ -280,7 +276,7 @@ class OrderManager:
                     f"基金 {fund_code} 持有 {holding_days} 天 → "
                     f"赎回费率 {rate*100:.2f}% → 费用 ¥{commission:.2f}"
                 )
-                return max(commission, self.min_commission)
+                return commission
             except Exception:
                 pass
 
@@ -296,5 +292,4 @@ class OrderManager:
         else:
             rate = 0.0     # 免赎回费
 
-        commission = amount * rate
-        return max(commission, self.min_commission)
+        return amount * rate

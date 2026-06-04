@@ -27,7 +27,6 @@ class AIConfig:
 class CommissionConfig:
     buy_rate: float = 0.0015
     sell_rate: float = 0.0050
-    min_commission: float = 5.0
 
 
 @dataclass
@@ -177,7 +176,6 @@ class ConfigLoader:
             commission=CommissionConfig(
                 buy_rate=comm_raw.get("buy_rate", 0.0015),
                 sell_rate=comm_raw.get("sell_rate", 0.0050),
-                min_commission=comm_raw.get("min_commission", 5.0),
             ),
             constraints=ConstraintsConfig(
                 max_positions=const_raw.get("max_positions", 10),

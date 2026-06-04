@@ -52,9 +52,8 @@ class BacktestEngine:
             if bt and hasattr(bt, "commission"):
                 self.buy_rate = bt.commission.buy_rate
                 self.sell_rate = bt.commission.sell_rate
-                self.min_commission = bt.commission.min_commission
             else:
-                self.buy_rate, self.sell_rate, self.min_commission = 0.0015, 0.0050, 5.0
+                self.buy_rate, self.sell_rate = 0.0015, 0.0050
             if bt and hasattr(bt, "constraints"):
                 self.constraints = Constraints(
                     max_positions=bt.constraints.max_positions,
@@ -67,7 +66,7 @@ class BacktestEngine:
             self.decision_freq = bt.decision_frequency if bt else "daily"
         else:
             self.initial_capital = 10000.0
-            self.buy_rate, self.sell_rate, self.min_commission = 0.0015, 0.0050, 5.0
+            self.buy_rate, self.sell_rate = 0.0015, 0.0050
             self.constraints = Constraints()
             self.decision_freq = "daily"
 
@@ -90,7 +89,6 @@ class BacktestEngine:
             constraints=self.constraints,
             buy_rate=self.buy_rate,
             sell_rate=self.sell_rate,
-            min_commission=self.min_commission,
             fee_manager=fee_mgr,
         )
         self.metrics_calc = MetricsCalculator()
@@ -353,7 +351,7 @@ class BacktestEngine:
                 for code, nav in nav_map.items():
                     if self.portfolio.cash >= per_fund:
                         # 申购费率
-                        commission = max(per_fund * self.buy_rate, self.min_commission)
+                        commission = per_fund * self.buy_rate
                         self.portfolio.buy(
                             fund_code=code,
                             amount=per_fund,

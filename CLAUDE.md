@@ -1,97 +1,110 @@
 # CLAUDE.md — 基金 AI 分析系统
 
+> **如果你是 Claude Code，请先阅读此文件和 AI_MUST_READ.md。**
+
 ## 项目概述
 
-这是一个 AI 驱动的中国公募基金投资分析系统。核心思路：让 AI（通过 DeepSeek API）读取历史基金净值数据，反复进行模拟回测（"穿越"到过去某天用1万元开始投资，逐日决策买卖直到"现在"），通过积累大量决策经验，学会分析基金并给出投资建议。
+AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取历史净值，反复回测（"穿越"到过去用 1 万元逐日决策买卖），积累经验，学会分析基金并给出投资建议。
 
-## 架构
+## 当前状态（v0.2.5 | 2026-06-04）
 
-```
-数据抓取(akshare) → CSV存储 → 回测引擎(逐日AI决策) → 经验积累(RAG检索) → 投资建议报告
-```
+- 10 只基金 ~727 条/只净值数据（2023-06 ~ 今）
+- 每只基金独立真实费率（从东方财富 + akshare 抓取）
+- 双层 AI 模型：Flash（日常回测决策）+ Pro（策略总结/建议）
+- 三种策略：AI 主动决策 / 等权买入持有 / 每月定投（DCA）
+- GitHub Actions 自动化：每日抓取+回测 / 每周学习+报告 / 月度深度分析
+- 完整操作手册：https://github.com/Yummy-He/fund-ai/wiki
 
-## 关键设计理念
+## 关键约束
 
-### 学习 = 上下文积累，不是微调
-AI 不会微调权重。而是在每次回测中，每个决策+结果被存为"经验"。下次遇到相似场景时，系统检索相关经验注入提示词。经过10+轮回测，AI积累了数千条经验，决策越来越准。
-
-### 回测粒度 = 交易日
-中国大陆每月约20个交易日，基金净值每日晚间更新。回测按 T+1 规则：当天看到的是前一交易日的净值。
-
-### AI 后端 = DeepSeek API（Anthropic格式）
-- Base URL: `https://api.deepseek.com/anthropic`
-- 模型: deepseek-v4-flash（日常）/ deepseek-v4-pro（高级分析）
-- 成本极低: 一次完整回测约 ¥2-10
+1. 数据只增：`data/nav/*.csv` 只追加不覆盖
+2. 经验只增：`experiences/` 只追加不删除
+3. 净值 T+1：当天决策看到的是前一交易日净值
+4. 手续费无最低收费：中国公募基金按百分比收费，无每笔最低 ¥5 这种规则
+5. DeepSeek API：base_url=`https://api.deepseek.com/anthropic`，不支持 cache_control
+6. akshare v1.18+：用 `fund_open_fund_info_em(symbol, indicator, period)` 获取净值
+7. 交易日判断：通过 `akshare.tool_trade_date_hist_sina()` 查询
 
 ## 项目结构
 
 ```
 fund-ai/
-├── config/            # YAML 配置文件
-│   ├── default.yaml   # 主配置
-│   ├── funds.yaml     # 基金池定义
-│   └── prompt_templates/  # AI 提示词模板
-├── src/               # 源代码
-│   ├── cli.py         # CLI 入口（click）
-│   ├── data/          # 数据层：抓取+存储
-│   ├── engine/        # 回测引擎：模拟+AI决策+指标
-│   ├── learning/      # 学习层：经验存储+检索+评估
-│   ├── report/        # 报告层：Markdown 生成
-│   └── utils/         # 工具：配置+日志+日期
-├── data/              # 数据文件（Git追踪）
-├── experiences/       # 经验存储（Git追踪）
-├── reports/           # 报告输出（Git追踪）
-├── tests/             # 测试
-└── .github/workflows/ # CI/CD 自动化
+├── config/
+│   ├── default.yaml           # 主配置（模型/回测/学习/费率参数）
+│   ├── funds.yaml             # 基金池（10只）
+│   └── prompt_templates/      # AI 提示词模板
+├── src/
+│   ├── cli.py                 # CLI入口（scrape/backtest/learn/recommend/report）
+│   ├── data/
+│   │   ├── fees.py            # 费率模型 + FeeManager（每只基金独立费率）
+│   │   ├── models.py          # Fund/NAVRecord/FundType 等数据模型
+│   │   ├── scraper.py         # 数据抓取编排
+│   │   ├── store.py           # CSV 存储 + FundRepository
+│   │   └── sources/
+│   │       ├── akshare_source.py   # 主数据源
+│   │       └── eastmoney_source.py # 备用数据源
+│   ├── engine/
+│   │   ├── ai_client.py       # DeepSeek API（Anthropic格式）
+│   │   ├── backtest.py        # 回测引擎（含 run/run_simple_baseline/run_dca）
+│   │   ├── decision.py        # AI 决策编排
+│   │   ├── metrics.py         # 指标计算（夏普/回撤/CAGR）
+│   │   ├── orders.py          # 订单验证执行（含动态费率）
+│   │   ├── portfolio.py       # 持仓管理（含 FIFO 持有天数）
+│   │   ├── prompt.py          # 提示词构建器
+│   │   └── simulator.py       # 时间步进器
+│   ├── learning/
+│   │   ├── experience.py      # 经验存储（Experience + ExperienceStore）
+│   │   ├── evaluator.py       # 策略评估（跨回测模式提取）
+│   │   └── retriever.py       # 多因子相似度检索（7维加权）
+│   ├── report/
+│   │   └── generator.py       # Markdown 报告生成
+│   └── utils/
+│       ├── config.py          # 配置加载（YAML → AppConfig）
+│       ├── date_utils.py      # 交易日历
+│       └── logging.py         # 日志
+├── data/                      # 净值+费率数据（Git追踪）
+│   ├── nav/                   # 每只基金一个CSV
+│   ├── funds/fees.json        # 所有基金费率缓存
+│   └── index/                 # 基准指数
+├── experiences/               # AI经验库（Git追踪）
+│   ├── index.json             # 经验索引
+│   ├── decisions/             # 决策详情
+│   └── summaries/             # 策略总结
+├── reports/                   # 报告（Git追踪）
+│   ├── backtests/             # 回测报告（.md）
+│   ├── recommendations/       # 投资建议
+│   └── daily/                 # 每日简报
+├── docs/WIKI.md               # 操作手册源文件
+└── .github/workflows/         # CI/CD
+    ├── daily-decision.yml     # 每日：判交易日→抓数据→回测
+    ├── weekly-report.yml      # 每周六：学习+周报
+    └── monthly-report.yml     # 每月1日：深度学习+月报
 ```
 
-## 开发指南
+## CLI 命令
 
-### 安装
 ```bash
-pip install -e ".[dev]"
+python -m src.cli scrape                         # 抓数据+费率
+python -m src.cli backtest -s 2024-01-01 -e 2025-01-01  # AI回测
+python -m src.cli backtest ... --baseline --dca   # 三策略对比
+python -m src.cli learn -n 5                     # 5轮学习
+python -m src.cli recommend                       # 投资建议
 ```
 
-### 环境变量
-```bash
-export DEEPSEEK_API_KEY="sk-xxxx"
-```
+## 工作流（设计节奏）
 
-### 命令
-```bash
-fund-ai scrape                    # 抓取基金数据
-fund-ai backtest --start 2023-01-01 --end 2024-01-01  # 单次回测
-fund-ai learn --iterations 10     # 多轮回测学习
-fund-ai recommend                 # 生成投资建议
-fund-ai report --type monthly     # 生成月度报告
-```
+| 频率 | 内容 |
+|------|------|
+| 每个交易日 17:30 | 先调 akshare 判交易日 → 抓净值 → 60天回测 |
+| 每周六 10:00 | 5 轮学习回测 + 出本周投资建议 |
+| 每月1日 12:00 | 20 轮深度学习 + 月度综合推荐 |
 
-### 基金代码规则
-- 场内基金（ETF/LOF）：以 5 开头
-- 场外基金：以 0 开头（股票/混合/债券型）
-- akshare 使用 `fund_open_fund_daily_em` 获取场外基金净值
+## 常见修改热点
 
-## 当前状态（2026-06-04）
-
-✅ 项目框架已完成搭建（v0.1.0）
-✅ 数据层: 9只基金 ~727条/只 净值 + 沪深300/上证50指数
-✅ 回测引擎: 端到端验证通过 — AI 已成功进行真实回测决策
-✅ 学习层: 经验存储 / 多因子检索 / 策略评估
-✅ 报告层: Markdown 报告生成
-✅ CLI: 5个命令全部可用
-✅ GitHub Actions: 3个工作流已配置
-🔜 下一步: git push → 设置 GitHub Secrets → 运行 learn 学习循环
-
-### 已修复的问题
-- Portfolio 参数名 initial_capital vs initial_cash 不一致
-- DeepSeek ThinkingBlock 解析失败 → 禁用 thinking + 遍历 content blocks
-- 指数数据读取 → 直接读 data/index/ 而非 FundRepository
-- Windows 终端 emoji 编码 → 替换为纯文本 + UTF-8 强制
-- .env 文件支持 → 优先于环境变量加载
-
-## 注意事项
-
-- 基金代码中可能包含特殊前缀，akshare 数据接口返回的代码格式需要适配
-- 中国大陆交易日历：需考虑春节、国庆等长假休市
-- CSV 文件大小：每只基金3年数据约几千行，10只基金总计可控
-- DeepSeek API 不支持 `cache_control` 和 extended thinking
+| 想改什么 | 文件 | 改后 |
+|---------|------|------|
+| 加/减基金 | `config/funds.yaml` | `scrape` → push |
+| 调模型 | `config/default.yaml` → `ai.flash_model/pro_model` | push 即生效 |
+| 调回测参数 | `config/default.yaml` → `backtest.*` | push 即生效 |
+| 改提示词 | `config/prompt_templates/*.txt` | push 即生效 |
+| 加数据源 | `src/data/sources/` | 新类 + 注册到 scraper |
