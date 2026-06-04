@@ -1,6 +1,5 @@
-# 每日数据抓取 + AI 当天决策回测
-# 北京时间 17:30（UTC 09:30），周一至周五
-# 基金净值当天晚间更新，此时大部分已出
+# 每日: 先判断交易日 → 抓取净值 → 快速回测
+# 北京时间 17:30 (UTC 09:30), 周一至周五
 
 name: Daily Scrape & Decision
 
@@ -11,6 +10,7 @@ on:
   push:
     paths:
       - ".github/workflows/daily-decision.yml"
+      - "pyproject.toml"
 
 jobs:
   daily:
@@ -27,14 +27,32 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install -e "."
+        run: |
+          pip install --upgrade pip
+          pip install aiohttp  # akshare 运行时依赖
+          pip install -e "."
+
+      - name: Check if today is a trading day
+        id: trading_day
+        shell: python
+        run: |
+          import os, akshare as ak
+          from datetime import date
+          df = ak.tool_trade_date_hist_sina()
+          today_str = date.today().strftime("%Y%m%d")
+          is_td = "true" if today_str in df["trade_date"].values else "false"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"IS_TRADING_DAY={is_td}\n")
+          print(f"Trading day: {is_td}")
 
       - name: Scrape today's NAV data
+        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
 
-      - name: Quick daily review (1 round, recent 60 days, weekly decisions)
+      - name: Quick daily review (recent 60 days, weekly decisions)
+        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
@@ -46,9 +64,14 @@ jobs:
             --interval 5
 
       - name: Commit and push
+        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         run: |
           git config user.name "fund-ai-bot"
           git config user.email "bot@fund-ai.local"
-          git add data/ reports/daily/ reports/backtests/
+          git add data/ reports/
           git diff --staged --quiet || git commit -m "daily: scrape + review $(date +%Y-%m-%d)"
           git push
+
+      - name: Skip (non-trading day)
+        if: steps.trading_day.outputs.IS_TRADING_DAY != 'true'
+        run: echo "Today is not a trading day, skipping."

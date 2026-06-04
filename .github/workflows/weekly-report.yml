@@ -1,6 +1,5 @@
-# 每周学习回测 + 投资建议报告
-# 北京时间 周六 10:00（UTC 02:00 周六）
-# 一周数据完整，周末不交易，适合深度学习
+# 每周六: 学习回测 + 投资建议报告
+# 北京时间 周六 10:00 (UTC 02:00)
 
 name: Weekly Learn & Report
 
@@ -15,6 +14,7 @@ on:
   push:
     paths:
       - ".github/workflows/weekly-report.yml"
+      - "pyproject.toml"
 
 jobs:
   weekly:
@@ -31,30 +31,30 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install -e "."
+        run: |
+          pip install --upgrade pip
+          pip install aiohttp
+          pip install -e "."
 
       - name: Scrape latest data
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
 
-      - name: Learning loop (5 iterations)
+      - name: Learning loop
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python -m src.cli learn \
             --iterations ${{ github.event.inputs.iterations || 5 }}
 
-      - name: Generate weekly investment recommendation
+      - name: Generate weekly recommendation
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           WEEK=$(date +%Y-W%V)
           python -m src.cli recommend \
             --output "reports/recommendations/weekly-${WEEK}.md"
-
-      - name: Generate daily brief
-        run: python -m src.cli report --type daily
 
       - name: Commit and push
         run: |
