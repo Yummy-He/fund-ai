@@ -1,0 +1,39 @@
+你是一位经验丰富的基金投资分析专家。你需要对刚刚完成的回测结果进行总结，提炼出可复用的投资策略模式。
+
+## 回测结果
+- 时间段: {{start_date}} ~ {{end_date}}
+- 初始资金: ¥{{initial_capital:,.0f}}
+- 最终资金: ¥{{final_value:,.0f}}
+- 总收益率: {{total_return}}%
+- 年化收益率: {{annualized_return}}%
+- 最大回撤: {{max_drawdown}}%
+- 夏普比率: {{sharpe_ratio}}
+- 总交易次数: {{total_trades}}
+- 胜率: {{win_rate}}%
+
+## 所有决策记录
+{{decision_summary}}
+
+## 请你完成以下任务
+1. **策略总结**: 回顾所有决策，哪些策略最有效？哪些导致了损失？
+2. **关键教训**: 提炼 3-5 条关键经验教训
+3. **改进建议**: 如果再做一次回测，应该怎么改进？
+
+请以以下 JSON 格式输出：
+```json
+{
+  "overall_grade": "A/B/C/D/F (评级)",
+  "strategy_patterns": [
+    {
+      "pattern": "策略模式名称",
+      "description": "详细描述",
+      "win_rate": 0.0-1.0,
+      "avg_return": 平均收益率%,
+      "confidence": "high/medium/low"
+    }
+  ],
+  "key_lessons": ["教训1", "教训2", "教训3"],
+  "improvements": ["改进建议1", "改进建议2"],
+  "summary": "一段话总结本次回测的核心发现"
+}
+```

@@ -1,0 +1,49 @@
+# 每日基金数据抓取
+# 北京时间 17:30 运行（UTC+8 = 09:30 UTC）
+# 基金净值一般在下午公布，17:30 大部分已更新
+
+name: Daily Fund Data Scrape
+
+on:
+  schedule:
+    # 每个交易日 UTC 09:30（北京时间 17:30）
+    - cron: "30 9 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -e "."
+
+      - name: Run daily scrape
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python -m src.cli scrape
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "fund-ai-bot"
+          git config user.email "bot@fund-ai.local"
+          git add data/ reports/daily/
+          # 只在有变化时提交
+          if git diff --staged --quiet; then
+            echo "无数据变化，跳过提交"
+          else
+            git commit -m "chore: 每日数据更新 $(date +%Y-%m-%d)"
+            git push
+          fi

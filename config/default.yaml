@@ -1,0 +1,82 @@
+# 基金AI分析系统 - 主配置文件
+
+# AI 模型配置
+ai:
+  # DeepSeek API (Anthropic 兼容格式)
+  base_url: "https://api.deepseek.com/anthropic"
+  api_key_env: "DEEPSEEK_API_KEY"  # 从环境变量读取
+  # 模型选择:
+  # - "deepseek-v4-flash" : 快速低成本（推荐日常回测）
+  # - "deepseek-v4-pro"   : 旗舰精度（推荐最终分析）
+  # - "claude-sonnet-4-20250514" : DeepSeek 自动映射到 v4-flash
+  model: "deepseek-v4-flash"
+  # 高级模型（用于学习总结和最终建议）
+  advanced_model: "deepseek-v4-pro"
+  max_tokens: 4096
+  temperature: 0.3  # 低温度保证决策一致性
+
+# 回测参数
+backtest:
+  initial_capital: 10000.0  # 初始资金（元）
+  # 交易成本
+  commission:
+    buy_rate: 0.0015   # 买入费率 0.15%
+    sell_rate: 0.0050  # 卖出费率 0.5%（含赎回费）
+    min_commission: 5.0  # 最低手续费
+  # 持仓限制
+  constraints:
+    max_positions: 10        # 最多持有基金数
+    max_single_position_pct: 0.30  # 单只基金最高仓位 30%
+    min_cash_reserve: 500.0  # 最低现金保留
+    min_trade_amount: 100.0  # 最低交易金额
+  # 决策频率
+  decision_frequency: "daily"  # daily | weekly | biweekly
+
+# 学习参数
+learning:
+  # 多轮回测设置
+  iterations: 10           # 学习迭代次数
+  random_seed: 42
+  # 每轮回测随机选择的时间段
+  backtest_duration_days: 365   # 每次回测跨度（天）
+  backtest_end_buffer_days: 30  # 回测结束距今天数（保留验证集）
+  # 每轮回测随机选择的基金数量
+  min_funds_per_backtest: 3
+  max_funds_per_backtest: 10
+  # 经验检索
+  retrieval:
+    top_k: 10                   # 每次决策检索的相似经验数
+    always_include_failures: 2  # 始终包含的失败案例数
+    similarity_threshold: 0.5   # 最低相似度阈值
+
+# 数据抓取参数
+scraper:
+  # 主数据源
+  primary_source: "akshare"
+  # 备用数据源
+  fallback_source: "eastmoney"
+  # 请求间隔（秒）
+  request_delay: 1.0
+  # 批量抓取时每批基金数
+  batch_size: 20
+  # 净值历史默认回溯天数
+  default_history_days: 1095  # 3年
+  # 缓存有效期（小时）
+  cache_ttl_hours: 24
+
+# 报告参数
+report:
+  output_dir: "reports"
+  formats:
+    - markdown
+  include_charts: false  # GitHub Actions 中用 ASCII 图表
+  # 投资建议模板
+  recommendation:
+    max_funds_recommended: 5
+    include_risk_assessment: true
+    comparison_benchmark: "CSI300"  # 沪深300
+
+# GitHub Actions 相关
+github:
+  auto_commit: true
+  create_issue_for_recommendations: true

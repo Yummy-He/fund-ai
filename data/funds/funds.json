@@ -1,0 +1,92 @@
+[
+  {
+    "code": "001714",
+    "name": "工银文体产业股票",
+    "fund_type": "STOCK",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "001054",
+    "name": "工银新金融股票",
+    "fund_type": "STOCK",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "260108",
+    "name": "景顺长城新兴成长混合",
+    "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "002190",
+    "name": "农银新能源主题",
+    "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "166002",
+    "name": "中欧新蓝筹混合",
+    "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "510300",
+    "name": "华泰柏瑞沪深300ETF",
+    "fund_type": "INDEX",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "510050",
+    "name": "华夏上证50ETF",
+    "fund_type": "INDEX",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "000744",
+    "name": "北信瑞丰稳定收益",
+    "fund_type": "BOND",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "000041",
+    "name": "华夏全球精选",
+    "fund_type": "QDII",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  }
+]
