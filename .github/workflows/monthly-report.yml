@@ -61,4 +61,5 @@ jobs:
           git config user.email "bot@fund-ai.local"
           git add experiences/ reports/ data/
           git diff --staged --quiet || git commit -m "monthly: deep learn + report $(date +%Y-%m)"
+          git pull --rebase origin main
           git push

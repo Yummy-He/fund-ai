@@ -25,6 +25,8 @@ AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取
 6. akshare v1.18+：用 `fund_open_fund_info_em(symbol, indicator, period)` 获取净值
 7. 交易日判断：三层检测 — tool_trade_date_hist_sina()（格式 YYYY-MM-DD）→ stock_zh_index_daily 上证最新日 → 工作日回退
 8. Wiki 单独仓库：`docs/WIKI.md` 是源，需手动同步到 `https://github.com/Yummy-He/fund-ai.wiki.git` 的 `Home.md`
+9. **推送前必须测试**：任何 Python 代码改动，commit 前必须跑语法检查 + 至少 import 测试 + 核心函数单元验证。禁止不经测试直接推送。
+10. 推送冲突：多个 workflow 可能同时运行（push 触发器），每次 push 前要 `git pull --rebase`
 
 ## 项目结构
 

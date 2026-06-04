@@ -159,6 +159,17 @@ class AkshareSource:
             logger.warning(f"获取基金 {fund_code} 信息失败: {e}")
             return None
 
+    @staticmethod
+    def _index_exchange(index_code: str) -> str:
+        """根据指数代码判断交易所前缀: 0xx→sh(上证), 3xx→sz(深证), 8xx→bj(北证)"""
+        if index_code.startswith("0"):
+            return "sh"
+        elif index_code.startswith("3"):
+            return "sz"
+        elif index_code.startswith("8"):
+            return "bj"
+        return "sh"  # 默认
+
     def fetch_index_data(self, index_code: str = "000300",
                          start: Optional[date] = None,
                          end: Optional[date] = None) -> pd.DataFrame:
@@ -169,12 +180,10 @@ class AkshareSource:
         try:
             import akshare as ak
             self._rate_limit()
-            df = ak.stock_zh_index_daily(symbol=f"sh{index_code}")
-            if df.empty:
-                df = ak.stock_zh_index_daily(symbol=f"sz{index_code}")
+            df = ak.stock_zh_index_daily(symbol=f"{self._index_exchange(index_code)}{index_code}")
 
-            if df.empty:
-                logger.warning(f"指数 {index_code} 无数据")
+            if df.empty or "date" not in df.columns:
+                logger.warning(f"指数 {index_code} 无数据或缺少 date 列, 列名: {list(df.columns) if not df.empty else '空'}")
                 return pd.DataFrame()
 
             df["date"] = pd.to_datetime(df["date"])
@@ -191,7 +200,10 @@ class AkshareSource:
             return pd.DataFrame()
 
     def fetch_trading_calendar(self, start: date, end: date) -> List[date]:
-        """获取交易日历"""
+        """获取交易日历
+
+        tool_trade_date_hist_sina() 返回格式 YYYY-MM-DD。
+        """
         try:
             import akshare as ak
             self._rate_limit()
@@ -203,7 +215,8 @@ class AkshareSource:
             for _, row in df.iterrows():
                 d_str = str(row["trade_date"])
                 try:
-                    d = datetime.strptime(d_str, "%Y%m%d").date()
+                    # 格式: YYYY-MM-DD
+                    d = datetime.strptime(d_str, "%Y-%m-%d").date()
                     if start <= d <= end:
                         days.append(d)
                 except ValueError:

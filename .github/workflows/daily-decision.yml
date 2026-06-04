@@ -103,6 +103,7 @@ jobs:
           git config user.email "bot@fund-ai.local"
           git add data/ reports/
           git diff --staged --quiet || git commit -m "daily: scrape + review $(date +%Y-%m-%d)"
+          git pull --rebase origin main
           git push
 
       - name: Skip (non-trading day)
