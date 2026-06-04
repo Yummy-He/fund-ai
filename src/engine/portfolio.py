@@ -64,7 +64,10 @@ class PortfolioSnapshot:
 
 
 class Portfolio:
-    """投资组合管理器"""
+    """投资组合管理器
+
+    追踪现金、持仓、交易记录。支持 FIFO 计算持有天数用于赎回费率。
+    """
 
     def __init__(self, initial_capital: float = 10000.0, initial_cash: float = None):
         # 兼容两种参数名
@@ -75,6 +78,8 @@ class Portfolio:
         self.positions: Dict[str, Position] = {}
         self.transactions: List[Transaction] = []
         self.daily_values: List[float] = []  # 每日总净值记录
+        # FIFO 买入队列: {fund_code: [(shares, cost_per_share, buy_date), ...]}
+        self._buy_queue: Dict[str, list] = {}
 
     def buy(
         self,
@@ -119,6 +124,11 @@ class Portfolio:
                 avg_cost=nav,
                 current_nav=nav,
             )
+
+        # FIFO 买入队列（用于计算持有天数 → 赎回费率）
+        if fund_code not in self._buy_queue:
+            self._buy_queue[fund_code] = []
+        self._buy_queue[fund_code].append((shares, nav, trade_date))
 
         txn = Transaction(
             date=trade_date,
@@ -171,9 +181,13 @@ class Portfolio:
         sell_amount = shares * nav
         self.cash += sell_amount - commission
 
+        # FIFO: 从买入队列中移除已卖出的份额
+        self._consume_buy_queue(fund_code, shares)
+
         if shares >= pos.shares:
             # 全部卖出
             del self.positions[fund_code]
+            self._buy_queue.pop(fund_code, None)
         else:
             pos.shares -= shares
 
@@ -245,3 +259,37 @@ class Portfolio:
     def is_holding(self, fund_code: str) -> bool:
         """是否持有某只基金"""
         return fund_code in self.positions
+
+    def get_holding_days(self, fund_code: str, sell_shares: float = None, trade_date: date = None) -> int:
+        """FIFO 计算持有天数（最早买入批次距 trade_date 的天数）
+
+        用于确定赎回费率阶梯。
+        """
+        if fund_code not in self._buy_queue or not self._buy_queue[fund_code]:
+            # 无买入记录，返回默认中等持有期
+            return 30
+
+        queue = self._buy_queue[fund_code]
+        # 返回最早批次的持有天数
+        _, _, first_buy_date = queue[0]
+        if trade_date:
+            return (trade_date - first_buy_date).days
+        return 30
+
+    def _consume_buy_queue(self, fund_code: str, sell_shares: float) -> None:
+        """FIFO: 从买入队列中消耗已卖出的份额"""
+        if fund_code not in self._buy_queue:
+            return
+
+        remaining = sell_shares
+        new_queue = []
+        for shares, cost, buy_date in self._buy_queue[fund_code]:
+            if remaining <= 0:
+                new_queue.append((shares, cost, buy_date))
+            elif remaining >= shares:
+                remaining -= shares
+            else:
+                new_queue.append((shares - remaining, cost, buy_date))
+                remaining = 0
+
+        self._buy_queue[fund_code] = new_queue

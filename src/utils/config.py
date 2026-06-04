@@ -9,12 +9,18 @@ from typing import Optional
 
 @dataclass
 class AIConfig:
+    """AI 模型配置 — 双层模型策略
+
+    model (flash):  高频日常任务 — 回测逐日买卖决策
+    advanced_model (pro): 深度分析任务 — 策略总结、经验提炼、投资建议
+    """
     base_url: str = "https://api.deepseek.com/anthropic"
     api_key_env: str = "DEEPSEEK_API_KEY"
-    model: str = "deepseek-v4-flash"
-    advanced_model: str = "deepseek-v4-pro"
+    model: str = "deepseek-v4-flash"       # Flash 模型: 日常决策
+    advanced_model: str = "deepseek-v4-pro"  # Pro 模型: 深度分析
     max_tokens: int = 4096
     temperature: float = 0.3
+    pro_temperature: float = 0.2  # Pro 模型专用温度
 
 
 @dataclass
@@ -155,10 +161,12 @@ class ConfigLoader:
         ai = AIConfig(
             base_url=ai_raw.get("base_url", "https://api.deepseek.com/anthropic"),
             api_key_env=ai_raw.get("api_key_env", "DEEPSEEK_API_KEY"),
-            model=ai_raw.get("model", "deepseek-v4-flash"),
-            advanced_model=ai_raw.get("advanced_model", "deepseek-v4-pro"),
+            # flash_model → model (高频日常决策), pro_model → advanced_model (深度分析)
+            model=ai_raw.get("flash_model", ai_raw.get("model", "deepseek-v4-flash")),
+            advanced_model=ai_raw.get("pro_model", ai_raw.get("advanced_model", "deepseek-v4-pro")),
             max_tokens=ai_raw.get("max_tokens", 4096),
             temperature=ai_raw.get("temperature", 0.3),
+            pro_temperature=ai_raw.get("pro_temperature", 0.2),
         )
 
         bt_raw = raw.get("backtest", {})

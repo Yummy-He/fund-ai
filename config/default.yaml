@@ -1,19 +1,26 @@
 # 基金AI分析系统 - 主配置文件
 
-# AI 模型配置
+# AI 模型配置 — 双层模型策略
 ai:
   # DeepSeek API (Anthropic 兼容格式)
   base_url: "https://api.deepseek.com/anthropic"
-  api_key_env: "DEEPSEEK_API_KEY"  # 从环境变量读取
-  # 模型选择:
-  # - "deepseek-v4-flash" : 快速低成本（推荐日常回测）
-  # - "deepseek-v4-pro"   : 旗舰精度（推荐最终分析）
-  # - "claude-sonnet-4-20250514" : DeepSeek 自动映射到 v4-flash
-  model: "deepseek-v4-flash"
-  # 高级模型（用于学习总结和最终建议）
-  advanced_model: "deepseek-v4-pro"
+  api_key_env: "DEEPSEEK_API_KEY"
+
+  # 模型角色分工:
+  #   Flash (快速模型) — 高频低成本任务
+  #     • 回测中每轮逐日买卖决策（每次回测几十到上百次调用）
+  #     • 数据分析和聚合
+  #   Pro  (旗舰模型) — 深度推理任务
+  #     • 每轮回测结束后的策略总结和经验提炼
+  #     • 学习循环中的模式识别
+  #     • 最终投资建议生成
+
+  flash_model: "deepseek-v4-flash"
+  pro_model: "deepseek-v4-pro"
+
   max_tokens: 4096
   temperature: 0.3  # 低温度保证决策一致性
+  pro_temperature: 0.2  # Pro 模型使用更低温度以保证分析质量
 
 # 回测参数
 backtest:

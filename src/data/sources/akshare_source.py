@@ -117,8 +117,8 @@ class AkshareSource:
                     logger.error(f"基金 {fund_code} 数据缺少 {col} 列，现有列: {list(df.columns)}")
                     return pd.DataFrame()
 
-            # 转换日期并排序
-            df["净值日期"] = pd.to_datetime(df["净值日期"])
+            # 转换日期并排序（兼容 datetime.date 和 str 两种类型）
+            df["净值日期"] = pd.to_datetime(df["净值日期"], format="mixed", dayfirst=False)
             df = df.sort_values("净值日期")
 
             # 过滤日期范围

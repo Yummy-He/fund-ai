@@ -1,67 +1,72 @@
 # 基金池配置
-# 这是初始关注的基金列表，先选代表性基金跑通流程
+# 修改后运行: python -m src.cli scrape (抓取新数据 + 费率)
 
 funds:
-  # 股票型基金
-  - code: "001714"  # 工银文体产业股票 (示例)
-    name: "工银文体产业股票"
-    type: "STOCK"
-    enabled: true
-
-  - code: "001054"  # 工银新金融股票 (示例)
-    name: "工银新金融股票"
-    type: "STOCK"
-    enabled: true
-
-  # 混合型基金
-  - code: "260108"  # 景顺长城新兴成长混合
+  # === 混合型基金（主动管理，核心仓位）===
+  - code: "260108"
     name: "景顺长城新兴成长混合"
     type: "MIXED"
     enabled: true
 
-  - code: "002190"  # 农银新能源主题
-    name: "农银新能源主题"
-    type: "MIXED"
-    enabled: true
-
-  - code: "166002"  # 中欧新蓝筹混合
+  - code: "166002"
     name: "中欧新蓝筹混合"
     type: "MIXED"
     enabled: true
 
-  # 指数型基金
-  - code: "510300"  # 华泰柏瑞沪深300ETF
+  - code: "012125"
+    name: "国泰盛益混合C"
+    type: "MIXED"
+    enabled: true
+
+  # === 股票型基金 ===
+  - code: "001714"
+    name: "工银文体产业股票"
+    type: "STOCK"
+    enabled: true
+
+  - code: "002190"
+    name: "农银新能源主题"
+    type: "MIXED"
+    enabled: true
+
+  # === 债券型基金（防御配置）===
+  - code: "009520"
+    name: "中欧兴利债券C"
+    type: "BOND"
+    enabled: true
+
+  # === 指数型基金（市场贝塔）===
+  - code: "510300"
     name: "华泰柏瑞沪深300ETF"
     type: "INDEX"
     enabled: true
 
-  - code: "510050"  # 华夏上证50ETF
+  - code: "510050"
     name: "华夏上证50ETF"
     type: "INDEX"
     enabled: true
 
-  # 债券型基金
-  - code: "000744"  # 北信瑞丰稳定收益 (示例)
-    name: "北信瑞丰稳定收益"
-    type: "BOND"
+  - code: "021302"
+    name: "前海开源黄金ETF联接C"
+    type: "INDEX"
     enabled: true
 
-  # QDII 基金（海外投资）
-  - code: "000041"  # 华夏全球精选 (示例)
-    name: "华夏全球精选"
+  # === QDII 基金（海外配置）===
+  - code: "040046"
+    name: "华安纳斯达克100ETF联接(QDII)A"
     type: "QDII"
     enabled: true
 
-# 关注的基金经理（后续扩展）
-managers_of_interest:
-  - name: "张坤"
-    funds: ["110011"]  # 易方达中小盘混合
+# 已移除（表现不佳或类型重复）:
+#   - 001054 工银新金融股票 (STOCK 与001714重复)
+#   - 000744 北信瑞丰稳定收益 (BOND 用009520替代)
+#   - 000041 华夏全球精选 (QDII 用040046替代)
 
 # 基准指数配置
 benchmarks:
-  - code: "000300"  # 沪深300
+  - code: "000300"
     name: "沪深300"
-  - code: "000016"  # 上证50
+  - code: "000016"
     name: "上证50"
-  - code: "399006"  # 创业板指
+  - code: "399006"
     name: "创业板指"

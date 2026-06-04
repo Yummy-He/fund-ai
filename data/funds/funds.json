@@ -1,28 +1,38 @@
 [
   {
-    "code": "001714",
-    "name": "工银文体产业股票",
-    "fund_type": "STOCK",
-    "manager": null,
-    "company": null,
-    "inception_date": null,
-    "aum": null,
-    "risk_level": "MEDIUM"
-  },
-  {
-    "code": "001054",
-    "name": "工银新金融股票",
-    "fund_type": "STOCK",
-    "manager": null,
-    "company": null,
-    "inception_date": null,
-    "aum": null,
-    "risk_level": "MEDIUM"
-  },
-  {
     "code": "260108",
     "name": "景顺长城新兴成长混合",
     "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "166002",
+    "name": "中欧新蓝筹混合",
+    "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "012125",
+    "name": "国泰盛益混合C",
+    "fund_type": "MIXED",
+    "manager": null,
+    "company": null,
+    "inception_date": null,
+    "aum": null,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "code": "001714",
+    "name": "工银文体产业股票",
+    "fund_type": "STOCK",
     "manager": null,
     "company": null,
     "inception_date": null,
@@ -40,9 +50,9 @@
     "risk_level": "MEDIUM"
   },
   {
-    "code": "166002",
-    "name": "中欧新蓝筹混合",
-    "fund_type": "MIXED",
+    "code": "009520",
+    "name": "中欧兴利债券C",
+    "fund_type": "BOND",
     "manager": null,
     "company": null,
     "inception_date": null,
@@ -70,9 +80,9 @@
     "risk_level": "MEDIUM"
   },
   {
-    "code": "000744",
-    "name": "北信瑞丰稳定收益",
-    "fund_type": "BOND",
+    "code": "021302",
+    "name": "前海开源黄金ETF联接C",
+    "fund_type": "INDEX",
     "manager": null,
     "company": null,
     "inception_date": null,
@@ -80,8 +90,8 @@
     "risk_level": "MEDIUM"
   },
   {
-    "code": "000041",
-    "name": "华夏全球精选",
+    "code": "040046",
+    "name": "华安纳斯达克100ETF联接(QDII)A",
     "fund_type": "QDII",
     "manager": null,
     "company": null,

@@ -141,16 +141,20 @@ class FundDecisionMaker:
         return orders
 
     def generate_lessons(self, result) -> dict:
-        """回测结束后，让 AI 总结策略教训"""
+        """回测结束后，用 Pro 模型深度总结策略教训"""
         try:
             user_message = self.prompt.build_summary_user_message(result)
-            system_prompt = "你是一位经验丰富的基金投资分析专家。请以 JSON 格式输出你的分析。"
+            system_prompt = (
+                "你是一位经验丰富的基金投资分析专家。"
+                "请深入分析回测中每笔决策的得失，提炼可复用的策略模式。"
+                "以 JSON 格式输出你的深度分析。"
+            )
 
-            return self.ai.chat_json(
+            # 使用 Pro 模型做深度分析
+            return self.ai.chat_advanced(
                 system_prompt=system_prompt,
                 user_message=user_message,
-                temperature=0.2,
-                max_tokens=2048,
+                json_mode=True,
             )
         except Exception as e:
             logger.error(f"AI 策略总结失败: {e}")

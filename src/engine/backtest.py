@@ -80,12 +80,18 @@ class BacktestEngine:
         # 经验检索器（用于学习循环）
         self.experience_retriever = experience_retriever
 
-        # 创建内部组件
+        # 创建内部组件（含动态费率支持）
+        from ..data.fees import FeeManager
+        try:
+            fee_mgr = FeeManager()
+        except Exception:
+            fee_mgr = None
         self.order_manager = OrderManager(
             constraints=self.constraints,
             buy_rate=self.buy_rate,
             sell_rate=self.sell_rate,
             min_commission=self.min_commission,
+            fee_manager=fee_mgr,
         )
         self.metrics_calc = MetricsCalculator()
 
@@ -288,6 +294,101 @@ class BacktestEngine:
 
         logger.info(
             f"基准策略完成 | 收益: {result.total_return:+.2f}% | "
+            f"最大回撤: {result.max_drawdown:.2f}%"
+        )
+        return result
+
+    def run_dca(
+        self,
+        start_date: date,
+        end_date: date,
+        fund_pool: List[str],
+        amount_per_invest: float = 1000.0,
+        invest_interval_days: int = 22,  # ~每月一次
+        allocation_mode: str = "equal",  # equal | weighted
+    ) -> BacktestResult:
+        """定投策略（Dollar Cost Averaging）
+
+        定期定额投资：无论市场涨跌，到了定投日就按计划买入。
+        这是最经典、最简单的被动投资策略，作为 AI 策略的对比基线。
+
+        Args:
+            start_date: 回测开始日期
+            end_date: 回测结束日期
+            fund_pool: 定投基金池
+            amount_per_invest: 每次定投总金额
+            invest_interval_days: 定投间隔（交易日）
+            allocation_mode: 分配方式
+                - "equal": 等额分配（每只基金分 equally）
+                - "weighted": 按市值加权
+        """
+        logger.info(
+            f"开始定投策略回测: {start_date} ~ {end_date}, "
+            f"每次 ¥{amount_per_invest:,.0f}, "
+            f"间隔 {invest_interval_days} 交易日, {allocation_mode} 分配"
+        )
+
+        self.portfolio = Portfolio(initial_capital=self.initial_capital)
+        self.simulator = TimeSimulator(start_date, end_date)
+
+        per_fund = amount_per_invest / max(len(fund_pool), 1)
+        days_since_invest = invest_interval_days  # 首日即投
+        invest_count = 0
+
+        self.portfolio.record_daily_value()
+
+        while not self.simulator.is_finished():
+            current_date = self.simulator.current_date
+
+            # 获取当日净值
+            nav_map = {}
+            for code in fund_pool:
+                nav_rec = self.fund_repo.get_nav_on_date(code, current_date)
+                if nav_rec:
+                    nav_map[code] = nav_rec.nav
+            self.portfolio.update_navs(nav_map)
+
+            # 到了定投日
+            if days_since_invest >= invest_interval_days and nav_map:
+                for code, nav in nav_map.items():
+                    if self.portfolio.cash >= per_fund:
+                        # 申购费率
+                        commission = max(per_fund * self.buy_rate, self.min_commission)
+                        self.portfolio.buy(
+                            fund_code=code,
+                            amount=per_fund,
+                            nav=nav,
+                            trade_date=current_date,
+                            commission=commission,
+                            reason=f"定投 #{invest_count+1}",
+                        )
+                invest_count += 1
+                days_since_invest = 0
+
+            days_since_invest += 1
+            self.portfolio.record_daily_value()
+            if not self.simulator.next_day():
+                break
+
+            if invest_count > 0 and invest_count % 10 == 0:
+                val = self.portfolio.total_value()
+                invested = invest_count * amount_per_invest
+                logger.info(
+                    f"  定投 {invest_count} 次 | 投入 ¥{invested:,.0f} | "
+                    f"市值 ¥{val:,.2f} | 收益 {(val-invested)/invested*100:+.2f}%"
+                )
+
+        result = self.metrics_calc.compute(
+            portfolio=self.portfolio,
+            start_date=start_date,
+            end_date=end_date,
+            fund_pool=fund_pool,
+            decisions_made=invest_count,
+        )
+
+        logger.info(
+            f"定投策略完成 ({invest_count} 次定投) | "
+            f"收益: {result.total_return:+.2f}% | "
             f"最大回撤: {result.max_drawdown:.2f}%"
         )
         return result

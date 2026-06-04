@@ -126,7 +126,9 @@ class FundRepository:
                 return pd.DataFrame()
             df = pd.read_csv(path, encoding="utf-8-sig")
             if "净值日期" in df.columns:
-                df["净值日期"] = pd.to_datetime(df["净值日期"])
+                # 兼容多种日期格式: YYYY-MM-DD, YYYY-MM-DD HH:MM:SS, datetime.date
+                df["净值日期"] = pd.to_datetime(df["净值日期"], format="mixed", dayfirst=False)
+                df["净值日期"] = df["净值日期"].dt.floor("D")  # 去掉时分秒
             self._nav_cache[fund_code] = df
 
         if df.empty:

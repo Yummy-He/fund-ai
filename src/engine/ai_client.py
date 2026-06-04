@@ -29,10 +29,11 @@ class AIClient:
             # config 是 AIConfig，没有 api_key 属性；api_key_env 是环境变量名
             api_key_env = getattr(config, "api_key_env", "DEEPSEEK_API_KEY")
             self.api_key = os.environ.get(api_key_env, "")
-            self.model = config.model
-            self.advanced_model = getattr(config, "advanced_model", config.model)
+            self.model = config.model                          # Flash 模型
+            self.advanced_model = getattr(config, "advanced_model", config.model)  # Pro 模型
             self.max_tokens = config.max_tokens
-            self.temperature = config.temperature
+            self.temperature = config.temperature              # Flash 温度
+            self.pro_temperature = getattr(config, "pro_temperature", 0.2)  # Pro 温度
         else:
             self.base_url = os.environ.get(
                 "DEEPSEEK_BASE_URL", "https://api.deepseek.com/anthropic"
@@ -42,6 +43,7 @@ class AIClient:
             self.advanced_model = os.environ.get("DEEPSEEK_MODEL_ADVANCED", "deepseek-v4-pro")
             self.max_tokens = 4096
             self.temperature = 0.3
+            self.pro_temperature = 0.2
 
         if not self.api_key:
             raise ValueError("未设置 DEEPSEEK_API_KEY 环境变量")
@@ -83,9 +85,10 @@ class AIClient:
         temperature = temperature if temperature is not None else self.temperature
         max_tokens = max_tokens or self.max_tokens
 
-        logger.debug(
-            f"调用 AI: model={model}, system_len={len(system_prompt)}, "
-            f"user_len={len(user_message)}, temp={temperature}"
+        model_role = "PRO" if "pro" in model.lower() else "FLASH"
+        logger.info(
+            f"[{model_role}] 调用 AI: model={model}, "
+            f"prompt={len(system_prompt)+len(user_message)}chars, temp={temperature}"
         )
 
         try:
@@ -170,19 +173,19 @@ class AIClient:
         user_message: str,
         json_mode: bool = True,
     ) -> str | dict:
-        """使用高级模型 (V4-Pro) 进行分析"""
+        """使用 Pro 模型进行深度分析（策略总结、经验提炼、投资建议）"""
         if json_mode:
             return self.chat_json(
                 system_prompt=system_prompt,
                 user_message=user_message,
                 model=self.advanced_model,
-                temperature=0.2,  # 高级模型用更低温度保证分析质量
+                temperature=self.pro_temperature,
             )
         return self.chat(
             system_prompt=system_prompt,
             user_message=user_message,
             model=self.advanced_model,
-            temperature=0.2,
+            temperature=self.pro_temperature,
         )
 
     @staticmethod

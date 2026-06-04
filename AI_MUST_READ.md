@@ -35,7 +35,7 @@
 1. **数据是只增的**：`data/nav/*.csv` 只追加新日期，不覆盖已有数据
 2. **经验是只增的**：`experiences/decisions/*.json` 只追加，不删除
 3. **净值=T+1**：当天决策基于今天的净值（实际是昨天收盘的），基金净值每日晚间更新
-4. **费率计算**：买入 0.15%，卖出 0.5%（赎回费），单笔最低5元
+4. **动态费率**：买入 0.15%，卖出按 FIFO 持有天数阶梯计算（<7天 1.5% 惩罚 → ≥730天 0%），费率来自各基金实际数据
 5. **DeepSeek 限制**：不支持 cache_control 和 thinking，但支持 system prompt 和 JSON output
 6. **交易日历**：中国大陆市场，非周六日+非节假日，可用 akshare 获取交易日历
 7. **akshare 版本**: 1.18.64+ — `fund_open_fund_info_em(symbol, indicator, period)` 获取历史净值

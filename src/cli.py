@@ -134,7 +134,16 @@ def scrape(ctx, funds, all_funds):
 
     # 也抓取基准指数
     scraper.scrape_index_data()
-    console.print("[green]✅ 数据抓取完成[/green]")
+
+    # 抓取基金费率数据（赎回阶梯费率）
+    from .data.fees import FeeManager
+    fm = FeeManager()
+    repo = FundRepository()
+    existing = repo.get_funds()
+    if existing:
+        fm.fetch_all([f.code for f in existing])
+
+    console.print("[green]OK 数据抓取完成[/green]")
 
 
 @main.command()
@@ -143,9 +152,12 @@ def scrape(ctx, funds, all_funds):
 @click.option("--funds", "-f", multiple=True, help="基金代码")
 @click.option("--capital", "-c", default=10000.0, help="初始资金（元）")
 @click.option("--interval", "-i", default=1, help="决策间隔（交易日）")
-@click.option("--baseline", is_flag=True, help="运行基准策略对比")
+@click.option("--baseline", is_flag=True, help="运行等权买入持有基线对比")
+@click.option("--dca", is_flag=True, help="运行定投策略对比")
+@click.option("--dca-amount", default=1000.0, help="每次定投金额")
+@click.option("--dca-interval", default=22, help="定投间隔（交易日,默认22≈月）")
 @click.pass_context
-def backtest(ctx, start, end, funds, capital, interval, baseline):
+def backtest(ctx, start, end, funds, capital, interval, baseline, dca, dca_amount, dca_interval):
     """运行单次回测"""
     console.print(Panel.fit(f"Backtest: {start} ~ {end}", style="bold blue"))
 
@@ -180,6 +192,16 @@ def backtest(ctx, start, end, funds, capital, interval, baseline):
         console.print("[bold]基准策略 (等权买入持有)[/bold] ...")
         base_result = engine.run_simple_baseline(start_date, end_date, fund_pool)
         _print_result(base_result, "基准策略")
+
+    # 定投策略
+    if dca:
+        console.print(f"[bold]定投策略 (每次 ¥{dca_amount:,.0f}, 间隔 {dca_interval}天)[/bold] ...")
+        dca_result = engine.run_dca(
+            start_date, end_date, fund_pool,
+            amount_per_invest=dca_amount,
+            invest_interval_days=dca_interval,
+        )
+        _print_result(dca_result, "定投策略")
 
     # AI 策略
     console.print(f"\n[AI] 运行 AI 策略（决策间隔: {interval}天）...")

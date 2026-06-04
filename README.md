@@ -77,3 +77,7 @@ fund-ai/
 ## 许可证
 
 MIT
+
+## 详细文档
+
+📖 **[完整操作手册 (Wiki)](docs/WIKI.md)** — 包含命令详解、配置说明、基金添加、费率规则、AI 学习机制、GitHub Actions 等全部内容。
