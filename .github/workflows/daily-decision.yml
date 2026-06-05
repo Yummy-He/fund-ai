@@ -1,12 +1,12 @@
-# 每日: 判前一北京交易日 → 抓取净值 → 实盘交易 → 快速回测
-# 北京时间 00:30 (UTC 16:30), 周二至周六（UTC 周一-周五）
-# 周六凌晨处理周五数据，覆盖全部交易日
+# 每日: scrape 总是执行 → 交易日则 live 交易 + 回测
+# 北京时间 00:30 (UTC 16:30), 周一至周六（UTC 周日-周五）
+# 周六只 scrape 数据不交易，周一~周五正常交易
 
 name: Daily Scrape & Decision
 
 on:
   schedule:
-    - cron: "30 16 * * 1-5"
+    - cron: "30 16 * * 0-5"
   workflow_dispatch:
   push:
     paths:
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
-      - name: Check if previous Beijing day was a trading day
+      - name: Check if today (Beijing time) is a trading day
         id: trading_day
         shell: python
         run: |
@@ -45,8 +45,7 @@ jobs:
           beijing_tz = timezone(timedelta(hours=8))
           beijing_now = datetime.now(beijing_tz)
           beijing_today = beijing_now.date()
-          check_date = beijing_today - timedelta(days=1)  # 前一天
-          check_date_str = check_date.strftime("%Y-%m-%d")
+          today_str = beijing_today.strftime("%Y-%m-%d")
           is_td = "false"
 
           try:
@@ -55,34 +54,33 @@ jobs:
               # 第一层: 交易日历 (新浪) — trade_date 格式为 YYYY-MM-DD
               df = ak.tool_trade_date_hist_sina()
               trade_dates = set(str(d) for d in df["trade_date"])
-              if check_date_str in trade_dates:
+              if today_str in trade_dates:
                   is_td = "true"
-                  print(f"交易日历命中: {check_date_str}")
+                  print(f"交易日历命中: {today_str}")
 
               # 第二层: 日历未覆盖 → 查上证指数最新交易日
               if is_td == "false":
                   idx = ak.stock_zh_index_daily(symbol="sh000001")
                   latest = str(idx["date"].max())
-                  if latest == check_date_str:
+                  if latest == today_str:
                       is_td = "true"
                       print(f"上证指数确认: 最新交易日={latest}")
                   else:
-                      print(f"非交易日: 上证最新={latest}, 检查日期={check_date_str}")
+                      print(f"非交易日: 上证最新={latest}, 今天={today_str}")
           except Exception as e:
               print(f"akshare 查询异常: {e}")
 
           # 第三层: akshare 完全不可用时的回退
           if is_td == "false":
-              is_td = "true" if check_date.weekday() < 5 else "false"
-              print(f"回退到工作日判断: weekday={check_date.weekday()}")
+              is_td = "true" if beijing_today.weekday() < 5 else "false"
+              print(f"回退到工作日判断: weekday={beijing_today.weekday()}")
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"IS_TRADING_DAY={is_td}\n")
-              f.write(f"CHECK_DATE={check_date_str}\n")
-          print(f"北京时间={beijing_today}, 检查前一天={check_date_str}, 交易日: {is_td}")
+              f.write(f"TODAY={today_str}\n")
+          print(f"北京时间={beijing_today}, 交易日: {is_td}")
 
-      - name: Scrape NAV data
-        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
+      - name: Scrape latest NAV data (always)
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
@@ -91,30 +89,30 @@ jobs:
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python -m src.cli live -d ${{ steps.trading_day.outputs.CHECK_DATE }}
+        run: python -m src.cli live -d ${{ steps.trading_day.outputs.TODAY }}
 
-      - name: Quick daily review (recent 60 days, weekly decisions)
+      - name: Quick daily review (recent 60 days)
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          END_DATE=${{ steps.trading_day.outputs.CHECK_DATE }}
+          END_DATE=${{ steps.trading_day.outputs.TODAY }}
           START_DATE=$(date -d "$END_DATE - 60 days" +%Y-%m-%d)
           python -m src.cli backtest \
             --start "$START_DATE" \
             --end "$END_DATE" \
             --interval 5
 
-      - name: Commit and push
-        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
+      - name: Commit and push (always)
         run: |
           git config user.name "fund-ai-bot"
           git config user.email "bot@fund-ai.local"
           git add data/ reports/ experiences/
-          git diff --staged --quiet || git commit -m "daily: scrape + live + review $(date +%Y-%m-%d)"
+          if [ "${{ steps.trading_day.outputs.IS_TRADING_DAY }}" = "true" ]; then
+            MSG="daily: scrape + live + review ${{ steps.trading_day.outputs.TODAY }}"
+          else
+            MSG="daily: scrape only ${{ steps.trading_day.outputs.TODAY }}"
+          fi
+          git diff --staged --quiet || git commit -m "$MSG"
           git pull --rebase -X theirs origin main
           git push
-
-      - name: Skip (non-trading day)
-        if: steps.trading_day.outputs.IS_TRADING_DAY != 'true'
-        run: echo "Previous Beijing day is not a trading day, skipping."
