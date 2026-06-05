@@ -87,12 +87,17 @@ class FundFee:
         return self.management_fee + self.custody_fee + self.sales_service_fee
 
     def get_subscription_fee(self, amount: float) -> float:
-        """根据申购金额匹配费率（默认费率 0.15% 为平台折扣后）"""
+        """根据申购金额匹配费率，已应用平台 1 折优惠（官方费率 × 0.1）
+
+        东方财富页面展示的是官方原价费率（通常 1.0%-1.5%），
+        而主流平台（支付宝/天天基金）实际收取 1 折优惠后的费率。
+        """
         if not self.subscription_tiers:
-            return 0.0015  # 默认 0.15%（支付宝/天天基金折扣）
+            return 0.0015  # 默认 0.15%（主流平台折扣后）
         for tier in self.subscription_tiers:
             if tier.matches(amount):
-                return tier.rate
+                # 官方费率 × 0.1 = 平台折扣费率（1折）
+                return tier.rate * 0.1
         return 0.0015
 
     def get_redemption_fee(self, holding_days: int) -> float:
