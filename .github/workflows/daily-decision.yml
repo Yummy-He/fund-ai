@@ -78,6 +78,7 @@ jobs:
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"IS_TRADING_DAY={is_td}\n")
+              f.write(f"CHECK_DATE={check_date_str}\n")
           print(f"北京时间={beijing_today}, 检查前一天={check_date_str}, 交易日: {is_td}")
 
       - name: Scrape NAV data
@@ -90,15 +91,15 @@ jobs:
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python -m src.cli live
+        run: python -m src.cli live -d ${{ steps.trading_day.outputs.CHECK_DATE }}
 
       - name: Quick daily review (recent 60 days, weekly decisions)
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          END_DATE=$(date +%Y-%m-%d)
-          START_DATE=$(date -d "60 days ago" +%Y-%m-%d)
+          END_DATE=${{ steps.trading_day.outputs.CHECK_DATE }}
+          START_DATE=$(date -d "$END_DATE - 60 days" +%Y-%m-%d)
           python -m src.cli backtest \
             --start "$START_DATE" \
             --end "$END_DATE" \
