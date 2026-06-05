@@ -292,14 +292,20 @@ class LiveTrader:
                 if not order.is_trade:
                     continue
                 try:
-                    self.order_manager.execute(order, portfolio, nav_map, target_date)
-                    decisions.append({
+                    txn = self.order_manager.execute(order, portfolio, nav_map, target_date)
+                    detail = {
                         "fund_code": order.fund_code,
                         "action": order.action,
                         "amount": order.amount,
                         "reasoning": order.reasoning or "",
                         "confidence": order.confidence,
-                    })
+                    }
+                    if txn:
+                        detail["shares"] = round(txn.shares, 4)
+                        detail["price"] = round(txn.price, 4)
+                        detail["commission"] = round(txn.commission, 2)
+                        detail["net_amount"] = round(txn.amount - txn.commission, 2)
+                    decisions.append(detail)
                 except Exception as e:
                     logger.warning(f"执行订单失败 ({order.fund_code} {order.action}): {e}")
         except Exception as e:

@@ -316,36 +316,59 @@ class MarkdownReportGenerator:
         lines.append("")
         positions = snapshot_after.get("positions", [])
         if positions:
-            lines.append("| 基金代码 | 持有份额 | 成本价 | 当前净值 | 市值(¥) | 盈亏% |")
-            lines.append("|----------|----------|--------|----------|----------|-------|")
+            lines.append("| 基金代码 | 持有份额 | 成本价 | 当前净值 | 市值(¥) | 浮动盈亏 | 盈亏% |")
+            lines.append("|----------|----------|--------|----------|----------|----------|-------|")
             for pos in positions:
+                pnl = pos.get("market_value", 0) * pos.get("profit_loss_pct", 0) / 100
                 pnl_pct = pos.get("profit_loss_pct", 0)
                 emoji = "🟢" if pnl_pct > 0 else ("🔴" if pnl_pct < 0 else "⚪")
                 lines.append(
                     f"| {pos['fund_code']} | {pos['shares']:.2f} | {pos['avg_cost']:.4f} | "
                     f"{pos['current_nav']:.4f} | {pos['market_value']:,.2f} | "
-                    f"{emoji} {pnl_pct:+.2f}% |"
+                    f"{emoji} ¥{pnl:+,.2f} | {pnl_pct:+.2f}% |"
                 )
             lines.append("")
         else:
             lines.append("暂无持仓")
             lines.append("")
 
-        # 今日操作
+        # 今日操作明细
         lines.append("## 🔧 今日操作")
         lines.append("")
         if decisions:
-            lines.append("| 操作 | 基金 | 金额(¥) | 置信度 | 理由 |")
-            lines.append("|------|------|----------|--------|------|")
+            lines.append("| 操作 | 基金 | 金额(¥) | 净值 | 份额 | 手续费(¥) | 置信度 | 理由 |")
+            lines.append("|------|------|----------|------|------|-----------|--------|------|")
             for d in decisions:
                 action_str = {"buy": "🟢 买入", "sell": "🔴 卖出", "increase": "🟢 加仓", "decrease": "🔴 减仓"}.get(
                     d.get("action", ""), d.get("action", "")
                 )
+                shares = d.get("shares", "")
+                price = d.get("price", "")
+                commission = d.get("commission", 0)
                 lines.append(
                     f"| {action_str} | {d['fund_code']} | {d.get('amount', 0):,.2f} | "
-                    f"{d.get('confidence', 0):.0%} | {d.get('reasoning', '')[:60]} |"
+                    f"{f'{price:.4f}' if price else '-'} | "
+                    f"{f'{shares:.2f}' if shares else '-'} | "
+                    f"{commission:.2f} | "
+                    f"{d.get('confidence', 0):.0%} | {d.get('reasoning', '')[:50]} |"
                 )
             lines.append("")
+
+            # 手续费汇总
+            total_buy_commission = sum(d.get("commission", 0) for d in decisions if d.get("action") in ("buy", "increase"))
+            total_sell_commission = sum(d.get("commission", 0) for d in decisions if d.get("action") in ("sell", "decrease"))
+            total_commission = total_buy_commission + total_sell_commission
+            if total_commission > 0:
+                lines.append("### 💸 手续费明细")
+                lines.append("")
+                lines.append("| 类型 | 金额(¥) |")
+                lines.append("|------|----------|")
+                if total_buy_commission > 0:
+                    lines.append(f"| 申购费 | {total_buy_commission:.2f} |")
+                if total_sell_commission > 0:
+                    lines.append(f"| 赎回费 | {total_sell_commission:.2f} |")
+                lines.append(f"| **合计** | **{total_commission:.2f}** |")
+                lines.append("")
         else:
             lines.append("今日无操作，维持现有持仓")
             lines.append("")
@@ -364,18 +387,56 @@ class MarkdownReportGenerator:
         lines.append("")
         lines.append("| 指标 | 数值 |")
         lines.append("|------|------|")
-        lines.append(f"| 初始资金 | ¥{10000:,.2f} |")
+        lines.append(f"| 初始资金 | ¥10,000.00 |")
         lines.append(f"| 当前总价值 | ¥{snapshot_after.get('total_value', 0):,.2f} |")
-        lines.append(f"| 现金 | ¥{snapshot_after.get('cash', 0):,.2f} |")
+        lines.append(f"| 现金余额 | ¥{snapshot_after.get('cash', 0):,.2f} |")
         lines.append(f"| 持仓市值 | ¥{snapshot_after.get('total_market_value', 0):,.2f} |")
         lines.append(f"| 累计收益率 | {snapshot_after.get('total_return_pct', 0):+.2f}% |")
+        lines.append(f"| 持有基金数 | {snapshot_after.get('position_count', 0)} |")
+        lines.append("")
 
-        # 本日盈亏
+        # 本日盈亏明细
+        lines.append("## 📉 本日盈亏明细")
+        lines.append("")
+        day_pnl = 0.0
         if snapshot_before and snapshot_after:
             day_pnl = snapshot_after.get("total_value", 0) - snapshot_before.get("total_value", 0)
-            pnl_emoji = "🟢" if day_pnl >= 0 else "🔴"
-            lines.append(f"| 本日盈亏 | {pnl_emoji} ¥{day_pnl:+,.2f} |")
-        lines.append(f"| 持有基金数 | {snapshot_after.get('position_count', 0)} |")
+
+        # 已有持仓的市值涨跌
+        pos_before = {p["fund_code"]: p for p in snapshot_before.get("positions", [])}
+        pos_after = {p["fund_code"]: p for p in snapshot_after.get("positions", [])}
+        market_change = 0.0
+        for code, pos in pos_after.items():
+            if code in pos_before:
+                before_mv = pos_before[code].get("market_value", 0)
+                after_mv = pos.get("market_value", 0)
+                market_change += (after_mv - before_mv)
+
+        total_buy_fee = sum(d.get("commission", 0) for d in decisions if d.get("action") in ("buy", "increase"))
+        total_sell_fee = sum(d.get("commission", 0) for d in decisions if d.get("action") in ("sell", "decrease"))
+        total_fee = total_buy_fee + total_sell_fee
+
+        # 其他（新买入净值波动等）
+        other = day_pnl - market_change + total_fee
+
+        pnl_emoji = "🟢" if day_pnl >= 0 else "🔴"
+        lines.append("| 项目 | 金额(¥) | 说明 |")
+        lines.append("|------|----------|------|")
+        lines.append(f"| 📊 总变动 | {pnl_emoji} {day_pnl:+,.2f} | 今日总价值 - 前一日总价值 |")
+        if abs(market_change) > 0.01:
+            m_emoji = "🟢" if market_change >= 0 else "🔴"
+            lines.append(f"| 📈 持仓涨跌 | {m_emoji} {market_change:+,.2f} | 已有持仓的市值变动 |")
+        if total_buy_fee > 0:
+            lines.append(f"| 💸 申购手续费 | -{total_buy_fee:.2f} | 今日买入/加仓产生 |")
+        if total_sell_fee > 0:
+            lines.append(f"| 💸 赎回手续费 | -{total_sell_fee:.2f} | 今日卖出/减仓产生 |")
+        if abs(other) > 0.01:
+            lines.append(f"| 🔄 其他 | {other:+,.2f} | 新买入基金净值波动等 |")
+        if not decisions:
+            if abs(market_change) > 0.01:
+                lines.append(f"| 📈 持仓涨跌 | {market_change:+,.2f} | 无操作，纯持仓波动 |")
+            else:
+                lines.append(f"| — | 0.00 | 无操作，净值未更新 |")
         lines.append("")
 
         # 免责声明
