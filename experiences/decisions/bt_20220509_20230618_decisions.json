@@ -100,5 +100,107 @@
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
+  },
+  {
+    "id": "8a48b88d-827",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-06T03:07:27.913606+08:00",
+    "scenario": {
+      "date": "2023-06-05",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 8500.0,
+      "amount_pct": 377.9995,
+      "reasoning": "INDEX类基金在震荡市买入历史胜率79%，平均回报+2.88%，华泰柏瑞沪深300ETF作为指数基金，可捕捉市场反弹机会。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": 1.85,
+      "return_90d": -0.1,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9a0a18a8-990",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-06T03:07:27.952699+08:00",
+    "scenario": {
+      "date": "2023-06-08",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.14534863654517297,
+      "portfolio_return": -1.0998634615166338
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.3969,
+      "reasoning": "震荡市下BOND类基金加仓胜率70%且平均收益+2.8%，当前波动率低，加仓以增强组合防御性并优化夏普比率。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.54,
+      "return_30d": 1.6,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "de335b18-def",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-06-06T03:07:27.991592+08:00",
+    "scenario": {
+      "date": "2023-06-13",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.671,
+      "nav_change_7d": 2.89,
+      "nav_change_30d": 3.14,
+      "nav_change_90d": 3.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09353598171612901,
+      "portfolio_return": 0.14862546083377312
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 22.0092,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.93,
+      "return_30d": 1.94,
+      "return_90d": -1.59,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
   }
 ]
