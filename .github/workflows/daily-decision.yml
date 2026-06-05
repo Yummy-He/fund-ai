@@ -1,11 +1,12 @@
 # 每日: 判前一北京交易日 → 抓取净值 → 实盘交易 → 快速回测
-# 北京时间 00:30 (UTC 16:30), 周一至周五（UTC 周日-周四）
+# 北京时间 00:30 (UTC 16:30), 周二至周六（UTC 周一-周五）
+# 周六凌晨处理周五数据，覆盖全部交易日
 
 name: Daily Scrape & Decision
 
 on:
   schedule:
-    - cron: "30 16 * * 0-4"
+    - cron: "30 16 * * 1-5"
   workflow_dispatch:
   push:
     paths:
