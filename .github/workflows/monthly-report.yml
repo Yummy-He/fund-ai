@@ -1,11 +1,11 @@
 # 每月1日: 深度学习 + 综合报告
-# 北京时间 12:00 (UTC 04:00)
+# 北京时间 03:00 (UTC 19:00 月末最后几天, 运行时判断 BJT 明天是否为 1 日)
 
 name: Monthly Deep Report
 
 on:
   schedule:
-    - cron: "0 4 1 * *"
+    - cron: "0 19 28-31 * *"
   workflow_dispatch:
     inputs:
       iterations:
@@ -37,7 +37,24 @@ jobs:
       - name: Install dependencies
         run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
+      - name: Check if BJT tomorrow is 1st of month
+        id: monthly_check
+        shell: python
+        run: |
+          import os
+          from datetime import datetime, timedelta, timezone
+
+          beijing_tz = timezone(timedelta(hours=8))
+          beijing_now = datetime.now(beijing_tz)
+          tomorrow = beijing_now + timedelta(days=1)
+          is_monthly = "true" if tomorrow.day == 1 else "false"
+
+          print(f"BJT now: {beijing_now}, BJT tomorrow: {tomorrow}, is_1st: {is_monthly}")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"IS_MONTHLY={is_monthly}\n")
+
       - name: Deep learning (20 iterations)
+        if: steps.monthly_check.outputs.IS_MONTHLY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
@@ -45,6 +62,7 @@ jobs:
             --iterations ${{ github.event.inputs.iterations || 20 }}
 
       - name: Generate monthly recommendation
+        if: steps.monthly_check.outputs.IS_MONTHLY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
@@ -53,6 +71,7 @@ jobs:
             --output "reports/recommendations/${MONTH}.md"
 
       - name: Commit and push
+        if: steps.monthly_check.outputs.IS_MONTHLY == 'true'
         run: |
           git config user.name "fund-ai-bot"
           git config user.email "bot@fund-ai.local"
@@ -60,3 +79,7 @@ jobs:
           git diff --staged --quiet || git commit -m "monthly: deep learn + report $(date +%Y-%m)"
           git pull --rebase -X theirs origin main
           git push
+
+      - name: Skip (not 1st of month)
+        if: steps.monthly_check.outputs.IS_MONTHLY != 'true'
+        run: echo "BJT tomorrow is not the 1st of month, skipping."

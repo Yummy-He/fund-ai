@@ -13,6 +13,8 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from ..utils.date_utils import beijing_now
+
 logger = logging.getLogger("fund_ai.report.generator")
 
 
@@ -38,7 +40,7 @@ class MarkdownReportGenerator:
         """
         lines = []
         lines.append(f"# 基金回测报告")
-        lines.append(f"\n> 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        lines.append(f"\n> 生成时间: {beijing_now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
 
         # 基本信息
         lines.append("## 📋 基本信息")
@@ -117,7 +119,7 @@ class MarkdownReportGenerator:
         """
         lines = []
         lines.append(f"# 🎯 基金投资建议报告")
-        lines.append(f"\n> 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        lines.append(f"\n> 生成时间: {beijing_now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)")
         lines.append(f"\n> ⚠️ 免责声明: 本报告由 AI 基于历史回测生成，不构成投资建议。投资有风险，入市需谨慎。\n")
 
         # 市场分析
@@ -195,7 +197,7 @@ class MarkdownReportGenerator:
         """生成学习进度报告"""
         lines = []
         lines.append(f"# 📚 AI 投资学习报告")
-        lines.append(f"\n> 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        lines.append(f"\n> 生成时间: {beijing_now().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)\n")
 
         # 概览
         lines.append(f"## 概览")
@@ -265,6 +267,125 @@ class MarkdownReportGenerator:
 
         if output_path:
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(md)
+
+        return md
+
+    def generate_live_report(
+        self,
+        target_date,
+        snapshot_before: dict,
+        snapshot_after: dict,
+        decisions: list,
+        market_context: Optional[dict] = None,
+        output_path: Optional[str] = None,
+    ) -> str:
+        """生成实盘交易日报
+
+        Args:
+            target_date: 交易日期
+            snapshot_before: 决策前持仓快照
+            snapshot_after: 决策后持仓快照
+            decisions: 当日的交易决策列表
+            market_context: 市场环境（可选）
+            output_path: 输出路径
+        """
+        from ..utils.date_utils import beijing_now as _beijing_now2
+
+        lines = []
+        lines.append(f"# 📊 实盘交易日报")
+        lines.append(f"\n> 生成时间: {_beijing_now2().strftime('%Y-%m-%d %H:%M:%S')} (北京时间)")
+        lines.append(f"> 交易日期: {target_date.strftime('%Y年%m月%d日')}")
+        lines.append("")
+
+        # 市场概况
+        lines.append("## 📈 市场概况")
+        lines.append("")
+        if market_context:
+            lines.append("| 指标 | 数值 |")
+            lines.append("|------|------|")
+            for k, v in market_context.items():
+                lines.append(f"| {k} | {v} |")
+        else:
+            lines.append("（市场数据由 AI 决策时实时获取）")
+        lines.append("")
+
+        # 当前持仓
+        lines.append("## 💼 当前持仓")
+        lines.append("")
+        positions = snapshot_after.get("positions", [])
+        if positions:
+            lines.append("| 基金代码 | 持有份额 | 成本价 | 当前净值 | 市值(¥) | 盈亏% |")
+            lines.append("|----------|----------|--------|----------|----------|-------|")
+            for pos in positions:
+                pnl_pct = pos.get("profit_loss_pct", 0)
+                emoji = "🟢" if pnl_pct > 0 else ("🔴" if pnl_pct < 0 else "⚪")
+                lines.append(
+                    f"| {pos['fund_code']} | {pos['shares']:.2f} | {pos['avg_cost']:.4f} | "
+                    f"{pos['current_nav']:.4f} | {pos['market_value']:,.2f} | "
+                    f"{emoji} {pnl_pct:+.2f}% |"
+                )
+            lines.append("")
+        else:
+            lines.append("暂无持仓")
+            lines.append("")
+
+        # 今日操作
+        lines.append("## 🔧 今日操作")
+        lines.append("")
+        if decisions:
+            lines.append("| 操作 | 基金 | 金额(¥) | 置信度 | 理由 |")
+            lines.append("|------|------|----------|--------|------|")
+            for d in decisions:
+                action_str = {"buy": "🟢 买入", "sell": "🔴 卖出", "increase": "🟢 加仓", "decrease": "🔴 减仓"}.get(
+                    d.get("action", ""), d.get("action", "")
+                )
+                lines.append(
+                    f"| {action_str} | {d['fund_code']} | {d.get('amount', 0):,.2f} | "
+                    f"{d.get('confidence', 0):.0%} | {d.get('reasoning', '')[:60]} |"
+                )
+            lines.append("")
+        else:
+            lines.append("今日无操作，维持现有持仓")
+            lines.append("")
+
+        # AI 决策分析
+        if decisions:
+            lines.append("## 🤖 AI 决策分析")
+            lines.append("")
+            for d in decisions:
+                if d.get("reasoning"):
+                    lines.append(f"- **{d['fund_code']}** ({d['action']}): {d['reasoning']}")
+            lines.append("")
+
+        # 投资组合概况
+        lines.append("## 📊 投资组合概况")
+        lines.append("")
+        lines.append("| 指标 | 数值 |")
+        lines.append("|------|------|")
+        lines.append(f"| 初始资金 | ¥{10000:,.2f} |")
+        lines.append(f"| 当前总价值 | ¥{snapshot_after.get('total_value', 0):,.2f} |")
+        lines.append(f"| 现金 | ¥{snapshot_after.get('cash', 0):,.2f} |")
+        lines.append(f"| 持仓市值 | ¥{snapshot_after.get('total_market_value', 0):,.2f} |")
+        lines.append(f"| 累计收益率 | {snapshot_after.get('total_return_pct', 0):+.2f}% |")
+
+        # 本日盈亏
+        if snapshot_before and snapshot_after:
+            day_pnl = snapshot_after.get("total_value", 0) - snapshot_before.get("total_value", 0)
+            pnl_emoji = "🟢" if day_pnl >= 0 else "🔴"
+            lines.append(f"| 本日盈亏 | {pnl_emoji} ¥{day_pnl:+,.2f} |")
+        lines.append(f"| 持有基金数 | {snapshot_after.get('position_count', 0)} |")
+        lines.append("")
+
+        # 免责声明
+        lines.append("---")
+        lines.append("> ⚠️ 免责声明: 本报告由 AI 基于历史经验生成，为模拟交易记录，不构成投资建议。投资有风险，入市需谨慎。")
+
+        md = "\n".join(lines)
+
+        if output_path:
+            Path(output_path).parent.mkdir(parents=True, exist_ok=True)
             with open(output_path, "w", encoding="utf-8") as f:
                 f.write(md)
 

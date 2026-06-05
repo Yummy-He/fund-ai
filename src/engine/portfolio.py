@@ -7,6 +7,8 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Dict, List, Optional
 
+from ..utils.date_utils import beijing_today
+
 
 @dataclass
 class Position:
@@ -192,7 +194,7 @@ class Portfolio:
             pos.shares -= shares
 
         txn = Transaction(
-            date=trade_date or date.today(),
+            date=trade_date or beijing_today(),
             fund_code=fund_code,
             action="sell",
             shares=shares,

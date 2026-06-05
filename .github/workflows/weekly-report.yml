@@ -1,11 +1,11 @@
 # 每周六: 学习回测 + 投资建议报告
-# 北京时间 周六 10:00 (UTC 02:00)
+# 北京时间 周六 01:00 (UTC 周五 17:00)
 
 name: Weekly Learn & Report
 
 on:
   schedule:
-    - cron: "0 2 * * 6"
+    - cron: "0 17 * * 5"
   workflow_dispatch:
     inputs:
       iterations:

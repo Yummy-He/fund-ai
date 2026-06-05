@@ -1,6 +1,6 @@
 # 基金 AI 分析系统 — 操作手册
 
-> 版本 v0.1.0 | 2026-06-04
+> 版本 v0.4.0 | 2026-06-05
 
 ## 目录
 
@@ -25,7 +25,7 @@
 
 ```
 抓取基金净值数据 → 历史回测模拟(1万元起) → AI逐日决策买卖 → 
-积累投资经验 → 多轮回测学习 → 生成投资建议
+积累投资经验 → 多轮回测学习 → 实盘模拟交易 → 生成投资建议
 ```
 
 ### 核心概念
@@ -35,14 +35,15 @@
 | **回测** | AI "穿越"到过去某天，用 1 万虚拟资金逐日决策，直到"现在" |
 | **经验** | 每次决策 + 后续结果 = 一条经验（存在 `experiences/`） |
 | **学习** | 多轮不同时段回测，AI 从经验中总结策略模式 |
+| **实盘** | `live` 命令每天运行，AI 根据历史经验用 ¥10,000 真实模拟交易 |
 | **RAG 检索** | 新决策时自动找相似场景的历史经验做参考 |
 
 ### 技术栈
 
 - **数据**: akshare（东方财富底层数据）
 - **AI**: DeepSeek V4-Flash (日常决策) + V4-Pro (深度分析)
-- **存储**: CSV 文件（可直接在 GitHub 上查看）
-- **自动化**: GitHub Actions
+- **存储**: CSV + JSON 文件（可直接在 GitHub 上查看）
+- **自动化**: GitHub Actions（实盘交易 + 抓取 + 回测 + 报告）
 
 ---
 
@@ -143,6 +144,24 @@ python -m src.cli recommend
 # 输出到指定文件
 python -m src.cli recommend --output reports/my_advice.md
 ```
+
+### live — 实盘模拟交易
+
+```powershell
+# 今日常规实盘交易（AI 决策买卖）
+python -m src.cli live
+
+# 指定日期（用于回填历史）
+python -m src.cli live -d 2026-06-04
+```
+
+**工作流程：**
+1. 检查目标日期是否为交易日（非交易日自动跳过）
+2. 从 `data/live/portfolio.json` 加载当前持仓（首次自动初始化 ¥10,000）
+3. 获取当日基金净值，AI 结合历史经验生成买卖决策
+4. 执行订单，更新持仓和现金
+5. 保存持仓状态，生成日报 `reports/live/{date}.md`
+6. 自动清理 30 天前的旧报告
 
 ### report — 生成报告
 
@@ -399,13 +418,13 @@ experiences/
 
 ## 8. GitHub Actions 自动化
 
-### 8.1 三个工作流
+### 8.1 三个工作流（均为北京时间）
 
 | 工作流 | 频率 | 功能 |
 |--------|------|------|
-| `daily-decision.yml` | 每个交易日 17:30 | 判交易日→抓取净值→快速回测 |
-| `weekly-report.yml` | 每周六 10:00 | 5轮学习回测 + 投资建议 |
-| `monthly-report.yml` | 每月1日 12:00 | 20轮深度学习 + 综合报告 |
+| `daily-decision.yml` | 每个交易日 00:30 | 判前一交易日→抓净值→实盘交易→60天回测 |
+| `weekly-report.yml` | 每周六 01:00 | 抓取+5轮学习回测+投资建议 |
+| `monthly-report.yml` | 每月1日 03:00 | 20轮深度学习+月度综合报告 |
 
 ### 8.2 推送到 GitHub
 
@@ -478,32 +497,36 @@ fund-ai/
 ├── src/
 │   ├── cli.py                 # 命令行入口
 │   ├── data/                  # 数据层: 抓取 + 存储
-│   ├── engine/                # 回测引擎: 模拟 + AI决策
+│   ├── engine/                # 引擎: 回测 + 实盘 + AI决策
 │   ├── learning/              # 学习层: 经验 + 检索 + 评估
 │   ├── report/                # 报告生成
-│   └── utils/                 # 工具函数
+│   └── utils/                 # 工具函数（含北京时间）
 ├── data/                      # 数据文件 (Git 追踪)
 │   ├── nav/                   # 每只基金一个 CSV
+│   ├── live/                  # 实盘持仓状态
 │   ├── funds/                 # 基金元数据
 │   └── index/                 # 基准指数
 ├── experiences/               # AI 经验库 (Git 追踪)
 ├── reports/                   # 输出报告 (Git 追踪)
+│   ├── live/                  # 实盘日报
+│   ├── backtests/             # 回测报告
+│   └── recommendations/       # 投资建议
 └── .github/workflows/         # CI/CD 自动化
 ```
 
 ### 主要类关系
 
 ```
-BacktestEngine (回测主循环)
+BacktestEngine / LiveTrader (回测/实盘主循环)
   ├── Portfolio        (资金 + 持仓)
-  ├── TimeSimulator    (交易日步进器)
+  ├── TimeSimulator    (交易日步进器，仅回测)
   ├── FundDecisionMaker (AI 决策)
   │     ├── AIClient           (DeepSeek API)
   │     ├── PromptBuilder      (提示词构建)
   │     ├── FundRepository     (净值查询)
   │     └── ExperienceRetriever (经验检索)
   ├── OrderManager     (订单验证执行)
-  └── MetricsCalculator (指标计算)
+  └── MetricsCalculator (指标计算，仅回测)
 ```
 
 ### 修改提示词

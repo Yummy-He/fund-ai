@@ -7,7 +7,7 @@ from datetime import date, timedelta
 from typing import List, Optional
 import random
 
-from ..utils.date_utils import TradingCalendar, get_trading_calendar
+from ..utils.date_utils import TradingCalendar, get_trading_calendar, beijing_today
 
 
 class TimeSimulator:
@@ -96,7 +96,7 @@ class TimeSimulator:
         Returns:
             (start_date, end_date)
         """
-        today = date.today()
+        today = beijing_today()
         # 最晚结束日期：today - buffer
         latest_end = today - timedelta(days=end_buffer_days)
         # 最早开始日期：5年前

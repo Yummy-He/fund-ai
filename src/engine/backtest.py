@@ -18,6 +18,7 @@ from .decision import FundDecisionMaker
 from .ai_client import AIClient
 from .prompt import PromptBuilder
 from ..data.store import FundRepository
+from ..utils.date_utils import beijing_now
 from ..data.models import MarketContext, MarketTrend
 from ..learning.experience import Experience, ScenarioSnapshot, DecisionRecord, OutcomeRecord
 
@@ -311,7 +312,7 @@ class BacktestEngine:
             )
 
             experiences.append(Experience(
-                backtest_id=backtest_id, timestamp=datetime.now().isoformat(),
+                backtest_id=backtest_id, timestamp=beijing_now().isoformat(),
                 scenario=scenario, decision=decision, outcome=outcome,
             ))
         return experiences

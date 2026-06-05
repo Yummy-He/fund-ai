@@ -4,9 +4,22 @@
 当天做决策，看到的净值是 T-1 日的（最新的已公布净值）。
 """
 
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from typing import Optional, List
 import time
+
+# 北京时区 (UTC+8)
+BEIJING_TZ = timezone(timedelta(hours=8))
+
+
+def beijing_now() -> datetime:
+    """返回当前北京时间（带时区）"""
+    return datetime.now(BEIJING_TZ)
+
+
+def beijing_today() -> date:
+    """返回当前北京日期"""
+    return beijing_now().date()
 
 
 def get_today() -> date:

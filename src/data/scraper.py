@@ -12,6 +12,7 @@ from .models import Fund, FundType
 from .sources.akshare_source import AkshareSource
 from .sources.eastmoney_source import EastMoneySource
 from .store import FundRepository
+from ..utils.date_utils import beijing_today
 
 logger = logging.getLogger("fund_ai.data.scraper")
 
@@ -72,7 +73,7 @@ class FundDataScraper:
     ) -> pd.DataFrame:
         """抓取单只基金的历史净值"""
         if end is None:
-            end = date.today()
+            end = beijing_today()
         if start is None:
             history_days = getattr(self.config, "default_history_days", 1095) if self.config else 1095
             start = end - timedelta(days=history_days)

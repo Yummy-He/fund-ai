@@ -16,6 +16,7 @@ from datetime import datetime
 from typing import List
 
 from .experience import Experience, ExperienceStore
+from ..utils.date_utils import beijing_now
 
 logger = logging.getLogger("fund_ai.learning.consolidator")
 
@@ -99,7 +100,7 @@ class ExperienceConsolidator:
         try:
             if exp.timestamp:
                 exp_dt = datetime.fromisoformat(exp.timestamp[:19])
-                days_ago = (datetime.now() - exp_dt).days
+                days_ago = (beijing_now() - exp_dt).days
                 if days_ago <= 180:
                     score += 40.0
                 elif days_ago <= 365:

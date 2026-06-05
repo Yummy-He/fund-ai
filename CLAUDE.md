@@ -6,18 +6,20 @@
 
 AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取历史净值，反复回测（"穿越"到过去用 1 万元逐日决策买卖），积累经验，学会分析基金并给出投资建议。
 
-## 当前状态（v0.3.0 | 2026-06-04）
+## 当前状态（v0.4.0 | 2026-06-05）
 
 - 经验系统已贯通：learn 每轮回测产生逐条 Experience → `experiences/decisions/`
 - 经验自动裁剪：超过 3000 条时 consolidator 按质量分裁剪到 2000 条
-- 7 维经验检索已激活，AI 决策时有历史经验参考（不再报"经验库为空"）
+- 7 维经验检索已激活，AI 决策时有历史经验参考
+- **实盘模拟交易**：`live` 命令每日 AI 决策买卖，¥10,000 真实模拟持仓，状态持久化
+- **时区统一北京时间**：所有报告时间戳和日期判断使用北京时间 (UTC+8)
 - **推送不触发 workflow**：改 `.github/TRIGGER` 才触发。日常 push 不会浪费 CI 资源
 
 - 10 只基金 ~727 条/只净值数据（2023-06 ~ 今）
 - 每只基金独立真实费率（从东方财富 + akshare 抓取）
 - 双层 AI 模型：Flash（日常回测决策）+ Pro（策略总结/建议）
 - 三种策略：AI 主动决策 / 等权买入持有 / 每月定投（DCA）
-- GitHub Actions 自动化：每日抓取+回测 / 每周学习+报告 / 月度深度分析
+- GitHub Actions 自动化：每日（实盘+抓取+回测）/ 每周学习+报告 / 月度深度分析
 - 完整操作手册：https://github.com/Yummy-He/fund-ai/wiki
 
 ## 关键约束
@@ -43,7 +45,7 @@ fund-ai/
 │   ├── funds.yaml             # 基金池（10只）
 │   └── prompt_templates/      # AI 提示词模板
 ├── src/
-│   ├── cli.py                 # CLI入口（scrape/backtest/learn/recommend/report）
+│   ├── cli.py                 # CLI入口（scrape/backtest/learn/live/recommend/report）
 │   ├── data/
 │   │   ├── fees.py            # 费率模型 + FeeManager（每只基金独立费率）
 │   │   ├── models.py          # Fund/NAVRecord/FundType 等数据模型
@@ -56,6 +58,7 @@ fund-ai/
 │   │   ├── ai_client.py       # DeepSeek API（Anthropic格式）
 │   │   ├── backtest.py        # 回测引擎（含 run/run_simple_baseline/run_dca）
 │   │   ├── decision.py        # AI 决策编排
+│   │   ├── live.py            # 实盘模拟交易引擎（每日 AI 决策）
 │   │   ├── metrics.py         # 指标计算（夏普/回撤/CAGR）
 │   │   ├── orders.py          # 订单验证执行（含动态费率）
 │   │   ├── portfolio.py       # 持仓管理（含 FIFO 持有天数）
@@ -70,10 +73,11 @@ fund-ai/
 │   │   └── generator.py       # Markdown 报告生成
 │   └── utils/
 │       ├── config.py          # 配置加载（YAML → AppConfig）
-│       ├── date_utils.py      # 交易日历
+│       ├── date_utils.py      # 交易日历 + 北京时间工具函数
 │       └── logging.py         # 日志
 ├── data/                      # 净值+费率数据（Git追踪）
 │   ├── nav/                   # 每只基金一个CSV
+│   ├── live/                  # 实盘持仓状态（Git追踪）
 │   ├── funds/fees.json        # 所有基金费率缓存
 │   └── index/                 # 基准指数
 ├── experiences/               # AI经验库（Git追踪）
@@ -82,13 +86,14 @@ fund-ai/
 │   └── summaries/             # 策略总结
 ├── reports/                   # 报告（Git追踪）
 │   ├── backtests/             # 回测报告（.md）
+│   ├── live/                  # 实盘日报（保留近30天）
 │   ├── recommendations/       # 投资建议
 │   └── daily/                 # 每日简报
 ├── docs/WIKI.md               # 操作手册源文件
 ├── .github/workflows/         # CI/CD
-│   ├── daily-decision.yml     # 每日：判交易日→抓数据→回测
-│   ├── weekly-report.yml      # 每周六：学习+周报
-│   ├── monthly-report.yml     # 每月1日：深度学习+月报
+│   ├── daily-decision.yml     # 每日：00:30 判前一交易日→抓数据→实盘→回测
+│   ├── weekly-report.yml      # 每周六 01:00：学习+周报
+│   ├── monthly-report.yml     # 每月1日 03:00：深度学习+月报
 │   └── TRIGGER                # 工作流触发器：改此文件才触发 push 事件
 ```
 
@@ -99,6 +104,7 @@ python -m src.cli scrape                         # 抓数据+费率
 python -m src.cli backtest -s 2024-01-01 -e 2025-01-01  # AI回测
 python -m src.cli backtest ... --baseline --dca   # 三策略对比
 python -m src.cli learn -n 5                     # 5轮学习
+python -m src.cli live                            # 实盘模拟交易（每日）
 python -m src.cli recommend                       # 投资建议
 ```
 
@@ -106,15 +112,16 @@ python -m src.cli recommend                       # 投资建议
 
 | 频率 | 内容 |
 |------|------|
-| 每个交易日 17:30 | 先调 akshare 判交易日 → 抓净值 → 60天回测 |
-| 每周六 10:00 | 5 轮学习回测 + 出本周投资建议 |
-| 每月1日 12:00 | 20 轮深度学习 + 月度综合推荐 |
+| 每个交易日 00:30 | 判前一交易日 → 抓净值 → 实盘交易 → 60天回测 |
+| 每周六 01:00 | 5 轮学习回测 + 出本周投资建议 |
+| 每月1日 03:00 | 20 轮深度学习 + 月度综合推荐 |
 
 ## 常见修改热点
 
 | 想改什么 | 文件 | 改后 |
 |---------|------|------|
 | 加/减基金 | `config/funds.yaml` | `scrape` → push（改 TRIGGER 触发 workflow） |
+| 实盘操作 | `src/cli.py` → `live` 命令 | 自动写入 `data/live/` 和 `reports/live/` |
 | 调模型 | `config/default.yaml` → `ai.flash_model/pro_model` | push 后改 TRIGGER 触发即可生效 |
 | 调回测参数 | `config/default.yaml` → `backtest.*` | push 后改 TRIGGER 触发即可生效 |
 | 改提示词 | `config/prompt_templates/*.txt` | push 后改 TRIGGER 触发即可生效 |

@@ -1,11 +1,11 @@
-# 每日: 先判断交易日 → 抓取净值 → 快速回测
-# 北京时间 17:30 (UTC 09:30), 周一至周五
+# 每日: 判前一北京交易日 → 抓取净值 → 实盘交易 → 快速回测
+# 北京时间 00:30 (UTC 16:30), 周一至周五（UTC 周日-周四）
 
 name: Daily Scrape & Decision
 
 on:
   schedule:
-    - cron: "30 9 * * 1-5"
+    - cron: "30 16 * * 0-4"
   workflow_dispatch:
   push:
     paths:
@@ -33,15 +33,19 @@ jobs:
       - name: Install dependencies
         run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
-      - name: Check if today is a trading day
+      - name: Check if previous Beijing day was a trading day
         id: trading_day
         shell: python
         run: |
           import os
-          from datetime import date
+          from datetime import date, timedelta, datetime, timezone
 
-          today = date.today()
-          today_dash = today.strftime("%Y-%m-%d")
+          # 北京时间
+          beijing_tz = timezone(timedelta(hours=8))
+          beijing_now = datetime.now(beijing_tz)
+          beijing_today = beijing_now.date()
+          check_date = beijing_today - timedelta(days=1)  # 前一天
+          check_date_str = check_date.strftime("%Y-%m-%d")
           is_td = "false"
 
           try:
@@ -50,36 +54,42 @@ jobs:
               # 第一层: 交易日历 (新浪) — trade_date 格式为 YYYY-MM-DD
               df = ak.tool_trade_date_hist_sina()
               trade_dates = set(str(d) for d in df["trade_date"])
-              if today_dash in trade_dates:
+              if check_date_str in trade_dates:
                   is_td = "true"
-                  print(f"交易日历命中: {today_dash}")
+                  print(f"交易日历命中: {check_date_str}")
 
-              # 第二层: 日历未覆盖今天 → 查上证指数最新交易日
+              # 第二层: 日历未覆盖 → 查上证指数最新交易日
               if is_td == "false":
                   idx = ak.stock_zh_index_daily(symbol="sh000001")
                   latest = str(idx["date"].max())
-                  if latest == today_dash:
+                  if latest == check_date_str:
                       is_td = "true"
                       print(f"上证指数确认: 最新交易日={latest}")
                   else:
-                      print(f"非交易日: 上证最新={latest}, 今天={today_dash}")
+                      print(f"非交易日: 上证最新={latest}, 检查日期={check_date_str}")
           except Exception as e:
               print(f"akshare 查询异常: {e}")
 
           # 第三层: akshare 完全不可用时的回退
           if is_td == "false":
-              is_td = "true" if today.weekday() < 5 else "false"
-              print(f"回退到工作日判断: weekday={today.weekday()}")
+              is_td = "true" if check_date.weekday() < 5 else "false"
+              print(f"回退到工作日判断: weekday={check_date.weekday()}")
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"IS_TRADING_DAY={is_td}\n")
-          print(f"最终结果 - 交易日: {is_td}")
+          print(f"北京时间={beijing_today}, 检查前一天={check_date_str}, 交易日: {is_td}")
 
-      - name: Scrape today's NAV data
+      - name: Scrape NAV data
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
+
+      - name: Live trading simulation
+        if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python -m src.cli live
 
       - name: Quick daily review (recent 60 days, weekly decisions)
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
@@ -98,11 +108,11 @@ jobs:
         run: |
           git config user.name "fund-ai-bot"
           git config user.email "bot@fund-ai.local"
-          git add data/ reports/
-          git diff --staged --quiet || git commit -m "daily: scrape + review $(date +%Y-%m-%d)"
+          git add data/ reports/ experiences/
+          git diff --staged --quiet || git commit -m "daily: scrape + live + review $(date +%Y-%m-%d)"
           git pull --rebase -X theirs origin main
           git push
 
       - name: Skip (non-trading day)
         if: steps.trading_day.outputs.IS_TRADING_DAY != 'true'
-        run: echo "Today is not a trading day, skipping."
+        run: echo "Previous Beijing day is not a trading day, skipping."

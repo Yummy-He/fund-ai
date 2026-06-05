@@ -21,6 +21,8 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from ..utils.date_utils import beijing_now
+
 logger = logging.getLogger("fund_ai.learning.experience")
 
 
@@ -201,7 +203,7 @@ class ExperienceStore:
     def save_summary(self, backtest_id: str, summary: dict) -> None:
         """保存回测策略总结"""
         summary["backtest_id"] = backtest_id
-        summary["saved_at"] = datetime.now().isoformat()
+        summary["saved_at"] = beijing_now().isoformat()
         path = self.summaries_dir / f"{backtest_id}_summary.json"
         with open(path, "w", encoding="utf-8") as f:
             json.dump(summary, f, ensure_ascii=False, indent=2)
@@ -257,7 +259,7 @@ class ExperienceStore:
         fund_type = exp.scenario.fund_type
         self.index.setdefault("by_fund_type", {})
         self.index["by_fund_type"][fund_type] = self.index["by_fund_type"].get(fund_type, 0) + 1
-        self.index["last_updated"] = datetime.now().isoformat()
+        self.index["last_updated"] = beijing_now().isoformat()
 
     def _save_index(self) -> None:
         with open(self.index_path, "w", encoding="utf-8") as f:

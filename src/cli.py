@@ -63,6 +63,7 @@ from rich.panel import Panel
 
 from .utils.config import ConfigLoader, AppConfig
 from .utils.logging import setup_logging
+from .utils.date_utils import beijing_today
 from .data.scraper import FundDataScraper
 from .data.store import FundRepository
 from .engine.ai_client import AIClient
@@ -398,8 +399,7 @@ def recommend(ctx, output, detailed):
     strategy_summary = evaluator.generate_strategy_summary()
 
     # 获取当前基金数据
-    from datetime import date
-    today = date.today()
+    today = beijing_today()
 
     funds = repo.get_funds()
     if not funds:
@@ -459,7 +459,7 @@ def report(ctx, report_type, output):
     repo = FundRepository()
 
     if report_type == "daily":
-        today = date.today()
+        today = beijing_today()
         funds = repo.get_funds()[:10]
         fund_data = []
         for f in funds:
@@ -480,7 +480,7 @@ def report(ctx, report_type, output):
         evaluator = StrategyEvaluator(exp_store)
         strategy = evaluator.generate_strategy_summary()
         # 写入文件
-        today = date.today()
+        today = beijing_today()
         path = output or f"reports/recommendations/{today.strftime('%Y-%m')}.md"
         with open(path, "w", encoding="utf-8") as f:
             f.write(f"# 月度报告 - {today.strftime('%Y年%m月')}\n\n")
@@ -489,6 +489,108 @@ def report(ctx, report_type, output):
         console.print(f"[green]✅ 月度报告已保存: {path}[/green]")
     else:
         console.print(f"[yellow]未知报告类型: {report_type}[/yellow]")
+
+
+@main.command()
+@click.option("--date", "-d", default=None, help="交易日期 YYYY-MM-DD（默认：北京时间今天）")
+@click.pass_context
+def live(ctx, date):
+    """运行一天实盘模拟交易 — AI 根据历史经验决策买卖"""
+    from .engine.live import LiveTrader
+    from .utils.date_utils import beijing_today as _bt, parse_date
+
+    config = load_config()
+    target_date = parse_date(date) if date else _bt()
+
+    console.print(Panel.fit(f"[Live] 实盘模拟交易 — {target_date}", style="bold blue"))
+
+    # 初始化组件
+    ai = AIClient(config=config.ai)
+    prompt = PromptBuilder(template_dir=ctx.obj.get("config_dir") and
+                           f"{ctx.obj['config_dir']}/prompt_templates")
+    repo = FundRepository()
+    exp_store = ExperienceStore()
+    retriever = ExperienceRetriever(
+        store=exp_store,
+        top_k=config.learning.retrieval.top_k,
+        always_include_failures=config.learning.retrieval.always_include_failures,
+    )
+
+    # 创建实盘交易引擎
+    trader = LiveTrader(
+        config=config,
+        ai_client=ai,
+        prompt_builder=prompt,
+        fund_repo=repo,
+        experience_retriever=retriever,
+    )
+
+    # 执行
+    result = trader.run(target_date)
+
+    if result.skipped:
+        console.print(f"[yellow]⏭ {result.skip_reason}[/yellow]")
+        return
+
+    # 显示摘要
+    snap = result.snapshot_after or {}
+    console.print(f"\n[bold]持仓摘要:[/bold]")
+    console.print(f"  现金: ¥{snap.get('cash', 0):,.2f}")
+    console.print(f"  持仓市值: ¥{snap.get('total_market_value', 0):,.2f}")
+    console.print(f"  总价值: ¥{snap.get('total_value', 0):,.2f}")
+    console.print(f"  累计收益率: {snap.get('total_return_pct', 0):+.2f}%")
+    console.print(f"  持有基金数: {snap.get('position_count', 0)}")
+
+    if result.decisions:
+        console.print(f"\n[bold]今日操作 ({len(result.decisions)} 笔):[/bold]")
+        for d in result.decisions:
+            action_emoji = {"buy": "🟢", "sell": "🔴", "increase": "🟢", "decrease": "🔴"}.get(d["action"], "")
+            console.print(
+                f"  {action_emoji} {d['action']} {d['fund_code']} "
+                f"¥{d['amount']:,.2f} (置信度 {d['confidence']:.0%})"
+            )
+            if d.get("reasoning"):
+                console.print(f"    [dim]{d['reasoning'][:100]}[/dim]")
+    else:
+        console.print(f"\n[dim]今日无操作，维持现有持仓[/dim]")
+
+    # 生成报告
+    reporter = MarkdownReportGenerator()
+    reports_dir = Path("reports/live")
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    report_path = reports_dir / f"{target_date.isoformat()}.md"
+
+    reporter.generate_live_report(
+        target_date=target_date,
+        snapshot_before=result.snapshot_before or {},
+        snapshot_after=result.snapshot_after or {},
+        decisions=result.decisions,
+        market_context=result.market_context,
+        output_path=str(report_path),
+    )
+    console.print(f"\n[green]✅ 实盘报告已保存: {report_path}[/green]")
+
+    # 清理 30 天前的旧报告
+    _cleanup_old_live_reports(reports_dir, keep_days=30)
+
+
+def _cleanup_old_live_reports(reports_dir: Path, keep_days: int = 30):
+    """清理超过 keep_days 天的旧实盘报告"""
+    from datetime import datetime, timedelta
+    from .utils.date_utils import beijing_now as _bn
+
+    cutoff = _bn() - timedelta(days=keep_days)
+    removed = 0
+    for f in reports_dir.glob("*.md"):
+        try:
+            mtime = datetime.fromtimestamp(f.stat().st_mtime)
+            if mtime < cutoff.replace(tzinfo=None):
+                f.unlink()
+                removed += 1
+        except Exception:
+            pass
+    if removed:
+        console.print(f"[dim]已清理 {removed} 份超过 {keep_days} 天的旧报告[/dim]")
 
 
 def _print_result(result, label: str):
@@ -510,7 +612,7 @@ def _print_result(result, label: str):
 
 def _random_time_window():
     """生成随机回测时间窗口"""
-    today = date.today()
+    today = beijing_today()
     # 从 2020-01-01 到 6个月前 之间随机
     earliest = date(2020, 1, 1)
     latest_end = today - timedelta(days=180)

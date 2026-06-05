@@ -18,6 +18,7 @@ from datetime import date, datetime
 from typing import Dict, List, Optional
 
 from .experience import Experience, ExperienceStore
+from ..utils.date_utils import beijing_now
 
 logger = logging.getLogger("fund_ai.learning.retriever")
 
@@ -159,7 +160,7 @@ class ExperienceRetriever:
         # 6. 时效性（更近期的经验分数更高）
         try:
             exp_date = datetime.fromisoformat(exp.timestamp[:10])
-            days_ago = (datetime.now() - exp_date).days
+            days_ago = (beijing_now() - exp_date).days
             if days_ago <= 30:
                 scores["recency"] = 1.0
             elif days_ago <= 180:
