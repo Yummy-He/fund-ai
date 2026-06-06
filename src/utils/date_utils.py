@@ -8,6 +8,8 @@ from datetime import date, datetime, timedelta, timezone
 from typing import Optional, List
 import time
 
+from .network import call_with_timeout
+
 # 北京时区 (UTC+8)
 BEIJING_TZ = timezone(timedelta(hours=8))
 
@@ -63,7 +65,7 @@ class TradingCalendar:
         try:
             import akshare as ak
             # 获取 A 股交易日历（新浪，trade_date 格式 YYYY-MM-DD）
-            df = ak.tool_trade_date_hist_sina()
+            df = call_with_timeout(ak.tool_trade_date_hist_sina, timeout=30, retries=2)
             if "trade_date" in df.columns:
                 days = sorted({
                     datetime.strptime(str(d), "%Y-%m-%d").date()
@@ -73,7 +75,7 @@ class TradingCalendar:
                 today = date.today()
                 if days and today > days[-1]:
                     try:
-                        idx = ak.stock_zh_index_daily(symbol="sh000001")
+                        idx = call_with_timeout(ak.stock_zh_index_daily, symbol="sh000001", timeout=30, retries=2)
                         idx_dates = sorted({
                             datetime.strptime(str(d), "%Y-%m-%d").date()
                             for d in idx["date"]

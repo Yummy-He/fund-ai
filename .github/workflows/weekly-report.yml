@@ -38,11 +38,13 @@ jobs:
         run: pip install akshare pandas numpy pyyaml requests beautifulsoup4 lxml click rich python-dateutil httpx anthropic aiohttp
 
       - name: Scrape latest data
+        timeout-minutes: 15
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
 
       - name: Learning loop
+        timeout-minutes: 45
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
@@ -50,6 +52,7 @@ jobs:
             --iterations ${{ github.event.inputs.iterations || 5 }}
 
       - name: Generate weekly recommendation
+        timeout-minutes: 15
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |

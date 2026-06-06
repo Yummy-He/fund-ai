@@ -56,10 +56,15 @@ class AIClient:
     @property
     def client(self):
         if self._client is None:
+            import httpx
             from anthropic import Anthropic
+            # connect=30s, read=120s — DeepSeek Pro 模型推理可能较慢
+            timeout = httpx.Timeout(120.0, connect=30.0)
             self._client = Anthropic(
                 base_url=self.base_url,
                 api_key=self.api_key,
+                timeout=timeout,
+                max_retries=2,
             )
         return self._client
 

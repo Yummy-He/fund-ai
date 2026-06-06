@@ -39,6 +39,7 @@ jobs:
         shell: python
         run: |
           import os
+          import concurrent.futures
           from datetime import date, timedelta, datetime, timezone
 
           # 北京时间
@@ -48,11 +49,17 @@ jobs:
           today_str = beijing_today.strftime("%Y-%m-%d")
           is_td = "false"
 
+          def call_ak_with_timeout(func, *args, timeout=30):
+              """给 akshare 调用加超时保护，防止无限挂起"""
+              with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                  future = executor.submit(func, *args)
+                  return future.result(timeout=timeout)
+
           try:
               import akshare as ak
 
               # 第一层: 交易日历 (新浪) — trade_date 格式为 YYYY-MM-DD
-              df = ak.tool_trade_date_hist_sina()
+              df = call_ak_with_timeout(ak.tool_trade_date_hist_sina, timeout=30)
               trade_dates = set(str(d) for d in df["trade_date"])
               if today_str in trade_dates:
                   is_td = "true"
@@ -60,7 +67,7 @@ jobs:
 
               # 第二层: 日历未覆盖 → 查上证指数最新交易日
               if is_td == "false":
-                  idx = ak.stock_zh_index_daily(symbol="sh000001")
+                  idx = call_ak_with_timeout(ak.stock_zh_index_daily, symbol="sh000001", timeout=30)
                   latest = str(idx["date"].max())
                   if latest == today_str:
                       is_td = "true"
@@ -68,7 +75,7 @@ jobs:
                   else:
                       print(f"非交易日: 上证最新={latest}, 今天={today_str}")
           except Exception as e:
-              print(f"akshare 查询异常: {e}")
+              print(f"akshare 查询失败(超时或异常): {e}")
 
           # 第三层: akshare 完全不可用时的回退
           if is_td == "false":
@@ -81,17 +88,20 @@ jobs:
           print(f"北京时间={beijing_today}, 交易日: {is_td}")
 
       - name: Scrape latest NAV data (always)
+        timeout-minutes: 15
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli scrape
 
       - name: Live trading simulation
+        timeout-minutes: 10
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python -m src.cli live -d ${{ steps.trading_day.outputs.TODAY }}
 
       - name: Quick daily review (recent 60 days)
+        timeout-minutes: 5
         if: steps.trading_day.outputs.IS_TRADING_DAY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}

@@ -17,6 +17,7 @@ from typing import Optional, List, Dict
 import pandas as pd
 
 from ..models import Fund, NAVRecord, FundType, RiskLevel
+from ...utils.network import call_with_timeout
 
 logger = logging.getLogger("fund_ai.data.akshare")
 
@@ -36,13 +37,17 @@ class AkshareSource:
             time.sleep(self.request_delay - elapsed)
         self._last_request_time = time.time()
 
+    def _call_akshare(self, func, *args, timeout=30, retries=2, **kwargs):
+        """调用 akshare 函数，带超时+重试+频率控制"""
+        self._rate_limit()
+        return call_with_timeout(func, *args, timeout=timeout, retries=retries, **kwargs)
+
     def fetch_all_funds(self) -> List[Fund]:
         """获取所有开放式基金列表"""
         try:
             import akshare as ak
-            self._rate_limit()
             # 获取天天基金所有开放式基金
-            df = ak.fund_open_fund_rank_em(symbol="全部")
+            df = self._call_akshare(ak.fund_open_fund_rank_em, symbol="全部")
             logger.info(f"获取到 {len(df)} 只基金排名数据")
 
             funds = []
@@ -86,7 +91,8 @@ class AkshareSource:
             self._rate_limit()
 
             # akshare v1.18+ API: fund_open_fund_info_em
-            df = ak.fund_open_fund_info_em(
+            df = self._call_akshare(
+                ak.fund_open_fund_info_em,
                 symbol=fund_code,
                 indicator="单位净值走势",
                 period="交易日",
@@ -145,7 +151,7 @@ class AkshareSource:
         try:
             import akshare as ak
             self._rate_limit()
-            df = ak.fund_open_fund_info_em(fund=fund_code, indicator="单位净值走势")
+            df = self._call_akshare(ak.fund_open_fund_info_em, fund=fund_code, indicator="单位净值走势")
             if df.empty:
                 return None
             # 提取基本信息
@@ -180,7 +186,7 @@ class AkshareSource:
         try:
             import akshare as ak
             self._rate_limit()
-            df = ak.stock_zh_index_daily(symbol=f"{self._index_exchange(index_code)}{index_code}")
+            df = self._call_akshare(ak.stock_zh_index_daily, symbol=f"{self._index_exchange(index_code)}{index_code}")
 
             if df.empty or "date" not in df.columns:
                 logger.warning(f"指数 {index_code} 无数据或缺少 date 列, 列名: {list(df.columns) if not df.empty else '空'}")
@@ -207,7 +213,7 @@ class AkshareSource:
         try:
             import akshare as ak
             self._rate_limit()
-            df = ak.tool_trade_date_hist_sina()
+            df = self._call_akshare(ak.tool_trade_date_hist_sina)
             if df.empty:
                 return self._simple_trading_days(start, end)
 

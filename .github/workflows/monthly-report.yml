@@ -54,6 +54,7 @@ jobs:
               f.write(f"IS_MONTHLY={is_monthly}\n")
 
       - name: Deep learning (20 iterations)
+        timeout-minutes: 120
         if: steps.monthly_check.outputs.IS_MONTHLY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -62,6 +63,7 @@ jobs:
             --iterations ${{ github.event.inputs.iterations || 20 }}
 
       - name: Generate monthly recommendation
+        timeout-minutes: 30
         if: steps.monthly_check.outputs.IS_MONTHLY == 'true'
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}

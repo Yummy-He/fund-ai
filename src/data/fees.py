@@ -19,6 +19,8 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
 
+from ..utils.network import call_with_timeout, fetch_url_with_retry
+
 logger = logging.getLogger("fund_ai.data.fees")
 
 
@@ -149,7 +151,11 @@ class FeeManager:
 
             # 赎回费率
             try:
-                df = ak.fund_fee_em(symbol=fund_code, indicator="赎回费率")
+                df = call_with_timeout(
+                    ak.fund_fee_em,
+                    symbol=fund_code, indicator="赎回费率",
+                    timeout=30, retries=2,
+                )
                 if not df.empty:
                     tiers = []
                     for _, row in df.iterrows():
@@ -171,7 +177,11 @@ class FeeManager:
 
             # 运作费用
             try:
-                df = ak.fund_fee_em(symbol=fund_code, indicator="运作费用")
+                df = call_with_timeout(
+                    ak.fund_fee_em,
+                    symbol=fund_code, indicator="运作费用",
+                    timeout=30, retries=2,
+                )
                 if not df.empty and len(df.columns) >= 6:
                     # 列: 费用类型1, 费率1, 费用类型2, 费率2, 费用类型3, 费率3
                     for i in range(0, min(6, len(df.columns)), 2):
@@ -214,13 +224,9 @@ class FeeManager:
             return None
 
     def _fetch_fund_page(self, fund_code: str) -> str:
-        import requests
         url = f"https://fundf10.eastmoney.com/jjfl_{fund_code}.html"
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-        resp = requests.get(url, headers=headers, timeout=15)
-        resp.raise_for_status()
-        resp.encoding = "utf-8"
-        return resp.text
+        return fetch_url_with_retry(url, timeout=15, retries=2, headers=headers)
 
     def _parse_page_fees(self, fee: FundFee, html: str) -> None:
         """从东方财富基金详情页解析完整的交易规则和费率"""
