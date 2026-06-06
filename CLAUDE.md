@@ -6,7 +6,7 @@
 
 AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取历史净值，反复回测（"穿越"到过去用 1 万元逐日决策买卖），积累经验，学会分析基金并给出投资建议。
 
-## 当前状态（v0.4.0 | 2026-06-05）
+## 当前状态（v0.4.1 | 2026-06-06）
 
 - 经验系统已贯通：learn 每轮回测产生逐条 Experience → `experiences/decisions/`
 - 经验自动裁剪：超过 3000 条时 consolidator 按质量分裁剪到 2000 条
@@ -14,10 +14,11 @@ AI 驱动的中国公募基金投资分析系统。AI 通过 DeepSeek API 读取
 - **实盘模拟交易**：`live` 命令每日 AI 决策买卖，¥10,000 真实模拟持仓，状态持久化
 - **时区统一北京时间**：所有报告时间戳和日期判断使用北京时间 (UTC+8)
 - **推送不触发 workflow**：改 `.github/TRIGGER` 才触发。日常 push 不会浪费 CI 资源
+- **全量 Pro 模型**：`force_pro: true` 开关，所有 AI 调用统一用 Pro。切回 Flash 改 `config/default.yaml` 一行
 
 - 10 只基金 ~727 条/只净值数据（2023-06 ~ 今）
 - 每只基金独立真实费率（从东方财富 + akshare 抓取）
-- 双层 AI 模型：Flash（日常回测决策）+ Pro（策略总结/建议）
+- AI 模型：全部使用 Pro（deepseek-v4-pro），`force_pro` 一键切换
 - 三种策略：AI 主动决策 / 等权买入持有 / 每月定投（DCA）
 - GitHub Actions 自动化：每日（实盘+抓取+回测）/ 每周学习+报告 / 月度深度分析
 - 完整操作手册：https://github.com/Yummy-He/fund-ai/wiki
@@ -122,7 +123,8 @@ python -m src.cli recommend                       # 投资建议
 |---------|------|------|
 | 加/减基金 | `config/funds.yaml` | `scrape` → push（改 TRIGGER 触发 workflow） |
 | 实盘操作 | `src/cli.py` → `live` 命令 | 自动写入 `data/live/` 和 `reports/live/` |
-| 调模型 | `config/default.yaml` → `ai.flash_model/pro_model` | push 后改 TRIGGER 触发即可生效 |
+| 调模型 | `config/default.yaml` → `ai.force_pro`（true=全Pro, false=Flash+Pro分工） | push 后改 TRIGGER 触发即可生效 |
+| 切模型型号 | `config/default.yaml` → `ai.flash_model/pro_model` | 修改具体模型 ID |
 | 调回测参数 | `config/default.yaml` → `backtest.*` | push 后改 TRIGGER 触发即可生效 |
 | 改提示词 | `config/prompt_templates/*.txt` | push 后改 TRIGGER 触发即可生效 |
 | 加数据源 | `src/data/sources/` | 新类 + 注册到 scraper |

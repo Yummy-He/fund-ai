@@ -21,6 +21,7 @@ class AIConfig:
     max_tokens: int = 4096
     temperature: float = 0.3
     pro_temperature: float = 0.2  # Pro 模型专用温度
+    force_pro: bool = False  # true=全用Pro模型, false=Flash高频/Pro深度
 
 
 @dataclass
@@ -166,6 +167,7 @@ class ConfigLoader:
             max_tokens=ai_raw.get("max_tokens", 4096),
             temperature=ai_raw.get("temperature", 0.3),
             pro_temperature=ai_raw.get("pro_temperature", 0.2),
+            force_pro=ai_raw.get("force_pro", False),
         )
 
         bt_raw = raw.get("backtest", {})

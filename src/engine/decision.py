@@ -241,15 +241,19 @@ class FundDecisionMaker:
         """构建市场环境快照（从沪深300数据）"""
         try:
             import pandas as pd
-            index_path = "data/index/000300.csv"
-            if os.path.exists(index_path):
-                index_df = pd.read_csv(index_path, encoding="utf-8-sig")
+            index_path = self.repo.index_dir / "000300.csv"
+            if index_path.exists():
+                index_df = pd.read_csv(str(index_path), encoding="utf-8-sig")
                 if not index_df.empty:
                     return self._extract_market_from_df(index_df, target_date)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(
+                "构建市场环境失败（将使用默认值 CSI300=3500）: %s | 路径=%s",
+                e, self.repo.index_dir / "000300.csv"
+            )
 
-        # 简单回退
+        # 简单回退（仅在数据文件缺失或解析失败时使用）
+        logger.warning("⚠ 市场环境使用硬编码默认值: CSI300=3500, 涨跌幅=0, 波动率=15%")
         return MarketContext(
             date=target_date,
             csi300_level=3500.0,

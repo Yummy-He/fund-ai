@@ -18,6 +18,9 @@ ai:
   flash_model: "deepseek-v4-flash"
   pro_model: "deepseek-v4-pro"
 
+  # force_pro: true=全用Pro模型, false=按原有分工(Flash高频决策/Pro深度分析)
+  force_pro: true
+
   max_tokens: 4096
   temperature: 0.3  # 低温度保证决策一致性
   pro_temperature: 0.2  # Pro 模型使用更低温度以保证分析质量

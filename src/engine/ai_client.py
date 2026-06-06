@@ -34,6 +34,7 @@ class AIClient:
             self.max_tokens = config.max_tokens
             self.temperature = config.temperature              # Flash 温度
             self.pro_temperature = getattr(config, "pro_temperature", 0.2)  # Pro 温度
+            self.force_pro = getattr(config, "force_pro", False)  # 全量Pro开关
         else:
             self.base_url = os.environ.get(
                 "DEEPSEEK_BASE_URL", "https://api.deepseek.com/anthropic"
@@ -44,6 +45,7 @@ class AIClient:
             self.max_tokens = 4096
             self.temperature = 0.3
             self.pro_temperature = 0.2
+            self.force_pro = False
 
         if not self.api_key:
             raise ValueError("未设置 DEEPSEEK_API_KEY 环境变量")
@@ -81,7 +83,7 @@ class AIClient:
         Returns:
             AI 回复的原始文本
         """
-        model = model or self.model
+        model = model or (self.advanced_model if self.force_pro else self.model)
         temperature = temperature if temperature is not None else self.temperature
         max_tokens = max_tokens or self.max_tokens
 
