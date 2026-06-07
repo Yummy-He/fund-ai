@@ -243,7 +243,12 @@ class FundDecisionMaker:
             import pandas as pd
             index_path = self.repo.index_dir / "000300.csv"
             if index_path.exists():
-                index_df = pd.read_csv(str(index_path), encoding="utf-8-sig")
+                # parse_dates + index_col 确保日期列直接转为 DatetimeIndex
+                # 避免 df.index.dtype==object 时与 pd.Timestamp 比较失败
+                index_df = pd.read_csv(
+                    str(index_path), encoding="utf-8-sig",
+                    parse_dates=["date"], index_col="date",
+                )
                 if not index_df.empty:
                     return self._extract_market_from_df(index_df, target_date)
         except Exception as e:
@@ -269,10 +274,13 @@ class FundDecisionMaker:
         target_date: date,
     ) -> MarketContext:
         """从指数数据 DataFrame 提取市场环境"""
-        if "date" in df.columns:
-            df = df.set_index("date")
-        if df.index.dtype == object:
-            df.index = pd.to_datetime(df.index)
+        # 确保 index 是 DatetimeIndex（兜底保护）
+        if not isinstance(df.index, pd.DatetimeIndex):
+            if "date" in df.columns:
+                df["date"] = pd.to_datetime(df["date"])
+                df = df.set_index("date")
+            else:
+                df.index = pd.to_datetime(df.index)
 
         df = df.sort_index()
         mask = df.index <= pd.Timestamp(target_date)
@@ -326,6 +334,10 @@ class FundDecisionMaker:
         if df.empty or "单位净值" not in df.columns:
             return 0.0
 
+        # 兜底：确保日期列是 datetime（GH Actions 某些 pandas 版本 get_nav_history 可能转换失败）
+        if "净值日期" in df.columns and df["净值日期"].dtype == object:
+            df["净值日期"] = pd.to_datetime(df["净值日期"])
+
         df = df[df["净值日期"] <= pd.Timestamp(target_date)]
         if len(df) < 2:
             return 0.0
@@ -348,6 +360,9 @@ class FundDecisionMaker:
         if df.empty or "日增长率" not in df.columns:
             return 0.0
 
+        if "净值日期" in df.columns and df["净值日期"].dtype == object:
+            df["净值日期"] = pd.to_datetime(df["净值日期"])
+
         df = df[df["净值日期"] <= pd.Timestamp(target_date)]
         recent = df.tail(lookback) if len(df) >= lookback else df
         if len(recent) < 5:
@@ -364,6 +379,9 @@ class FundDecisionMaker:
         df = self.repo.get_nav_history(fund_code)
         if df.empty or "单位净值" not in df.columns:
             return 0.0
+
+        if "净值日期" in df.columns and df["净值日期"].dtype == object:
+            df["净值日期"] = pd.to_datetime(df["净值日期"])
 
         df = df[df["净值日期"] <= pd.Timestamp(target_date)]
         recent = df.tail(lookback) if len(df) >= lookback else df
