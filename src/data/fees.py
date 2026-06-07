@@ -141,72 +141,82 @@ class FeeManager:
         return FundFee(fund_code=fund_code)
 
     def fetch_and_store(self, fund_code: str) -> Optional[FundFee]:
-        """从 akshare 抓取并缓存基金费率"""
+        """抓取并缓存基金费率
+
+        优先从东方财富基金详情页解析（快速、可靠），
+        akshare API 仅作为补充数据源的 fallback。
+        """
         try:
-            import akshare as ak
             import time
             time.sleep(0.5)
 
             fee = FundFee(fund_code=fund_code)
 
-            # 赎回费率
+            # === 第一步: 东方财富基金详情页（主数据源） ===
+            page_redemption_ok = False  # 页面是否已确认赎回费率（有数据 或 明确无数据如ETF）
+            page_op_ok = False  # 页面是否已解析到运作费用
             try:
-                df = call_with_timeout(
-                    ak.fund_fee_em,
-                    symbol=fund_code, indicator="赎回费率",
-                    timeout=30,
-                )
-                if not df.empty:
-                    tiers = []
-                    for _, row in df.iterrows():
-                        desc = str(row.iloc[0])
-                        rate_str = str(row.iloc[1]).replace("%", "")
-                        rate = float(rate_str) / 100.0 if rate_str else 0.0
-
-                        # 解析持有天数范围
-                        min_days, max_days = self._parse_holding_period(desc)
-                        tiers.append(RedemptionFeeTier(
-                            min_days=min_days,
-                            max_days=max_days,
-                            rate=rate,
-                        ))
-                    if tiers:
-                        fee.redemption_tiers = tiers
-            except Exception:
-                pass  # ETF 等可能没有赎回费率表
-
-            # 运作费用
-            try:
-                df = call_with_timeout(
-                    ak.fund_fee_em,
-                    symbol=fund_code, indicator="运作费用",
-                    timeout=30,
-                )
-                if not df.empty and len(df.columns) >= 6:
-                    # 列: 费用类型1, 费率1, 费用类型2, 费率2, 费用类型3, 费率3
-                    for i in range(0, min(6, len(df.columns)), 2):
-                        fee_type = str(df.iloc[0, i])
-                        rate_str = str(df.iloc[0, i+1]) if i+1 < len(df.columns) else ""
-                        rate_str = rate_str.replace("%", "").replace("（每年）", "").strip()
-                        try:
-                            rate_val = float(rate_str) / 100.0
-                        except ValueError:
-                            rate_val = 0.0
-
-                        if "管理费" in fee_type:
-                            fee.management_fee = rate_val
-                        elif "托管费" in fee_type:
-                            fee.custody_fee = rate_val
-                        elif "销售服务费" in fee_type:
-                            fee.sales_service_fee = rate_val
+                html = self._fetch_fund_page(fund_code)
+                parsed = self._parse_page_fees(fee, html)
+                page_redemption_ok = parsed.get("redemption_confirmed", False)
+                page_op_ok = parsed.get("op_fees_parsed", False)
             except Exception:
                 pass
 
-            # 东方财富基金详情页 — 交易规则和全面费率
+            # === 第二步: akshare API 补充页面上没取到的数据 ===
             try:
-                import requests
-                html = self._fetch_fund_page(fund_code)
-                self._parse_page_fees(fee, html)
+                import akshare as ak
+
+                # 赎回费率 — 页面没确认过才调 akshare
+                if not page_redemption_ok:
+                    try:
+                        df = call_with_timeout(
+                            ak.fund_fee_em,
+                            symbol=fund_code, indicator="赎回费率",
+                            timeout=30,
+                        )
+                        if not df.empty:
+                            tiers = []
+                            for _, row in df.iterrows():
+                                desc = str(row.iloc[0])
+                                rate_str = str(row.iloc[1]).replace("%", "")
+                                rate = float(rate_str) / 100.0 if rate_str else 0.0
+                                min_days, max_days = self._parse_holding_period(desc)
+                                tiers.append(RedemptionFeeTier(
+                                    min_days=min_days,
+                                    max_days=max_days,
+                                    rate=rate,
+                                ))
+                            if tiers:
+                                fee.redemption_tiers = tiers
+                    except Exception:
+                        pass
+
+                # 运作费用 — 页面没解析到则用 akshare 补充
+                if not page_op_ok:
+                    try:
+                        df = call_with_timeout(
+                            ak.fund_fee_em,
+                            symbol=fund_code, indicator="运作费用",
+                            timeout=30,
+                        )
+                        if not df.empty and len(df.columns) >= 6:
+                            for i in range(0, min(6, len(df.columns)), 2):
+                                fee_type = str(df.iloc[0, i])
+                                rate_str = str(df.iloc[0, i+1]) if i+1 < len(df.columns) else ""
+                                rate_str = rate_str.replace("%", "").replace("（每年）", "").strip()
+                                try:
+                                    rate_val = float(rate_str) / 100.0
+                                except ValueError:
+                                    rate_val = 0.0
+                                if "管理费" in fee_type:
+                                    fee.management_fee = rate_val
+                                elif "托管费" in fee_type:
+                                    fee.custody_fee = rate_val
+                                elif "销售服务费" in fee_type:
+                                    fee.sales_service_fee = rate_val
+                    except Exception:
+                        pass
             except Exception:
                 pass
 
@@ -228,9 +238,17 @@ class FeeManager:
         headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
         return fetch_url_with_retry(url, timeout=15, retries=2, headers=headers)
 
-    def _parse_page_fees(self, fee: FundFee, html: str) -> None:
-        """从东方财富基金详情页解析完整的交易规则和费率"""
+    def _parse_page_fees(self, fee: FundFee, html: str) -> dict:
+        """从东方财富基金详情页解析完整的交易规则和费率
+
+        Returns:
+            dict with:
+              - redemption_confirmed: 页面已确认赎回费率（解析到数据 或 明确标注「暂无数据」）
+              - op_fees_parsed: 页面已解析到运作费用
+        """
         import re
+        result = {"redemption_confirmed": False, "op_fees_parsed": False}
+
         # 去掉 HTML 标签方便正则
         text = re.sub(r"<[^>]+>", " ", html)
         text = re.sub(r"\s+", " ", text)
@@ -273,9 +291,11 @@ class FeeManager:
         mgmt = re.search(r"管理费[率率]?\s*(\d+\.?\d*)\s*%", text)
         if mgmt:
             fee.management_fee = float(mgmt.group(1)) / 100.0
+            result["op_fees_parsed"] = True
         cus = re.search(r"托管费[率率]?\s*(\d+\.?\d*)\s*%", text)
         if cus:
             fee.custody_fee = float(cus.group(1)) / 100.0
+            result["op_fees_parsed"] = True
         ssf = re.search(r"销售服务费[率率]?\s*(\d+\.?\d*)\s*%", text)
         if ssf:
             fee.sales_service_fee = float(ssf.group(1)) / 100.0
@@ -285,6 +305,25 @@ class FeeManager:
         sub_tiers = self._parse_amount_tiers(text, r"申购金额", r"申购费率")
         if sub_tiers:
             fee.subscription_tiers = sub_tiers
+
+        # --- 赎回费率阶梯（从页面直接解析，优先级高于 akshare） ---
+        # 页面格式:
+        #   赎回费率 适用期限 赎回费率 小于7天 1.50% 大于等于7天，小于365天 0.50% ...
+        #   ETF 会标注「暂无数据」
+        try:
+            redemption_tiers = self._parse_redemption_tiers_from_text(text)
+            if redemption_tiers:
+                fee.redemption_tiers = redemption_tiers
+                result["redemption_confirmed"] = True
+            else:
+                # 检查是否页面明确标注了「暂无数据」（如 ETF）
+                idx = text.find("赎回费率")
+                if idx >= 0 and "暂无数据" in text[idx:idx + 80]:
+                    result["redemption_confirmed"] = True  # 页面确认过了：就是没有
+        except Exception:
+            pass
+
+        return result
 
     @staticmethod
     def _re_float(text: str, pattern: str, default: float) -> float:
@@ -338,35 +377,71 @@ class FeeManager:
                 results[code] = fee
         return results
 
+    @staticmethod
+    def _parse_redemption_tiers_from_text(text: str) -> List[RedemptionFeeTier]:
+        """从东方财富页面文本解析赎回费率阶梯
+
+        页面格式:
+          赎回费率 适用期限 赎回费率 小于7天 1.50% 大于等于7天，小于365天 0.50% ...
+          ETF 会标注「暂无数据」
+        """
+        import re
+
+        idx = text.find("赎回费率")
+        if idx < 0:
+            return []
+
+        # 如果标注了暂无数据，说明此基金没有传统赎回费率（如 ETF）
+        if "暂无数据" in text[idx:idx + 80]:
+            return []
+
+        # 取赎回费率后面的 600 字符
+        chunk = text[idx:idx + 600]
+
+        # 匹配 (持有期描述, 费率百分比)
+        # 持有期描述: 小于N天/大于等于N天，小于M天/大于等于N天
+        pattern = r'(小于\d+[天日]|大于等于\d+[天日].*?小于\d+[天日]|大于等于\d+[天日])\s+(\d+\.?\d*)\s*%'
+        matches = re.findall(pattern, chunk)
+
+        if not matches:
+            return []
+
+        tiers = []
+        for desc, rate_str in matches:
+            # 用已有的通用解析器
+            min_days, max_days = FeeManager._parse_holding_period_static(desc)
+            tiers.append(RedemptionFeeTier(
+                min_days=min_days,
+                max_days=max_days,
+                rate=float(rate_str) / 100.0,
+            ))
+
+        return tiers
+
+    @staticmethod
+    def _parse_holding_period_static(desc: str) -> Tuple[int, Optional[int]]:
+        """解析持有期描述文字（静态版本，供 _parse_redemption_tiers_from_text 调用）"""
+        import re
+        numbers = re.findall(r'\d+', desc)
+        if not numbers:
+            return (0, None)
+        nums = [int(n) for n in numbers]
+        if "小于" in desc and "大于" not in desc:
+            return (0, nums[0])
+        elif len(nums) >= 2:
+            return (nums[0], nums[1])
+        else:
+            return (nums[0], None)
+
     def _parse_holding_period(self, desc: str) -> Tuple[int, Optional[int]]:
-        """解析持有期描述文字
+        """解析持有期描述文字（委托静态方法）
+
         "小于7天" → (0, 7)
         "大于等于7天，小于30天" → (7, 30)
         "大于等于365天，小于730天" → (365, 730)
         "大于等于730天" → (730, None)
         """
-        import re
-
-        # 提取所有数字
-        numbers = re.findall(r'\d+', desc)
-        if not numbers:
-            return (0, None)
-
-        nums = [int(n) for n in numbers]
-
-        if "小于" in desc and "大于" not in desc:
-            # "小于N天"
-            return (0, nums[0])
-        elif "大于等于" in desc or "大于" in desc:
-            if len(nums) >= 2:
-                # "大于等于N天，小于M天"
-                return (nums[0], nums[1])
-            else:
-                # "大于等于N天"
-                return (nums[0], None)
-
-        # 兜底
-        return (0, None)
+        return FeeManager._parse_holding_period_static(desc)
 
     def _load_cache(self):
         if self.cache_file.exists():
