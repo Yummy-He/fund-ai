@@ -154,7 +154,7 @@ class FeeManager:
                 df = call_with_timeout(
                     ak.fund_fee_em,
                     symbol=fund_code, indicator="赎回费率",
-                    timeout=30, retries=2,
+                    timeout=30,
                 )
                 if not df.empty:
                     tiers = []
@@ -180,7 +180,7 @@ class FeeManager:
                 df = call_with_timeout(
                     ak.fund_fee_em,
                     symbol=fund_code, indicator="运作费用",
-                    timeout=30, retries=2,
+                    timeout=30,
                 )
                 if not df.empty and len(df.columns) >= 6:
                     # 列: 费用类型1, 费率1, 费用类型2, 费率2, 费用类型3, 费率3

@@ -37,7 +37,7 @@ class AkshareSource:
             time.sleep(self.request_delay - elapsed)
         self._last_request_time = time.time()
 
-    def _call_akshare(self, func, *args, timeout=30, retries=2, **kwargs):
+    def _call_akshare(self, func, *args, timeout=30, retries=5, **kwargs):
         """调用 akshare 函数，带超时+重试+频率控制"""
         self._rate_limit()
         return call_with_timeout(func, *args, timeout=timeout, retries=retries, **kwargs)

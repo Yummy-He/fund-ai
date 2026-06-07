@@ -3,13 +3,22 @@
 中国金融数据 API（akshare 底层走东方财富/新浪等）网络波动频繁。
 不加超时保护会导致整个流程无限期卡死，不会自己恢复。
 
+注意: 不能使用 ThreadPoolExecutor 的 future.result(timeout) 模式！
+ThreadPoolExecutor.__exit__ 会调用 shutdown(wait=True) → thread.join()，
+如果子线程卡在 C 层 socket 操作（如 TCP connect 无响应），join() 会阻塞到
+OS 级 TCP 超时（可达 127 秒），远比 timeout 长，导致重试机制形同虚设。
+
+改为 threading.Thread(daemon=True) + join(timeout)：
+join 超时后直接放弃卡死的守护线程，不等待 OS 清理。
+
 用法:
     from src.utils.network import call_with_timeout
-    result = call_with_timeout(ak.fund_fee_em, symbol="510050", indicator="赎回费率", timeout=30, retries=2)
+    result = call_with_timeout(ak.fund_fee_em, symbol="510050", indicator="赎回费率", timeout=30, retries=5)
 """
 
 import concurrent.futures
 import logging
+import threading
 import time
 from typing import Callable, TypeVar
 
@@ -22,19 +31,19 @@ def call_with_timeout(
     func: Callable[..., T],
     *args,
     timeout: float = 30,
-    retries: int = 2,
+    retries: int = 5,
     **kwargs,
 ) -> T:
     """对可能无限期挂起的阻塞调用添加超时+重试保护
 
-    在独立线程中执行 func，超时则抛 TimeoutError 并自动重试。
+    在独立守护线程中执行 func，join(timeout) 后若线程仍存活则放弃它。
     非超时异常也会触发重试（兼顾网络瞬时故障）。
 
     Args:
         func: 要调用的函数
         *args: 位置参数
         timeout: 每次调用的超时时间（秒），默认 30
-        retries: 超时/失败后的重试次数（总尝试次数 = retries + 1），默认 2
+        retries: 超时/失败后的重试次数（总尝试次数 = retries + 1），默认 5
         **kwargs: 关键字参数
 
     Returns:
@@ -49,23 +58,38 @@ def call_with_timeout(
     func_name = getattr(func, "__name__", str(func))
 
     for attempt in range(total_attempts):
-        try:
-            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-                future = executor.submit(func, *args, **kwargs)
-                return future.result(timeout=timeout)
-        except concurrent.futures.TimeoutError:
-            last_error = TimeoutError(
+        # 用 list 做容器在闭包中传递结果/异常
+        result_container = []
+        exception_container = []
+
+        def worker():
+            try:
+                result_container.append(func(*args, **kwargs))
+            except Exception as e:
+                exception_container.append(e)
+
+        t = threading.Thread(target=worker, daemon=True)
+        t.start()
+        t.join(timeout=timeout)
+
+        if t.is_alive():
+            # 线程卡在 C 层操作中（如 TCP connect），放弃它
+            last_error = concurrent.futures.TimeoutError(
                 f"调用超时 ({timeout}s, attempt {attempt+1}/{total_attempts}): {func_name}"
             )
             logger.warning(str(last_error))
-        except Exception as e:
-            last_error = e
+        elif exception_container:
+            last_error = exception_container[0]
             logger.warning(
-                f"调用失败 (attempt {attempt+1}/{total_attempts}): {func_name} → {e}"
+                f"调用失败 (attempt {attempt+1}/{total_attempts}): {func_name} → {last_error}"
             )
+        else:
+            # 成功 — 不能保证 result_container 非空（函数可能返回 None），
+            # 但线程已结束且未抛异常，视为成功
+            return result_container[0] if result_container else None  # type: ignore
 
         if attempt < total_attempts - 1:
-            delay = min(2 ** attempt, 8)  # 1s → 2s → 4s → 最多 8s
+            delay = min(2 ** attempt, 8)  # 1s → 2s → 4s → 8s → 8s
             logger.info(f"等待 {delay}s 后重试 {func_name}...")
             time.sleep(delay)
 
@@ -75,7 +99,7 @@ def call_with_timeout(
 def fetch_url_with_retry(
     url: str,
     timeout: float = 15,
-    retries: int = 2,
+    retries: int = 5,
     headers: dict | None = None,
 ) -> str:
     """带超时+重试的 HTTP GET 请求
