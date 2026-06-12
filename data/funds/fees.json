@@ -53,14 +53,14 @@
         "rate": 0.0
       }
     ],
-    "min_subscription": 1.0,
-    "min_auto_invest": 1.0,
-    "min_first_purchase": 1.0,
-    "min_additional_purchase": 1.0,
+    "min_subscription": 10.0,
+    "min_auto_invest": 10.0,
+    "min_first_purchase": 10.0,
+    "min_additional_purchase": 10.0,
     "daily_purchase_limit": null,
     "max_holding_amount": null,
-    "min_redemption_shares": 0.01,
-    "min_retained_shares": 0.01,
+    "min_redemption_shares": 1.0,
+    "min_retained_shares": 1.0,
     "confirmation_days": "T+1"
   },
   "021302": {
