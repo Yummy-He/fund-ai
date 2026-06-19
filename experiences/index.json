@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "total_experiences": 1822,
+  "total_experiences": 2006,
   "backtests": [
     "bt_20230802_20240522",
     "bt_20220509_20230618",
@@ -18,10 +18,10 @@
     "bt_20220831_20230815"
   ],
   "by_fund_type": {
-    "MIXED": 1239,
-    "QDII": 12,
+    "MIXED": 1420,
+    "QDII": 15,
     "INDEX": 451,
     "BOND": 120
   },
-  "last_updated": "2026-06-13T03:22:34.498751+08:00"
+  "last_updated": "2026-06-20T03:14:51.259325+08:00"
 }
