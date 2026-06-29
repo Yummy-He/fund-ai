@@ -1,1875 +1,5 @@
 [
   {
-    "id": "ea872eb2-e76",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.727812",
-    "scenario": {
-      "date": "2024-10-21",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0186,
-      "nav_change_7d": -0.59,
-      "nav_change_30d": 22.89,
-      "nav_change_90d": 14.91,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 1.0,
-      "portfolio_return": 0.0
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 9500.0,
-      "amount_pct": 923.9178,
-      "reasoning": "中欧兴利债券C波动率相对较低，近期表现稳健，适合作为震荡市下的底仓配置，降低组合波动。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.25,
-      "return_30d": 2.18,
-      "return_90d": -1.71,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "330c3de5-239",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.746939",
-    "scenario": {
-      "date": "2024-10-24",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0125,
-      "nav_change_7d": 3.78,
-      "nav_change_30d": 17.19,
-      "nav_change_90d": 15.59,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.04478419195450604,
-      "portfolio_return": -0.7462274966254335
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.4414,
-      "reasoning": "中欧兴利债券C波动率低，作为组合中的低风险资产继续持有，稳定收益。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.01,
-      "return_30d": -0.35,
-      "return_90d": -1.96,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "b9e79775-3c7",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.765799",
-    "scenario": {
-      "date": "2024-10-29",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0081,
-      "nav_change_7d": -0.83,
-      "nav_change_30d": 5.97,
-      "nav_change_90d": 14.34,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.06452332690586385,
-      "portfolio_return": -0.5785921522746502
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 96.9067,
-      "reasoning": "债券基金近期涨幅有限，减仓释放现金以捕捉混合型基金机会，同时降低低波动资产占比。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.63,
-      "return_30d": -0.5,
-      "return_90d": -1.87,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "870676e5-02f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.784955",
-    "scenario": {
-      "date": "2024-11-01",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9737,
-      "nav_change_7d": -1.66,
-      "nav_change_30d": -3.12,
-      "nav_change_90d": 15.28,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.06421973365400555,
-      "portfolio_return": -1.120735968609315
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 97.5819,
-      "reasoning": "沪深300ETF波动率低，作为底仓配置，维持现有仓位。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 4.43,
-      "return_30d": 1.04,
-      "return_90d": -1.28,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "d03fbddc-6dc",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.804644",
-    "scenario": {
-      "date": "2024-11-06",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.1098,
-      "nav_change_7d": 3.46,
-      "nav_change_30d": 0.2,
-      "nav_change_90d": 20.71,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.16123611055671278,
-      "portfolio_return": 1.3420625415831455
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 37.8591,
-      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，增加债券配置以平衡组合风险，提升夏普比率。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.95,
-      "return_30d": -1.49,
-      "return_90d": -4.07,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "24d821b6-4d3",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.823811",
-    "scenario": {
-      "date": "2024-11-11",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.2187,
-      "nav_change_7d": 4.71,
-      "nav_change_30d": 6.32,
-      "nav_change_90d": 24.19,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.15741972156024095,
-      "portfolio_return": 3.684594523653395
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近期收益稳健，作为组合的稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -4.13,
-      "return_30d": -3.55,
-      "return_90d": -4.29,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "16f29786-f97",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.842910",
-    "scenario": {
-      "date": "2024-11-14",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.126,
-      "nav_change_7d": -2.55,
-      "nav_change_30d": 4.83,
-      "nav_change_90d": 20.96,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.16015957452440233,
-      "portfolio_return": 1.9108601435073072
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 37.7291,
-      "reasoning": "沪深300ETF作为核心配置，波动适中，当前仓位合理，继续持有等待市场方向明确。",
-      "confidence": 0.9,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.87,
-      "return_30d": -2.57,
-      "return_90d": -1.79,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "f64c9b7b-a62",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.862381",
-    "scenario": {
-      "date": "2024-11-19",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0621,
-      "nav_change_7d": -2.64,
-      "nav_change_30d": 1.33,
-      "nav_change_90d": 19.93,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.16155534317266237,
-      "portfolio_return": 0.9189772360242568
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.5541,
-      "reasoning": "沪深300ETF近期表现稳健，波动率适中，作为核心配置继续持有，等待市场方向明确。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -2.79,
-      "return_30d": -1.7,
-      "return_90d": -0.2,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "e55ef683-9ba",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.881396",
-    "scenario": {
-      "date": "2024-11-22",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9491,
-      "nav_change_7d": -2.59,
-      "nav_change_30d": -2.67,
-      "nav_change_90d": 16.37,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.17408858528189478,
-      "portfolio_return": -0.6454100825021851
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.6046,
-      "reasoning": "中欧兴利债券C波动率低且近期表现稳健，利用减仓资金加仓以增强组合稳定性并分散风险。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.18,
-      "return_30d": 0.35,
-      "return_90d": 1.99,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "d5b150a3-b28",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.901087",
-    "scenario": {
-      "date": "2024-11-27",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9911,
-      "nav_change_7d": -1.97,
-      "nav_change_30d": -1.41,
-      "nav_change_90d": 19.27,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1725273518631392,
-      "portfolio_return": 0.21599365714278976
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 48.5305,
-      "reasoning": "中欧兴利债券C近30日表现稳健且波动率低，在震荡市中增持可提升组合稳定性并分散权益风险。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.33,
-      "return_30d": 0.08,
-      "return_90d": 1.25,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "db68e963-dbb",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.920319",
-    "scenario": {
-      "date": "2024-12-02",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0333,
-      "nav_change_7d": 2.61,
-      "nav_change_30d": 1.5,
-      "nav_change_90d": 20.68,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.12149485895807839,
-      "portfolio_return": 1.094812614565508
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 48.3896,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为底仓配置维持持有。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.26,
-      "return_30d": -1.15,
-      "return_90d": 0.14,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "0fe235f0-2b1",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.939570",
-    "scenario": {
-      "date": "2024-12-05",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0067,
-      "nav_change_7d": 1.26,
-      "nav_change_30d": -2.99,
-      "nav_change_90d": 21.43,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07206272961563402,
-      "portfolio_return": 0.22517934753719598
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.5023,
-      "reasoning": "债券基金近期表现稳健，波动率低，作为防御性配置继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.26,
-      "return_30d": -3.71,
-      "return_90d": 1.38,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "69d60396-3e8",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.958675",
-    "scenario": {
-      "date": "2024-12-10",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0821,
-      "nav_change_7d": 1.1,
-      "nav_change_30d": -2.61,
-      "nav_change_90d": 25.44,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.05124146570622876,
-      "portfolio_return": 1.5291020328405467
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期收益稳定，波动率低，作为组合的稳定器，当前仓位合适，继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.71,
-      "return_30d": -4.48,
-      "return_90d": 0.54,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "db032f39-396",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.977612",
-    "scenario": {
-      "date": "2024-12-13",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0182,
-      "nav_change_7d": -1.01,
-      "nav_change_30d": -4.3,
-      "nav_change_90d": 24.5,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.05149801183698215,
-      "portfolio_return": 1.0233174917238468
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为组合的稳定器继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.52,
-      "return_30d": -4.3,
-      "return_90d": 0.79,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "02811b1b-fd3",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:27.997180",
-    "scenario": {
-      "date": "2024-12-18",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0265,
-      "nav_change_7d": -1.19,
-      "nav_change_30d": -0.22,
-      "nav_change_90d": 23.32,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0518020134305108,
-      "portfolio_return": 0.430459271217951
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近30日涨幅+2.23%，波动率低，作为组合稳定器继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.4,
-      "return_30d": -2.09,
-      "return_90d": 3.19,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "9d893a6d-369",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.016288",
-    "scenario": {
-      "date": "2024-12-23",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0214,
-      "nav_change_7d": 0.64,
-      "nav_change_30d": 1.83,
-      "nav_change_90d": 17.45,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.052049394622351676,
-      "portfolio_return": -0.04686821533405237
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.544,
-      "reasoning": "中欧兴利债券C近30日涨幅1.93%，波动率低，作为组合稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.21,
-      "return_30d": -1.85,
-      "return_90d": 1.59,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "dc797f4c-64a",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.035278",
-    "scenario": {
-      "date": "2024-12-26",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0762,
-      "nav_change_7d": 1.14,
-      "nav_change_30d": 3.91,
-      "nav_change_90d": 7.77,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.051481740554546886,
-      "portfolio_return": 0.7638814096357965
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.344,
-      "reasoning": "债券基金波动率低，近期收益稳定，作为组合的压舱石，维持现有仓位。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -3.26,
-      "return_30d": -1.81,
-      "return_90d": 0.9,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "3f6d4272-0e0",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.054353",
-    "scenario": {
-      "date": "2024-12-31",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0233,
-      "nav_change_7d": -1.21,
-      "nav_change_30d": 0.54,
-      "nav_change_90d": -1.91,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.051811504058797954,
-      "portfolio_return": -0.1669591731978835
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.7781,
-      "reasoning": "中欧兴利债券C近90日涨幅+2.66%，波动率低，作为组合的稳定器，当前仓位合理，继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -2.7,
-      "return_30d": -1.3,
-      "return_90d": 0.86,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "05f66328-ed2",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.073369",
-    "scenario": {
-      "date": "2025-01-06",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8534,
-      "nav_change_7d": -5.76,
-      "nav_change_30d": -5.07,
-      "nav_change_90d": -11.25,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.06353019332957523,
-      "portfolio_return": -2.920175797279644
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 30.4881,
-      "reasoning": "债券基金波动率低，近90日表现相对稳健，作为防御性配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.33,
-      "return_30d": 1.91,
-      "return_90d": 3.73,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "4b1a431e-74e",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.092200",
-    "scenario": {
-      "date": "2025-01-09",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8666,
-      "nav_change_7d": -1.01,
-      "nav_change_30d": -5.28,
-      "nav_change_90d": -2.55,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09339270380655806,
-      "portfolio_return": -1.999839099236906
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 40.4032,
-      "reasoning": "农银新能源主题近期跌幅较大且波动率高，减仓以控制回撤，参考历史经验减仓胜率较高。",
-      "confidence": 0.75,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.81,
-      "return_30d": 3.89,
-      "return_90d": -1.72,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "6c66d7e2-f92",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.111925",
-    "scenario": {
-      "date": "2025-01-14",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9091,
-      "nav_change_7d": 0.7,
-      "nav_change_30d": -2.72,
-      "nav_change_90d": -0.04,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09227926299097482,
-      "portfolio_return": -0.9582466984606254
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "债券基金波动率低，近期表现稳健，持有以平衡组合风险。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.65,
-      "return_30d": 2.7,
-      "return_90d": -0.79,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "878a3b84-7d3",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.131031",
-    "scenario": {
-      "date": "2025-01-17",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9007,
-      "nav_change_7d": 2.13,
-      "nav_change_30d": -3.12,
-      "nav_change_90d": -2.69,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09219888646398702,
-      "portfolio_return": -0.8719047429070816
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.9852,
-      "reasoning": "债券基金近期表现稳健，波动率低，作为组合的稳定器，当前仓位适中，继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.7,
-      "return_30d": 3.43,
-      "return_90d": -0.98,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "6f5690c5-333",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.150224",
-    "scenario": {
-      "date": "2025-01-22",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8857,
-      "nav_change_7d": 0.04,
-      "nav_change_30d": -3.37,
-      "nav_change_90d": -3.16,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1120726054344068,
-      "portfolio_return": -0.6938407752659077
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 400.0,
-      "amount_pct": 40.1369,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，加仓以增强组合稳定性并优化风险调整后收益。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.47,
-      "return_30d": 4.92,
-      "return_90d": -0.09,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "9dff6967-d81",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.169192",
-    "scenario": {
-      "date": "2025-01-27",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9104,
-      "nav_change_7d": -0.21,
-      "nav_change_30d": -3.92,
-      "nav_change_90d": -2.44,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09166090011153676,
-      "portfolio_return": -0.5028317537531438
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.9758,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为防御性资产持有以平衡组合风险。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.0,
-      "return_30d": 4.45,
-      "return_90d": -0.16,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "6b5fc205-b9f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.188671",
-    "scenario": {
-      "date": "2025-02-07",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9874,
-      "nav_change_7d": 1.97,
-      "nav_change_30d": 2.87,
-      "nav_change_90d": -4.87,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0998112125299453,
-      "portfolio_return": 1.341319713607354
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.7473,
-      "reasoning": "债券基金近期表现稳健，波动率低，当前持仓合理，无需调整。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.78,
-      "return_30d": 1.66,
-      "return_90d": -0.95,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "1f1e827a-1e3",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.208433",
-    "scenario": {
-      "date": "2025-02-12",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0151,
-      "nav_change_7d": 3.27,
-      "nav_change_30d": 5.41,
-      "nav_change_90d": -2.69,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.10918840769888155,
-      "portfolio_return": 1.7507282516567284
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.6976,
-      "reasoning": "中欧兴利债券C近期表现良好，波动率低，作为稳定器持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.59,
-      "return_30d": 2.14,
-      "return_90d": -0.51,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "3a40c8a6-8a5",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.227574",
-    "scenario": {
-      "date": "2025-02-17",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0431,
-      "nav_change_7d": 1.18,
-      "nav_change_30d": 3.65,
-      "nav_change_90d": -0.47,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.11869234475361613,
-      "portfolio_return": 1.9863583041332094
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 28.9371,
-      "reasoning": "债券基金波动率低，近期收益稳健，作为组合稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.71,
-      "return_30d": 1.88,
-      "return_90d": -1.25,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "2018daf0-925",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.246875",
-    "scenario": {
-      "date": "2025-02-20",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.024,
-      "nav_change_7d": 0.59,
-      "nav_change_30d": 2.61,
-      "nav_change_90d": 1.9,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1086671261703572,
-      "portfolio_return": 1.9627590282447454
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 550.0,
-      "amount_pct": 53.1714,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，加仓以增强组合稳定性并分散风险。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.2,
-      "return_30d": -0.16,
-      "return_90d": -0.61,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "82a612a3-56f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.265941",
-    "scenario": {
-      "date": "2025-02-25",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0208,
-      "nav_change_7d": 0.33,
-      "nav_change_30d": 2.4,
-      "nav_change_90d": 0.74,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0642262030189909,
-      "portfolio_return": 2.2946973536226505
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为底仓配置维持现有仓位。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.66,
-      "return_30d": -0.0,
-      "return_90d": -2.21,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "85f9f5fb-b7f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.285216",
-    "scenario": {
-      "date": "2025-02-28",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9846,
-      "nav_change_7d": -2.21,
-      "nav_change_30d": 1.9,
-      "nav_change_90d": -0.43,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.06486314466143148,
-      "portfolio_return": 1.2901861957767868
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "债券基金近期表现稳健，波动率低，作为底仓配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.4,
-      "return_30d": 0.36,
-      "return_90d": -1.64,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "20499adf-306",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.305127",
-    "scenario": {
-      "date": "2025-03-05",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9983,
-      "nav_change_7d": -1.42,
-      "nav_change_30d": 2.25,
-      "nav_change_90d": -0.21,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0644590029239442,
-      "portfolio_return": 1.9252501896749163
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 550.0,
-      "amount_pct": 53.2755,
-      "reasoning": "华夏上证50ETF波动率13.92%较低，近90日涨幅0.48%，作为指数配置保持现有仓位。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.34,
-      "return_30d": -1.59,
-      "return_90d": -2.4,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "933a4651-575",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.324301",
-    "scenario": {
-      "date": "2025-03-10",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0251,
-      "nav_change_7d": 1.03,
-      "nav_change_30d": 0.95,
-      "nav_change_90d": -1.4,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.020090044970210018,
-      "portfolio_return": 2.5383468804880978
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为底仓配置继续持有，无需调整。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.15,
-      "return_30d": -6.59,
-      "return_90d": -2.52,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "70815fa1-00a",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.343518",
-    "scenario": {
-      "date": "2025-03-13",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0073,
-      "nav_change_7d": -1.14,
-      "nav_change_30d": 0.74,
-      "nav_change_90d": -0.27,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.020274444413790296,
-      "portfolio_return": 1.6057435634994182
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 150.0,
-      "amount_pct": 14.5426,
-      "reasoning": "中欧兴利债券C波动率低、近期收益稳定，作为组合稳定器继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.68,
-      "return_30d": -4.09,
-      "return_90d": -1.28,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "3b7aee49-e45",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.363020",
-    "scenario": {
-      "date": "2025-03-18",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.1056,
-      "nav_change_7d": 1.68,
-      "nav_change_30d": 1.76,
-      "nav_change_90d": 1.96,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.014992236340949273,
-      "portfolio_return": 3.220091039601102
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 400.0,
-      "amount_pct": 37.8684,
-      "reasoning": "债券基金波动率低，近期表现稳定，作为组合压舱石继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.83,
-      "return_30d": -6.05,
-      "return_90d": -3.99,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "98839ecd-144",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.382375",
-    "scenario": {
-      "date": "2025-03-21",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0103,
-      "nav_change_7d": -2.3,
-      "nav_change_30d": -0.62,
-      "nav_change_90d": -0.13,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.05449300986439916,
-      "portfolio_return": 1.4350283413354374
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近90日收益稳健，作为组合稳定器继续持有，无需调整。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.01,
-      "return_30d": -3.97,
-      "return_90d": -3.1,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "ec4eea28-502",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.402220",
-    "scenario": {
-      "date": "2025-03-26",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.015,
-      "nav_change_7d": -2.26,
-      "nav_change_30d": -1.25,
-      "nav_change_90d": -1.5,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.054409936196414946,
-      "portfolio_return": 1.5899004190378947
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近期回调但长期稳健，维持现有仓位作为组合稳定器。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.01,
-      "return_30d": -3.31,
-      "return_90d": -1.74,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "0a6e2f4a-e90",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.421615",
-    "scenario": {
-      "date": "2025-03-31",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9821,
-      "nav_change_7d": -1.21,
-      "nav_change_30d": -0.06,
-      "nav_change_90d": -1.02,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.05475375424937268,
-      "portfolio_return": 0.9519817549922482
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近90日涨幅+3.24%，波动率低，作为组合稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -6.91,
-      "return_30d": -2.54,
-      "return_90d": -0.31,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "a40fb478-a88",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.440939",
-    "scenario": {
-      "date": "2025-04-03",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9562,
-      "nav_change_7d": -1.79,
-      "nav_change_30d": -0.61,
-      "nav_change_90d": 2.49,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.05497127725759356,
-      "portfolio_return": 0.552511707128815
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 300.0,
-      "amount_pct": 29.4736,
-      "reasoning": "上证50ETF近30日涨幅1.56%，表现稳健，波动率低，维持现有仓位以保持组合均衡。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -3.36,
-      "return_30d": -1.87,
-      "return_90d": 1.07,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "2e4b5fa8-82f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.460210",
-    "scenario": {
-      "date": "2025-04-09",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.7765,
-      "nav_change_7d": -5.1,
-      "nav_change_30d": -6.18,
-      "nav_change_90d": -2.33,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.046290930991067965,
-      "portfolio_return": -2.3674853099831306
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 257.21,
-      "amount_pct": 26.4916,
-      "reasoning": "农银新能源主题近7日跌幅超10%，波动率极高，清仓止损以控制回撤。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.04,
-      "return_30d": 4.34,
-      "return_90d": 7.16,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "1d409fbf-cde",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.479419",
-    "scenario": {
-      "date": "2025-04-14",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8505,
-      "nav_change_7d": 4.73,
-      "nav_change_30d": -6.19,
-      "nav_change_90d": -1.5,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07165365014370136,
-      "portfolio_return": -1.2089476837035908
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 229.16,
-      "amount_pct": 23.1048,
-      "reasoning": "农银新能源主题波动率极高，近30日大幅下跌，清仓止损，避免进一步亏损。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.53,
-      "return_30d": 4.1,
-      "return_90d": 5.17,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "921bf478-082",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.499600",
-    "scenario": {
-      "date": "2025-04-17",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8645,
-      "nav_change_7d": 1.01,
-      "nav_change_30d": -5.87,
-      "nav_change_90d": -0.93,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0949068862154123,
-      "portfolio_return": -1.3888046146837405
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 7.0,
-      "amount_pct": 0.7057,
-      "reasoning": "华夏上证50ETF近7日涨幅1.81%，表现相对稳健，波动率适中，持有等待市场反弹。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.94,
-      "return_30d": 3.28,
-      "return_90d": 5.22,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "d20fef17-bca",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.518972",
-    "scenario": {
-      "date": "2025-04-22",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8798,
-      "nav_change_7d": 0.71,
-      "nav_change_30d": -3.25,
-      "nav_change_90d": -0.15,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09521048112257081,
-      "portfolio_return": -0.9717061731678223
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 506.0,
-      "amount_pct": 50.7263,
-      "reasoning": "农银新能源主题近期跌幅较大且波动率高，减仓以控制回撤风险。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.09,
-      "return_30d": 2.91,
-      "return_90d": 6.15,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "a44087dd-e44",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.538268",
-    "scenario": {
-      "date": "2025-04-25",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8834,
-      "nav_change_7d": 0.46,
-      "nav_change_30d": -3.28,
-      "nav_change_90d": -1.1,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.045109751913572804,
-      "portfolio_return": -0.6704468562634611
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.9925,
-      "reasoning": "上证50ETF近90日表现稳健，波动率低，作为指数配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.24,
-      "return_30d": 1.91,
-      "return_90d": 7.05,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "5d056827-966",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.557748",
-    "scenario": {
-      "date": "2025-04-30",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8674,
-      "nav_change_7d": -0.39,
-      "nav_change_30d": -2.88,
-      "nav_change_90d": -1.1,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.04688559261039591,
-      "portfolio_return": -0.17638329612194864
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 500.0,
-      "amount_pct": 50.1595,
-      "reasoning": "中欧兴利债券C近90日表现稳健，波动率低，作为组合的稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.24,
-      "return_30d": 0.83,
-      "return_90d": 7.3,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "2dfae36b-79f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.577061",
-    "scenario": {
-      "date": "2025-05-08",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9514,
-      "nav_change_7d": 2.17,
-      "nav_change_30d": 5.66,
-      "nav_change_90d": -0.9,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.046307467476722285,
-      "portfolio_return": 1.0698636894149787
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为防御性底仓继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.74,
-      "return_30d": -0.26,
-      "return_90d": 4.88,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "1ca19eb0-944",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.597011",
-    "scenario": {
-      "date": "2025-05-13",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.997,
-      "nav_change_7d": 2.33,
-      "nav_change_30d": 4.04,
-      "nav_change_90d": -0.45,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.04624200856670467,
-      "portfolio_return": 1.2129353966742928
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为组合的稳定器，当前仓位合理，继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.16,
-      "return_30d": -0.82,
-      "return_90d": 4.31,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "fe2bc377-95d",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.616572",
-    "scenario": {
-      "date": "2025-05-16",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9909,
-      "nav_change_7d": 1.15,
-      "nav_change_30d": 3.27,
-      "nav_change_90d": -1.09,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.04639722496505458,
-      "portfolio_return": 0.8743395580109609
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 200.0,
-      "amount_pct": 19.5189,
-      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为组合的压舱石，继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.26,
-      "return_30d": -1.18,
-      "return_90d": 5.45,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "d6131304-8fb",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.635808",
-    "scenario": {
-      "date": "2025-05-21",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0206,
-      "nav_change_7d": -0.62,
-      "nav_change_30d": 3.67,
-      "nav_change_90d": -0.08,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.026284442378725716,
-      "portfolio_return": 1.0593790577921935
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.6996,
-      "reasoning": "债券基金波动率低，近期收益稳定，作为组合稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -2.14,
-      "return_30d": -2.66,
-      "return_90d": 6.12,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "d784d6f4-3ae",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.655091",
-    "scenario": {
-      "date": "2025-05-26",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9638,
-      "nav_change_7d": -0.38,
-      "nav_change_30d": 2.07,
-      "nav_change_90d": -1.42,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.036346100490635844,
-      "portfolio_return": 0.18377147811153918
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "华夏上证50ETF近90日表现稳健，波动率较低，作为组合稳定器继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.72,
-      "return_30d": 1.48,
-      "return_90d": 10.51,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "f33eb32a-ed2",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.674709",
-    "scenario": {
-      "date": "2025-05-29",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.963,
-      "nav_change_7d": -1.37,
-      "nav_change_30d": 2.37,
-      "nav_change_90d": -0.54,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03632979159923812,
-      "portfolio_return": 0.22874520840085094
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为组合稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.27,
-      "return_30d": 0.9,
-      "return_90d": 10.56,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "c1a5a33b-16c",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.694180",
-    "scenario": {
-      "date": "2025-06-04",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.9736,
-      "nav_change_7d": 0.86,
-      "nav_change_30d": 2.75,
-      "nav_change_90d": -1.97,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03625872070120186,
-      "portfolio_return": 0.4252040683178893
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 220.0,
-      "amount_pct": 21.6772,
-      "reasoning": "中欧兴利债券C波动率极低，近期回调提供加仓机会，增强组合稳定性。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.56,
-      "return_30d": 2.2,
-      "return_90d": 12.69,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "570ec590-eb4",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.714430",
-    "scenario": {
-      "date": "2025-06-09",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.994,
-      "nav_change_7d": 1.25,
-      "nav_change_30d": 1.23,
-      "nav_change_90d": -1.08,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.018185378304099126,
-      "portfolio_return": 1.0036412198426843
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.8242,
-      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，作为防御性底仓继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.34,
-      "return_30d": 2.28,
-      "return_90d": 13.73,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "615ae6bb-d09",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.733826",
-    "scenario": {
-      "date": "2025-06-12",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0069,
-      "nav_change_7d": 0.59,
-      "nav_change_30d": 0.25,
-      "nav_change_90d": -2.38,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.025939305502268126,
-      "portfolio_return": 0.8864170024028499
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.0,
-      "amount_pct": 48.9975,
-      "reasoning": "上证50ETF波动率低，近期表现稳定，作为防御性配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.66,
-      "return_30d": 2.56,
-      "return_90d": 12.91,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "4123ba92-95f",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.753642",
-    "scenario": {
-      "date": "2025-06-17",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.987,
-      "nav_change_7d": 0.34,
-      "nav_change_30d": -0.1,
-      "nav_change_90d": -2.95,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07574383932971697,
-      "portfolio_return": 0.5616253289943598
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 49.2795,
-      "reasoning": "上证50ETF波动率低，作为指数配置保持不动，无需调整。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.54,
-      "return_30d": 3.64,
-      "return_90d": 15.92,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "21f3531d-211",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.772976",
-    "scenario": {
-      "date": "2025-06-20",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 3.8796,
-      "nav_change_7d": -2.53,
-      "nav_change_30d": -3.51,
-      "nav_change_90d": -3.26,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.026203057592309703,
-      "portfolio_return": -0.4153014409898242
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C近期小幅下跌，但波动率低，作为防御性配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.05,
-      "return_30d": 5.19,
-      "return_90d": 17.13,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
     "id": "843a5e6c-74f",
     "backtest_id": "bt_20241017_20251209",
     "timestamp": "2026-06-04T15:53:28.792730",
@@ -1904,383 +34,77 @@
     "lesson": ""
   },
   {
-    "id": "094d7f5b-f00",
+    "id": "ea872eb2-e76",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.812937",
+    "timestamp": "2026-06-04T15:53:27.727812",
     "scenario": {
-      "date": "2025-06-30",
+      "date": "2024-10-21",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 3.9844,
-      "nav_change_7d": 2.39,
-      "nav_change_30d": 1.01,
-      "nav_change_90d": 0.04,
+      "nav_current": 4.0186,
+      "nav_change_7d": -0.59,
+      "nav_change_30d": 22.89,
+      "nav_change_90d": 14.91,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.005755314778719626,
-      "portfolio_return": 1.718778930938497
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
     },
     "decision": {
-      "action": "increase",
+      "action": "buy",
+      "amount_rmb": 9500.0,
+      "amount_pct": 923.9178,
+      "reasoning": "中欧兴利债券C波动率相对较低，近期表现稳健，适合作为震荡市下的底仓配置，降低组合波动。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.25,
+      "return_30d": 2.18,
+      "return_90d": -1.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5f529816-bc7",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.307300",
+    "scenario": {
+      "date": "2025-10-21",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7135,
+      "nav_change_7d": 1.59,
+      "nav_change_30d": 2.47,
+      "nav_change_90d": 12.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1233690315588048,
+      "portfolio_return": 10.948595634840567
+    },
+    "decision": {
+      "action": "buy",
       "amount_rmb": 500.0,
-      "amount_pct": 48.641,
-      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，在震荡市中作为防御性资产加仓以增强组合稳定性。",
-      "confidence": 0.7,
+      "amount_pct": 41.4532,
+      "reasoning": "中欧兴利债券C波动率低，提供稳定收益，作为防御性配置继续持有。",
+      "confidence": 0.9,
       "model": ""
     },
     "outcome": {
-      "return_7d": 0.34,
-      "return_30d": 3.99,
-      "return_90d": 15.42,
+      "return_7d": 1.62,
+      "return_30d": 0.13,
+      "return_90d": 3.21,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
   },
   {
-    "id": "d6d4ab39-430",
+    "id": "977d6c82-06f",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.832755",
-    "scenario": {
-      "date": "2025-07-03",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0171,
-      "nav_change_7d": 0.73,
-      "nav_change_30d": 1.53,
-      "nav_change_90d": 1.54,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.005739826246771998,
-      "portfolio_return": 1.9932601590125343
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.6608,
-      "reasoning": "债券基金波动率低，近期收益稳定，作为组合压舱石继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.74,
-      "return_30d": 1.62,
-      "return_90d": 17.52,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "6b134465-cd0",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.852149",
-    "scenario": {
-      "date": "2025-07-08",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0499,
-      "nav_change_7d": 1.48,
-      "nav_change_30d": 1.7,
-      "nav_change_90d": 7.24,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.015411239594409137,
-      "portfolio_return": 2.3878437544362896
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 9.5895,
-      "reasoning": "中欧兴利债券C作为低波动底仓，近期表现稳健，当前仓位合理，继续持有以稳定组合。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.12,
-      "return_30d": 2.32,
-      "return_90d": 16.74,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "9d39553d-e46",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.871848",
-    "scenario": {
-      "date": "2025-07-11",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0749,
-      "nav_change_7d": 1.08,
-      "nav_change_30d": 1.75,
-      "nav_change_90d": 6.07,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.025066277268210885,
-      "portfolio_return": 2.5450873358990065
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为防御性配置继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.87,
-      "return_30d": 1.98,
-      "return_90d": 17.54,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "a45e0d33-b7c",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.891386",
-    "scenario": {
-      "date": "2025-07-16",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.0713,
-      "nav_change_7d": 0.69,
-      "nav_change_30d": 2.04,
-      "nav_change_90d": 5.35,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.025102100533215786,
-      "portfolio_return": 2.3987450075458945
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为组合的防御性配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.1,
-      "return_30d": 4.45,
-      "return_90d": 13.24,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "cae6c740-0ee",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.911532",
-    "scenario": {
-      "date": "2025-07-21",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.1585,
-      "nav_change_7d": 1.94,
-      "nav_change_30d": 7.19,
-      "nav_change_90d": 7.18,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.024866755017890412,
-      "portfolio_return": 3.3678736853783815
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 501.46,
-      "amount_pct": 47.1763,
-      "reasoning": "上证50ETF波动率低，作为防御性底仓继续持有，维持组合稳定性。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.93,
-      "return_30d": 3.99,
-      "return_90d": 11.08,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "113d2dfa-2e1",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.931175",
-    "scenario": {
-      "date": "2025-07-24",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.2243,
-      "nav_change_7d": 2.99,
-      "nav_change_30d": 7.26,
-      "nav_change_90d": 8.78,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07294602166500211,
-      "portfolio_return": 3.979818481226648
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 0.82,
-      "amount_pct": 0.0761,
-      "reasoning": "农银新能源主题为MIXED类基金，在震荡市环境下减仓胜率高达81%，且当前持仓份额极少，全部卖出以优化组合。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.7,
-      "return_30d": 4.57,
-      "return_90d": 11.16,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "1e3d003c-ffe",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.950839",
-    "scenario": {
-      "date": "2025-07-29",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.231,
-      "nav_change_7d": 0.91,
-      "nav_change_30d": 6.67,
-      "nav_change_90d": 9.4,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07301238973528075,
-      "portfolio_return": 3.9967684825067775
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 400.0,
-      "amount_pct": 37.0982,
-      "reasoning": "债券基金波动率低，近期表现平稳，当前持仓合理，无需调整。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.82,
-      "return_30d": 5.66,
-      "return_90d": 13.73,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "7ef0de7e-706",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.970109",
-    "scenario": {
-      "date": "2025-08-01",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.133,
-      "nav_change_7d": -1.69,
-      "nav_change_30d": 3.53,
-      "nav_change_90d": 6.87,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03450267667415705,
-      "portfolio_return": 2.9790420380870817
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 500.46,
-      "amount_pct": 47.4203,
-      "reasoning": "华夏上证50ETF波动率低，近期表现平稳，作为组合稳定器继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.28,
-      "return_30d": 8.65,
-      "return_90d": 16.73,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "c87c5cb1-aa4",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:28.989815",
-    "scenario": {
-      "date": "2025-08-06",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.1927,
-      "nav_change_7d": -0.88,
-      "nav_change_30d": 4.4,
-      "nav_change_90d": 6.11,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.08216862414501314,
-      "portfolio_return": 4.147169076992687
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.13,
-      "amount_pct": 46.6848,
-      "reasoning": "债券基金波动率低，近期表现稳健，加仓以增强组合稳定性并提升风险调整后收益。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.33,
-      "return_30d": 8.28,
-      "return_90d": 13.49,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "aa4abdec-56e",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.009966",
-    "scenario": {
-      "date": "2025-08-11",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.2033,
-      "nav_change_7d": 1.31,
-      "nav_change_30d": 3.15,
-      "nav_change_90d": 5.16,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03403541502263006,
-      "portfolio_return": 4.34493274999626
-    },
-    "decision": {
-      "action": "sell",
-      "amount_rmb": 0.2,
-      "amount_pct": 0.0186,
-      "reasoning": "中欧兴利债券C波动率低且近期表现稳定，作为组合的压舱石，维持现有仓位。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.2,
-      "return_30d": 7.3,
-      "return_90d": 14.96,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "3eed600e-1b1",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.029813",
+    "timestamp": "2026-06-30T05:27:51.854766+08:00",
     "scenario": {
       "date": "2025-08-14",
       "fund_code": "510300",
@@ -2290,16 +114,16 @@
       "nav_change_30d": 4.29,
       "nav_change_90d": 6.65,
       "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03391993656562844,
-      "portfolio_return": 4.758836585068111
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.01751273153352837,
+      "portfolio_return": 4.633705855183071
     },
     "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 18.4296,
-      "reasoning": "上证50ETF近期表现良好，波动率低，持仓比例适中，继续持有。",
-      "confidence": 0.8,
+      "action": "buy",
+      "amount_rmb": 800.0,
+      "amount_pct": 73.7185,
+      "reasoning": "中欧兴利债券C近30日涨2.01%趋势稳定，波动率4.82%较低，震荡市BOND加仓策略胜率70%且平均回报+2.82%，增配债券降低组合波动。",
+      "confidence": 0.78,
       "model": ""
     },
     "outcome": {
@@ -2346,136 +170,884 @@
     "lesson": ""
   },
   {
-    "id": "93918570-570",
+    "id": "586f8435-48b",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.069175",
+    "timestamp": "2026-06-30T05:27:51.622555+08:00",
     "scenario": {
-      "date": "2025-08-22",
+      "date": "2025-06-25",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 4.4679,
-      "nav_change_7d": 4.23,
-      "nav_change_30d": 6.53,
-      "nav_change_90d": 12.08,
+      "nav_current": 3.9979,
+      "nav_change_7d": 2.4,
+      "nav_change_30d": 0.86,
+      "nav_change_90d": -0.75,
       "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0328465003246754,
-      "portfolio_return": 7.819936877538403
+      "market_volatility": 0.0059,
+      "cash_ratio": 0.13476044052657246,
+      "portfolio_return": 0.8051134807722519
     },
     "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C作为低波动资产，有效平衡组合风险，维持当前仓位。",
-      "confidence": 0.9,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.87,
-      "return_30d": 4.28,
-      "return_90d": 6.82,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "2175a428-880",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.088656",
-    "scenario": {
-      "date": "2025-08-27",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.4774,
-      "nav_change_7d": 2.74,
-      "nav_change_30d": 6.26,
-      "nav_change_90d": 12.98,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.03284130319337163,
-      "portfolio_return": 7.836999366375003
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 200.0,
-      "amount_pct": 17.7037,
-      "reasoning": "中欧兴利债券C作为债券基金，波动率低，近期收益稳定，当前仓位合理，无需调整。",
+      "action": "decrease",
+      "amount_rmb": 500.18,
+      "amount_pct": 48.5272,
+      "reasoning": "农银新能源主题仅持有0.18份市值约0.40元，仓位极低无实质配置意义，清仓回收现金简化持仓结构。",
       "confidence": 0.85,
       "model": ""
     },
     "outcome": {
-      "return_7d": 1.78,
-      "return_30d": 5.92,
-      "return_90d": 5.51,
+      "return_7d": -0.07,
+      "return_30d": 3.71,
+      "return_90d": 14.16,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
   },
   {
-    "id": "03e76d51-c8b",
+    "id": "2e4b5fa8-82f",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.108913",
+    "timestamp": "2026-06-04T15:53:28.460210",
     "scenario": {
-      "date": "2025-09-01",
+      "date": "2025-04-09",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 4.6194,
-      "nav_change_7d": 1.27,
-      "nav_change_30d": 11.77,
-      "nav_change_90d": 16.75,
+      "nav_current": 3.7765,
+      "nav_change_7d": -5.1,
+      "nav_change_30d": -6.18,
+      "nav_change_90d": -2.33,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.013854213269191328,
-      "portfolio_return": 9.534014105957448
+      "cash_ratio": 0.046290930991067965,
+      "portfolio_return": -2.3674853099831306
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 700.0,
-      "amount_pct": 60.3672,
-      "reasoning": "上证50ETF近期涨幅适中，作为底仓配置，继续持有观察。",
+      "amount_rmb": 257.21,
+      "amount_pct": 26.4916,
+      "reasoning": "农银新能源主题近7日跌幅超10%，波动率极高，清仓止损以控制回撤。",
       "confidence": 0.8,
       "model": ""
     },
     "outcome": {
-      "return_7d": 1.17,
-      "return_30d": 5.97,
-      "return_90d": 3.76,
+      "return_7d": 2.04,
+      "return_30d": 4.34,
+      "return_90d": 7.16,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
   },
   {
-    "id": "f82714f2-d72",
+    "id": "7eaa9558-134",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.128396",
+    "timestamp": "2026-06-30T05:27:51.835593+08:00",
     "scenario": {
-      "date": "2025-09-04",
+      "date": "2025-08-11",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 4.4573,
-      "nav_change_7d": -2.17,
-      "nav_change_30d": 6.57,
-      "nav_change_90d": 11.93,
+      "nav_current": 4.2033,
+      "nav_change_7d": 1.31,
+      "nav_change_30d": 3.15,
+      "nav_change_90d": 5.16,
       "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07930365853125664,
-      "portfolio_return": 7.2776180723290045
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.06593230358130074,
+      "portfolio_return": 3.7415899107139197
     },
     "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "中欧兴利债券C波动率低，作为防御性配置，维持现有仓位。",
-      "confidence": 0.9,
+      "action": "decrease",
+      "amount_rmb": 2558.32,
+      "amount_pct": 238.0386,
+      "reasoning": "中欧兴利债券C波动率仅3.92%，近30日涨1.66%稳定，震荡市BOND加仓策略胜率70%平均回报+2.82%，增加债券配置提升组合防御性。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
-      "return_7d": 3.85,
-      "return_30d": 7.72,
-      "return_90d": 5.03,
+      "return_7d": 2.2,
+      "return_30d": 7.3,
+      "return_90d": 14.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9dff6967-d81",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.169192",
+    "scenario": {
+      "date": "2025-01-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9104,
+      "nav_change_7d": -0.21,
+      "nav_change_30d": -3.92,
+      "nav_change_90d": -2.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09166090011153676,
+      "portfolio_return": -0.5028317537531438
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.9758,
+      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，作为防御性资产持有以平衡组合风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": 4.45,
+      "return_90d": -0.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7ef0de7e-706",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.970109",
+    "scenario": {
+      "date": "2025-08-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.133,
+      "nav_change_7d": -1.69,
+      "nav_change_30d": 3.53,
+      "nav_change_90d": 6.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03450267667415705,
+      "portfolio_return": 2.9790420380870817
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.46,
+      "amount_pct": 47.4203,
+      "reasoning": "华夏上证50ETF波动率低，近期表现平稳，作为组合稳定器继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.28,
+      "return_30d": 8.65,
+      "return_90d": 16.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e8becf0e-b00",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.719614+08:00",
+    "scenario": {
+      "date": "2025-07-16",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0713,
+      "nav_change_7d": 0.69,
+      "nav_change_30d": 2.04,
+      "nav_change_90d": 5.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.0006312198868810589,
+      "portfolio_return": 1.9058514107253721
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.03,
+      "amount_pct": 47.8493,
+      "reasoning": "中欧兴利债券C近30日+1.61%表现稳定，波动率仅3.56%，震荡市BOND类加仓策略胜率70%平均回报+2.82%，增加防御性配置。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.1,
+      "return_30d": 4.45,
+      "return_90d": 13.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a44087dd-e44",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.538268",
+    "scenario": {
+      "date": "2025-04-25",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8834,
+      "nav_change_7d": 0.46,
+      "nav_change_30d": -3.28,
+      "nav_change_90d": -1.1,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.045109751913572804,
+      "portfolio_return": -0.6704468562634611
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.9925,
+      "reasoning": "上证50ETF近90日表现稳健，波动率低，作为指数配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.24,
+      "return_30d": 1.91,
+      "return_90d": 7.05,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c1a5a33b-16c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.694180",
+    "scenario": {
+      "date": "2025-06-04",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9736,
+      "nav_change_7d": 0.86,
+      "nav_change_30d": 2.75,
+      "nav_change_90d": -1.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03625872070120186,
+      "portfolio_return": 0.4252040683178893
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 220.0,
+      "amount_pct": 21.6772,
+      "reasoning": "中欧兴利债券C波动率极低，近期回调提供加仓机会，增强组合稳定性。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.56,
+      "return_30d": 2.2,
+      "return_90d": 12.69,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6b5fc205-b9f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.188671",
+    "scenario": {
+      "date": "2025-02-07",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9874,
+      "nav_change_7d": 1.97,
+      "nav_change_30d": 2.87,
+      "nav_change_90d": -4.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0998112125299453,
+      "portfolio_return": 1.341319713607354
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.7473,
+      "reasoning": "债券基金近期表现稳健，波动率低，当前持仓合理，无需调整。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.78,
+      "return_30d": 1.66,
+      "return_90d": -0.95,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d6d4ab39-430",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.832755",
+    "scenario": {
+      "date": "2025-07-03",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0171,
+      "nav_change_7d": 0.73,
+      "nav_change_30d": 1.53,
+      "nav_change_90d": 1.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005739826246771998,
+      "portfolio_return": 1.9932601590125343
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.6608,
+      "reasoning": "债券基金波动率低，近期收益稳定，作为组合压舱石继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.74,
+      "return_30d": 1.62,
+      "return_90d": 17.52,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "570ec590-eb4",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.714430",
+    "scenario": {
+      "date": "2025-06-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.994,
+      "nav_change_7d": 1.25,
+      "nav_change_30d": 1.23,
+      "nav_change_90d": -1.08,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.018185378304099126,
+      "portfolio_return": 1.0036412198426843
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.8242,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，作为防御性底仓继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.34,
+      "return_30d": 2.28,
+      "return_90d": 13.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e210366b-5cf",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.208506",
+    "scenario": {
+      "date": "2025-09-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.621,
+      "nav_change_7d": -0.2,
+      "nav_change_30d": 3.43,
+      "nav_change_90d": 17.34,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.18603887655142015,
+      "portfolio_return": 10.30399517588301
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 33.8699,
+      "reasoning": "中欧兴利债券波动率低，近期表现稳健，加仓以增强组合稳定性并分散权益风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.6,
+      "return_30d": 1.53,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1f1e827a-1e3",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.208433",
+    "scenario": {
+      "date": "2025-02-12",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0151,
+      "nav_change_7d": 3.27,
+      "nav_change_30d": 5.41,
+      "nav_change_90d": -2.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.10918840769888155,
+      "portfolio_return": 1.7507282516567284
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.6976,
+      "reasoning": "中欧兴利债券C近期表现良好，波动率低，作为稳定器持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.59,
+      "return_30d": 2.14,
+      "return_90d": -0.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "dd780216-cd5",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.467047",
+    "scenario": {
+      "date": "2025-11-24",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.5576,
+      "nav_change_7d": -3.22,
+      "nav_change_30d": -4.48,
+      "nav_change_90d": 0.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1260442783398007,
+      "portfolio_return": 9.622689369519575
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 25.4755,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，作为防御性资产继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.14,
+      "return_30d": 2.73,
+      "return_90d": 4.92,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6523c956-561",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.527866",
+    "scenario": {
+      "date": "2025-12-05",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6974,
+      "nav_change_7d": 1.28,
+      "nav_change_30d": -0.86,
+      "nav_change_90d": 3.13,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07831587634806284,
+      "portfolio_return": 11.016497250295942
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 10.0,
+      "amount_pct": 0.8282,
+      "reasoning": "债券基金波动率低，近期表现平稳，作为底仓配置持有不动。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.03,
+      "return_30d": 0.81,
+      "return_90d": 1.84,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "878a3b84-7d3",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.131031",
+    "scenario": {
+      "date": "2025-01-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9007,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": -3.12,
+      "nav_change_90d": -2.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09219888646398702,
+      "portfolio_return": -0.8719047429070816
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 19.9852,
+      "reasoning": "债券基金近期表现稳健，波动率低，作为组合的稳定器，当前仓位适中，继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.7,
+      "return_30d": 3.43,
+      "return_90d": -0.98,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a717dc2f-36d",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.071921+08:00",
+    "scenario": {
+      "date": "2025-02-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0431,
+      "nav_change_7d": 1.18,
+      "nav_change_30d": 3.65,
+      "nav_change_90d": -0.47,
+      "market_trend": "sideways",
+      "market_volatility": 0.0103,
+      "cash_ratio": 0.12743645138020643,
+      "portfolio_return": 2.2831015681008284
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 508.0,
+      "amount_pct": 49.0002,
+      "reasoning": "中欧兴利债券C近90日上涨5.44%，趋势稳健，震荡市中BOND类加仓策略胜率70%且平均回报2.82%，增加防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.71,
+      "return_30d": 1.88,
+      "return_90d": -1.25,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "aca6ea15-de4",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.030080+08:00",
+    "scenario": {
+      "date": "2025-09-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.621,
+      "nav_change_7d": -0.2,
+      "nav_change_30d": 3.43,
+      "nav_change_90d": 17.34,
+      "market_trend": "sideways",
+      "market_volatility": 0.0111,
+      "cash_ratio": 0.06734879360304522,
+      "portfolio_return": 12.465592845563824
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.3374,
+      "reasoning": "中欧兴利债券C近90日+7.79%趋势稳健，震荡市中BOND类加仓策略胜率70%且平均回报+2.82%，增持增强组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.6,
+      "return_30d": 1.53,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f00f7ba2-3a6",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.049442+08:00",
+    "scenario": {
+      "date": "2025-09-25",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6942,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": 3.29,
+      "nav_change_90d": 18.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.0111,
+      "cash_ratio": 0.057324013810584926,
+      "portfolio_return": 14.34862223115342
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.5593,
+      "reasoning": "中欧兴利债券C近30日+2.30%表现稳健，波动率仅5.78%，震荡市中BOND类加仓策略胜率70%且平均回报+2.82%，增持提升组合防御性。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.56,
+      "return_30d": 1.22,
+      "return_90d": 0.66,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5644461d-df0",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.977403+08:00",
+    "scenario": {
+      "date": "2025-01-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9007,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": -3.12,
+      "nav_change_90d": -2.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.0106,
+      "cash_ratio": 0.1526196056562265,
+      "portfolio_return": -0.5712311026345378
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 510.0,
+      "amount_pct": 50.9623,
+      "reasoning": "中欧兴利债券C近90日上涨4.18%趋势稳健，震荡市中BOND类加仓策略胜率70%平均回报+2.82%，增强防御。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.7,
+      "return_30d": 3.43,
+      "return_90d": -0.98,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3a40c8a6-8a5",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.227574",
+    "scenario": {
+      "date": "2025-02-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0431,
+      "nav_change_7d": 1.18,
+      "nav_change_30d": 3.65,
+      "nav_change_90d": -0.47,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11869234475361613,
+      "portfolio_return": 1.9863583041332094
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 28.9371,
+      "reasoning": "债券基金波动率低，近期收益稳健，作为组合稳定器继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.71,
+      "return_30d": 1.88,
+      "return_90d": -1.25,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5f730f94-e57",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.374523+08:00",
+    "scenario": {
+      "date": "2025-04-25",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8834,
+      "nav_change_7d": 0.46,
+      "nav_change_30d": -3.28,
+      "nav_change_90d": -1.1,
+      "market_trend": "sideways",
+      "market_volatility": 0.0146,
+      "cash_ratio": 0.00795855995159873,
+      "portfolio_return": -0.6207147008906941
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 7000.0,
+      "amount_pct": 699.4754,
+      "reasoning": "上证50ETF近90日涨2.74%表现稳健，当前仓位适中，震荡市下持有INDEX类基金有正期望收益，继续观察。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.24,
+      "return_30d": 1.91,
+      "return_90d": 7.05,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d78e9467-7dd",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.526921+08:00",
+    "scenario": {
+      "date": "2025-06-04",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9736,
+      "nav_change_7d": 0.86,
+      "nav_change_30d": 2.75,
+      "nav_change_90d": -1.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.21579492725627364,
+      "portfolio_return": 0.006801709341798415
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 502.22,
+      "amount_pct": 49.4852,
+      "reasoning": "中欧兴利债券C波动率仅4.25%，震荡市BOND加仓策略胜率70%平均回报+2.82%，当前仓位可适度增加以提升夏普比率。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.56,
+      "return_30d": 2.2,
+      "return_90d": 12.69,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0e5b2f45-b99",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.325440+08:00",
+    "scenario": {
+      "date": "2025-12-02",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6663,
+      "nav_change_7d": 1.42,
+      "nav_change_30d": -1.8,
+      "nav_change_90d": 2.47,
+      "market_trend": "sideways",
+      "market_volatility": 0.0095,
+      "cash_ratio": 0.0066515970468543845,
+      "portfolio_return": 13.41967871562094
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 600.0,
+      "amount_pct": 50.0221,
+      "reasoning": "中欧兴利债券C波动率5.08%极低，震荡市BOND加仓胜率70%且平均回报+2.82%，增强组合防御性。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.7,
+      "return_30d": 1.43,
+      "return_90d": 3.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "05f66328-ed2",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.073369",
+    "scenario": {
+      "date": "2025-01-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8534,
+      "nav_change_7d": -5.76,
+      "nav_change_30d": -5.07,
+      "nav_change_90d": -11.25,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06353019332957523,
+      "portfolio_return": -2.920175797279644
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 30.4881,
+      "reasoning": "债券基金波动率低，近90日表现相对稳健，作为防御性配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.33,
+      "return_30d": 1.91,
+      "return_90d": 3.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a7b5adf7-a43",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.089240+08:00",
+    "scenario": {
+      "date": "2025-10-13",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6959,
+      "nav_change_7d": -1.01,
+      "nav_change_30d": 1.66,
+      "nav_change_90d": 15.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.0113,
+      "cash_ratio": 0.02200311697340762,
+      "portfolio_return": 14.207546277968103
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.6371,
+      "reasoning": "沪深300ETF作为核心底仓，震荡市中INDEX类持有策略胜率60%且平均回报+1.39%，维持配置。",
+      "confidence": 0.65,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.99,
+      "return_30d": 2.07,
+      "return_90d": 3.83,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
@@ -2516,6 +1088,414 @@
     "lesson": ""
   },
   {
+    "id": "75294139-882",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.285846+08:00",
+    "scenario": {
+      "date": "2025-11-24",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.5576,
+      "nav_change_7d": -3.22,
+      "nav_change_30d": -4.48,
+      "nav_change_90d": 0.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.0107,
+      "cash_ratio": 0.0026790029149024934,
+      "portfolio_return": 11.579572510796005
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1600.0,
+      "amount_pct": 135.8696,
+      "reasoning": "中欧兴利债券C近90日涨0.58%波动仅5.7%，震荡市中BOND加仓策略胜率70%平均回报2.82%，增配债券提升防御性。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.14,
+      "return_30d": 2.73,
+      "return_90d": 4.92,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "869ca995-62c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.305948+08:00",
+    "scenario": {
+      "date": "2025-11-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6266,
+      "nav_change_7d": -1.07,
+      "nav_change_30d": -3.7,
+      "nav_change_90d": 0.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.0097,
+      "cash_ratio": 0.002279957014283174,
+      "portfolio_return": 12.68721225464613
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 550.0,
+      "amount_pct": 46.1588,
+      "reasoning": "中欧兴利债券C近30日-1.77%回调提供低吸机会，震荡市BOND加仓策略胜率70%平均回报2.82%，增加防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.46,
+      "return_30d": 2.67,
+      "return_90d": 5.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "614fb5a3-867",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.108768+08:00",
+    "scenario": {
+      "date": "2025-10-16",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7228,
+      "nav_change_7d": -1.89,
+      "nav_change_30d": 2.2,
+      "nav_change_90d": 14.33,
+      "market_trend": "sideways",
+      "market_volatility": 0.011,
+      "cash_ratio": 0.039239187780960035,
+      "portfolio_return": 14.755739214993174
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.2572,
+      "reasoning": "沪深300ETF在震荡市中表现稳健，近30日+2.20%，历史经验显示震荡市持有INDEX类基金胜率60%，继续持有维持大盘敞口。",
+      "confidence": 0.65,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.4,
+      "return_30d": 1.47,
+      "return_90d": 2.75,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a12fa580-2fa",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.816327+08:00",
+    "scenario": {
+      "date": "2025-08-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1927,
+      "nav_change_7d": -0.88,
+      "nav_change_30d": 4.4,
+      "nav_change_90d": 6.11,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.09517007301462456,
+      "portfolio_return": 3.5769090823880108
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 65.3418,
+      "reasoning": "中欧兴利债券C近30日+1.83%稳定上行，震荡市BOND类加仓策略胜率70%平均回报+2.82%，增加防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.33,
+      "return_30d": 8.28,
+      "return_90d": 13.49,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "663a80ba-66b",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.487065",
+    "scenario": {
+      "date": "2025-11-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6266,
+      "nav_change_7d": -1.07,
+      "nav_change_30d": -3.7,
+      "nav_change_90d": 0.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11611874904554684,
+      "portfolio_return": 10.148558061302538
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 72.39,
+      "amount_pct": 6.0753,
+      "reasoning": "农银新能源主题波动率高且近期跌幅较大，清仓止损以降低组合风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.46,
+      "return_30d": 2.67,
+      "return_90d": 5.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6b134465-cd0",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.852149",
+    "scenario": {
+      "date": "2025-07-08",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0499,
+      "nav_change_7d": 1.48,
+      "nav_change_30d": 1.7,
+      "nav_change_90d": 7.24,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.015411239594409137,
+      "portfolio_return": 2.3878437544362896
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.5895,
+      "reasoning": "中欧兴利债券C作为低波动底仓，近期表现稳健，当前仓位合理，继续持有以稳定组合。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.12,
+      "return_30d": 2.32,
+      "return_90d": 16.74,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e220fc95-e2f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.643013+08:00",
+    "scenario": {
+      "date": "2024-11-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9737,
+      "nav_change_7d": -1.66,
+      "nav_change_30d": -3.12,
+      "nav_change_90d": 15.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.0292,
+      "cash_ratio": 0.06153769833602818,
+      "portfolio_return": -1.0281475471723387
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 78.0655,
+      "reasoning": "震荡市下BOND类加仓胜率70%，平均收益+2.82%，中欧兴利债券C波动率低，作为防御性配置加仓。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.43,
+      "return_30d": 1.04,
+      "return_90d": -1.28,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "921bf478-082",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.499600",
+    "scenario": {
+      "date": "2025-04-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8645,
+      "nav_change_7d": 1.01,
+      "nav_change_30d": -5.87,
+      "nav_change_90d": -0.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0949068862154123,
+      "portfolio_return": -1.3888046146837405
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 7.0,
+      "amount_pct": 0.7057,
+      "reasoning": "华夏上证50ETF近7日涨幅1.81%，表现相对稳健，波动率适中，持有等待市场反弹。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.94,
+      "return_30d": 3.28,
+      "return_90d": 5.22,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4b1a431e-74e",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.092200",
+    "scenario": {
+      "date": "2025-01-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8666,
+      "nav_change_7d": -1.01,
+      "nav_change_30d": -5.28,
+      "nav_change_90d": -2.55,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09339270380655806,
+      "portfolio_return": -1.999839099236906
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 40.4032,
+      "reasoning": "农银新能源主题近期跌幅较大且波动率高，减仓以控制回撤，参考历史经验减仓胜率较高。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.81,
+      "return_30d": 3.89,
+      "return_90d": -1.72,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "113d2dfa-2e1",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.931175",
+    "scenario": {
+      "date": "2025-07-24",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.2243,
+      "nav_change_7d": 2.99,
+      "nav_change_30d": 7.26,
+      "nav_change_90d": 8.78,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07294602166500211,
+      "portfolio_return": 3.979818481226648
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 0.82,
+      "amount_pct": 0.0761,
+      "reasoning": "农银新能源主题为MIXED类基金，在震荡市环境下减仓胜率高达81%，且当前持仓份额极少，全部卖出以优化组合。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.7,
+      "return_30d": 4.57,
+      "return_90d": 11.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1d409fbf-cde",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.479419",
+    "scenario": {
+      "date": "2025-04-14",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8505,
+      "nav_change_7d": 4.73,
+      "nav_change_30d": -6.19,
+      "nav_change_90d": -1.5,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07165365014370136,
+      "portfolio_return": -1.2089476837035908
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 229.16,
+      "amount_pct": 23.1048,
+      "reasoning": "农银新能源主题波动率极高，近30日大幅下跌，清仓止损，避免进一步亏损。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.53,
+      "return_30d": 4.1,
+      "return_90d": 5.17,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c02ea47e-3dc",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.507891+08:00",
+    "scenario": {
+      "date": "2025-05-29",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.963,
+      "nav_change_7d": -1.37,
+      "nav_change_30d": 2.37,
+      "nav_change_90d": -0.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.015424704511736751,
+      "portfolio_return": -0.16878450875337875
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2004.13,
+      "amount_pct": 197.5972,
+      "reasoning": "农银新能源主题持仓极低仅4.13份，近90日跌幅7.04%表现疲弱，清仓回收现金简化持仓，符合历史经验中清除无效仓位的做法。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.27,
+      "return_30d": 0.9,
+      "return_90d": 10.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
     "id": "6d20d50a-573",
     "backtest_id": "bt_20241017_20251209",
     "timestamp": "2026-06-04T15:53:29.168386",
@@ -2550,68 +1530,1972 @@
     "lesson": ""
   },
   {
-    "id": "eb70f3ca-7c6",
+    "id": "ea63a83d-afb",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.188297",
+    "timestamp": "2026-06-30T05:27:51.015190+08:00",
     "scenario": {
-      "date": "2025-09-17",
+      "date": "2025-01-27",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 4.6501,
-      "nav_change_7d": 2.43,
-      "nav_change_30d": 7.54,
-      "nav_change_90d": 20.08,
+      "nav_current": 3.9104,
+      "nav_change_7d": -0.21,
+      "nav_change_30d": -3.92,
+      "nav_change_90d": -2.44,
       "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09506828508748333,
-      "portfolio_return": 10.666047378188305
+      "market_volatility": 0.0097,
+      "cash_ratio": 0.05162855565635259,
+      "portfolio_return": -0.05958070289118041
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 83.9581,
-      "reasoning": "上证50ETF波动率较低，近期涨幅温和，作为底仓配置继续持有。",
+      "amount_rmb": 789.68,
+      "amount_pct": 78.7766,
+      "reasoning": "中欧兴利债券近90日+5.11%趋势强劲，震荡市BOND加仓策略胜率70%，增配提升防御性。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": 4.45,
+      "return_90d": -0.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "03e76d51-c8b",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.108913",
+    "scenario": {
+      "date": "2025-09-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6194,
+      "nav_change_7d": 1.27,
+      "nav_change_30d": 11.77,
+      "nav_change_90d": 16.75,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.013854213269191328,
+      "portfolio_return": 9.534014105957448
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 60.3672,
+      "reasoning": "上证50ETF近期涨幅适中，作为底仓配置，继续持有观察。",
       "confidence": 0.8,
       "model": ""
     },
     "outcome": {
-      "return_7d": 0.43,
-      "return_30d": -0.63,
-      "return_90d": -0.62,
+      "return_7d": 1.17,
+      "return_30d": 5.97,
+      "return_90d": 3.76,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f4b1dc44-6af",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.735113+08:00",
+    "scenario": {
+      "date": "2024-11-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9491,
+      "nav_change_7d": -2.59,
+      "nav_change_30d": -2.67,
+      "nav_change_90d": 16.37,
+      "market_trend": "sideways",
+      "market_volatility": 0.015,
+      "cash_ratio": 0.05024378832017602,
+      "portfolio_return": -0.9330274166205527
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 78.4183,
+      "reasoning": "中欧兴利债券C近90日涨8.58%波动率仅13.18%，震荡市加仓BOND类基金胜率70%平均回报+2.82%，增强组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.18,
+      "return_30d": 0.35,
+      "return_90d": 1.99,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5c643e13-c40",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.660885+08:00",
+    "scenario": {
+      "date": "2025-07-03",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0171,
+      "nav_change_7d": 0.73,
+      "nav_change_30d": 1.53,
+      "nav_change_90d": 1.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.035286441686780856,
+      "portfolio_return": 1.2097658273631713
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.05,
+      "amount_pct": 19.3264,
+      "reasoning": "中欧兴利债券C波动率仅6.09%，近30日+2.02%表现稳健，震荡市BOND加仓策略胜率70%且平均回报+2.82%，增配提升组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.74,
+      "return_30d": 1.62,
+      "return_90d": 17.52,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "615ae6bb-d09",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.733826",
+    "scenario": {
+      "date": "2025-06-12",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0069,
+      "nav_change_7d": 0.59,
+      "nav_change_30d": 0.25,
+      "nav_change_90d": -2.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025939305502268126,
+      "portfolio_return": 0.8864170024028499
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 48.9975,
+      "reasoning": "上证50ETF波动率低，近期表现稳定，作为防御性配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.66,
+      "return_30d": 2.56,
+      "return_90d": 12.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cae6c740-0ee",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.911532",
+    "scenario": {
+      "date": "2025-07-21",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1585,
+      "nav_change_7d": 1.94,
+      "nav_change_30d": 7.19,
+      "nav_change_90d": 7.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.024866755017890412,
+      "portfolio_return": 3.3678736853783815
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 501.46,
+      "amount_pct": 47.1763,
+      "reasoning": "上证50ETF波动率低，作为防御性底仓继续持有，维持组合稳定性。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.93,
+      "return_30d": 3.99,
+      "return_90d": 11.08,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7b053bc2-6ba",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.641590+08:00",
+    "scenario": {
+      "date": "2025-06-30",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9844,
+      "nav_change_7d": 2.39,
+      "nav_change_30d": 1.01,
+      "nav_change_90d": 0.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.08510864450933807,
+      "portfolio_return": 0.7986033552529624
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.1,
+      "amount_pct": 48.6507,
+      "reasoning": "中欧兴利债券C近30日+2.10%表现稳健，波动率仅5.91%，震荡市BOND类加仓策略胜率70%平均回报+2.82%，提升组合防御性。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.34,
+      "return_30d": 3.99,
+      "return_90d": 15.42,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3a07659b-a5e",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.069103+08:00",
+    "scenario": {
+      "date": "2025-09-30",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7436,
+      "nav_change_7d": 2.72,
+      "nav_change_30d": 3.31,
+      "nav_change_90d": 18.83,
+      "market_trend": "sideways",
+      "market_volatility": 0.0114,
+      "cash_ratio": 0.047806336252164114,
+      "portfolio_return": 15.788458893865082
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 57.2546,
+      "reasoning": "中欧兴利债券C近30日+2.95%趋势稳健，波动率仅6.56%，震荡市中BOND类加仓策略胜率70%且平均回报+2.82%，增持增强组合防御性。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": 0.97,
+      "return_90d": -0.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "870676e5-02f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:27.784955",
+    "scenario": {
+      "date": "2024-11-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9737,
+      "nav_change_7d": -1.66,
+      "nav_change_30d": -3.12,
+      "nav_change_90d": 15.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06421973365400555,
+      "portfolio_return": -1.120735968609315
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 97.5819,
+      "reasoning": "沪深300ETF波动率低，作为底仓配置，维持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.43,
+      "return_30d": 1.04,
+      "return_90d": -1.28,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "64f3b676-503",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.583847+08:00",
+    "scenario": {
+      "date": "2025-06-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.987,
+      "nav_change_7d": 0.34,
+      "nav_change_30d": -0.1,
+      "nav_change_90d": -2.95,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.21563198936157948,
+      "portfolio_return": 0.16969450567321473
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.64,
+      "amount_pct": 49.3426,
+      "reasoning": "农银新能源主题近90日跌幅-9.66%趋势极弱，波动率9.23%偏高，持仓仅0.64份无实质意义，清仓消除冗余。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.54,
+      "return_30d": 3.64,
+      "return_90d": 15.92,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e55ef683-9ba",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:27.881396",
+    "scenario": {
+      "date": "2024-11-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9491,
+      "nav_change_7d": -2.59,
+      "nav_change_30d": -2.67,
+      "nav_change_90d": 16.37,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.17408858528189478,
+      "portfolio_return": -0.6454100825021851
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 19.6046,
+      "reasoning": "中欧兴利债券C波动率低且近期表现稳健，利用减仓资金加仓以增强组合稳定性并分散风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.18,
+      "return_30d": 0.35,
+      "return_90d": 1.99,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "09aedc55-d73",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.488690+08:00",
+    "scenario": {
+      "date": "2025-05-26",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9638,
+      "nav_change_7d": -0.38,
+      "nav_change_30d": 2.07,
+      "nav_change_90d": -1.42,
+      "market_trend": "sideways",
+      "market_volatility": 0.0051,
+      "cash_ratio": 0.014663770251073996,
+      "portfolio_return": -0.1859702559922698
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 507.66,
+      "amount_pct": 49.9557,
+      "reasoning": "震荡市环境下对BOND类基金加仓胜率70%，中欧兴利债券C波动率低，可提升组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.72,
+      "return_30d": 1.48,
+      "return_90d": 10.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3f6d4272-0e0",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.054353",
+    "scenario": {
+      "date": "2024-12-31",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0233,
+      "nav_change_7d": -1.21,
+      "nav_change_30d": 0.54,
+      "nav_change_90d": -1.91,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.051811504058797954,
+      "portfolio_return": -0.1669591731978835
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.7781,
+      "reasoning": "中欧兴利债券C近90日涨幅+2.66%，波动率低，作为组合的稳定器，当前仓位合理，继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.7,
+      "return_30d": -1.3,
+      "return_90d": 0.86,
       "was_profitable": false,
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
   },
   {
-    "id": "e210366b-5cf",
+    "id": "d03fbddc-6dc",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.208506",
+    "timestamp": "2026-06-04T15:53:27.804644",
     "scenario": {
-      "date": "2025-09-22",
+      "date": "2024-11-06",
       "fund_code": "510300",
       "fund_type": "INDEX",
-      "nav_current": 4.621,
-      "nav_change_7d": -0.2,
-      "nav_change_30d": 3.43,
-      "nav_change_90d": 17.34,
+      "nav_current": 4.1098,
+      "nav_change_7d": 3.46,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": 20.71,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.18603887655142015,
-      "portfolio_return": 10.30399517588301
+      "cash_ratio": 0.16123611055671278,
+      "portfolio_return": 1.3420625415831455
     },
     "decision": {
       "action": "decrease",
       "amount_rmb": 400.0,
-      "amount_pct": 33.8699,
-      "reasoning": "中欧兴利债券波动率低，近期表现稳健，加仓以增强组合稳定性并分散权益风险。",
+      "amount_pct": 37.8591,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，增加债券配置以平衡组合风险，提升夏普比率。",
       "confidence": 0.8,
       "model": ""
     },
     "outcome": {
-      "return_7d": 2.6,
-      "return_30d": 1.53,
-      "return_90d": 0.88,
+      "return_7d": 1.95,
+      "return_30d": -1.49,
+      "return_90d": -4.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "854be442-505",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.387164",
+    "scenario": {
+      "date": "2025-11-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.8061,
+      "nav_change_7d": -0.34,
+      "nav_change_30d": 1.32,
+      "nav_change_90d": 14.83,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09076884132503368,
+      "portfolio_return": 12.50414401250404
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 8.0587,
+      "reasoning": "中欧兴利债券C波动率低，作为防御性资产持有，平衡组合风险。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.44,
+      "return_30d": -2.56,
+      "return_90d": -0.24,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9d893a6d-369",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.016288",
+    "scenario": {
+      "date": "2024-12-23",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0214,
+      "nav_change_7d": 0.64,
+      "nav_change_30d": 1.83,
+      "nav_change_90d": 17.45,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.052049394622351676,
+      "portfolio_return": -0.04686821533405237
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 19.544,
+      "reasoning": "中欧兴利债券C近30日涨幅1.93%，波动率低，作为组合稳定器继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.21,
+      "return_30d": -1.85,
+      "return_90d": 1.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f64c9b7b-a62",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:27.862381",
+    "scenario": {
+      "date": "2024-11-19",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0621,
+      "nav_change_7d": -2.64,
+      "nav_change_30d": 1.33,
+      "nav_change_90d": 19.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.16155534317266237,
+      "portfolio_return": 0.9189772360242568
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 9.5541,
+      "reasoning": "沪深300ETF近期表现稳健，波动率适中，作为核心配置继续持有，等待市场方向明确。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.79,
+      "return_30d": -1.7,
+      "return_90d": -0.2,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9a77d775-49c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.447147",
+    "scenario": {
+      "date": "2025-11-19",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7,
+      "nav_change_7d": -1.23,
+      "nav_change_30d": 1.25,
+      "nav_change_90d": 7.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.11191487993046637,
+      "portfolio_return": 10.98770604942878
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.4587,
+      "reasoning": "中欧兴利债券C波动率低（5.20%），作为组合的稳定器，当前持仓比例合理，继续持有等待市场企稳。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.76,
+      "return_30d": -1.72,
+      "return_90d": 1.94,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9c7d2254-307",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.846803+08:00",
+    "scenario": {
+      "date": "2024-12-18",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0265,
+      "nav_change_7d": -1.19,
+      "nav_change_30d": -0.22,
+      "nav_change_90d": 23.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.0111,
+      "cash_ratio": 0.11179528445484796,
+      "portfolio_return": 0.1520596740559995
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 48.6575,
+      "reasoning": "中欧兴利债券C近30日+2.23%表现稳健，震荡市中BOND类加仓策略胜率70%、平均回报+2.82%，增加防御性配置。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.4,
+      "return_30d": -2.09,
+      "return_90d": 3.19,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "62b4b210-71a",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.791368+08:00",
+    "scenario": {
+      "date": "2024-12-05",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0067,
+      "nav_change_7d": 1.26,
+      "nav_change_30d": -2.99,
+      "nav_change_90d": 21.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.0127,
+      "cash_ratio": 0.039339626891526924,
+      "portfolio_return": -0.25324818611436056
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 68.2581,
+      "reasoning": "中欧兴利债券C近30日上涨0.80%，波动率仅11.32%，震荡市中债券基金加仓胜率70%，平均收益+2.82%，增加防御性配置。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.26,
+      "return_30d": -3.71,
+      "return_90d": 1.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b98baeeb-7c3",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.450626+08:00",
+    "scenario": {
+      "date": "2025-05-16",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9909,
+      "nav_change_7d": 1.15,
+      "nav_change_30d": 3.27,
+      "nav_change_90d": -1.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.0148,
+      "cash_ratio": 0.03400474365614944,
+      "portfolio_return": 0.48303950034574883
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 205.0,
+      "amount_pct": 20.0068,
+      "reasoning": "沪深300ETF近期表现平稳，30日+3.27%与市场同步，波动率适中，作为核心持仓继续持有。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.26,
+      "return_30d": -1.18,
+      "return_90d": 5.45,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6b6fed51-266",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.661345+08:00",
+    "scenario": {
+      "date": "2024-11-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1098,
+      "nav_change_7d": 3.46,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": 20.71,
+      "market_trend": "sideways",
+      "market_volatility": 0.0294,
+      "cash_ratio": 0.059481620891431615,
+      "portfolio_return": 1.787743999964805
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 75.7181,
+      "reasoning": "中欧兴利债券C波动率低（9.21%），近90日稳健上涨6.07%，震荡市下债券基金加仓胜率70%且平均收益+2.82%，增加防御性配置。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.95,
+      "return_30d": -1.49,
+      "return_90d": -4.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fa1c19de-6f8",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.809863+08:00",
+    "scenario": {
+      "date": "2024-12-10",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0821,
+      "nav_change_7d": 1.1,
+      "nav_change_30d": -2.61,
+      "nav_change_90d": 25.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.0127,
+      "cash_ratio": 0.008959952459069238,
+      "portfolio_return": 1.172411811453403
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 3137.44,
+      "amount_pct": 301.1557,
+      "reasoning": "中欧兴利债券C近30日正收益1.22%，波动率低，震荡市中债券基金作为压舱石，加仓提升组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.71,
+      "return_30d": -4.48,
+      "return_90d": 0.54,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "dc797f4c-64a",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.035278",
+    "scenario": {
+      "date": "2024-12-26",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0762,
+      "nav_change_7d": 1.14,
+      "nav_change_30d": 3.91,
+      "nav_change_90d": 7.77,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.051481740554546886,
+      "portfolio_return": 0.7638814096357965
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 19.344,
+      "reasoning": "债券基金波动率低，近期收益稳定，作为组合的压舱石，维持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.26,
+      "return_30d": -1.81,
+      "return_90d": 0.9,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "70815fa1-00a",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.343518",
+    "scenario": {
+      "date": "2025-03-13",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0073,
+      "nav_change_7d": -1.14,
+      "nav_change_30d": 0.74,
+      "nav_change_90d": -0.27,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.020274444413790296,
+      "portfolio_return": 1.6057435634994182
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 150.0,
+      "amount_pct": 14.5426,
+      "reasoning": "中欧兴利债券C波动率低、近期收益稳定，作为组合稳定器继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.68,
+      "return_30d": -4.09,
+      "return_90d": -1.28,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "93918570-570",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.069175",
+    "scenario": {
+      "date": "2025-08-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4679,
+      "nav_change_7d": 4.23,
+      "nav_change_30d": 6.53,
+      "nav_change_90d": 12.08,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0328465003246754,
+      "portfolio_return": 7.819936877538403
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C作为低波动资产，有效平衡组合风险，维持当前仓位。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.87,
+      "return_30d": 4.28,
+      "return_90d": 6.82,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9d39553d-e46",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.871848",
+    "scenario": {
+      "date": "2025-07-11",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0749,
+      "nav_change_7d": 1.08,
+      "nav_change_30d": 1.75,
+      "nav_change_90d": 6.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025066277268210885,
+      "portfolio_return": 2.5450873358990065
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为防御性配置继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.87,
+      "return_30d": 1.98,
+      "return_90d": 17.54,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6c66d7e2-f92",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.111925",
+    "scenario": {
+      "date": "2025-01-14",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9091,
+      "nav_change_7d": 0.7,
+      "nav_change_30d": -2.72,
+      "nav_change_90d": -0.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09227926299097482,
+      "portfolio_return": -0.9582466984606254
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "债券基金波动率低，近期表现稳健，持有以平衡组合风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.65,
+      "return_30d": 2.7,
+      "return_90d": -0.79,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f82714f2-d72",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.128396",
+    "scenario": {
+      "date": "2025-09-04",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4573,
+      "nav_change_7d": -2.17,
+      "nav_change_30d": 6.57,
+      "nav_change_90d": 11.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07930365853125664,
+      "portfolio_return": 7.2776180723290045
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C波动率低，作为防御性配置，维持现有仓位。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.85,
+      "return_30d": 7.72,
+      "return_90d": 5.03,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "85f9f5fb-b7f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.285216",
+    "scenario": {
+      "date": "2025-02-28",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9846,
+      "nav_change_7d": -2.21,
+      "nav_change_30d": 1.9,
+      "nav_change_90d": -0.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.06486314466143148,
+      "portfolio_return": 1.2901861957767868
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "债券基金近期表现稳健，波动率低，作为底仓配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.4,
+      "return_30d": 0.36,
+      "return_90d": -1.64,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f33eb32a-ed2",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.674709",
+    "scenario": {
+      "date": "2025-05-29",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.963,
+      "nav_change_7d": -1.37,
+      "nav_change_30d": 2.37,
+      "nav_change_90d": -0.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03632979159923812,
+      "portfolio_return": 0.22874520840085094
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为组合稳定器继续持有。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.27,
+      "return_30d": 0.9,
+      "return_90d": 10.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "21f3531d-211",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.772976",
+    "scenario": {
+      "date": "2025-06-20",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8796,
+      "nav_change_7d": -2.53,
+      "nav_change_30d": -3.51,
+      "nav_change_90d": -3.26,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.026203057592309703,
+      "portfolio_return": -0.4153014409898242
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C近期小幅下跌，但波动率低，作为防御性配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.05,
+      "return_30d": 5.19,
+      "return_90d": 17.13,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d784d6f4-3ae",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.655091",
+    "scenario": {
+      "date": "2025-05-26",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9638,
+      "nav_change_7d": -0.38,
+      "nav_change_30d": 2.07,
+      "nav_change_90d": -1.42,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.036346100490635844,
+      "portfolio_return": 0.18377147811153918
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "华夏上证50ETF近90日表现稳健，波动率较低，作为组合稳定器继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.72,
+      "return_30d": 1.48,
+      "return_90d": 10.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a45e0d33-b7c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.891386",
+    "scenario": {
+      "date": "2025-07-16",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0713,
+      "nav_change_7d": 0.69,
+      "nav_change_30d": 2.04,
+      "nav_change_90d": 5.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.025102100533215786,
+      "portfolio_return": 2.3987450075458945
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "中欧兴利债券C波动率低，近期收益稳定，作为组合的防御性配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.1,
+      "return_30d": 4.45,
+      "return_90d": 13.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c4653650-1d5",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.286873",
+    "scenario": {
+      "date": "2025-10-16",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7228,
+      "nav_change_7d": -1.89,
+      "nav_change_30d": 2.2,
+      "nav_change_90d": 14.33,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.12350206044641898,
+      "portfolio_return": 10.829088573935605
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "上证50ETF波动率低，近期表现稳健，作为分散配置继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.4,
+      "return_30d": 1.47,
+      "return_90d": 2.75,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3eed600e-1b1",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.029813",
+    "scenario": {
+      "date": "2025-08-14",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.2563,
+      "nav_change_7d": 1.49,
+      "nav_change_30d": 4.29,
+      "nav_change_90d": 6.65,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03391993656562844,
+      "portfolio_return": 4.758836585068111
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 18.4296,
+      "reasoning": "上证50ETF近期表现良好，波动率低，持仓比例适中，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.17,
+      "return_30d": 8.07,
+      "return_90d": 12.95,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2175a428-880",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.088656",
+    "scenario": {
+      "date": "2025-08-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4774,
+      "nav_change_7d": 2.74,
+      "nav_change_30d": 6.26,
+      "nav_change_90d": 12.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03284130319337163,
+      "portfolio_return": 7.836999366375003
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 200.0,
+      "amount_pct": 17.7037,
+      "reasoning": "中欧兴利债券C作为债券基金，波动率低，近期收益稳定，当前仓位合理，无需调整。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.78,
+      "return_30d": 5.92,
+      "return_90d": 5.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d20fef17-bca",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.518972",
+    "scenario": {
+      "date": "2025-04-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8798,
+      "nav_change_7d": 0.71,
+      "nav_change_30d": -3.25,
+      "nav_change_90d": -0.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.09521048112257081,
+      "portfolio_return": -0.9717061731678223
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 506.0,
+      "amount_pct": 50.7263,
+      "reasoning": "农银新能源主题近期跌幅较大且波动率高，减仓以控制回撤风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.09,
+      "return_30d": 2.91,
+      "return_90d": 6.15,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1e3d003c-ffe",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.950839",
+    "scenario": {
+      "date": "2025-07-29",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.231,
+      "nav_change_7d": 0.91,
+      "nav_change_30d": 6.67,
+      "nav_change_90d": 9.4,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07301238973528075,
+      "portfolio_return": 3.9967684825067775
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 37.0982,
+      "reasoning": "债券基金波动率低，近期表现平稳，当前持仓合理，无需调整。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.82,
+      "return_30d": 5.66,
+      "return_90d": 13.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "207b1450-653",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.508053",
+    "scenario": {
+      "date": "2025-12-02",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6663,
+      "nav_change_7d": 1.42,
+      "nav_change_30d": -1.8,
+      "nav_change_90d": 2.47,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1220756810451287,
+      "portfolio_return": 10.61461345652735
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 520.0,
+      "amount_pct": 43.3525,
+      "reasoning": "上证50ETF波动率较低，作为底仓配置，维持持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.7,
+      "return_30d": 1.43,
+      "return_90d": 3.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fbf25985-896",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.996465+08:00",
+    "scenario": {
+      "date": "2025-01-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8857,
+      "nav_change_7d": 0.04,
+      "nav_change_30d": -3.37,
+      "nav_change_90d": -3.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.0107,
+      "cash_ratio": 0.10184915275577491,
+      "portfolio_return": -0.1731558397916524
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 50.1711,
+      "reasoning": "震荡市中债券基金表现稳健，近90日+5.01%，历史经验显示震荡市加仓债券胜率70%，增持以增强组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.47,
+      "return_30d": 4.92,
+      "return_90d": -0.09,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d5b150a3-b28",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:27.901087",
+    "scenario": {
+      "date": "2024-11-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9911,
+      "nav_change_7d": -1.97,
+      "nav_change_30d": -1.41,
+      "nav_change_90d": 19.27,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1725273518631392,
+      "portfolio_return": 0.21599365714278976
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 48.5305,
+      "reasoning": "中欧兴利债券C近30日表现稳健且波动率低，在震荡市中增持可提升组合稳定性并分散权益风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.33,
+      "return_30d": 0.08,
+      "return_90d": 1.25,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "094d7f5b-f00",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.812937",
+    "scenario": {
+      "date": "2025-06-30",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9844,
+      "nav_change_7d": 2.39,
+      "nav_change_30d": 1.01,
+      "nav_change_90d": 0.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.005755314778719626,
+      "portfolio_return": 1.718778930938497
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 48.641,
+      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，在震荡市中作为防御性资产加仓以增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.34,
+      "return_30d": 3.99,
+      "return_90d": 15.42,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6f5690c5-333",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.150224",
+    "scenario": {
+      "date": "2025-01-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8857,
+      "nav_change_7d": 0.04,
+      "nav_change_30d": -3.37,
+      "nav_change_90d": -3.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.1120726054344068,
+      "portfolio_return": -0.6938407752659077
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 400.0,
+      "amount_pct": 40.1369,
+      "reasoning": "中欧兴利债券C近期表现稳健，波动率低，加仓以增强组合稳定性并优化风险调整后收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.47,
+      "return_30d": 4.92,
+      "return_90d": -0.09,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e6d6d71a-8dd",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.355632+08:00",
+    "scenario": {
+      "date": "2025-04-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8798,
+      "nav_change_7d": 0.71,
+      "nav_change_30d": -3.25,
+      "nav_change_90d": -0.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.0154,
+      "cash_ratio": 0.006985124771010446,
+      "portfolio_return": -1.0159413516134193
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 510.0,
+      "amount_pct": 51.1273,
+      "reasoning": "震荡市中债券基金加仓胜率70%，平均30日回报+2.82%，当前债券仓位偏低，加仓以增强组合稳定性并提高夏普比率。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.09,
+      "return_30d": 2.91,
+      "return_90d": 6.15,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "224b2bde-e64",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.958947+08:00",
+    "scenario": {
+      "date": "2025-01-14",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9091,
+      "nav_change_7d": 0.7,
+      "nav_change_30d": -2.72,
+      "nav_change_90d": -0.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.0109,
+      "cash_ratio": 0.1527257573578338,
+      "portfolio_return": -0.6403388496823572
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2010.0,
+      "amount_pct": 200.731,
+      "reasoning": "震荡市中BOND类基金加仓策略胜率70%，平均30日回报+2.82%，中欧兴利债券近90日+5.68%趋势稳健，增加配置以提升夏普比率。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.65,
+      "return_30d": 2.7,
+      "return_90d": -0.79,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4123ba92-95f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.753642",
+    "scenario": {
+      "date": "2025-06-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.987,
+      "nav_change_7d": 0.34,
+      "nav_change_30d": -0.1,
+      "nav_change_90d": -2.95,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.07574383932971697,
+      "portfolio_return": 0.5616253289943598
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 49.2795,
+      "reasoning": "上证50ETF波动率低，作为指数配置保持不动，无需调整。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.54,
+      "return_30d": 3.64,
+      "return_90d": 15.92,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "452d7e37-9df",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.033938+08:00",
+    "scenario": {
+      "date": "2025-02-07",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9874,
+      "nav_change_7d": 1.97,
+      "nav_change_30d": 2.87,
+      "nav_change_90d": -4.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.0103,
+      "cash_ratio": 0.029837192525911174,
+      "portfolio_return": 1.7051285024453502
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 505.0,
+      "amount_pct": 49.2241,
+      "reasoning": "震荡市中BOND类基金加仓策略胜率70%且平均30日回报+2.82%，中欧兴利债券C近90日+4.23%趋势稳健，增持提升夏普比率。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.78,
+      "return_30d": 1.66,
+      "return_90d": -0.95,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c87c5cb1-aa4",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.989815",
+    "scenario": {
+      "date": "2025-08-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1927,
+      "nav_change_7d": -0.88,
+      "nav_change_30d": 4.4,
+      "nav_change_90d": 6.11,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.08216862414501314,
+      "portfolio_return": 4.147169076992687
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.13,
+      "amount_pct": 46.6848,
+      "reasoning": "债券基金波动率低，近期表现稳健，加仓以增强组合稳定性并提升风险调整后收益。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.33,
+      "return_30d": 8.28,
+      "return_90d": 13.49,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "774c2992-e77",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.128512+08:00",
+    "scenario": {
+      "date": "2025-02-28",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9846,
+      "nav_change_7d": -2.21,
+      "nav_change_30d": 1.9,
+      "nav_change_90d": -0.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.0091,
+      "cash_ratio": 0.1322572587164729,
+      "portfolio_return": 1.749390775206557
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.0,
+      "amount_pct": 77.7824,
+      "reasoning": "中欧兴利债券C近90日+4.12%表现稳健，震荡市BOND加仓历史胜率70%平均回报+2.82%，增加防御性配置。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.4,
+      "return_30d": 0.36,
+      "return_90d": -1.64,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "48cdb450-790",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.267394",
+    "scenario": {
+      "date": "2025-10-13",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6959,
+      "nav_change_7d": -1.01,
+      "nav_change_30d": 1.66,
+      "nav_change_90d": 15.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.16857230699658887,
+      "portfolio_return": 10.902681047474907
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 41.5928,
+      "reasoning": "中欧兴利债券C波动率低且近期表现稳健，加仓可增强组合稳定性并分散权益风险。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.99,
+      "return_30d": 2.07,
+      "return_90d": 3.83,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5bf52b1e-b5f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.128414+08:00",
+    "scenario": {
+      "date": "2025-10-21",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.7135,
+      "nav_change_7d": 1.59,
+      "nav_change_30d": 2.47,
+      "nav_change_90d": 12.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.012,
+      "cash_ratio": 0.08291826060869976,
+      "portfolio_return": 14.485300708346042
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.0,
+      "amount_pct": 66.3251,
+      "reasoning": "农银新能源主题近90日涨幅23.66%趋势强劲，震荡市中MIXED类加仓策略胜率70%且平均回报+3.18%，适度增持。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.62,
+      "return_30d": 0.13,
+      "return_90d": 3.21,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "135d14a3-e02",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.753858+08:00",
+    "scenario": {
+      "date": "2024-11-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9911,
+      "nav_change_7d": -1.97,
+      "nav_change_30d": -1.41,
+      "nav_change_90d": 19.27,
+      "market_trend": "sideways",
+      "market_volatility": 0.0143,
+      "cash_ratio": 0.04951463247701392,
+      "portfolio_return": 0.0007422512652738078
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 67.9427,
+      "reasoning": "震荡市环境下BOND类基金加仓策略胜率70%平均回报2.82%，009520近30日涨1.56%趋势稳健，波动率12.81%可控，增加配置提升组合防御性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.33,
+      "return_30d": 0.08,
+      "return_90d": 1.25,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "20499adf-306",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:28.305127",
+    "scenario": {
+      "date": "2025-03-05",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.9983,
+      "nav_change_7d": -1.42,
+      "nav_change_30d": 2.25,
+      "nav_change_90d": -0.21,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.0644590029239442,
+      "portfolio_return": 1.9252501896749163
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 550.0,
+      "amount_pct": 53.2755,
+      "reasoning": "华夏上证50ETF波动率13.92%较低，近90日涨幅0.48%，作为指数配置保持现有仓位。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.34,
+      "return_30d": -1.59,
+      "return_90d": -2.4,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "002d593b-e2e",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.204044+08:00",
+    "scenario": {
+      "date": "2025-03-18",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1056,
+      "nav_change_7d": 1.68,
+      "nav_change_30d": 1.76,
+      "nav_change_90d": 1.96,
+      "market_trend": "sideways",
+      "market_volatility": 0.0089,
+      "cash_ratio": 0.20658060120995594,
+      "portfolio_return": 3.141802159558829
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 47.3355,
+      "reasoning": "中欧兴利债券C近90日涨幅4.99%，波动率仅9.09%，震荡市加仓BOND类基金历史胜率70%平均回报+2.82%，增加防御性配置。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.83,
+      "return_30d": -6.05,
+      "return_90d": -3.99,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3526e207-f1c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.772407+08:00",
+    "scenario": {
+      "date": "2024-12-02",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0333,
+      "nav_change_7d": 2.61,
+      "nav_change_30d": 1.5,
+      "nav_change_90d": 20.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.0129,
+      "cash_ratio": 0.06906098383020212,
+      "portfolio_return": 0.512613852516588
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 67.7454,
+      "reasoning": "震荡市下BOND类基金加仓胜率70%，平均30日回报+2.82%，该基金近30日涨3.51%表现稳健，波动率仅10.99%，加仓提升组合防御性。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": -1.15,
+      "return_90d": 0.14,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "aa4abdec-56e",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-04T15:53:29.009966",
+    "scenario": {
+      "date": "2025-08-11",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.2033,
+      "nav_change_7d": 1.31,
+      "nav_change_30d": 3.15,
+      "nav_change_90d": 5.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.15,
+      "cash_ratio": 0.03403541502263006,
+      "portfolio_return": 4.34493274999626
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 0.2,
+      "amount_pct": 0.0186,
+      "reasoning": "中欧兴利债券C波动率低且近期表现稳定，作为组合的压舱石，维持现有仓位。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.2,
+      "return_30d": 7.3,
+      "return_90d": 14.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3f9e9028-58a",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.603403+08:00",
+    "scenario": {
+      "date": "2025-06-20",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8796,
+      "nav_change_7d": -2.53,
+      "nav_change_30d": -3.51,
+      "nav_change_90d": -3.26,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.16806612094490186,
+      "portfolio_return": -1.2373320293288816
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 700.34,
+      "amount_pct": 69.971,
+      "reasoning": "农银新能源主题持仓仅0.34份几乎为零，近90日暴跌8.45%趋势极弱，清仓回收现金消除冗余持仓。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.05,
+      "return_30d": 5.19,
+      "return_90d": 17.13,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
@@ -2686,451 +3570,9 @@
     "lesson": ""
   },
   {
-    "id": "48cdb450-790",
+    "id": "c790535d-beb",
     "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.267394",
-    "scenario": {
-      "date": "2025-10-13",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.6959,
-      "nav_change_7d": -1.01,
-      "nav_change_30d": 1.66,
-      "nav_change_90d": 15.06,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.16857230699658887,
-      "portfolio_return": 10.902681047474907
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 41.5928,
-      "reasoning": "中欧兴利债券C波动率低且近期表现稳健，加仓可增强组合稳定性并分散权益风险。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.99,
-      "return_30d": 2.07,
-      "return_90d": 3.83,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "c4653650-1d5",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.286873",
-    "scenario": {
-      "date": "2025-10-16",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7228,
-      "nav_change_7d": -1.89,
-      "nav_change_30d": 2.2,
-      "nav_change_90d": 14.33,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.12350206044641898,
-      "portfolio_return": 10.829088573935605
-    },
-    "decision": {
-      "action": "hold",
-      "amount_rmb": 0,
-      "amount_pct": 0.0,
-      "reasoning": "上证50ETF波动率低，近期表现稳健，作为分散配置继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.4,
-      "return_30d": 1.47,
-      "return_90d": 2.75,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "5f529816-bc7",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.307300",
-    "scenario": {
-      "date": "2025-10-21",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7135,
-      "nav_change_7d": 1.59,
-      "nav_change_30d": 2.47,
-      "nav_change_90d": 12.38,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1233690315588048,
-      "portfolio_return": 10.948595634840567
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 500.0,
-      "amount_pct": 41.4532,
-      "reasoning": "中欧兴利债券C波动率低，提供稳定收益，作为防御性配置继续持有。",
-      "confidence": 0.9,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 1.62,
-      "return_30d": 0.13,
-      "return_90d": 3.21,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "c66b9a08-9c6",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.326942",
-    "scenario": {
-      "date": "2025-10-24",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7714,
-      "nav_change_7d": 3.34,
-      "nav_change_30d": 2.27,
-      "nav_change_90d": 13.49,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07723285846930666,
-      "portfolio_return": 11.709199520414568
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 50.0,
-      "amount_pct": 4.0941,
-      "reasoning": "华夏上证50ETF波动率低，作为指数配置保持现有仓位，暂不调整。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.67,
-      "return_30d": -3.12,
-      "return_90d": 1.62,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "18df4517-144",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.347551",
-    "scenario": {
-      "date": "2025-10-29",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.8614,
-      "nav_change_7d": 3.48,
-      "nav_change_30d": 2.96,
-      "nav_change_90d": 17.03,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.08053813337038791,
-      "portfolio_return": 13.239783623207057
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 80.0,
-      "amount_pct": 6.4291,
-      "reasoning": "上证50ETF波动率较低，近期表现稳健，持仓比例合理，继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.37,
-      "return_30d": -3.46,
-      "return_90d": -0.11,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "1081fc06-070",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.367369",
-    "scenario": {
-      "date": "2025-11-03",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7649,
-      "nav_change_7d": -1.31,
-      "nav_change_30d": 0.45,
-      "nav_change_90d": 13.93,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.0884133320688933,
-      "portfolio_return": 12.133776256214968
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 30.0,
-      "amount_pct": 2.4395,
-      "reasoning": "上证50ETF波动率较低，近期走势稳健，持有以平衡组合。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.67,
-      "return_30d": -2.88,
-      "return_90d": 0.31,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "854be442-505",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.387164",
-    "scenario": {
-      "date": "2025-11-06",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.8061,
-      "nav_change_7d": -0.34,
-      "nav_change_30d": 1.32,
-      "nav_change_90d": 14.83,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.09076884132503368,
-      "portfolio_return": 12.50414401250404
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 100.0,
-      "amount_pct": 8.0587,
-      "reasoning": "中欧兴利债券C波动率低，作为防御性资产持有，平衡组合风险。",
-      "confidence": 0.9,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.44,
-      "return_30d": -2.56,
-      "return_90d": -0.24,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "9e1d8d61-de0",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.407553",
-    "scenario": {
-      "date": "2025-11-11",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7644,
-      "nav_change_7d": 0.74,
-      "nav_change_30d": 0.96,
-      "nav_change_90d": 11.87,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.10016079655543879,
-      "portfolio_return": 11.863834769705754
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 50.0,
-      "amount_pct": 4.0553,
-      "reasoning": "上证50ETF波动率较低，近期表现稳健，持有等待市场趋势明朗。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.69,
-      "return_30d": -2.45,
-      "return_90d": 0.96,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "5385a8e8-090",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.427473",
-    "scenario": {
-      "date": "2025-11-14",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7402,
-      "nav_change_7d": -1.06,
-      "nav_change_30d": 0.66,
-      "nav_change_90d": 10.59,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.10486904480274706,
-      "portfolio_return": 11.573637561855794
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 72.6,
-      "amount_pct": 5.9083,
-      "reasoning": "债券基金波动率低，近期表现稳健，作为组合的稳定器继续持有。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -3.8,
-      "return_30d": -1.64,
-      "return_90d": 1.88,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "9a77d775-49c",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.447147",
-    "scenario": {
-      "date": "2025-11-19",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.7,
-      "nav_change_7d": -1.23,
-      "nav_change_30d": 1.25,
-      "nav_change_90d": 7.43,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.11191487993046637,
-      "portfolio_return": 10.98770604942878
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 200.0,
-      "amount_pct": 16.4587,
-      "reasoning": "中欧兴利债券C波动率低（5.20%），作为组合的稳定器，当前持仓比例合理，继续持有等待市场企稳。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -1.76,
-      "return_30d": -1.72,
-      "return_90d": 1.94,
-      "was_profitable": false,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "dd780216-cd5",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.467047",
-    "scenario": {
-      "date": "2025-11-24",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.5576,
-      "nav_change_7d": -3.22,
-      "nav_change_30d": -4.48,
-      "nav_change_90d": 0.29,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1260442783398007,
-      "portfolio_return": 9.622689369519575
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 300.0,
-      "amount_pct": 25.4755,
-      "reasoning": "中欧兴利债券C波动率低，近期表现稳健，作为防御性资产继续持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.14,
-      "return_30d": 2.73,
-      "return_90d": 4.92,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "663a80ba-66b",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.487065",
-    "scenario": {
-      "date": "2025-11-27",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.6266,
-      "nav_change_7d": -1.07,
-      "nav_change_30d": -3.7,
-      "nav_change_90d": 0.76,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.11611874904554684,
-      "portfolio_return": 10.148558061302538
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 72.39,
-      "amount_pct": 6.0753,
-      "reasoning": "农银新能源主题波动率高且近期跌幅较大，清仓止损以降低组合风险。",
-      "confidence": 0.85,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.46,
-      "return_30d": 2.67,
-      "return_90d": 5.24,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "207b1450-653",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.508053",
-    "scenario": {
-      "date": "2025-12-02",
-      "fund_code": "510300",
-      "fund_type": "INDEX",
-      "nav_current": 4.6663,
-      "nav_change_7d": 1.42,
-      "nav_change_30d": -1.8,
-      "nav_change_90d": 2.47,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.1220756810451287,
-      "portfolio_return": 10.61461345652735
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 520.0,
-      "amount_pct": 43.3525,
-      "reasoning": "上证50ETF波动率较低，作为底仓配置，维持持有。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 0.7,
-      "return_30d": 1.43,
-      "return_90d": 3.91,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "6523c956-561",
-    "backtest_id": "bt_20241017_20251209",
-    "timestamp": "2026-06-04T15:53:29.527866",
+    "timestamp": "2026-06-30T05:27:52.345073+08:00",
     "scenario": {
       "date": "2025-12-05",
       "fund_code": "510300",
@@ -3140,22 +3582,872 @@
       "nav_change_30d": -0.86,
       "nav_change_90d": 3.13,
       "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.07831587634806284,
-      "portfolio_return": 11.016497250295942
+      "market_volatility": 0.0091,
+      "cash_ratio": 0.015340711756566617,
+      "portfolio_return": 14.037863937516084
     },
     "decision": {
-      "action": "decrease",
-      "amount_rmb": 10.0,
-      "amount_pct": 0.8282,
-      "reasoning": "债券基金波动率低，近期表现平稳，作为底仓配置持有不动。",
-      "confidence": 0.85,
+      "action": "sell",
+      "amount_rmb": 697.63,
+      "amount_pct": 57.7747,
+      "reasoning": "中欧兴利债券C近30日仅-0.68%，波动率3.32%为组合最低，震荡市BOND加仓策略胜率70%，增加低波动底仓提升夏普比率。",
+      "confidence": 0.7,
       "model": ""
     },
     "outcome": {
       "return_7d": 0.03,
       "return_30d": 0.81,
       "return_90d": 1.84,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a9611c77-0c9",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.874019+08:00",
+    "scenario": {
+      "date": "2025-08-19",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.3081,
+      "nav_change_7d": 1.96,
+      "nav_change_30d": 4.29,
+      "nav_change_90d": 7.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.017344047473928037,
+      "portfolio_return": 5.651348265422748
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 300.0,
+      "amount_pct": 27.3468,
+      "reasoning": "农银新能源主题波动率13.63%偏高，持仓仅0.00份几乎为零，无法产生有效收益，清仓回收现金消除冗余持仓。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.94,
+      "return_30d": 7.26,
+      "return_90d": 10.97,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "770ee1b0-ba0",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.679987+08:00",
+    "scenario": {
+      "date": "2025-07-08",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0499,
+      "nav_change_7d": 1.48,
+      "nav_change_30d": 1.7,
+      "nav_change_90d": 7.24,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.015415040633627782,
+      "portfolio_return": 1.7404064818805638
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 200.1,
+      "amount_pct": 19.1885,
+      "reasoning": "中欧兴利债券C近30日涨1.44%表现稳健，震荡市BOND加仓策略胜率70%平均回报+2.82%，增配提升组合防御性。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.12,
+      "return_30d": 2.32,
+      "return_90d": 16.74,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6996bb14-3f1",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.796965+08:00",
+    "scenario": {
+      "date": "2025-08-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.133,
+      "nav_change_7d": -1.69,
+      "nav_change_30d": 3.53,
+      "nav_change_90d": 6.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.0064,
+      "cash_ratio": 0.14529744061298508,
+      "portfolio_return": 2.306155134514775
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 500.01,
+      "amount_pct": 47.3777,
+      "reasoning": "震荡市中BOND类基金加仓策略胜率70%平均30日回报+2.82%，该基金波动率仅2.76%且近90日稳健上涨2.19%，增加防御性配置。",
+      "confidence": 0.72,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.28,
+      "return_30d": 8.65,
+      "return_90d": 16.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "09ab62b0-d74",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.699749+08:00",
+    "scenario": {
+      "date": "2025-07-11",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0749,
+      "nav_change_7d": 1.08,
+      "nav_change_30d": 1.75,
+      "nav_change_90d": 6.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.015377646912372476,
+      "portfolio_return": 2.052512256433329
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 250.05,
+      "amount_pct": 23.8901,
+      "reasoning": "农银新能源主题仅持有0.05份仓位极低无实质配置意义，且波动率13.77%偏高，清仓回收现金简化持仓，符合历史经验中清除无效仓位的做法。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.87,
+      "return_30d": 1.98,
+      "return_90d": 17.54,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e7360f37-042",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.564737+08:00",
+    "scenario": {
+      "date": "2025-06-12",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0069,
+      "nav_change_7d": 0.59,
+      "nav_change_30d": 0.25,
+      "nav_change_90d": -2.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.11530911674539931,
+      "portfolio_return": 0.49551871588979335
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1001.18,
+      "amount_pct": 98.1107,
+      "reasoning": "沪深300ETF作为核心底仓，波动率6.45%适中，震荡市INDEX类持有策略胜率60%平均收益+1.39%，继续持有获取市场平均收益。",
+      "confidence": 0.65,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.66,
+      "return_30d": 2.56,
+      "return_90d": 12.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "033ac8af-9ee",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.394000+08:00",
+    "scenario": {
+      "date": "2025-04-30",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8674,
+      "nav_change_7d": -0.39,
+      "nav_change_30d": -2.88,
+      "nav_change_90d": -1.1,
+      "market_trend": "sideways",
+      "market_volatility": 0.0145,
+      "cash_ratio": 0.30786598083938266,
+      "portfolio_return": -0.6356080116573867
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 574.32,
+      "amount_pct": 57.6152,
+      "reasoning": "中欧兴利债券C波动率5.35%较低，震荡市下BOND类基金加仓胜率70%平均收益+2.82%，增配债券增强组合稳定性。",
+      "confidence": 0.7,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.24,
+      "return_30d": 0.83,
+      "return_90d": 7.3,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4a38b14b-379",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.545906+08:00",
+    "scenario": {
+      "date": "2025-06-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.994,
+      "nav_change_7d": 1.25,
+      "nav_change_30d": 1.23,
+      "nav_change_90d": -1.08,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.16500467047545175,
+      "portfolio_return": 0.442372038588328
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 502.22,
+      "amount_pct": 49.3393,
+      "reasoning": "中欧兴利债券C波动率4.08%较低，近7日涨1.12%表现积极，震荡市BOND类加仓策略胜率70%平均回报+2.82%，增加债券配置提升组合防御性。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.34,
+      "return_30d": 2.28,
+      "return_90d": 13.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "578c93df-63b",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.587506+08:00",
+    "scenario": {
+      "date": "2024-10-21",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0186,
+      "nav_change_7d": -0.59,
+      "nav_change_30d": 22.89,
+      "nav_change_90d": 14.91,
+      "market_trend": "bull",
+      "market_volatility": 0.0296,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 9000.0,
+      "amount_pct": 875.2905,
+      "reasoning": "沪深300ETF趋势强劲，近30日涨22.89%，牛市持有INDEX类基金胜率高，作为核心仓位配置。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.25,
+      "return_30d": 2.18,
+      "return_90d": -1.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "90e0e802-9b9",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.932479+08:00",
+    "scenario": {
+      "date": "2025-09-01",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6194,
+      "nav_change_7d": 1.27,
+      "nav_change_30d": 11.77,
+      "nav_change_90d": 16.75,
+      "market_trend": "bull",
+      "market_volatility": 0.0088,
+      "cash_ratio": 0.007403731910626394,
+      "portfolio_return": 11.35222208906891
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 4500.0,
+      "amount_pct": 388.0749,
+      "reasoning": "沪深300ETF作为核心底仓，牛市趋势未破，近30日+11.77%与市场同步，波动率18.01%适中，历史经验显示牛市持有指数基金胜率60%以上，继续持有享受beta收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.17,
+      "return_30d": 5.97,
+      "return_90d": 3.76,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "739c2ec5-d87",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.758360+08:00",
+    "scenario": {
+      "date": "2025-07-24",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.2243,
+      "nav_change_7d": 2.99,
+      "nav_change_30d": 7.26,
+      "nav_change_90d": 8.78,
+      "market_trend": "bull",
+      "market_volatility": 0.0052,
+      "cash_ratio": 0.1446548845719124,
+      "portfolio_return": 4.141823793795993
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 324.6392,
+      "reasoning": "沪深300ETF波动率低(5.94%)，近30日+7.26%趋势良好，牛市持有指数基金历史胜率高，加仓提升beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.7,
+      "return_30d": 4.57,
+      "return_90d": 11.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a1bb3270-91f",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.951841+08:00",
+    "scenario": {
+      "date": "2025-09-04",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4573,
+      "nav_change_7d": -2.17,
+      "nav_change_30d": 6.57,
+      "nav_change_90d": 11.93,
+      "market_trend": "bull",
+      "market_volatility": 0.01,
+      "cash_ratio": 0.14590290109163268,
+      "portfolio_return": 8.458583630641096
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 4000.0,
+      "amount_pct": 352.1406,
+      "reasoning": "牛市环境下指数基金持有胜率高，沪深300ETF近30日涨6.57%与市场同步，波动率23.08%适中，历史经验显示牛市持有指数基金胜率较高，加仓增强beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.85,
+      "return_30d": 7.72,
+      "return_90d": 5.03,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a6924ea1-95a",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.991126+08:00",
+    "scenario": {
+      "date": "2025-09-12",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6191,
+      "nav_change_7d": 1.41,
+      "nav_change_30d": 8.46,
+      "nav_change_90d": 16.05,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.06819348108511598,
+      "portfolio_return": 11.952372551139614
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.5112,
+      "reasoning": "沪深300ETF牛市持有指数基金胜率高，波动率20.95%适中，继续持有获取beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.21,
+      "return_30d": 2.92,
+      "return_90d": 2.14,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b1a75db4-7e3",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.738869+08:00",
+    "scenario": {
+      "date": "2025-07-21",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.1585,
+      "nav_change_7d": 1.94,
+      "nav_change_30d": 7.19,
+      "nav_change_90d": 7.18,
+      "market_trend": "bull",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.0006259544404950802,
+      "portfolio_return": 3.2399417901469314
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 8000.0,
+      "amount_pct": 752.6224,
+      "reasoning": "沪深300ETF波动率6.12%较低，牛市持有指数基金历史胜率79%平均回报+2.88%，作为核心底仓加仓享受beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.93,
+      "return_30d": 3.99,
+      "return_90d": 11.08,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d64f0cbb-a83",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.893764+08:00",
+    "scenario": {
+      "date": "2025-08-22",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4679,
+      "nav_change_7d": 4.23,
+      "nav_change_30d": 6.53,
+      "nav_change_90d": 12.08,
+      "market_trend": "bull",
+      "market_volatility": 0.0069,
+      "cash_ratio": 0.00758432620034421,
+      "portfolio_return": 8.70075709066692
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 44.2157,
+      "reasoning": "沪深300ETF作为核心底仓，牛市趋势未破，波动率10.46%适中，历史经验显示牛市持有指数基金胜率高，继续持有享受市场beta收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.87,
+      "return_30d": 4.28,
+      "return_90d": 6.82,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d046cba0-6f6",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.913094+08:00",
+    "scenario": {
+      "date": "2025-08-27",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.4774,
+      "nav_change_7d": 2.74,
+      "nav_change_30d": 6.26,
+      "nav_change_90d": 12.98,
+      "market_trend": "bull",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.007577770381777714,
+      "portfolio_return": 8.794798267111219
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 309.814,
+      "reasoning": "沪深300ETF作为核心底仓，牛市趋势未破，近30日+6.26%表现稳健，历史经验显示牛市持有指数基金胜率高，加仓增强beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.78,
+      "return_30d": 5.92,
+      "return_90d": 5.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2dfc54d1-a22",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.052911+08:00",
+    "scenario": {
+      "date": "2025-02-12",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0151,
+      "nav_change_7d": 3.27,
+      "nav_change_30d": 5.41,
+      "nav_change_90d": -2.69,
+      "market_trend": "bull",
+      "market_volatility": 0.0102,
+      "cash_ratio": 0.029706409778771092,
+      "portfolio_return": 2.1528862827642112
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 4500.0,
+      "amount_pct": 436.3933,
+      "reasoning": "沪深300ETF作为核心指数仓位，牛市趋势未破，近30日涨幅5.41%与市场同步，波动率12.37%适中，历史经验显示牛市持有指数基金胜率较高，加仓增强beta收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.59,
+      "return_30d": 2.14,
+      "return_90d": -0.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d87926aa-393",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:52.010591+08:00",
+    "scenario": {
+      "date": "2025-09-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.6501,
+      "nav_change_7d": 2.43,
+      "nav_change_30d": 7.54,
+      "nav_change_90d": 20.08,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.02272922535785742,
+      "portfolio_return": 13.264836767084454
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 167.9162,
+      "reasoning": "沪深300ETF牛市持有胜率高，波动率20.11%适中，继续持有获取beta收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.43,
+      "return_30d": -0.63,
+      "return_90d": -0.62,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fa0b0150-377",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.624397+08:00",
+    "scenario": {
+      "date": "2024-10-29",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.0081,
+      "nav_change_7d": -0.83,
+      "nav_change_30d": 5.97,
+      "nav_change_90d": 14.34,
+      "market_trend": "bull",
+      "market_volatility": 0.0292,
+      "cash_ratio": 0.14160194026678233,
+      "portfolio_return": -0.4074381083305525
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2300.0,
+      "amount_pct": 222.8855,
+      "reasoning": "牛市环境下MIXED基金加仓胜率70%且平均30日回报3.18%，农银新能源近30日涨9.78%趋势强劲，波动率31%虽高但牛市可接受，加仓以增强收益。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.63,
+      "return_30d": -0.5,
+      "return_90d": -1.87,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "22b3a042-cad",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.336871+08:00",
+    "scenario": {
+      "date": "2025-04-17",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8645,
+      "nav_change_7d": 1.01,
+      "nav_change_30d": -5.87,
+      "nav_change_90d": -0.93,
+      "market_trend": "bear",
+      "market_volatility": 0.0154,
+      "cash_ratio": 0.04836811367030863,
+      "portfolio_return": -1.5112408048225734
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 593.99,
+      "amount_pct": 59.8865,
+      "reasoning": "农银新能源主题近30日跌幅11.41%，波动率48.49%极高，熊市中高波动混合基金风险过大，历史经验显示清仓高波动品种可止损，全额赎回回收资金。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.94,
+      "return_30d": 3.28,
+      "return_90d": 5.22,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0371cadf-0fa",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.940426+08:00",
+    "scenario": {
+      "date": "2025-01-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8666,
+      "nav_change_7d": -1.01,
+      "nav_change_30d": -5.28,
+      "nav_change_90d": -2.55,
+      "market_trend": "bear",
+      "market_volatility": 0.0098,
+      "cash_ratio": 0.07307147872930708,
+      "portfolio_return": -1.5473119594247873
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 5802.08,
+      "amount_pct": 586.0568,
+      "reasoning": "中欧兴利债券C近90日涨5.23%，波动率仅9.82%，熊市中债券基金防御性强，加仓提升组合稳定性。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.81,
+      "return_30d": 3.89,
+      "return_90d": -1.72,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "03224f64-73b",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.317927+08:00",
+    "scenario": {
+      "date": "2025-04-14",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8505,
+      "nav_change_7d": 4.73,
+      "nav_change_30d": -6.19,
+      "nav_change_90d": -1.5,
+      "market_trend": "bear",
+      "market_volatility": 0.0156,
+      "cash_ratio": 0.03767358063408644,
+      "portfolio_return": -1.1085371420964112
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1107.6,
+      "amount_pct": 111.6724,
+      "reasoning": "农银新能源主题近30日跌9.31%，波动率48.93%极高，熊市中风险过大，历史案例显示清仓高波动MIXED基金可止损，全额赎回。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.53,
+      "return_30d": 4.1,
+      "return_90d": 5.17,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f6e5414a-413",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:50.921681+08:00",
+    "scenario": {
+      "date": "2025-01-06",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.8534,
+      "nav_change_7d": -5.76,
+      "nav_change_30d": -5.07,
+      "nav_change_90d": -11.25,
+      "market_trend": "bear",
+      "market_volatility": 0.0104,
+      "cash_ratio": 0.03266350207999465,
+      "portfolio_return": -2.587129444739621
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 403.24,
+      "amount_pct": 40.9801,
+      "reasoning": "中欧兴利债券C近90日仅跌1.77%，波动率8.23%较低，熊市中债券基金提供防御性配置，继续持有。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.33,
+      "return_30d": 1.91,
+      "return_90d": 3.73,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3caa1504-7ac",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.299164+08:00",
+    "scenario": {
+      "date": "2025-04-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 3.7765,
+      "nav_change_7d": -5.1,
+      "nav_change_30d": -6.18,
+      "nav_change_90d": -2.33,
+      "market_trend": "bear",
+      "market_volatility": 0.0157,
+      "cash_ratio": 0.05361416897560153,
+      "portfolio_return": -2.309490194961436
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 450.0,
+      "amount_pct": 46.3483,
+      "reasoning": "农银新能源主题近30日跌12.86%，波动率44.47%过高，熊市中风险极大，历史经验显示减仓高波动混合基金胜率较高，减仓150份回收资金。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.04,
+      "return_30d": 4.34,
+      "return_90d": 7.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2d11b4c1-ee2",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.971037+08:00",
+    "scenario": {
+      "date": "2025-09-09",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.5304,
+      "nav_change_7d": -1.2,
+      "nav_change_30d": 8.24,
+      "nav_change_90d": 13.12,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.05119235554611565,
+      "portfolio_return": 10.259079500948701
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 17.2503,
+      "reasoning": "沪深300ETF牛市持有胜率高，波动率21.10%适中，继续持有获取beta收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.0,
+      "return_30d": 6.45,
+      "return_90d": 4.77,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "51e71461-91c",
+    "backtest_id": "bt_20241017_20251209",
+    "timestamp": "2026-06-30T05:27:51.777382+08:00",
+    "scenario": {
+      "date": "2025-07-29",
+      "fund_code": "510300",
+      "fund_type": "INDEX",
+      "nav_current": 4.231,
+      "nav_change_7d": 0.91,
+      "nav_change_30d": 6.67,
+      "nav_change_90d": 9.4,
+      "market_trend": "bull",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.14457148834143405,
+      "portfolio_return": 4.201898125458338
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 4000.02,
+      "amount_pct": 370.9837,
+      "reasoning": "农银新能源主题仅持有0.02份，持仓无意义，清仓释放现金并减少管理复杂度。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.82,
+      "return_30d": 5.66,
+      "return_90d": 13.73,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
