@@ -54,7 +54,7 @@
       }
     ],
     "min_subscription": 10.0,
-    "min_auto_invest": 1.0,
+    "min_auto_invest": 10.0,
     "min_first_purchase": 10.0,
     "min_additional_purchase": 10.0,
     "daily_purchase_limit": null,
