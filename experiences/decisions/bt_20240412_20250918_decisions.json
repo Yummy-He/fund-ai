@@ -25158,5 +25158,3983 @@
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
+  },
+  {
+    "id": "3efff31a-d4d",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.368091+08:00",
+    "scenario": {
+      "date": "2024-04-16",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6899,
+      "nav_change_7d": -1.52,
+      "nav_change_30d": 0.9,
+      "nav_change_90d": 8.4,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 8000.0,
+      "amount_pct": 704.0394,
+      "reasoning": "震荡市MIXED买入策略胜率91%，中欧新蓝筹混合近期回调，提供入场机会，控制仓位30%。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.35,
+      "return_30d": 6.4,
+      "return_90d": 4.95,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "69f72d55-519",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.385511+08:00",
+    "scenario": {
+      "date": "2024-04-19",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7025,
+      "nav_change_7d": -0.12,
+      "nav_change_30d": 0.16,
+      "nav_change_90d": 8.58,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.19227899490495506,
+      "portfolio_return": -0.14509900319219013
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "华安纳斯达克100ETF联接近30日暴跌6.59%，波动率17.12%过高，震荡市下QDII弱势，历史经验显示震荡市卖出MIXED类胜率90%，但当前未持仓，暂不买入。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.07,
+      "return_30d": 7.3,
+      "return_90d": 4.64,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "64b49439-99e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.403891+08:00",
+    "scenario": {
+      "date": "2024-04-24",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7028,
+      "nav_change_7d": -0.65,
+      "nav_change_30d": 0.76,
+      "nav_change_90d": 8.1,
+      "market_trend": "sideways",
+      "market_volatility": 0.0084,
+      "cash_ratio": 0.19280080523311366,
+      "portfolio_return": -0.41535367663294886
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 500.0,
+      "amount_pct": 44.0149,
+      "reasoning": "华安纳斯达克100ETF联接波动率20.94%过高，近30日跌4.17%，在震荡市中风险收益比差，且无持仓，暂不参与。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.69,
+      "return_30d": 4.24,
+      "return_90d": 1.61,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9309f6b1-f3f",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.421612+08:00",
+    "scenario": {
+      "date": "2024-04-29",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7447,
+      "nav_change_7d": 2.65,
+      "nav_change_30d": 2.64,
+      "nav_change_90d": 14.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.13924770961670702,
+      "portfolio_return": 1.9226818097493197
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 60.3287,
+      "reasoning": "国泰盛益混合近30日+6.92%涨幅较大，波动率21.36%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓200份锁定利润控制回撤。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.73,
+      "return_30d": 1.63,
+      "return_90d": -2.57,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "89d2f214-fa7",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.439517+08:00",
+    "scenario": {
+      "date": "2024-05-07",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7644,
+      "nav_change_7d": 1.18,
+      "nav_change_30d": 2.68,
+      "nav_change_90d": 12.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.0092,
+      "cash_ratio": 0.10801775880436675,
+      "portfolio_return": 2.876602171741815
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 42.4921,
+      "reasoning": "国泰盛益混合30日+8.23%涨幅过大，波动率22.26%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓200份锁定部分利润。",
+      "confidence": 0.82,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.24,
+      "return_30d": 0.17,
+      "return_90d": -6.84,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "22fa1b47-b6d",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.457244+08:00",
+    "scenario": {
+      "date": "2024-05-10",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7764,
+      "nav_change_7d": 1.87,
+      "nav_change_30d": 4.29,
+      "nav_change_90d": 12.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.0092,
+      "cash_ratio": 0.09759515915898931,
+      "portfolio_return": 3.2069632018448466
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 8.4601,
+      "reasoning": "国泰盛益混合30日+10.22%涨幅过大，波动率22.43%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓100份锁定利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.04,
+      "return_30d": -0.81,
+      "return_90d": -6.31,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b79bcbf1-096",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.475121+08:00",
+    "scenario": {
+      "date": "2024-05-15",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7605,
+      "nav_change_7d": -0.06,
+      "nav_change_30d": 2.58,
+      "nav_change_90d": 11.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.10787690948209837,
+      "portfolio_return": 2.593780755617554
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 50.0,
+      "amount_pct": 4.1978,
+      "reasoning": "国泰盛益混合30日+10.28%涨幅过大，波动率20.15%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓20份锁定部分利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.73,
+      "return_30d": -0.77,
+      "return_90d": -5.87,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8cf3a365-4a6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.492918+08:00",
+    "scenario": {
+      "date": "2024-05-20",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7969,
+      "nav_change_7d": 0.82,
+      "nav_change_30d": 5.54,
+      "nav_change_90d": 11.34,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.1110063367453902,
+      "portfolio_return": 4.1967543396149996
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2.72,
+      "amount_pct": 0.2258,
+      "reasoning": "国泰盛益混合C近30日+12.53%涨幅过大，波动率11.92%偏高，在震荡市中MIXED减仓策略胜率80%，减仓锁定利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.41,
+      "return_30d": -1.75,
+      "return_90d": -6.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "62e4578b-df3",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.511232+08:00",
+    "scenario": {
+      "date": "2024-05-23",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7575,
+      "nav_change_7d": -0.15,
+      "nav_change_30d": 4.22,
+      "nav_change_90d": 7.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.0088,
+      "cash_ratio": 0.11278512021743435,
+      "portfolio_return": 2.793382475003691
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 51.35,
+      "amount_pct": 4.3076,
+      "reasoning": "国泰盛益混合C近30日+7.49%、90日+14.33%涨幅过大，波动率11.33%偏高，震荡市MIXED卖出策略胜率86%，全部卖出锁定利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.27,
+      "return_30d": -1.15,
+      "return_90d": -5.35,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d819ab9c-d0c",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.529043+08:00",
+    "scenario": {
+      "date": "2024-05-28",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7493,
+      "nav_change_7d": -1.96,
+      "nav_change_30d": 1.02,
+      "nav_change_90d": 7.96,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.11832746795771497,
+      "portfolio_return": 2.2932204232284676
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1050.0,
+      "amount_pct": 87.8808,
+      "reasoning": "沪深300ETF近7日-1.79%回调，震荡市INDEX加仓策略胜率84%，提供低吸机会，增强组合贝塔。",
+      "confidence": 0.82,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.21,
+      "return_30d": -2.19,
+      "return_90d": -5.67,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "77c231fc-4d6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.546724+08:00",
+    "scenario": {
+      "date": "2024-05-31",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7391,
+      "nav_change_7d": -0.42,
+      "nav_change_30d": -0.27,
+      "nav_change_90d": 5.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.0075,
+      "cash_ratio": 0.1234390575975418,
+      "portfolio_return": 1.5002707066239782
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 84.8284,
+      "reasoning": "震荡市中INDEX类加仓策略胜率84%且平均30日回报+3.00%，沪深300近30日跌0.51%提供逢低加仓机会，加仓500元提升核心底仓。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.76,
+      "return_30d": -0.72,
+      "return_90d": -4.6,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6df916b5-e8b",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.564504+08:00",
+    "scenario": {
+      "date": "2024-06-05",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7568,
+      "nav_change_7d": 0.31,
+      "nav_change_30d": -0.64,
+      "nav_change_90d": 5.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.0075,
+      "cash_ratio": 0.0631451040691972,
+      "portfolio_return": 2.131398102596122
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 83.5031,
+      "reasoning": "中欧新蓝筹混合近30日跌0.64%，震荡市中MIXED类减仓策略胜率80%且平均回报+3.45%，减仓300元控制风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.32,
+      "return_30d": -1.68,
+      "return_90d": -5.96,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b209bb0b-95f",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.582938+08:00",
+    "scenario": {
+      "date": "2024-06-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7433,
+      "nav_change_7d": -1.3,
+      "nav_change_30d": -1.86,
+      "nav_change_90d": 4.39,
+      "market_trend": "sideways",
+      "market_volatility": 0.0076,
+      "cash_ratio": 0.023547610396180974,
+      "portfolio_return": 1.1184456452199083
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 58.5245,
+      "reasoning": "震荡市中INDEX类加仓策略胜率84%且平均30日回报+3.0%，沪深300近30日跌3.03%提供逢低加仓机会，提升核心底仓。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.0,
+      "return_30d": -0.11,
+      "return_90d": -7.15,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5e2a4562-842",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.601623+08:00",
+    "scenario": {
+      "date": "2024-06-14",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7384,
+      "nav_change_7d": -0.82,
+      "nav_change_30d": -1.26,
+      "nav_change_90d": 3.8,
+      "market_trend": "sideways",
+      "market_volatility": 0.0068,
+      "cash_ratio": 0.04324579863051528,
+      "portfolio_return": 1.306899182331963
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2761.95,
+      "amount_pct": 228.4038,
+      "reasoning": "国泰盛益混合C近30日跌5.41%表现疲弱，震荡市中MIXED类基金卖出策略胜率86%且平均30日回报+3.15%，清仓止损。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.69,
+      "return_30d": -0.42,
+      "return_90d": -6.71,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "85657e41-40e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.619819+08:00",
+    "scenario": {
+      "date": "2024-06-19",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7262,
+      "nav_change_7d": -0.99,
+      "nav_change_30d": -3.93,
+      "nav_change_90d": 1.02,
+      "market_trend": "sideways",
+      "market_volatility": 0.006,
+      "cash_ratio": 0.11200843679085355,
+      "portfolio_return": 1.099020171646116
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1100.0,
+      "amount_pct": 90.5238,
+      "reasoning": "中欧新蓝筹混合近30日跌3.93%趋势偏弱，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓600份控制风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.42,
+      "return_30d": -1.59,
+      "return_90d": -7.02,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d233d684-a1b",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.638022+08:00",
+    "scenario": {
+      "date": "2024-06-24",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6969,
+      "nav_change_7d": -2.27,
+      "nav_change_30d": -2.84,
+      "nav_change_90d": 0.74,
+      "market_trend": "sideways",
+      "market_volatility": 0.0058,
+      "cash_ratio": 0.12290185317428681,
+      "portfolio_return": -0.3762523161473655
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 900.0,
+      "amount_pct": 75.5034,
+      "reasoning": "震荡市MIXED基金减仓策略胜率80%平均回报+3.45%，该基金近30日-2.84%表现疲弱，减仓降低风险敞口。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.55,
+      "return_30d": -2.54,
+      "return_90d": -4.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "72b826a3-5c5",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.655978+08:00",
+    "scenario": {
+      "date": "2024-06-27",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6802,
+      "nav_change_7d": -2.24,
+      "nav_change_30d": -3.95,
+      "nav_change_90d": -1.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.0059,
+      "cash_ratio": 0.21326070327425933,
+      "portfolio_return": -0.5961113086520708
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 66.8248,
+      "reasoning": "国泰盛益混合近30日跌5.82%趋势极弱，波动率13.18%偏高，当前无持仓，保持观望不介入。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.11,
+      "return_30d": -2.35,
+      "return_90d": -0.6,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "84902a14-f09",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.673756+08:00",
+    "scenario": {
+      "date": "2024-07-02",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6957,
+      "nav_change_7d": 0.36,
+      "nav_change_30d": -2.5,
+      "nav_change_90d": -1.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.0055,
+      "cash_ratio": 0.2919672772940386,
+      "portfolio_return": -0.12941353990418067
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 82.8459,
+      "reasoning": "中欧新蓝筹近30日跌2.50%表现疲弱，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓降低风险敞口。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.19,
+      "return_30d": -2.43,
+      "return_90d": 10.92,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5eed851f-6b6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.691553+08:00",
+    "scenario": {
+      "date": "2024-07-05",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6829,
+      "nav_change_7d": -0.56,
+      "nav_change_30d": -4.21,
+      "nav_change_90d": -2.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.0049,
+      "cash_ratio": 0.33239634662732964,
+      "portfolio_return": -0.43830641852166086
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1623.74,
+      "amount_pct": 133.9156,
+      "reasoning": "中欧新蓝筹近30日跌4.21%表现疲弱，波动率12.80%偏高，震荡市MIXED卖出策略胜率86%平均回报+3.15%，清仓降低波动风险。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.33,
+      "return_30d": -3.7,
+      "return_90d": 11.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "112f2ead-3ee",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.710638+08:00",
+    "scenario": {
+      "date": "2024-07-10",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.692,
+      "nav_change_7d": 0.54,
+      "nav_change_30d": -3.47,
+      "nav_change_90d": -0.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.0051,
+      "cash_ratio": 0.332496344569931,
+      "portfolio_return": -0.11873287368351158
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1431.37,
+      "amount_pct": 117.0338,
+      "reasoning": "中欧新蓝筹近30日跌3.47%表现疲弱，波动率11.93%偏高，震荡市MIXED卖出策略胜率86%平均回报+3.15%，清仓降低波动风险。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.16,
+      "return_30d": -4.75,
+      "return_90d": 15.15,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "38778d8f-a64",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.728715+08:00",
+    "scenario": {
+      "date": "2024-07-15",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7111,
+      "nav_change_7d": 2.21,
+      "nav_change_30d": -1.57,
+      "nav_change_90d": 1.25,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.3144880040424057,
+      "portfolio_return": -0.11610202379164548
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.3586,
+      "reasoning": "华安纳斯达克100ETF联接近90日涨幅14.55%获利丰厚，近7日转跌-0.29%显示动能减弱，震荡市QDII减仓锁定部分利润，策略胜率高。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.45,
+      "return_30d": -5.44,
+      "return_90d": 7.99,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3aa9f53d-8d2",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.746592+08:00",
+    "scenario": {
+      "date": "2024-07-18",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7146,
+      "nav_change_7d": 0.1,
+      "nav_change_30d": -1.62,
+      "nav_change_90d": 0.71,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.3363292191593077,
+      "portfolio_return": -0.6560066531513985
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 16.5782,
+      "reasoning": "华安纳斯达克90日涨幅+15.05%获利丰厚，但近7日-2.61%短期回调，波动率20.45%偏高，震荡市下减仓锁定利润，降低组合波动。",
+      "confidence": 0.75,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.07,
+      "return_30d": -3.69,
+      "return_90d": 7.22,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c0f231d0-246",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.764401+08:00",
+    "scenario": {
+      "date": "2024-07-23",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6655,
+      "nav_change_7d": -3.2,
+      "nav_change_30d": -3.02,
+      "nav_change_90d": -2.19,
+      "market_trend": "sideways",
+      "market_volatility": 0.0068,
+      "cash_ratio": 0.35904005939053074,
+      "portfolio_return": -1.3695358377967932
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 541.23,
+      "amount_pct": 45.3113,
+      "reasoning": "中欧新蓝筹混合近90日跌2.19%，波动率15.06%，震荡市中MIXED类基金减仓策略胜率80%且平均30日回报+3.45%，当前持仓亏损应止损减仓。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.81,
+      "return_30d": -2.93,
+      "return_90d": 11.27,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ad78ac2e-85f",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.782377+08:00",
+    "scenario": {
+      "date": "2024-07-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6469,
+      "nav_change_7d": -3.98,
+      "nav_change_30d": -3.1,
+      "nav_change_90d": -4.89,
+      "market_trend": "sideways",
+      "market_volatility": 0.0068,
+      "cash_ratio": 0.4191055633658193,
+      "portfolio_return": -2.6557273950986926
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 410.0,
+      "amount_pct": 35.1515,
+      "reasoning": "震荡市中MIXED类基金减仓策略胜率80%且平均30日回报+3.45%，中欧新蓝筹近90日跌4.89%趋势偏弱，减仓控制风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.12,
+      "return_30d": -0.82,
+      "return_90d": 13.27,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "874d0c3a-fec",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.801024+08:00",
+    "scenario": {
+      "date": "2024-07-31",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6656,
+      "nav_change_7d": 0.81,
+      "nav_change_30d": -2.93,
+      "nav_change_90d": -4.48,
+      "market_trend": "sideways",
+      "market_volatility": 0.008,
+      "cash_ratio": 0.45757410761767514,
+      "portfolio_return": -1.9240261557589473
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1015.39,
+      "amount_pct": 85.7615,
+      "reasoning": "震荡市INDEX类加仓策略胜率84%平均回报+3.0%，沪深300估值低位且近30日企稳，逢低加仓提升核心底仓。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.88,
+      "return_30d": -1.64,
+      "return_90d": 12.03,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "570ff132-8bf",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.819042+08:00",
+    "scenario": {
+      "date": "2024-08-05",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6078,
+      "nav_change_7d": -1.69,
+      "nav_change_30d": -4.46,
+      "nav_change_90d": -8.88,
+      "market_trend": "sideways",
+      "market_volatility": 0.0084,
+      "cash_ratio": 0.36820227348487516,
+      "portfolio_return": -5.133239998997742
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 461.33,
+      "amount_pct": 41.1714,
+      "reasoning": "华安纳斯达克100ETF联接近30日暴跌12.29%，波动率高达31%，在震荡市下风险收益比极差，且QDII类无明确高胜率策略支撑，止损离场。",
+      "confidence": 0.92,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.24,
+      "return_30d": 0.8,
+      "return_90d": 15.54,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "dd3acf6f-ab3",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.837147+08:00",
+    "scenario": {
+      "date": "2024-08-08",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.607,
+      "nav_change_7d": -2.6,
+      "nav_change_30d": -4.77,
+      "nav_change_90d": -9.54,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 0.41413271901720167,
+      "portfolio_return": -4.51539471608241
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 378.95,
+      "amount_pct": 33.2909,
+      "reasoning": "华安纳斯达克100波动率33.82%过高，近30日暴跌9.90%，在震荡市下风险极大，且无高胜率策略支持持有，清仓止损。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.03,
+      "return_30d": -1.74,
+      "return_90d": 17.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2af9f0e4-f90",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.855158+08:00",
+    "scenario": {
+      "date": "2024-08-13",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6078,
+      "nav_change_7d": -0.48,
+      "nav_change_30d": -5.7,
+      "nav_change_90d": -8.67,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 0.4516547065234877,
+      "portfolio_return": -4.058146445420461
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 2501.59,
+      "amount_pct": 216.5279,
+      "reasoning": "中欧新蓝筹混合近90日跌8.67%表现最弱，震荡市下MIXED类基金卖出策略胜率86%平均回报+3.15%，果断止损换仓。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.27,
+      "return_30d": -1.65,
+      "return_90d": 19.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "306ee902-095",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.873646+08:00",
+    "scenario": {
+      "date": "2024-08-16",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.596,
+      "nav_change_7d": -0.5,
+      "nav_change_30d": -6.61,
+      "nav_change_90d": -9.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.2905007232140076,
+      "portfolio_return": -3.189878843107199
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 651.42,
+      "amount_pct": 55.6726,
+      "reasoning": "华安纳斯达克100波动率高达27.79%，在震荡市环境下QDII类基金无高胜率策略支持，且近期反弹5.19%提供了减仓窗口，清仓锁定利润并降低组合波动。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.43,
+      "return_30d": -2.1,
+      "return_90d": 16.06,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5b537caa-af3",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.891655+08:00",
+    "scenario": {
+      "date": "2024-08-21",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5724,
+      "nav_change_7d": -1.11,
+      "nav_change_30d": -7.85,
+      "nav_change_90d": -10.53,
+      "market_trend": "bear",
+      "market_volatility": 0.0078,
+      "cash_ratio": 0.3568802781910941,
+      "portfolio_return": -2.9433333047165435
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 435.6,
+      "amount_pct": 37.1194,
+      "reasoning": "中欧新蓝筹混合近90日跌10.53%，熊市中表现不佳，清仓止损，符合熊市卖出混合型基金的高胜率经验。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.25,
+      "return_30d": -0.68,
+      "return_90d": 15.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "533379cc-18d",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.910481+08:00",
+    "scenario": {
+      "date": "2024-08-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.561,
+      "nav_change_7d": -2.13,
+      "nav_change_30d": -5.22,
+      "nav_change_90d": -10.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.0077,
+      "cash_ratio": 0.4039043147796496,
+      "portfolio_return": -3.5122211264958243
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1700.0,
+      "amount_pct": 146.2756,
+      "reasoning": "震荡市INDEX类加仓策略胜率84%平均回报+3.0%，沪深300近90日跌5.98%估值低位，逢低加仓提升核心底仓。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.13,
+      "return_30d": 3.1,
+      "return_90d": 13.63,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6e381446-bdc",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.928517+08:00",
+    "scenario": {
+      "date": "2024-08-29",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5559,
+      "nav_change_7d": -0.64,
+      "nav_change_30d": -4.42,
+      "nav_change_90d": -10.53,
+      "market_trend": "sideways",
+      "market_volatility": 0.0075,
+      "cash_ratio": 0.27021067902285556,
+      "portfolio_return": -4.438158018436643
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1200.0,
+      "amount_pct": 104.0285,
+      "reasoning": "震荡市INDEX类加仓策略胜率84%平均回报+3.0%，沪深300近90日跌6.51%估值低位，逢低加仓提升核心底仓。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.64,
+      "return_30d": 9.7,
+      "return_90d": 14.62,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "72f22104-bae",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.946551+08:00",
+    "scenario": {
+      "date": "2024-09-03",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5604,
+      "nav_change_7d": 0.81,
+      "nav_change_30d": -4.51,
+      "nav_change_90d": -11.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.0076,
+      "cash_ratio": 0.18691574709044584,
+      "portfolio_return": -5.188136974153822
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 61.2922,
+      "reasoning": "国泰盛益混合近30日涨3.38%表现强势，震荡市MIXED类买入策略胜率91%，平均30日回报+4.05%，小仓试探。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": 16.0,
+      "return_90d": 16.33,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "975cabbe-feb",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.964640+08:00",
+    "scenario": {
+      "date": "2024-09-06",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5385,
+      "nav_change_7d": -2.57,
+      "nav_change_30d": -4.36,
+      "nav_change_90d": -12.23,
+      "market_trend": "sideways",
+      "market_volatility": 0.0077,
+      "cash_ratio": 0.11447277222190372,
+      "portfolio_return": -6.800280945134328
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.22,
+      "amount_pct": 8.9716,
+      "reasoning": "震荡市中MIXED类减仓策略胜率80%且平均30日回报+3.45%，该基金近90日跌12.23%表现疲弱，清仓止损。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.93,
+      "return_30d": 18.02,
+      "return_90d": 18.33,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "23cd09b3-d5e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:27.982603+08:00",
+    "scenario": {
+      "date": "2024-09-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5443,
+      "nav_change_7d": -0.32,
+      "nav_change_30d": -3.69,
+      "nav_change_90d": -10.75,
+      "market_trend": "sideways",
+      "market_volatility": 0.0065,
+      "cash_ratio": 0.12458398500017565,
+      "portfolio_return": -6.320068261609994
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 600.07,
+      "amount_pct": 52.6433,
+      "reasoning": "持仓仅0.07份几乎为零，近90日跌10.75%表现疲弱，清仓回收现金消除冗余持仓，符合震荡市MIXED卖出策略（胜率86%，平均回报+3.15%）。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.05,
+      "return_30d": 15.07,
+      "return_90d": 18.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f78facca-1fa",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.001584+08:00",
+    "scenario": {
+      "date": "2024-09-18",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5403,
+      "nav_change_7d": -0.26,
+      "nav_change_30d": -3.43,
+      "nav_change_90d": -10.38,
+      "market_trend": "bear",
+      "market_volatility": 0.0061,
+      "cash_ratio": 0.08160525920940515,
+      "portfolio_return": -6.6026407568270775
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 940.0,
+      "amount_pct": 82.5314,
+      "reasoning": "华安纳斯达克100波动率26.3%极高，熊市中风险收益比差，清仓回收现金降低组合波动。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.39,
+      "return_30d": 16.13,
+      "return_90d": 17.87,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "48b7e8c3-d55",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.019775+08:00",
+    "scenario": {
+      "date": "2024-09-23",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.5427,
+      "nav_change_7d": 0.24,
+      "nav_change_30d": -1.5,
+      "nav_change_90d": -8.7,
+      "market_trend": "sideways",
+      "market_volatility": 0.0064,
+      "cash_ratio": 0.07411430080550264,
+      "portfolio_return": -5.359483469723491
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 600.03,
+      "amount_pct": 51.8855,
+      "reasoning": "持仓仅0.03份几乎为零，近90日跌8.70%表现疲弱，清仓回收现金消除冗余持仓，符合历史案例6、7、10经验。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 16.03,
+      "return_30d": 15.7,
+      "return_90d": 16.57,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5d51103c-565",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.038113+08:00",
+    "scenario": {
+      "date": "2024-09-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6587,
+      "nav_change_7d": 6.9,
+      "nav_change_30d": 7.17,
+      "nav_change_90d": -1.99,
+      "market_trend": "bull",
+      "market_volatility": 0.0131,
+      "cash_ratio": 0.029519671356913846,
+      "portfolio_return": 1.864759067135783
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 500.01,
+      "amount_pct": 41.1788,
+      "reasoning": "牛市趋势明确，沪深300ETF近7日涨幅10.91%，历史经验显示牛市加仓指数基金胜率86%，当前仓位偏低，加仓增强beta收益。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 8.57,
+      "return_30d": 8.12,
+      "return_90d": 10.13,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f2c12b17-731",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.056330+08:00",
+    "scenario": {
+      "date": "2024-10-08",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.9346,
+      "nav_change_7d": 4.66,
+      "nav_change_30d": 25.75,
+      "nav_change_90d": 14.34,
+      "market_trend": "bull",
+      "market_volatility": 0.0236,
+      "cash_ratio": 0.02575603142905204,
+      "portfolio_return": 16.753767706663204
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1300.0,
+      "amount_pct": 97.9115,
+      "reasoning": "纳斯达克100波动率仅17.17%极低，牛市加仓低波动QDII可有效分散A股风险并提升夏普比率，历史类似操作胜率91%且平均回报+4.05%。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -6.19,
+      "return_30d": -0.04,
+      "return_90d": -5.76,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "96a552bb-3cf",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.074618+08:00",
+    "scenario": {
+      "date": "2024-10-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7667,
+      "nav_change_7d": -4.42,
+      "nav_change_30d": 14.4,
+      "nav_change_90d": 3.62,
+      "market_trend": "bull",
+      "market_volatility": 0.0283,
+      "cash_ratio": 0.02665919656830774,
+      "portfolio_return": 9.986667660912117
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 5500.0,
+      "amount_pct": 431.5689,
+      "reasoning": "纳斯达克100波动率仅8.40%极低，近7日涨1.80%逆势走强，牛市加仓低波动QDII可有效降低组合波动并提升夏普比率，历史类似操作胜率91%且平均回报+4.67%。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.87,
+      "return_30d": 4.84,
+      "return_90d": -0.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ec91169c-a42",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.092981+08:00",
+    "scenario": {
+      "date": "2024-10-16",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7511,
+      "nav_change_7d": -3.64,
+      "nav_change_30d": 13.78,
+      "nav_change_90d": 2.13,
+      "market_trend": "bull",
+      "market_volatility": 0.029,
+      "cash_ratio": 0.07271041032337977,
+      "portfolio_return": 8.74861189612726
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2800.0,
+      "amount_pct": 221.2407,
+      "reasoning": "纳斯达克100波动率仅11.39%极低，近7日涨0.30%逆势走强，牛市加仓低波动QDII可分散A股风险并提升夏普比率，历史类似操作胜率91%且平均回报+4.67%。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.59,
+      "return_30d": 2.44,
+      "return_90d": 0.81,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9c896a72-d32",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.111852+08:00",
+    "scenario": {
+      "date": "2024-10-21",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7901,
+      "nav_change_7d": -0.36,
+      "nav_change_30d": 15.65,
+      "nav_change_90d": 7.48,
+      "market_trend": "bull",
+      "market_volatility": 0.0296,
+      "cash_ratio": 0.14344586349625552,
+      "portfolio_return": 10.718816185870564
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1800.0,
+      "amount_pct": 139.9188,
+      "reasoning": "纳斯达克100波动率仅9.86%极低，牛市加仓低波动QDII可有效分散A股风险并提升夏普比率，历史类似操作胜率高。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.82,
+      "return_30d": 1.15,
+      "return_90d": -0.07,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "facf7724-d0a",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.130145+08:00",
+    "scenario": {
+      "date": "2024-10-24",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7774,
+      "nav_change_7d": 2.8,
+      "nav_change_30d": 11.03,
+      "nav_change_90d": 7.92,
+      "market_trend": "bull",
+      "market_volatility": 0.0293,
+      "cash_ratio": 0.14266478474259048,
+      "portfolio_return": 10.518907812562247
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 155.7596,
+      "reasoning": "纳斯达克100波动率仅12.68%极低，牛市加仓低波动QDII可分散A股风险并提升夏普比率，历史类似操作胜率高。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.94,
+      "return_30d": -0.81,
+      "return_90d": 0.96,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "380b163d-16c",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.148344+08:00",
+    "scenario": {
+      "date": "2024-10-29",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7728,
+      "nav_change_7d": -1.65,
+      "nav_change_30d": 2.65,
+      "nav_change_90d": 6.44,
+      "market_trend": "bull",
+      "market_volatility": 0.0292,
+      "cash_ratio": 0.1419992674802967,
+      "portfolio_return": 11.03688401246989
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1500.0,
+      "amount_pct": 116.0156,
+      "reasoning": "纳斯达克100波动率仅10.79%极低，牛市加仓低波动QDII可分散A股风险并提升夏普比率，历史类似操作胜率86%且平均回报+4.3%。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.31,
+      "return_30d": -1.34,
+      "return_90d": -0.37,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "76bc4b57-904",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.166750+08:00",
+    "scenario": {
+      "date": "2024-11-01",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7674,
+      "nav_change_7d": -0.75,
+      "nav_change_30d": -4.38,
+      "nav_change_90d": 8.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.0292,
+      "cash_ratio": 0.005659848228481443,
+      "portfolio_return": 9.04112056569731
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1330.55,
+      "amount_pct": 104.6203,
+      "reasoning": "未持有中欧新蓝筹混合，且其近30日下跌4.38%，震荡市中MIXED基金卖出胜率高，不买入。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.77,
+      "return_30d": 0.94,
+      "return_90d": 0.87,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "26c9223d-5bc",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.185191+08:00",
+    "scenario": {
+      "date": "2024-11-06",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8317,
+      "nav_change_7d": 3.24,
+      "nav_change_30d": -0.9,
+      "nav_change_90d": 13.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.0294,
+      "cash_ratio": 0.11405110398383236,
+      "portfolio_return": 12.343883906829797
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 53.2522,
+      "reasoning": "中欧新蓝筹混合近30日下跌0.90%，但当前未持仓，震荡市中MIXED基金卖出胜率86%但无持仓可卖，暂不买入。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.57,
+      "return_30d": -0.02,
+      "return_90d": -2.09,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b3de543e-8b3",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.204055+08:00",
+    "scenario": {
+      "date": "2024-11-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8749,
+      "nav_change_7d": 4.98,
+      "nav_change_30d": 6.12,
+      "nav_change_90d": 16.61,
+      "market_trend": "bull",
+      "market_volatility": 0.0291,
+      "cash_ratio": 0.0853262346762685,
+      "portfolio_return": 14.91710635782445
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 259.8907,
+      "reasoning": "牛市加仓INDEX类基金历史胜率86%且平均30日回报+4.30%，沪深300趋势强劲，加仓增强beta收益。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.24,
+      "return_30d": -1.55,
+      "return_90d": -1.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "595b1dc8-e6e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.222318+08:00",
+    "scenario": {
+      "date": "2024-11-14",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8179,
+      "nav_change_7d": -2.54,
+      "nav_change_30d": 3.45,
+      "nav_change_90d": 13.9,
+      "market_trend": "sideways",
+      "market_volatility": 0.0278,
+      "cash_ratio": 0.08654740690111051,
+      "portfolio_return": 13.295641504420619
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 566.32,
+      "amount_pct": 42.7689,
+      "reasoning": "国泰盛益混合C近7日下跌3.65%，持仓仅0.02份市值极小，震荡市中MIXED基金卖出胜率90%，清仓回收资金。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.01,
+      "return_30d": 0.07,
+      "return_90d": 1.96,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9605f3f8-d74",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.240655+08:00",
+    "scenario": {
+      "date": "2024-11-19",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.785,
+      "nav_change_7d": -3.71,
+      "nav_change_30d": 0.13,
+      "nav_change_90d": 13.52,
+      "market_trend": "sideways",
+      "market_volatility": 0.0153,
+      "cash_ratio": 0.13124926340527043,
+      "portfolio_return": 11.956673555739599
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 61.2145,
+      "reasoning": "中欧新蓝筹未持仓，近7日跌3.71%趋势偏弱，震荡市下暂不建仓，等待更好时机。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.07,
+      "return_30d": 0.36,
+      "return_90d": 4.38,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b4520770-c48",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.259028+08:00",
+    "scenario": {
+      "date": "2024-11-22",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7511,
+      "nav_change_7d": -1.85,
+      "nav_change_30d": -2.52,
+      "nav_change_90d": 11.81,
+      "market_trend": "sideways",
+      "market_volatility": 0.015,
+      "cash_ratio": 0.20428496694543824,
+      "portfolio_return": 10.968669288082202
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 154.6755,
+      "reasoning": "国泰盛益混合C近30日跌4.15%趋势明显下行，波动率16.06%偏高，震荡市下MIXED类卖出胜率96%，当前无持仓，观望为宜。",
+      "confidence": 0.92,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.94,
+      "return_30d": 2.26,
+      "return_90d": 6.19,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "77bba925-ab5",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.277782+08:00",
+    "scenario": {
+      "date": "2024-11-27",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7559,
+      "nav_change_7d": -2.16,
+      "nav_change_30d": -2.01,
+      "nav_change_90d": 12.85,
+      "market_trend": "sideways",
+      "market_volatility": 0.0143,
+      "cash_ratio": 0.022210296472728933,
+      "portfolio_return": 11.175055250928436
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4089,
+      "reasoning": "中欧新蓝筹混合近30日跌2.01%趋势偏弱，且无持仓，暂不介入。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.47,
+      "return_30d": 2.3,
+      "return_90d": 5.15,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6280cfe6-436",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.296209+08:00",
+    "scenario": {
+      "date": "2024-12-02",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.785,
+      "nav_change_7d": 2.64,
+      "nav_change_30d": 1.0,
+      "nav_change_90d": 14.39,
+      "market_trend": "sideways",
+      "market_volatility": 0.0129,
+      "cash_ratio": 0.03954442731165524,
+      "portfolio_return": 12.76509082686438
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2500.0,
+      "amount_pct": 189.7648,
+      "reasoning": "震荡市中MIXED类买入策略胜率91%，中欧新蓝筹混合近90日涨14.39%趋势良好，波动率18.42%适中，建仓捕捉反弹机会。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.82,
+      "return_30d": -0.76,
+      "return_90d": 2.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4c4d3f28-75a",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.315223+08:00",
+    "scenario": {
+      "date": "2024-12-05",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7708,
+      "nav_change_7d": 1.53,
+      "nav_change_30d": -2.83,
+      "nav_change_90d": 15.1,
+      "market_trend": "sideways",
+      "market_volatility": 0.0127,
+      "cash_ratio": 0.08330722044324992,
+      "portfolio_return": 13.246257494833516
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2497.0,
+      "amount_pct": 188.9748,
+      "reasoning": "华安纳斯达克100ETF联接近30日涨6.79%，波动率仅9.56%，趋势强劲且风险可控，震荡市中QDII分散配置价值高，加仓增强收益。",
+      "confidence": 0.88,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.21,
+      "return_30d": -2.89,
+      "return_90d": 3.18,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4843a88a-425",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.333630+08:00",
+    "scenario": {
+      "date": "2024-12-10",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7904,
+      "nav_change_7d": 0.58,
+      "nav_change_30d": -3.47,
+      "nav_change_90d": 15.94,
+      "market_trend": "sideways",
+      "market_volatility": 0.0127,
+      "cash_ratio": 0.12647644944654013,
+      "portfolio_return": 13.692161666612138
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 900.0,
+      "amount_pct": 67.6554,
+      "reasoning": "中欧新蓝筹混合近30日跌3.47%已回调，90日涨15.94%中期趋势良好，震荡市中MIXED类买入策略胜率91%，逢低建仓。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.52,
+      "return_30d": -3.7,
+      "return_90d": 1.15,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "df23994a-d83",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.352418+08:00",
+    "scenario": {
+      "date": "2024-12-13",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7757,
+      "nav_change_7d": -0.4,
+      "nav_change_30d": -4.25,
+      "nav_change_90d": 15.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.0134,
+      "cash_ratio": 0.11646799968851927,
+      "portfolio_return": 14.275002344760795
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 479.27,
+      "amount_pct": 35.9004,
+      "reasoning": "中欧新蓝筹近30日跌4.25%趋势偏弱，震荡市中MIXED类基金卖出胜率86%，清仓回收资金控制风险。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.72,
+      "return_30d": -4.97,
+      "return_90d": -0.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2bf6e450-db4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.371099+08:00",
+    "scenario": {
+      "date": "2024-12-18",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7587,
+      "nav_change_7d": -2.08,
+      "nav_change_30d": -0.49,
+      "nav_change_90d": 13.35,
+      "market_trend": "sideways",
+      "market_volatility": 0.0111,
+      "cash_ratio": 0.16042917602358714,
+      "portfolio_return": 12.51189393905075
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 621.99,
+      "amount_pct": 47.2705,
+      "reasoning": "国泰盛益混合近30日上涨2.48%，趋势稳健，震荡市中MIXED买入策略胜率91%，增加配置以提升风险调整后收益。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.08,
+      "return_30d": -1.27,
+      "return_90d": 3.66,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "35922d5c-f74",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.389438+08:00",
+    "scenario": {
+      "date": "2024-12-23",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7432,
+      "nav_change_7d": -0.79,
+      "nav_change_30d": -0.45,
+      "nav_change_90d": 8.89,
+      "market_trend": "sideways",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.12561574267726586,
+      "portfolio_return": 13.357534923624062
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 652.63,
+      "amount_pct": 49.3337,
+      "reasoning": "中欧新蓝筹混合近7日下跌0.79%，30日下跌0.45%，短期趋势走弱，震荡市中MIXED类卖出策略胜率86%，及时止损。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.55,
+      "return_30d": -0.32,
+      "return_90d": 1.76,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "b48f27c5-af4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.408530+08:00",
+    "scenario": {
+      "date": "2024-12-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.767,
+      "nav_change_7d": 0.35,
+      "nav_change_30d": 2.2,
+      "nav_change_90d": 2.32,
+      "market_trend": "sideways",
+      "market_volatility": 0.01,
+      "cash_ratio": 0.09342074634450047,
+      "portfolio_return": 14.515884919655436
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1022.44,
+      "amount_pct": 76.3351,
+      "reasoning": "中欧新蓝筹混合近90日仅涨2.32%，波动率13.03%，在震荡市中MIXED类卖出策略胜率86%且平均回报3.15%，止损出清弱势品种。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.0,
+      "return_30d": -1.3,
+      "return_90d": 0.42,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f3794ef3-862",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.427276+08:00",
+    "scenario": {
+      "date": "2024-12-31",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7267,
+      "nav_change_7d": -1.74,
+      "nav_change_30d": -2.23,
+      "nav_change_90d": -6.58,
+      "market_trend": "sideways",
+      "market_volatility": 0.0104,
+      "cash_ratio": 0.04367590153958411,
+      "portfolio_return": 11.20405684341111
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 575.39,
+      "amount_pct": 44.1108,
+      "reasoning": "中欧新蓝筹混合近90日跌6.58%趋势疲弱，震荡市中MIXED卖出策略胜率86%且平均回报3.15%，清仓止损。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.17,
+      "return_30d": -0.31,
+      "return_90d": 1.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a8f07fdb-d09",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.445916+08:00",
+    "scenario": {
+      "date": "2025-01-06",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6591,
+      "nav_change_7d": -5.75,
+      "nav_change_30d": -6.94,
+      "nav_change_90d": -14.24,
+      "market_trend": "bear",
+      "market_volatility": 0.0104,
+      "cash_ratio": 0.08832920919906345,
+      "portfolio_return": 11.888513103598452
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 680.2900000000001,
+      "amount_pct": 52.5507,
+      "reasoning": "中欧新蓝筹混合近90日跌14.24%，波动率16.17%偏高，熊市中MIXED类基金卖出胜率95%，清仓止损。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": 2.82,
+      "return_90d": 2.63,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3eb23342-633",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.464527+08:00",
+    "scenario": {
+      "date": "2025-01-09",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6905,
+      "nav_change_7d": 0.17,
+      "nav_change_30d": -5.58,
+      "nav_change_90d": -4.31,
+      "market_trend": "bear",
+      "market_volatility": 0.0098,
+      "cash_ratio": 0.15057301801039724,
+      "portfolio_return": 10.590261129985903
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 502.34,
+      "amount_pct": 39.017,
+      "reasoning": "中欧新蓝筹混合近30日跌5.58%，波动率18.08%偏高，熊市中MIXED类基金卖出胜率95%且平均回报5.91%，清仓止损回收现金。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.6,
+      "return_30d": 4.88,
+      "return_90d": -2.27,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "37bf01fb-46e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.483149+08:00",
+    "scenario": {
+      "date": "2025-01-14",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7159,
+      "nav_change_7d": 2.17,
+      "nav_change_30d": -3.37,
+      "nav_change_90d": -2.01,
+      "market_trend": "sideways",
+      "market_volatility": 0.0109,
+      "cash_ratio": 0.19823316900031315,
+      "portfolio_return": 9.215791131632978
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 500.66,
+      "amount_pct": 39.0524,
+      "reasoning": "中欧新蓝筹混合近30日下跌3.37%，波动率23.43%偏高，震荡市中MIXED类卖出策略胜率86%，清仓止损。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.18,
+      "return_30d": 5.0,
+      "return_90d": -0.58,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e6f1945d-abc",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.502165+08:00",
+    "scenario": {
+      "date": "2025-01-17",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7138,
+      "nav_change_7d": 2.38,
+      "nav_change_30d": -2.55,
+      "nav_change_90d": -3.86,
+      "market_trend": "sideways",
+      "market_volatility": 0.0106,
+      "cash_ratio": 0.14873195824578467,
+      "portfolio_return": 11.65562248199989
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.28,
+      "amount_pct": 268.6571,
+      "reasoning": "华安纳斯达克100ETF联接近90日上涨5.40%，趋势强劲，震荡市中QDII资产提供分散化收益，历史经验显示加仓MIXED/QDII类胜率较高，当前仓位偏低，适度加仓增强进攻性。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.38,
+      "return_30d": 4.91,
+      "return_90d": -2.61,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f4d24bba-c6e",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.520721+08:00",
+    "scenario": {
+      "date": "2025-01-22",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7423,
+      "nav_change_7d": 2.15,
+      "nav_change_30d": -0.05,
+      "nav_change_90d": -1.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.0107,
+      "cash_ratio": 0.014033599574097989,
+      "portfolio_return": 13.088974252132394
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 800.11,
+      "amount_pct": 60.7949,
+      "reasoning": "中欧新蓝筹混合持仓仅0.11份，几乎为零，且近90日下跌1.97%表现疲弱，震荡市中清仓释放资金，历史回测卖出胜率86%。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.84,
+      "return_30d": 5.77,
+      "return_90d": -3.05,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "ac29cd48-0a9",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.539144+08:00",
+    "scenario": {
+      "date": "2025-01-27",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7528,
+      "nav_change_7d": 1.64,
+      "nav_change_30d": -0.59,
+      "nav_change_90d": -1.13,
+      "market_trend": "sideways",
+      "market_volatility": 0.0097,
+      "cash_ratio": 0.014402383295593194,
+      "portfolio_return": 10.269241437688926
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.05,
+      "amount_pct": 269.9781,
+      "reasoning": "华安纳斯达克100ETF联接近90日+2.49%为持仓中唯一正收益品种，QDII分散A股风险，震荡市持有胜率较高，加仓增强分散化收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": 5.76,
+      "return_90d": -0.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9cd71d15-41c",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.558037+08:00",
+    "scenario": {
+      "date": "2025-02-07",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8281,
+      "nav_change_7d": 4.3,
+      "nav_change_30d": 8.87,
+      "nav_change_90d": -1.44,
+      "market_trend": "sideways",
+      "market_volatility": 0.0103,
+      "cash_ratio": 0.0584555844093806,
+      "portfolio_return": 12.284180326261723
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 4100.0,
+      "amount_pct": 309.1586,
+      "reasoning": "沪深300ETF近90日跌4.87%，震荡市中INDEX减仓策略胜率79%且平均回报2.18%，适度降低大盘敞口。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.57,
+      "return_30d": 1.68,
+      "return_90d": -1.38,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5bf2866c-ba4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.577116+08:00",
+    "scenario": {
+      "date": "2025-02-12",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8411,
+      "nav_change_7d": 4.11,
+      "nav_change_30d": 10.3,
+      "nav_change_90d": 1.28,
+      "market_trend": "bull",
+      "market_volatility": 0.0102,
+      "cash_ratio": 0.066690975412699,
+      "portfolio_return": 13.338234058286435
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 261.5571,
+      "reasoning": "沪深300ETF作为核心beta仓位，近30日涨5.41%与市场同步，波动率12.37%适中，牛市持有指数基金胜率高，继续持有。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.51,
+      "return_30d": 0.28,
+      "return_90d": -0.75,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "691d9647-ad1",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.595856+08:00",
+    "scenario": {
+      "date": "2025-02-17",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8406,
+      "nav_change_7d": 0.42,
+      "nav_change_30d": 7.4,
+      "nav_change_90d": 3.11,
+      "market_trend": "sideways",
+      "market_volatility": 0.0103,
+      "cash_ratio": 0.06565188047161305,
+      "portfolio_return": 15.132077354100348
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3600.0,
+      "amount_pct": 265.7219,
+      "reasoning": "中欧新蓝筹混合近30日涨7.40%，趋势良好，震荡市中MIXED买入策略胜率91%且平均回报4.05%，加仓增强收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.45,
+      "return_30d": -0.11,
+      "return_90d": -1.82,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6cb2aae6-04d",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.615328+08:00",
+    "scenario": {
+      "date": "2025-02-20",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8364,
+      "nav_change_7d": 0.6,
+      "nav_change_30d": 5.08,
+      "nav_change_90d": 4.87,
+      "market_trend": "sideways",
+      "market_volatility": 0.0084,
+      "cash_ratio": 0.07437084936926518,
+      "portfolio_return": 15.013307679592236
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 59.1668,
+      "reasoning": "国泰盛益混合C近30日涨7.35%且波动率18.89%偏高，震荡市下高波动MIXED减仓胜率80%+，减仓500元锁定利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.44,
+      "return_30d": -2.25,
+      "return_90d": -1.71,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "59bbd32c-821",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.634052+08:00",
+    "scenario": {
+      "date": "2025-02-25",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8481,
+      "nav_change_7d": 1.86,
+      "nav_change_30d": 4.73,
+      "nav_change_90d": 5.25,
+      "market_trend": "sideways",
+      "market_volatility": 0.0086,
+      "cash_ratio": 0.1482742276795736,
+      "portfolio_return": 11.642040831755075
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1487.47,
+      "amount_pct": 112.2018,
+      "reasoning": "华安纳斯达克100ETF联接近7日跌4.76%，30日跌3.15%，短期趋势走弱，且震荡市下QDII类基金无历史策略支撑，全部卖出止损。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.8,
+      "return_30d": -1.5,
+      "return_90d": -2.47,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f09897aa-601",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.652681+08:00",
+    "scenario": {
+      "date": "2025-02-28",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7945,
+      "nav_change_7d": -4.12,
+      "nav_change_30d": 2.38,
+      "nav_change_90d": 1.61,
+      "market_trend": "sideways",
+      "market_volatility": 0.0091,
+      "cash_ratio": 0.28353528833951414,
+      "portfolio_return": 10.844535665933108
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 700.0,
+      "amount_pct": 53.4898,
+      "reasoning": "持仓仅0.02份可忽略，净值波动小，暂不操作。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.66,
+      "return_30d": -0.63,
+      "return_90d": 0.03,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e45a54b7-371",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.671390+08:00",
+    "scenario": {
+      "date": "2025-03-05",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8261,
+      "nav_change_7d": -2.08,
+      "nav_change_30d": 4.18,
+      "nav_change_90d": 3.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.0077,
+      "cash_ratio": 0.2579780329633148,
+      "portfolio_return": 10.00292177952757
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1679.97,
+      "amount_pct": 128.4145,
+      "reasoning": "国泰盛益混合近30日涨12.72%涨幅过大，波动率29.61%极高，震荡市MIXED减仓策略胜率80%平均回报3.45%，清仓锁定利润。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.12,
+      "return_30d": -3.58,
+      "return_90d": -0.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2c3cf46d-593",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.690048+08:00",
+    "scenario": {
+      "date": "2025-03-10",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8415,
+      "nav_change_7d": 2.55,
+      "nav_change_30d": 0.73,
+      "nav_change_90d": 2.85,
+      "market_trend": "sideways",
+      "market_volatility": 0.0081,
+      "cash_ratio": 0.32868441748535493,
+      "portfolio_return": 6.834071997852098
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1408.67,
+      "amount_pct": 110.304,
+      "reasoning": "国泰盛益混合C近30日涨8.10%涨幅较大，波动率24.09%偏高，震荡市MIXED减仓策略胜率86%，减仓锁定利润。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.29,
+      "return_30d": -6.81,
+      "return_90d": 1.93,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3257c09a-b79",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.709709+08:00",
+    "scenario": {
+      "date": "2025-03-13",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8062,
+      "nav_change_7d": -2.85,
+      "nav_change_30d": -1.15,
+      "nav_change_90d": 1.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.008,
+      "cash_ratio": 0.41578769167420054,
+      "portfolio_return": 6.3076074816506305
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2755.05,
+      "amount_pct": 217.8956,
+      "reasoning": "华安纳斯达克100ETF联接近30日暴跌11.20%，波动率28.92%过高，震荡市MIXED类减仓策略胜率80%平均回报+3.45%，清仓止损规避进一步下跌风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.29,
+      "return_30d": -4.43,
+      "return_90d": 4.22,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "de09272c-a22",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.728496+08:00",
+    "scenario": {
+      "date": "2025-03-18",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.85,
+      "nav_change_7d": 0.99,
+      "nav_change_30d": 0.9,
+      "nav_change_90d": 5.19,
+      "market_trend": "sideways",
+      "market_volatility": 0.0089,
+      "cash_ratio": 0.29342113916511786,
+      "portfolio_return": 7.531089314076944
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2500.0,
+      "amount_pct": 193.6753,
+      "reasoning": "华安纳斯达克100ETF联接近30日回调-11.70%，在恐慌中贪婪，利用市场过度反应进行左侧布局，历史案例显示类似回调后30日回报可达+7.30%。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.21,
+      "return_30d": -7.25,
+      "return_90d": 1.52,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "33c1f4aa-8ce",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.747269+08:00",
+    "scenario": {
+      "date": "2025-03-21",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7886,
+      "nav_change_7d": -3.21,
+      "nav_change_30d": -2.75,
+      "nav_change_90d": 1.65,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.10586745202677397,
+      "portfolio_return": 7.2274292511695055
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1100.01,
+      "amount_pct": 85.8759,
+      "reasoning": "中欧新蓝筹持仓仅0.01份可忽略，30日-2.75%持续弱势，波动率16.97%偏高，震荡市MIXED卖出策略胜率86%，清仓止损。",
+      "confidence": 0.82,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.4,
+      "return_30d": -5.82,
+      "return_90d": 1.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5abbf232-a51",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.766052+08:00",
+    "scenario": {
+      "date": "2025-03-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7856,
+      "nav_change_7d": -2.77,
+      "nav_change_30d": -3.91,
+      "nav_change_90d": 1.05,
+      "market_trend": "sideways",
+      "market_volatility": 0.0088,
+      "cash_ratio": 0.0027209036598720188,
+      "portfolio_return": 7.682688852081156
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 800.0,
+      "amount_pct": 62.2399,
+      "reasoning": "国泰盛益混合近7日-3.86%回调明显，波动率21.05%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，部分止盈降低风险。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.47,
+      "return_30d": -3.33,
+      "return_90d": 3.03,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fcad203f-be0",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.784733+08:00",
+    "scenario": {
+      "date": "2025-03-31",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7851,
+      "nav_change_7d": -0.56,
+      "nav_change_30d": -0.52,
+      "nav_change_90d": 3.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.07819277867710811,
+      "portfolio_return": 5.482812629821383
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 350.0,
+      "amount_pct": 27.7184,
+      "reasoning": "沪深300ETF波动率9.65%适中，近30日仅微跌0.06%，作为核心底仓继续持有。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -9.27,
+      "return_30d": -1.87,
+      "return_90d": 5.29,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "00d5997e-804",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.804909+08:00",
+    "scenario": {
+      "date": "2025-04-03",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.763,
+      "nav_change_7d": -1.9,
+      "nav_change_30d": -2.67,
+      "nav_change_90d": 5.95,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 0.11378766352645378,
+      "portfolio_return": 3.1789726438403707
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1077.8,
+      "amount_pct": 87.1992,
+      "reasoning": "华安纳斯达克100ETF联接近30日暴跌8.65%，波动率32.80%极高，在震荡市中风险收益比极差，且QDII类无历史策略支撑，全部卖出止损，符合历史案例1、2、5的教训。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.15,
+      "return_30d": -0.48,
+      "return_90d": 7.33,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0a4add2c-2c6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.823496+08:00",
+    "scenario": {
+      "date": "2025-04-09",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6539,
+      "nav_change_7d": -7.19,
+      "nav_change_30d": -10.19,
+      "nav_change_90d": -2.17,
+      "market_trend": "bear",
+      "market_volatility": 0.0157,
+      "cash_ratio": 0.21992437663077552,
+      "portfolio_return": 2.269188487339907
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 965.31,
+      "amount_pct": 79.8014,
+      "reasoning": "华安纳斯达克QDII波动率70.01%极高，近90日跌10.92%，熊市中风险过大，历史多次验证清仓高波动QDII可获利，全额赎回回收资金。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.83,
+      "return_30d": 5.56,
+      "return_90d": 13.17,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3a22a836-737",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.842066+08:00",
+    "scenario": {
+      "date": "2025-04-14",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7035,
+      "nav_change_7d": 4.61,
+      "nav_change_30d": -7.82,
+      "nav_change_90d": -0.72,
+      "market_trend": "bear",
+      "market_volatility": 0.0156,
+      "cash_ratio": 0.3138224693858944,
+      "portfolio_return": 2.3973429611215944
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1032.4,
+      "amount_pct": 84.7619,
+      "reasoning": "华安纳斯达克QDII波动率71.76%极高，近90日跌10.39%，熊市中风险过大，历史经验多次验证清仓高波动QDII在熊市中胜率高且获利，全额赎回回收资金。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.2,
+      "return_30d": 6.19,
+      "return_90d": 11.42,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "bfc71ce2-daf",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.860918+08:00",
+    "scenario": {
+      "date": "2025-04-17",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6937,
+      "nav_change_7d": 1.03,
+      "nav_change_30d": -8.45,
+      "nav_change_90d": -1.17,
+      "market_trend": "bear",
+      "market_volatility": 0.0154,
+      "cash_ratio": 0.4173408999101495,
+      "portfolio_return": 1.6880613324748082
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 520.98,
+      "amount_pct": 43.3446,
+      "reasoning": "华安纳斯达克QDII波动率72.21%极高，近90日跌15.54%，熊市中风险过大，历史经验显示清仓高波动QDII在熊市中胜率高，全额赎回回收资金。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.2,
+      "return_30d": 6.68,
+      "return_90d": 14.2,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "33ef9a7a-eaa",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.879724+08:00",
+    "scenario": {
+      "date": "2025-04-22",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.6978,
+      "nav_change_7d": 0.18,
+      "nav_change_30d": -5.08,
+      "nav_change_90d": -2.55,
+      "market_trend": "sideways",
+      "market_volatility": 0.0154,
+      "cash_ratio": 0.467989243737283,
+      "portfolio_return": 1.815132856690343
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 426.64,
+      "amount_pct": 35.3949,
+      "reasoning": "华安纳斯达克波动率60.63%极高，近90日跌16.89%趋势明显下行，震荡市下清仓止损降低组合波动风险，符合历史回测盈利经验。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.1,
+      "return_30d": 6.02,
+      "return_90d": 15.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "bc0854e9-ed1",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.898610+08:00",
+    "scenario": {
+      "date": "2025-04-25",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7016,
+      "nav_change_7d": 0.76,
+      "nav_change_30d": -4.7,
+      "nav_change_90d": -3.57,
+      "market_trend": "sideways",
+      "market_volatility": 0.0146,
+      "cash_ratio": 0.5040935576981633,
+      "portfolio_return": 2.986412410568009
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 349.4,
+      "amount_pct": 28.1656,
+      "reasoning": "华安纳斯达克波动率28.21%极高，90日跌11.65%趋势下行，震荡市减仓高波动QDII锁定资金，历史经验显示震荡市减仓MIXED/QDII高波动资产胜率80%+",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.42,
+      "return_30d": 3.23,
+      "return_90d": 14.7,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1e8adef9-6b4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.917797+08:00",
+    "scenario": {
+      "date": "2025-04-30",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7317,
+      "nav_change_7d": 1.32,
+      "nav_change_30d": -2.99,
+      "nav_change_90d": -1.2,
+      "market_trend": "sideways",
+      "market_volatility": 0.0145,
+      "cash_ratio": 0.5381302923528267,
+      "portfolio_return": 2.9653743972557822
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1789.68,
+      "amount_pct": 143.7159,
+      "reasoning": "华安纳斯达克波动率22.91%极高，90日跌8.38%趋势下行，震荡市清仓止损符合历史高胜率经验，降低组合波动风险。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.22,
+      "return_30d": 2.94,
+      "return_90d": 15.64,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "339c5f03-b68",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.936829+08:00",
+    "scenario": {
+      "date": "2025-05-08",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7488,
+      "nav_change_7d": 0.99,
+      "nav_change_30d": 7.43,
+      "nav_change_90d": -4.34,
+      "market_trend": "bull",
+      "market_volatility": 0.0145,
+      "cash_ratio": 0.4153918974041931,
+      "portfolio_return": 4.198197646829213
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2500.0,
+      "amount_pct": 196.6197,
+      "reasoning": "牛市环境下指数基金加仓胜率84%且平均30日回报+3.0%，沪深300ETF波动率仅6.03%风险可控，当前仓位偏低，加仓增强beta收益。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.65,
+      "return_30d": 3.31,
+      "return_90d": 13.51,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1dc5d97c-ee4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.955711+08:00",
+    "scenario": {
+      "date": "2025-05-13",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.752,
+      "nav_change_7d": -0.09,
+      "nav_change_30d": 3.28,
+      "nav_change_90d": -4.84,
+      "market_trend": "sideways",
+      "market_volatility": 0.0146,
+      "cash_ratio": 0.17052072097898904,
+      "portfolio_return": 5.75305407508502
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.2899,
+      "reasoning": "中欧新蓝筹持仓为0份，无需操作，维持空仓观望。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.27,
+      "return_30d": 3.02,
+      "return_90d": 12.24,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1df7693c-ca3",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.974590+08:00",
+    "scenario": {
+      "date": "2025-05-16",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.741,
+      "nav_change_7d": 0.48,
+      "nav_change_30d": 3.34,
+      "nav_change_90d": -5.04,
+      "market_trend": "sideways",
+      "market_volatility": 0.0148,
+      "cash_ratio": 0.18912558343818497,
+      "portfolio_return": 5.924786390209628
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 38.0886,
+      "reasoning": "中欧新蓝筹持仓为0份，无需操作，维持空仓观望。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.69,
+      "return_30d": 2.01,
+      "return_90d": 14.47,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3b41c21a-708",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:28.993372+08:00",
+    "scenario": {
+      "date": "2025-05-21",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7447,
+      "nav_change_7d": -1.14,
+      "nav_change_30d": 2.11,
+      "nav_change_90d": -4.99,
+      "market_trend": "sideways",
+      "market_volatility": 0.0059,
+      "cash_ratio": 0.1793193221511358,
+      "portfolio_return": 6.115653340333484
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 900.0,
+      "amount_pct": 68.8584,
+      "reasoning": "沪深300ETF作为核心底仓，波动率10.53%适中，近30日+3.67%跟随市场反弹，震荡市INDEX持有策略有效，继续持有。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.92,
+      "return_30d": 0.55,
+      "return_90d": 15.7,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a3568632-15d",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.012926+08:00",
+    "scenario": {
+      "date": "2025-05-26",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7201,
+      "nav_change_7d": -0.69,
+      "nav_change_30d": 1.09,
+      "nav_change_90d": -6.93,
+      "market_trend": "sideways",
+      "market_volatility": 0.0051,
+      "cash_ratio": 0.11408383559905082,
+      "portfolio_return": 4.958664509638347
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 15.4764,
+      "reasoning": "华安纳斯达克30日涨6.92%涨幅较大，波动率11.48%偏高，震荡市QDII减仓锁定利润，历史经验胜率较高。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.45,
+      "return_30d": 4.43,
+      "return_90d": 20.03,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "49bad19c-d14",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.032095+08:00",
+    "scenario": {
+      "date": "2025-05-29",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7288,
+      "nav_change_7d": -0.48,
+      "nav_change_30d": 0.92,
+      "nav_change_90d": -3.66,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.13233809782270442,
+      "portfolio_return": 5.556051178309445
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 428.45,
+      "amount_pct": 32.7686,
+      "reasoning": "华安纳斯达克30日涨8.69%涨幅过大，波动率15.04%偏高，震荡市QDII减仓锁定利润，降低单一持仓风险，历史经验显示类似操作胜率较高。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.25,
+      "return_30d": 3.76,
+      "return_90d": 20.53,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5ea03944-a40",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.051210+08:00",
+    "scenario": {
+      "date": "2025-06-04",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7425,
+      "nav_change_7d": 1.83,
+      "nav_change_30d": 0.62,
+      "nav_change_90d": -6.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.1715955124616528,
+      "portfolio_return": 6.3091001910097475
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 196.3,
+      "amount_pct": 14.8512,
+      "reasoning": "中欧新蓝筹混合近90日跌6.28%表现疲弱，持仓仅96.30份市值约168元几乎为零，震荡市MIXED卖出策略胜率86%平均回报+3.15%，清仓回收现金消除冗余。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.73,
+      "return_30d": 3.94,
+      "return_90d": 22.64,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "63ccd6c5-a03",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.070409+08:00",
+    "scenario": {
+      "date": "2025-06-09",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7841,
+      "nav_change_7d": 3.76,
+      "nav_change_30d": 2.97,
+      "nav_change_90d": -2.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.1882881884548558,
+      "portfolio_return": 7.284209872021638
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 600.0,
+      "amount_pct": 45.0086,
+      "reasoning": "沪深300ETF波动率6.42%较低，近30日微涨1.23%表现平稳，作为核心底仓继续持有，符合震荡市INDEX持有策略。",
+      "confidence": 0.8,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.15,
+      "return_30d": 2.79,
+      "return_90d": 20.37,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d8a1cd69-369",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.089373+08:00",
+    "scenario": {
+      "date": "2025-06-12",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7955,
+      "nav_change_7d": 1.73,
+      "nav_change_30d": 2.48,
+      "nav_change_90d": -2.84,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.15044946837521603,
+      "portfolio_return": 7.629822168790088
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 541.04,
+      "amount_pct": 40.4114,
+      "reasoning": "中欧新蓝筹混合近90日-2.84%表现疲弱，持仓仅41份，震荡市MIXED卖出策略胜率86%平均+3.15%，清仓回收现金消除冗余。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.85,
+      "return_30d": 2.58,
+      "return_90d": 19.98,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f63c5a43-f26",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.108912+08:00",
+    "scenario": {
+      "date": "2025-06-17",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7887,
+      "nav_change_7d": 1.05,
+      "nav_change_30d": 2.74,
+      "nav_change_90d": -2.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.2020523738279304,
+      "portfolio_return": 6.785172170201731
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 618.18,
+      "amount_pct": 46.5406,
+      "reasoning": "中欧新蓝筹混合持仓仅18.18份几乎为零，近90日跌2.60%趋势偏弱，震荡市MIXED减仓策略胜率80%平均回报+3.45%，清仓回收现金消除冗余。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.43,
+      "return_30d": 6.18,
+      "return_90d": 24.2,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6efab711-da4",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.127875+08:00",
+    "scenario": {
+      "date": "2025-06-20",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.7741,
+      "nav_change_7d": -0.58,
+      "nav_change_30d": 1.69,
+      "nav_change_90d": -0.81,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.2636991429388946,
+      "portfolio_return": 5.260442704758771
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1600.0,
+      "amount_pct": 122.0182,
+      "reasoning": "华安纳斯达克100ETF联接近90日+7.16%表现最强，QDII分散化收益显著，震荡市加仓提升组合弹性。",
+      "confidence": 0.84,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.89,
+      "return_30d": 7.99,
+      "return_90d": 26.48,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8a232d52-b63",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.146978+08:00",
+    "scenario": {
+      "date": "2025-06-25",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8193,
+      "nav_change_7d": 1.13,
+      "nav_change_30d": 5.77,
+      "nav_change_90d": 1.23,
+      "market_trend": "sideways",
+      "market_volatility": 0.0059,
+      "cash_ratio": 0.25766622697172364,
+      "portfolio_return": 7.317473661955937
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2300.0,
+      "amount_pct": 170.6649,
+      "reasoning": "华安纳斯达克100ETF联接近90日+9.85%趋势最强，30日+5.91%延续强势，震荡市QDII分散化收益显著，加仓提升组合弹性。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.69,
+      "return_30d": 6.74,
+      "return_90d": 24.4,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "69f52c59-daa",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.165982+08:00",
+    "scenario": {
+      "date": "2025-06-30",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8562,
+      "nav_change_7d": 4.92,
+      "nav_change_30d": 7.96,
+      "nav_change_90d": 4.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.041016022142731874,
+      "portfolio_return": 7.8136858621994545
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 700.0,
+      "amount_pct": 51.3943,
+      "reasoning": "中欧新蓝筹混合近30日+7.96%涨幅较大，波动率12.97%偏高，震荡市MIXED减仓策略胜率86%，减仓200份锁定部分利润。",
+      "confidence": 0.82,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.06,
+      "return_30d": 7.18,
+      "return_90d": 23.13,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "63beefd1-222",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.185059+08:00",
+    "scenario": {
+      "date": "2025-07-03",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8576,
+      "nav_change_7d": 2.14,
+      "nav_change_30d": 7.54,
+      "nav_change_90d": 5.37,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.05910279708098335,
+      "portfolio_return": 8.49044111783054
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1098.0,
+      "amount_pct": 80.094,
+      "reasoning": "华安纳斯达克100ETF近90日+20.20%表现强劲，30日+4.95%趋势良好，QDII分散A股风险，继续持有获取海外市场收益。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.57,
+      "return_30d": 4.46,
+      "return_90d": 25.39,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4ef66276-7c6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.204598+08:00",
+    "scenario": {
+      "date": "2025-07-08",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.88,
+      "nav_change_7d": 1.12,
+      "nav_change_30d": 6.04,
+      "nav_change_90d": 13.67,
+      "market_trend": "sideways",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.1601070032285604,
+      "portfolio_return": 8.574816691794604
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 7.2898,
+      "reasoning": "国泰盛益混合波动率仅3.40%极低，近30日涨2.53%稳步上行，震荡市低波动MIXED持有策略胜率较高，维持仓位。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.61,
+      "return_30d": 6.2,
+      "return_90d": 24.82,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7f58d68d-2c6",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.223553+08:00",
+    "scenario": {
+      "date": "2025-07-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.8882,
+      "nav_change_7d": 1.78,
+      "nav_change_30d": 5.81,
+      "nav_change_90d": 11.31,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.16870587469300496,
+      "portfolio_return": 8.93863986691118
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 14.5244,
+      "reasoning": "华安纳斯达克90日涨19.80%涨幅过大，波动率10.13%偏高，震荡市减仓锁定部分利润，降低QDII单一持仓风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.93,
+      "return_30d": 5.71,
+      "return_90d": 26.13,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "8f9bccae-415",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.242639+08:00",
+    "scenario": {
+      "date": "2025-07-16",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 1.951,
+      "nav_change_7d": 4.04,
+      "nav_change_30d": 8.92,
+      "nav_change_90d": 15.19,
+      "market_trend": "sideways",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.18621335860860738,
+      "portfolio_return": 9.436770159149837
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 300.0,
+      "amount_pct": 21.5986,
+      "reasoning": "华安纳斯达克近90日涨23.25%涨幅过大，震荡市减仓锁定部分利润，降低QDII单一持仓风险，符合历史经验胜率79%平均回报+2.18%。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.55,
+      "return_30d": 7.42,
+      "return_90d": 18.11,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "49ba27ea-8ed",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.261749+08:00",
+    "scenario": {
+      "date": "2025-07-21",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.0091,
+      "nav_change_7d": 6.28,
+      "nav_change_30d": 13.25,
+      "nav_change_90d": 18.34,
+      "market_trend": "bull",
+      "market_volatility": 0.0054,
+      "cash_ratio": 0.21087671068652358,
+      "portfolio_return": 10.840065982247124
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 70.7935,
+      "reasoning": "中欧新蓝筹混合近30日+13.25%表现最强，牛市加仓混合类基金历史胜率91%，平均30日回报+4.05%，加仓提升收益。",
+      "confidence": 0.91,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.64,
+      "return_30d": 6.48,
+      "return_90d": 15.3,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6cf90b5b-233",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.280915+08:00",
+    "scenario": {
+      "date": "2025-07-24",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.0342,
+      "nav_change_7d": 2.33,
+      "nav_change_30d": 13.24,
+      "nav_change_90d": 19.55,
+      "market_trend": "bull",
+      "market_volatility": 0.0052,
+      "cash_ratio": 0.11882052222521057,
+      "portfolio_return": 11.711245482114263
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 245.859,
+      "reasoning": "中欧新蓝筹混合近30日+13.24%表现强劲，牛市加仓混合类基金历史胜率86%平均回报+4.30%，加仓提升收益。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.23,
+      "return_30d": 7.45,
+      "return_90d": 16.62,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3513becc-c54",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.300010+08:00",
+    "scenario": {
+      "date": "2025-07-29",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.1129,
+      "nav_change_7d": 4.53,
+      "nav_change_30d": 15.39,
+      "nav_change_90d": 22.01,
+      "market_trend": "bull",
+      "market_volatility": 0.0053,
+      "cash_ratio": 0.1181710244470417,
+      "portfolio_return": 12.325238684564901
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 800.0,
+      "amount_pct": 55.701,
+      "reasoning": "中欧新蓝筹混合近30日+15.39%表现强劲，牛市加仓混合类基金历史胜率86%，平均30日回报+4.30%，加仓提升收益。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.72,
+      "return_30d": 9.41,
+      "return_90d": 19.34,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7b448a2e-0c1",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.319538+08:00",
+    "scenario": {
+      "date": "2025-08-01",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.0867,
+      "nav_change_7d": 2.38,
+      "nav_change_30d": 13.28,
+      "nav_change_90d": 20.5,
+      "market_trend": "sideways",
+      "market_volatility": 0.0064,
+      "cash_ratio": 0.04726585052539223,
+      "portfolio_return": 9.880356935995568
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 200.0,
+      "amount_pct": 14.2367,
+      "reasoning": "中欧新蓝筹混合近30日涨13.28%涨幅最大，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓200份锁定部分利润降低波动风险。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.03,
+      "return_30d": 12.16,
+      "return_90d": 21.14,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a60111a9-c07",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.338594+08:00",
+    "scenario": {
+      "date": "2025-08-06",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.1294,
+      "nav_change_7d": 0.44,
+      "nav_change_30d": 15.72,
+      "nav_change_90d": 21.76,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.06424761790178914,
+      "portfolio_return": 11.81097075995196
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 34.8921,
+      "reasoning": "中欧新蓝筹混合近30日+15.72%涨幅过大，波动率14.16%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓锁定部分利润控制回撤。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.98,
+      "return_30d": 10.01,
+      "return_90d": 15.93,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "944ed286-842",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.357853+08:00",
+    "scenario": {
+      "date": "2025-08-11",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.1423,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": 13.46,
+      "nav_change_90d": 22.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.0056,
+      "cash_ratio": 0.10840214544808532,
+      "portfolio_return": 12.300254541027916
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 550.0,
+      "amount_pct": 38.1536,
+      "reasoning": "中欧新蓝筹混合近30日+13.46%涨幅过大，波动率14.19%偏高，震荡市MIXED减仓策略胜率80%平均回报+3.45%，减仓100份锁定利润降低风险敞口。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.32,
+      "return_30d": 9.73,
+      "return_90d": 16.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e7874904-749",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.377188+08:00",
+    "scenario": {
+      "date": "2025-08-14",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.2317,
+      "nav_change_7d": 4.92,
+      "nav_change_30d": 14.58,
+      "nav_change_90d": 28.18,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.15531246856933092,
+      "portfolio_return": 13.69717247608347
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 350.0,
+      "amount_pct": 23.8836,
+      "reasoning": "沪深300ETF波动率仅6.55%较低，近30日+4.29%稳健，震荡市INDEX持有策略胜率较高，作为核心底仓继续持有。",
+      "confidence": 0.88,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.73,
+      "return_30d": 10.31,
+      "return_90d": 13.72,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fe74247c-411",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.396242+08:00",
+    "scenario": {
+      "date": "2025-08-19",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.318,
+      "nav_change_7d": 6.22,
+      "nav_change_30d": 16.07,
+      "nav_change_90d": 32.86,
+      "market_trend": "sideways",
+      "market_volatility": 0.0057,
+      "cash_ratio": 0.18563944903071308,
+      "portfolio_return": 13.922922293927877
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 400.0,
+      "amount_pct": 27.2595,
+      "reasoning": "沪深300ETF波动率仅6.68%风险可控，近30日涨4.29%与市场同步，震荡市INDEX持有策略稳健，维持现有仓位。",
+      "confidence": 0.85,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.33,
+      "return_30d": 9.54,
+      "return_90d": 10.97,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c34196a4-d52",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.416042+08:00",
+    "scenario": {
+      "date": "2025-08-22",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.3776,
+      "nav_change_7d": 5.41,
+      "nav_change_30d": 17.73,
+      "nav_change_90d": 38.12,
+      "market_trend": "bull",
+      "market_volatility": 0.0069,
+      "cash_ratio": 0.2166568617423796,
+      "portfolio_return": 16.029505479060607
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 6500.0,
+      "amount_pct": 434.4107,
+      "reasoning": "中欧新蓝筹混合近30日+17.73%表现强劲，牛市加仓混合型基金历史胜率86%平均回报+4.3%，顺势加仓。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.39,
+      "return_30d": 7.21,
+      "return_90d": 6.58,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "10e1c41a-671",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.435779+08:00",
+    "scenario": {
+      "date": "2025-08-27",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.4736,
+      "nav_change_7d": 6.08,
+      "nav_change_30d": 19.78,
+      "nav_change_90d": 43.08,
+      "market_trend": "bull",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.042505758699902946,
+      "portfolio_return": 16.18633986704461
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 550.0,
+      "amount_pct": 36.4968,
+      "reasoning": "中欧新蓝筹近30日涨幅19.78%已积累较大获利盘，波动率23.01%偏高，历史经验显示牛市减仓高波动混合基金胜率86%，锁定部分利润降低组合波动。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.55,
+      "return_30d": 6.46,
+      "return_90d": 5.15,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c01e847b-c48",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.455030+08:00",
+    "scenario": {
+      "date": "2025-09-01",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.7233,
+      "nav_change_7d": 10.29,
+      "nav_change_30d": 30.51,
+      "nav_change_90d": 57.65,
+      "market_trend": "bull",
+      "market_volatility": 0.0088,
+      "cash_ratio": 0.0032493191164322138,
+      "portfolio_return": 18.821363116049106
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 4500.0,
+      "amount_pct": 291.2716,
+      "reasoning": "中欧新蓝筹混合近30日+30.51%表现强势，牛市环境下MIXED基金加仓策略胜率86%，平均30日回报+4.30%，波动率27.28%可接受，加仓增强收益。",
+      "confidence": 0.86,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.36,
+      "return_30d": 4.81,
+      "return_90d": 3.0,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "429bde1f-dcf",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.474304+08:00",
+    "scenario": {
+      "date": "2025-09-04",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.5152,
+      "nav_change_7d": -2.91,
+      "nav_change_30d": 18.93,
+      "nav_change_90d": 41.87,
+      "market_trend": "bull",
+      "market_volatility": 0.01,
+      "cash_ratio": 0.003331202014576854,
+      "portfolio_return": 15.90066436200652
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 3500.0,
+      "amount_pct": 231.9463,
+      "reasoning": "沪深300ETF作为核心beta仓位，牛市趋势未破，近30日涨6.57%与市场同步，波动率23.08%适中，继续持有享受市场上涨。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 4.97,
+      "return_30d": 8.88,
+      "return_90d": 7.33,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "01b717a7-f9b",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.493412+08:00",
+    "scenario": {
+      "date": "2025-09-09",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.5683,
+      "nav_change_7d": -3.03,
+      "nav_change_30d": 20.96,
+      "nav_change_90d": 43.92,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.0032833196709123437,
+      "portfolio_return": 17.59090350962646
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 6.5333,
+      "reasoning": "沪深300ETF牛市持有胜率高，近7日回调-1.20%属正常调整，波动率21.10%适中，继续持有获取beta收益。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.31,
+      "return_30d": 8.47,
+      "return_90d": 7.48,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5ab6c924-c24",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.513326+08:00",
+    "scenario": {
+      "date": "2025-09-12",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.7328,
+      "nav_change_7d": 3.77,
+      "nav_change_30d": 20.49,
+      "nav_change_90d": 53.15,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.011530482498028648,
+      "portfolio_return": 19.77716690083307
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 350.0,
+      "amount_pct": 22.337,
+      "reasoning": "沪深300ETF趋势稳健，波动率20.95%适中，牛市持有指数基金胜率高，继续持有获取beta收益。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.85,
+      "return_30d": 2.57,
+      "return_90d": 3.11,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "09eb5045-862",
+    "backtest_id": "bt_20240412_20250918",
+    "timestamp": "2026-07-18T02:28:29.532847+08:00",
+    "scenario": {
+      "date": "2025-09-17",
+      "fund_code": "166002",
+      "fund_type": "MIXED",
+      "nav_current": 2.7411,
+      "nav_change_7d": 4.93,
+      "nav_change_30d": 20.1,
+      "nav_change_90d": 53.22,
+      "market_trend": "bull",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.007106151575108517,
+      "portfolio_return": 20.471470044661803
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 600.0,
+      "amount_pct": 38.0923,
+      "reasoning": "沪深300ETF牛市持有胜率高，波动率20.11%适中，继续持有获取beta收益。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.27,
+      "return_30d": -0.77,
+      "return_90d": 0.72,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
   }
 ]
