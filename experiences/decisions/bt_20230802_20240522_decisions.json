@@ -14210,5 +14210,2181 @@
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
+  },
+  {
+    "id": "06937b3b-839",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.679241+08:00",
+    "scenario": {
+      "date": "2023-08-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.8996,
+      "nav_change_7d": 1.92,
+      "nav_change_30d": -0.79,
+      "nav_change_90d": 2.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.0092,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "净值数据异常为0，历史经验表明应避免参与，无法评估风险收益",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.61,
+      "return_30d": -6.48,
+      "return_90d": -15.0,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "33474852-ed7",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.687849+08:00",
+    "scenario": {
+      "date": "2023-08-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.8688,
+      "nav_change_7d": 0.06,
+      "nav_change_30d": -1.48,
+      "nav_change_90d": 1.2,
+      "market_trend": "sideways",
+      "market_volatility": 0.0092,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估风险收益特征，历史经验表明应避免盲目参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.82,
+      "return_30d": -7.3,
+      "return_90d": -11.96,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9d92e34d-baa",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.696209+08:00",
+    "scenario": {
+      "date": "2023-08-14",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.789,
+      "nav_change_7d": -3.4,
+      "nav_change_30d": -3.52,
+      "nav_change_90d": -1.61,
+      "market_trend": "sideways",
+      "market_volatility": 0.01,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，历史经验多次显示应避免盲目参与，无法评估风险收益。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.33,
+      "return_30d": -5.56,
+      "return_90d": -10.38,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a8d1bff2-048",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.704992+08:00",
+    "scenario": {
+      "date": "2023-08-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.7521,
+      "nav_change_7d": -4.56,
+      "nav_change_30d": -3.41,
+      "nav_change_90d": -2.91,
+      "market_trend": "sideways",
+      "market_volatility": 0.0099,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，历史经验表明此类情况无法有效评估风险收益，坚决回避。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.78,
+      "return_30d": -6.16,
+      "return_90d": -9.18,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d181a59b-5dc",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.713440+08:00",
+    "scenario": {
+      "date": "2023-08-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6552,
+      "nav_change_7d": -3.78,
+      "nav_change_30d": -5.25,
+      "nav_change_90d": -6.33,
+      "market_trend": "sideways",
+      "market_volatility": 0.0104,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据持续异常为零，历史经验多次显示盲目参与易亏损，继续回避。",
+      "confidence": 1.0,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.38,
+      "return_30d": -5.39,
+      "return_90d": -7.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1fdd6c8d-24b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.721980+08:00",
+    "scenario": {
+      "date": "2023-08-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5888,
+      "nav_change_7d": -4.87,
+      "nav_change_30d": -8.58,
+      "nav_change_90d": -8.67,
+      "market_trend": "bear",
+      "market_volatility": 0.0105,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 5000.0,
+      "amount_pct": 943.788,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现，暂不参与。",
+      "confidence": 1.0,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.04,
+      "return_30d": -2.34,
+      "return_90d": -6.59,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "fdcbd9de-9a1",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.730319+08:00",
+    "scenario": {
+      "date": "2023-08-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6516,
+      "nav_change_7d": 2.34,
+      "nav_change_30d": -8.12,
+      "nav_change_90d": -6.46,
+      "market_trend": "bear",
+      "market_volatility": 0.0109,
+      "cash_ratio": 0.4914157589876199,
+      "portfolio_return": 0.5258767072720547
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.18,
+      "return_30d": -5.6,
+      "return_90d": -9.55,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "60531761-c56",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.738743+08:00",
+    "scenario": {
+      "date": "2023-09-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.6468,
+      "nav_change_7d": 2.13,
+      "nav_change_30d": -8.72,
+      "nav_change_90d": -5.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.0099,
+      "cash_ratio": 0.48836710280755824,
+      "portfolio_return": 1.153414544112202
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法有效评估其风险收益特征，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.54,
+      "return_30d": -6.1,
+      "return_90d": -11.53,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "762d8b5a-c25",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.747011+08:00",
+    "scenario": {
+      "date": "2023-09-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5712,
+      "nav_change_7d": -2.08,
+      "nav_change_30d": -10.64,
+      "nav_change_90d": -7.51,
+      "market_trend": "bear",
+      "market_volatility": 0.0092,
+      "cash_ratio": 0.4927728881861559,
+      "portfolio_return": 0.24902177925432625
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实风险收益，历史经验表明应避免参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.76,
+      "return_30d": -3.89,
+      "return_90d": -11.08,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "151300d4-1e3",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.755257+08:00",
+    "scenario": {
+      "date": "2023-09-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.5671,
+      "nav_change_7d": -2.5,
+      "nav_change_30d": -9.28,
+      "nav_change_90d": -7.28,
+      "market_trend": "sideways",
+      "market_volatility": 0.0092,
+      "cash_ratio": 0.4938640005373197,
+      "portfolio_return": 0.027537836840165256
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估其真实价值，继续规避不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.34,
+      "return_30d": -3.83,
+      "return_90d": -11.08,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "19b82288-71c",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.763623+08:00",
+    "scenario": {
+      "date": "2023-09-15",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4918,
+      "nav_change_7d": -2.31,
+      "nav_change_30d": -8.91,
+      "nav_change_90d": -14.43,
+      "market_trend": "sideways",
+      "market_volatility": 0.0089,
+      "cash_ratio": 0.4970741901000132,
+      "portfolio_return": -0.6184569952011952
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.46,
+      "return_30d": -2.84,
+      "return_90d": -11.16,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "99bbe645-31a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.772010+08:00",
+    "scenario": {
+      "date": "2023-09-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4671,
+      "nav_change_7d": -2.93,
+      "nav_change_30d": -7.57,
+      "nav_change_90d": -13.53,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.49902041431216837,
+      "portfolio_return": -1.0060538944260042
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估其风险收益特征，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.53,
+      "return_30d": -5.36,
+      "return_90d": -11.57,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "bd9e34dd-bae",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.780366+08:00",
+    "scenario": {
+      "date": "2023-09-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4659,
+      "nav_change_7d": -1.76,
+      "nav_change_30d": -4.75,
+      "nav_change_90d": -13.68,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.49967254688329604,
+      "portfolio_return": -1.1352528608342618
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 97.1647,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估其风险收益特征，暂不参与。",
+      "confidence": 1.0,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.5,
+      "return_30d": -5.78,
+      "return_90d": -10.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "40772262-a83",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.788655+08:00",
+    "scenario": {
+      "date": "2023-09-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4562,
+      "nav_change_7d": 0.56,
+      "nav_change_30d": -7.35,
+      "nav_change_90d": -15.52,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.5516144445706913,
+      "portfolio_return": -1.4257140377844917
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法有效评估风险收益特征，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.0,
+      "return_30d": -2.99,
+      "return_90d": -10.21,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4d0087fc-930",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.796986+08:00",
+    "scenario": {
+      "date": "2023-10-11",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4203,
+      "nav_change_7d": -1.46,
+      "nav_change_30d": -5.55,
+      "nav_change_90d": -17.29,
+      "market_trend": "sideways",
+      "market_volatility": 0.0077,
+      "cash_ratio": 0.5547893031799208,
+      "portfolio_return": -1.989819038803762
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 396.0161,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，历史经验显示此类情况不宜参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.62,
+      "return_30d": -0.93,
+      "return_90d": -10.84,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a6abeb14-268",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.805761+08:00",
+    "scenario": {
+      "date": "2023-10-16",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3806,
+      "nav_change_7d": -2.58,
+      "nav_change_30d": -4.46,
+      "nav_change_90d": -16.45,
+      "market_trend": "sideways",
+      "market_volatility": 0.0078,
+      "cash_ratio": 0.35148365321495284,
+      "portfolio_return": -2.8831079688236607
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益特征，历史经验多次显示应观望，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.46,
+      "return_30d": 1.07,
+      "return_90d": -8.69,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2eb85383-0d8",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.814292+08:00",
+    "scenario": {
+      "date": "2023-10-19",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3417,
+      "nav_change_7d": -5.0,
+      "nav_change_30d": -5.93,
+      "nav_change_90d": -16.44,
+      "market_trend": "bear",
+      "market_volatility": 0.0085,
+      "cash_ratio": 0.35609702492789075,
+      "portfolio_return": -4.141294056269363
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 2419.59,
+      "amount_pct": 494.5306,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实风险收益，历史经验表明应避免参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.77,
+      "return_30d": 1.82,
+      "return_90d": -9.18,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c66b5123-3af",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.822700+08:00",
+    "scenario": {
+      "date": "2023-10-24",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3104,
+      "nav_change_7d": -3.62,
+      "nav_change_30d": -6.81,
+      "nav_change_90d": -18.41,
+      "market_trend": "bear",
+      "market_volatility": 0.0078,
+      "cash_ratio": 0.6113965332213068,
+      "portfolio_return": -4.791870190520367
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.42,
+      "return_30d": 2.61,
+      "return_90d": -9.38,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3480040a-c30",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.831112+08:00",
+    "scenario": {
+      "date": "2023-10-27",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3904,
+      "nav_change_7d": 1.81,
+      "nav_change_30d": -2.76,
+      "nav_change_90d": -15.98,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 0.6056877011073634,
+      "portfolio_return": -3.8944981158172776
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 201.3531,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，历史经验显示此类情况不宜参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.07,
+      "return_30d": -1.28,
+      "return_90d": -9.41,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6d46df09-0b0",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.839452+08:00",
+    "scenario": {
+      "date": "2023-11-01",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3902,
+      "nav_change_7d": 3.32,
+      "nav_change_30d": -2.69,
+      "nav_change_90d": -17.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.0081,
+      "cash_ratio": 0.5014008339646446,
+      "portfolio_return": -4.088870136600162
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，历史经验多次显示此类情况不宜参与，继续观望。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.26,
+      "return_30d": -2.8,
+      "return_90d": -13.68,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "833f6f05-70f",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.847791+08:00",
+    "scenario": {
+      "date": "2023-11-06",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4611,
+      "nav_change_7d": 1.44,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": -14.46,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.49927151826561134,
+      "portfolio_return": -3.6798240222942695
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1859.3,
+      "amount_pct": 367.8068,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.11,
+      "return_30d": -6.33,
+      "return_90d": -17.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5160fb58-43d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.856199+08:00",
+    "scenario": {
+      "date": "2023-11-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4616,
+      "nav_change_7d": 4.45,
+      "nav_change_30d": 1.25,
+      "nav_change_90d": -13.01,
+      "market_trend": "sideways",
+      "market_volatility": 0.0085,
+      "cash_ratio": 0.6935721829140892,
+      "portfolio_return": -3.989869922092421
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，历史经验反复验证此类情况不宜参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.36,
+      "return_30d": -6.89,
+      "return_90d": -12.65,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4de55a0f-3aa",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.864780+08:00",
+    "scenario": {
+      "date": "2023-11-14",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4303,
+      "nav_change_7d": -0.8,
+      "nav_change_30d": 0.2,
+      "nav_change_90d": -11.16,
+      "market_trend": "sideways",
+      "market_volatility": 0.0077,
+      "cash_ratio": 0.6945640294665202,
+      "portfolio_return": -4.126973648280727
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，历史经验显示此类情况不宜参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.36,
+      "return_30d": -7.51,
+      "return_90d": -10.76,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "006f0e61-84f",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.873233+08:00",
+    "scenario": {
+      "date": "2023-11-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.4177,
+      "nav_change_7d": -0.74,
+      "nav_change_30d": 1.72,
+      "nav_change_90d": -11.15,
+      "market_trend": "sideways",
+      "market_volatility": 0.008,
+      "cash_ratio": 0.6947296130901117,
+      "portfolio_return": -4.149824269312121
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 401.7113,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，历史经验显示此类情况不宜参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.54,
+      "return_30d": -7.46,
+      "return_90d": -10.51,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "09ec28a1-782",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.881611+08:00",
+    "scenario": {
+      "date": "2023-11-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3583,
+      "nav_change_7d": -4.02,
+      "nav_change_30d": 2.41,
+      "nav_change_90d": -9.82,
+      "market_trend": "sideways",
+      "market_volatility": 0.0078,
+      "cash_ratio": 0.4850733298284861,
+      "portfolio_return": -4.447528549160634
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 101.7025,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效判断依据，历史经验显示此类情况不宜参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.22,
+      "return_30d": -6.41,
+      "return_90d": -9.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "0e5f3b48-a58",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.890099+08:00",
+    "scenario": {
+      "date": "2023-11-27",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3352,
+      "nav_change_7d": -3.26,
+      "nav_change_30d": -2.31,
+      "nav_change_90d": -11.92,
+      "market_trend": "sideways",
+      "market_volatility": 0.0076,
+      "cash_ratio": 0.5384483443822712,
+      "portfolio_return": -4.679889843691544
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 204.8677,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，缺乏有效参考信息，历史经验显示此类情况不宜参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.97,
+      "return_30d": -5.81,
+      "return_90d": -6.78,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2724f3db-c70",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.898627+08:00",
+    "scenario": {
+      "date": "2023-11-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.3138,
+      "nav_change_7d": -2.61,
+      "nav_change_30d": -3.72,
+      "nav_change_90d": -12.06,
+      "market_trend": "sideways",
+      "market_volatility": 0.0065,
+      "cash_ratio": 0.4335974059204978,
+      "portfolio_return": -4.969552544889684
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 500.0,
+      "amount_pct": 103.0545,
+      "reasoning": "前海开源黄金ETF联接C净值异常为0，无有效历史数据，历史经验表明此类情况不宜参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.87,
+      "return_30d": -1.91,
+      "return_90d": -6.93,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3254ce1c-d4b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.907460+08:00",
+    "scenario": {
+      "date": "2023-12-05",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2396,
+      "nav_change_7d": -4.84,
+      "nav_change_30d": -6.4,
+      "nav_change_90d": -14.73,
+      "market_trend": "bear",
+      "market_volatility": 0.0072,
+      "cash_ratio": 0.49326846981426864,
+      "portfolio_return": -6.3796728840417565
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1923.78,
+      "amount_pct": 408.8278,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.52,
+      "return_30d": -2.04,
+      "return_90d": -1.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "bbfa7c41-246",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.915944+08:00",
+    "scenario": {
+      "date": "2023-12-08",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2478,
+      "nav_change_7d": -1.99,
+      "nav_change_30d": -8.23,
+      "nav_change_90d": -11.88,
+      "market_trend": "bear",
+      "market_volatility": 0.0064,
+      "cash_ratio": 0.7003301393576935,
+      "portfolio_return": -6.727466334792388
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，历史经验表明应暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.78,
+      "return_30d": -2.79,
+      "return_90d": -2.2,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5bc29e55-996",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.924517+08:00",
+    "scenario": {
+      "date": "2023-12-13",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2102,
+      "nav_change_7d": -2.6,
+      "nav_change_30d": -9.09,
+      "nav_change_90d": -11.97,
+      "market_trend": "bear",
+      "market_volatility": 0.0072,
+      "cash_ratio": 0.700759755925619,
+      "portfolio_return": -6.784649164508447
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -3.0,
+      "return_30d": -2.1,
+      "return_90d": 3.13,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "7bac1256-040",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.933163+08:00",
+    "scenario": {
+      "date": "2023-12-18",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1519,
+      "nav_change_7d": -4.8,
+      "nav_change_30d": -10.99,
+      "nav_change_90d": -13.55,
+      "market_trend": "bear",
+      "market_volatility": 0.0062,
+      "cash_ratio": 0.7038686241008549,
+      "portfolio_return": -7.1963655384640335
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.82,
+      "return_30d": -2.39,
+      "return_90d": 4.24,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5a367565-ac3",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.941678+08:00",
+    "scenario": {
+      "date": "2023-12-21",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1677,
+      "nav_change_7d": -1.2,
+      "nav_change_30d": -9.66,
+      "nav_change_90d": -12.56,
+      "market_trend": "bear",
+      "market_volatility": 0.0068,
+      "cash_ratio": 0.7039553753592306,
+      "portfolio_return": -7.207802104407238
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现和风险，历史经验表明应暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.79,
+      "return_30d": -1.96,
+      "return_90d": 5.07,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "01f6174d-e86",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.950177+08:00",
+    "scenario": {
+      "date": "2023-12-26",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1905,
+      "nav_change_7d": 1.52,
+      "nav_change_30d": -6.51,
+      "nav_change_90d": -10.89,
+      "market_trend": "bear",
+      "market_volatility": 0.0067,
+      "cash_ratio": 0.7027428003385673,
+      "portfolio_return": -7.047690181202287
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 1143.66,
+      "amount_pct": 248.2709,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实价值，历史经验表明应暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.76,
+      "return_30d": -2.31,
+      "return_90d": 1.7,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f058d262-631",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.958921+08:00",
+    "scenario": {
+      "date": "2023-12-29",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.27,
+      "nav_change_7d": 3.79,
+      "nav_change_30d": -2.24,
+      "nav_change_90d": -7.58,
+      "market_trend": "sideways",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.8213465356977853,
+      "portfolio_return": -6.615563387215444
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接净值数据异常为零，历史经验表明应避免参与，继续回避。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -4.15,
+      "return_30d": -6.45,
+      "return_90d": -1.58,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "65d8b72c-64c",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.967512+08:00",
+    "scenario": {
+      "date": "2024-01-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1771,
+      "nav_change_7d": -4.05,
+      "nav_change_30d": -2.79,
+      "nav_change_90d": -11.36,
+      "market_trend": "sideways",
+      "market_volatility": 0.0084,
+      "cash_ratio": 0.8246018546169713,
+      "portfolio_return": -6.984221451178127
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，历史经验表明应避免盲目参与",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.13,
+      "return_30d": -9.83,
+      "return_90d": 4.19,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c39a9c00-3f0",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.976144+08:00",
+    "scenario": {
+      "date": "2024-01-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1258,
+      "nav_change_7d": -4.45,
+      "nav_change_30d": -5.43,
+      "nav_change_90d": -12.17,
+      "market_trend": "sideways",
+      "market_volatility": 0.0086,
+      "cash_ratio": 0.8278231887206526,
+      "portfolio_return": -7.346176641250604
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 670.29,
+      "amount_pct": 148.7616,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估，遵循历史经验避免盲目参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.26,
+      "return_30d": -1.15,
+      "return_90d": 5.45,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5ba1b376-f63",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.984833+08:00",
+    "scenario": {
+      "date": "2024-01-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1746,
+      "nav_change_7d": 1.22,
+      "nav_change_30d": -1.61,
+      "nav_change_90d": -10.34,
+      "market_trend": "sideways",
+      "market_volatility": 0.0086,
+      "cash_ratio": 0.9002816543342064,
+      "portfolio_return": -7.395237258660273
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，缺乏有效参考信息，历史经验表明应避免盲目参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.57,
+      "return_30d": -2.13,
+      "return_90d": 4.53,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "335be44c-135",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:33.993371+08:00",
+    "scenario": {
+      "date": "2024-01-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1047,
+      "nav_change_7d": -1.28,
+      "nav_change_30d": -2.19,
+      "nav_change_90d": -10.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.0089,
+      "cash_ratio": 0.9016060369881527,
+      "portfolio_return": -7.53126578599482
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 500.0,
+      "amount_pct": 112.4682,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益特征，遵循历史经验避免盲目参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.57,
+      "return_30d": 0.18,
+      "return_90d": 5.27,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e0891301-6e4",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.002277+08:00",
+    "scenario": {
+      "date": "2024-01-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0654,
+      "nav_change_7d": -3.93,
+      "nav_change_30d": -5.56,
+      "nav_change_90d": -10.6,
+      "market_trend": "sideways",
+      "market_volatility": 0.0096,
+      "cash_ratio": 0.8491502501461556,
+      "portfolio_return": -7.777959216850923
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，缺乏有效参考信息，遵循历史经验避免盲目参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.2,
+      "return_30d": 2.85,
+      "return_90d": 7.66,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d681c61d-2de",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.010910+08:00",
+    "scenario": {
+      "date": "2024-01-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0965,
+      "nav_change_7d": -2.1,
+      "nav_change_30d": -4.29,
+      "nav_change_90d": -12.3,
+      "market_trend": "sideways",
+      "market_volatility": 0.0103,
+      "cash_ratio": 0.8437505115085747,
+      "portfolio_return": -7.187767080596114
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据持续为零，数据异常，无法评估风险收益，继续回避。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -5.92,
+      "return_30d": 1.04,
+      "return_90d": 3.83,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "9b018773-9f0",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.019681+08:00",
+    "scenario": {
+      "date": "2024-01-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9417,
+      "nav_change_7d": -6.57,
+      "nav_change_30d": -14.46,
+      "nav_change_90d": -18.76,
+      "market_trend": "bear",
+      "market_volatility": 0.0109,
+      "cash_ratio": 0.8468827893953469,
+      "portfolio_return": -7.5310420986218745
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现，历史经验多次提示回避，不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.82,
+      "return_30d": 7.81,
+      "return_90d": 13.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "85fd13a0-8e3",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.028409+08:00",
+    "scenario": {
+      "date": "2024-02-02",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.8689,
+      "nav_change_7d": -9.03,
+      "nav_change_30d": -15.5,
+      "nav_change_90d": -21.89,
+      "market_trend": "bear",
+      "market_volatility": 0.0108,
+      "cash_ratio": 0.8497051324261384,
+      "portfolio_return": -7.838182904223869
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法评估真实表现，历史经验多次提示回避，不参与。",
+      "confidence": 1.0,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 7.15,
+      "return_30d": 11.41,
+      "return_90d": 15.83,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "44d8ef51-03d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.037026+08:00",
+    "scenario": {
+      "date": "2024-02-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9784,
+      "nav_change_7d": 2.95,
+      "nav_change_30d": -6.45,
+      "nav_change_90d": -19.63,
+      "market_trend": "sideways",
+      "market_volatility": 0.0129,
+      "cash_ratio": 0.8426023470980886,
+      "portfolio_return": -7.061297337112937
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 1000.0,
+      "amount_pct": 226.8911,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益，遵循历史经验继续回避。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.34,
+      "return_30d": 4.96,
+      "return_90d": 11.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "2c7510a6-562",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.045714+08:00",
+    "scenario": {
+      "date": "2024-02-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 1.9874,
+      "nav_change_7d": -1.29,
+      "nav_change_30d": -6.41,
+      "nav_change_90d": -15.73,
+      "market_trend": "sideways",
+      "market_volatility": 0.0121,
+      "cash_ratio": 0.731863803227193,
+      "portfolio_return": -6.826422212287471
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2000.0,
+      "amount_pct": 449.2969,
+      "reasoning": "前海开源黄金ETF联接C净值持续为零，数据异常无法评估，遵循历史经验回避。",
+      "confidence": 1.0,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.43,
+      "return_30d": 7.95,
+      "return_90d": 9.86,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "e7d856ff-479",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.054325+08:00",
+    "scenario": {
+      "date": "2024-02-23",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0424,
+      "nav_change_7d": 1.44,
+      "nav_change_30d": -1.38,
+      "nav_change_90d": -12.83,
+      "market_trend": "bull",
+      "market_volatility": 0.0122,
+      "cash_ratio": 0.5103496112154243,
+      "portfolio_return": -6.044076558021279
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C无有效净值数据，无法评估风险收益特征，继续观望。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.82,
+      "return_30d": 3.88,
+      "return_90d": 6.16,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "df3fd570-98f",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.063011+08:00",
+    "scenario": {
+      "date": "2024-02-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.0412,
+      "nav_change_7d": 1.3,
+      "nav_change_30d": 2.62,
+      "nav_change_90d": -11.78,
+      "market_trend": "sideways",
+      "market_volatility": 0.0124,
+      "cash_ratio": 0.5138441107795616,
+      "portfolio_return": -6.683042591937665
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 2000.0,
+      "amount_pct": 441.8718,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法有效评估风险收益特征，遵循历史经验避免盲目参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.67,
+      "return_30d": 4.45,
+      "return_90d": 4.91,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "cda3a7ac-4ae",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.071701+08:00",
+    "scenario": {
+      "date": "2024-03-04",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.107,
+      "nav_change_7d": 3.08,
+      "nav_change_30d": 12.74,
+      "nav_change_90d": -5.92,
+      "market_trend": "bull",
+      "market_volatility": 0.0128,
+      "cash_ratio": 0.2932106555287274,
+      "portfolio_return": -5.49330838597345
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 479.0,
+      "amount_pct": 103.3441,
+      "reasoning": "前海开源黄金ETF联接C无有效净值数据，无法评估风险收益特征，继续观望。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.79,
+      "return_30d": 3.91,
+      "return_90d": 2.56,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "aef617a4-253",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.080326+08:00",
+    "scenario": {
+      "date": "2024-03-07",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.067,
+      "nav_change_7d": -1.75,
+      "nav_change_30d": 6.61,
+      "nav_change_90d": -8.04,
+      "market_trend": "bull",
+      "market_volatility": 0.0119,
+      "cash_ratio": 0.34415997737288595,
+      "portfolio_return": -5.7748688631950245
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1000.0,
+      "amount_pct": 217.3913,
+      "reasoning": "前海开源黄金ETF联接C无有效净值数据，无法评估风险收益特征，继续观望。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.78,
+      "return_30d": 4.83,
+      "return_90d": 4.71,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "6001df6e-34a",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.088991+08:00",
+    "scenario": {
+      "date": "2024-03-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2207,
+      "nav_change_7d": 6.01,
+      "nav_change_30d": 10.3,
+      "nav_change_90d": 0.48,
+      "market_trend": "bull",
+      "market_volatility": 0.0115,
+      "cash_ratio": 0.33726200779551135,
+      "portfolio_return": -4.136789046209596
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 510.58,
+      "amount_pct": 106.3553,
+      "reasoning": "农银新能源主题波动率32.47%过高，近90日仅涨0.48%，风险收益比差，清仓止损以降低组合波动。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.02,
+      "return_30d": -0.77,
+      "return_90d": -1.61,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f52d755d-600",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.097732+08:00",
+    "scenario": {
+      "date": "2024-03-15",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.202,
+      "nav_change_7d": 5.69,
+      "nav_change_30d": 9.37,
+      "nav_change_90d": 0.51,
+      "market_trend": "bull",
+      "market_volatility": 0.011,
+      "cash_ratio": 0.3929004242801626,
+      "portfolio_return": -4.814239973096792
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 780.6600000000001,
+      "amount_pct": 164.2457,
+      "reasoning": "前海开源黄金ETF联接C无有效净值数据，无法评估风险收益特征，继续观望。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.62,
+      "return_30d": -1.41,
+      "return_90d": -1.01,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "d483e564-b61",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.106964+08:00",
+    "scenario": {
+      "date": "2024-03-20",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2411,
+      "nav_change_7d": 0.82,
+      "nav_change_30d": 12.05,
+      "nav_change_90d": 3.39,
+      "market_trend": "bull",
+      "market_volatility": 0.01,
+      "cash_ratio": 0.3679721366117535,
+      "portfolio_return": -4.546914004362952
+    },
+    "decision": {
+      "action": "sell",
+      "amount_rmb": 653.21,
+      "amount_pct": 135.941,
+      "reasoning": "前海开源黄金ETF联接C净值数据缺失，无法评估风险收益特征，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.97,
+      "return_30d": -1.94,
+      "return_90d": -1.46,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "46a04c6d-b80",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.115897+08:00",
+    "scenario": {
+      "date": "2024-03-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1534,
+      "nav_change_7d": -4.61,
+      "nav_change_30d": 5.43,
+      "nav_change_90d": -1.69,
+      "market_trend": "sideways",
+      "market_volatility": 0.0101,
+      "cash_ratio": 0.43885869585919507,
+      "portfolio_return": -5.163813221207274
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 42.42,
+      "amount_pct": 9.0402,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，无法有效评估风险收益特征，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.88,
+      "return_30d": -0.26,
+      "return_90d": -1.34,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "725353a3-bb7",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.124725+08:00",
+    "scenario": {
+      "date": "2024-03-28",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1545,
+      "nav_change_7d": -3.32,
+      "nav_change_30d": 3.54,
+      "nav_change_90d": -5.09,
+      "market_trend": "sideways",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.4434989559723786,
+      "portfolio_return": -5.206758248562073
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 30.0,
+      "amount_pct": 6.3945,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益，历史经验多次显示应观望。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.57,
+      "return_30d": 1.64,
+      "return_90d": -2.17,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "73415acc-d77",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.133408+08:00",
+    "scenario": {
+      "date": "2024-04-02",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2405,
+      "nav_change_7d": 2.03,
+      "nav_change_30d": 6.1,
+      "nav_change_90d": 1.31,
+      "market_trend": "sideways",
+      "market_volatility": 0.0084,
+      "cash_ratio": 0.44182266762520955,
+      "portfolio_return": -4.173196958027111
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1512.0,
+      "amount_pct": 313.2705,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益特征，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.37,
+      "return_30d": -0.19,
+      "return_90d": -5.84,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "c3a38f48-a2b",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.142159+08:00",
+    "scenario": {
+      "date": "2024-04-09",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.2492,
+      "nav_change_7d": 0.39,
+      "nav_change_30d": 7.95,
+      "nav_change_90d": 5.5,
+      "market_trend": "sideways",
+      "market_volatility": 0.0082,
+      "cash_ratio": 0.49700370656943976,
+      "portfolio_return": -4.733399119258428
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0，历史经验多次显示此类情况不宜参与，继续观望。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -2.6,
+      "return_30d": 2.51,
+      "return_90d": -8.45,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "1ea61130-ddd",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.150880+08:00",
+    "scenario": {
+      "date": "2024-04-12",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1659,
+      "nav_change_7d": -2.48,
+      "nav_change_30d": -2.56,
+      "nav_change_90d": -0.4,
+      "market_trend": "sideways",
+      "market_volatility": 0.007,
+      "cash_ratio": 0.5012992477248206,
+      "portfolio_return": -5.54972111988729
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 100.0,
+      "amount_pct": 21.3361,
+      "reasoning": "前海开源黄金ETF联接C净值显示异常为0.0000，无有效历史数据，历史经验表明此类情况不宜参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.57,
+      "return_30d": 4.52,
+      "return_90d": -3.62,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "5b3d3598-9a6",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.159684+08:00",
+    "scenario": {
+      "date": "2024-04-17",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1645,
+      "nav_change_7d": -2.22,
+      "nav_change_30d": -4.12,
+      "nav_change_90d": 1.07,
+      "market_trend": "sideways",
+      "market_volatility": 0.0086,
+      "cash_ratio": 0.5056716278409031,
+      "portfolio_return": -4.398722237171132
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0.0000，无法评估风险收益特征，历史教训显示此类情况应回避，不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.55,
+      "return_30d": 2.69,
+      "return_90d": -4.11,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "f6d7e37e-0aa",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.168426+08:00",
+    "scenario": {
+      "date": "2024-04-22",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.114,
+      "nav_change_7d": -3.5,
+      "nav_change_30d": -3.3,
+      "nav_change_90d": 1.72,
+      "market_trend": "sideways",
+      "market_volatility": 0.0086,
+      "cash_ratio": 0.5062819536432216,
+      "portfolio_return": -4.513970126481399
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2228.21,
+      "amount_pct": 473.4828,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为0.0000，缺乏有效参考信息，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.65,
+      "return_30d": 4.24,
+      "return_90d": -1.52,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "dd44f63a-c0d",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.177281+08:00",
+    "scenario": {
+      "date": "2024-04-25",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1107,
+      "nav_change_7d": -2.23,
+      "nav_change_30d": -3.88,
+      "nav_change_90d": 2.74,
+      "market_trend": "sideways",
+      "market_volatility": 0.0083,
+      "cash_ratio": 0.31926955718072847,
+      "portfolio_return": -4.8655201635572665
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 60.0,
+      "amount_pct": 12.7695,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，无法评估风险收益特征，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 2.75,
+      "return_30d": 1.78,
+      "return_90d": -5.22,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3183ce29-420",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.186163+08:00",
+    "scenario": {
+      "date": "2024-04-30",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1739,
+      "nav_change_7d": 3.0,
+      "nav_change_30d": 0.4,
+      "nav_change_90d": 13.12,
+      "market_trend": "sideways",
+      "market_volatility": 0.0089,
+      "cash_ratio": 0.3200908341707878,
+      "portfolio_return": -3.249203213747278
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为零，历史案例显示数据缺失时参与风险高，暂不操作。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.97,
+      "return_30d": -1.27,
+      "return_90d": -7.99,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4a328009-271",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.195108+08:00",
+    "scenario": {
+      "date": "2024-05-08",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1927,
+      "nav_change_7d": 0.86,
+      "nav_change_30d": 0.02,
+      "nav_change_90d": 8.91,
+      "market_trend": "sideways",
+      "market_volatility": 0.0094,
+      "cash_ratio": 0.31947808816008677,
+      "portfolio_return": -3.063639111043558
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 1291.84,
+      "amount_pct": 266.2106,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常（0.0000），无法评估趋势，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.39,
+      "return_30d": -2.53,
+      "return_90d": -9.79,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "a11d1056-3d9",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.204251+08:00",
+    "scenario": {
+      "date": "2024-05-13",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1832,
+      "nav_change_7d": -1.96,
+      "nav_change_30d": 0.8,
+      "nav_change_90d": 8.43,
+      "market_trend": "bull",
+      "market_volatility": 0.0092,
+      "cash_ratio": 0.45013314002264043,
+      "portfolio_return": -2.6446903069704057
+    },
+    "decision": {
+      "action": "increase",
+      "amount_rmb": 2049.95,
+      "amount_pct": 421.0899,
+      "reasoning": "前海开源黄金ETF联接C净值数据缺失，无法评估风险收益特征，暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.42,
+      "return_30d": -3.08,
+      "return_90d": -10.91,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "44c6ef20-e52",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.217036+08:00",
+    "scenario": {
+      "date": "2024-05-16",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.162,
+      "nav_change_7d": -3.89,
+      "nav_change_30d": 1.82,
+      "nav_change_90d": 7.38,
+      "market_trend": "sideways",
+      "market_volatility": 0.009,
+      "cash_ratio": 0.24783447527313615,
+      "portfolio_return": -2.8389665180285375
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "黄金ETF联接净值数据异常，波动率为零无法评估风险收益特征，暂不参与。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -0.05,
+      "return_30d": -1.71,
+      "return_90d": -9.52,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "15826c59-b14",
+    "backtest_id": "bt_20230802_20240522",
+    "timestamp": "2026-07-25T02:26:34.230005+08:00",
+    "scenario": {
+      "date": "2024-05-21",
+      "fund_code": "002190",
+      "fund_type": "MIXED",
+      "nav_current": 2.1555,
+      "nav_change_7d": -1.03,
+      "nav_change_30d": 1.46,
+      "nav_change_90d": 6.97,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 0.24613026117389064,
+      "portfolio_return": -2.166220296708525
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 10.0,
+      "amount_pct": 1.7043,
+      "reasoning": "前海开源黄金ETF联接C净值数据异常为1.0000且无波动，无法评估风险收益特征，历史经验显示此类情况应暂不参与。",
+      "confidence": 0.9,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": -1.52,
+      "return_30d": -3.38,
+      "return_90d": -9.34,
+      "was_profitable": false,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
   }
 ]
