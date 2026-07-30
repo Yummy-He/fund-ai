@@ -1,73 +1,5 @@
 [
   {
-    "id": "3d4e3af8-bde",
-    "backtest_id": "bt_20220831_20230815",
-    "timestamp": "2026-06-04T16:48:32.323029",
-    "scenario": {
-      "date": "2023-06-05",
-      "fund_code": "021302",
-      "fund_type": "INDEX",
-      "nav_current": 0.0,
-      "nav_change_7d": 0.0,
-      "nav_change_30d": 0.0,
-      "nav_change_90d": 0.0,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 1.0,
-      "portfolio_return": 0.0
-    },
-    "decision": {
-      "action": "buy",
-      "amount_rmb": 9500.0,
-      "amount_pct": 711.8344,
-      "reasoning": "中欧兴利债券C波动率低，在震荡市中作为底仓配置可降低组合波动，历史经验显示持有和加仓胜率较高，适合稳健起步。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": -0.24,
-      "return_30d": 1.6,
-      "return_90d": -2.38,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "89be01f3-719",
-    "backtest_id": "bt_20220831_20230815",
-    "timestamp": "2026-06-04T16:48:32.375356",
-    "scenario": {
-      "date": "2023-06-13",
-      "fund_code": "021302",
-      "fund_type": "INDEX",
-      "nav_current": 0.0,
-      "nav_change_7d": 0.0,
-      "nav_change_30d": 0.0,
-      "nav_change_90d": 0.0,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.14586816632822386,
-      "portfolio_return": 0.2103499889658815
-    },
-    "decision": {
-      "action": "decrease",
-      "amount_rmb": 2000.0,
-      "amount_pct": 149.5685,
-      "reasoning": "震荡市下INDEX类基金买入胜率78%，平均30日回报+2.94%，当前沪深300估值合理，加仓以增强组合弹性。",
-      "confidence": 0.8,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 2.32,
-      "return_30d": 1.8,
-      "return_90d": -3.52,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
     "id": "c72e533f-a63",
     "backtest_id": "bt_20220831_20230815",
     "timestamp": "2026-06-04T16:48:32.532773",
@@ -136,11 +68,11 @@
     "lesson": ""
   },
   {
-    "id": "34db96a0-ddd",
+    "id": "89be01f3-719",
     "backtest_id": "bt_20220831_20230815",
-    "timestamp": "2026-06-04T16:48:32.585534",
+    "timestamp": "2026-06-04T16:48:32.375356",
     "scenario": {
-      "date": "2023-07-19",
+      "date": "2023-06-13",
       "fund_code": "021302",
       "fund_type": "INDEX",
       "nav_current": 0.0,
@@ -149,22 +81,22 @@
       "nav_change_90d": 0.0,
       "market_trend": "sideways",
       "market_volatility": 0.15,
-      "cash_ratio": 0.1033051151095086,
-      "portfolio_return": -0.5373549111485408
+      "cash_ratio": 0.14586816632822386,
+      "portfolio_return": 0.2103499889658815
     },
     "decision": {
       "action": "decrease",
-      "amount_rmb": 1000.0,
-      "amount_pct": 74.2997,
-      "reasoning": "中欧新蓝筹混合近30日微涨，波动率低，在震荡市中混合基金持有胜率57%，平均收益+2.08%，维持现有仓位。",
-      "confidence": 0.7,
+      "amount_rmb": 2000.0,
+      "amount_pct": 149.5685,
+      "reasoning": "震荡市下INDEX类基金买入胜率78%，平均30日回报+2.94%，当前沪深300估值合理，加仓以增强组合弹性。",
+      "confidence": 0.8,
       "model": ""
     },
     "outcome": {
-      "return_7d": 0.43,
-      "return_30d": -2.77,
-      "return_90d": -7.61,
-      "was_profitable": false,
+      "return_7d": 2.32,
+      "return_30d": 1.8,
+      "return_90d": -3.52,
+      "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
@@ -198,40 +130,6 @@
       "return_7d": 0.87,
       "return_30d": 1.34,
       "return_90d": -6.37,
-      "was_profitable": true,
-      "relative_to_benchmark": 0.0
-    },
-    "lesson": ""
-  },
-  {
-    "id": "a081f009-04d",
-    "backtest_id": "bt_20220831_20230815",
-    "timestamp": "2026-06-04T16:48:32.348917",
-    "scenario": {
-      "date": "2023-06-08",
-      "fund_code": "021302",
-      "fund_type": "INDEX",
-      "nav_current": 0.0,
-      "nav_change_7d": 0.0,
-      "nav_change_30d": 0.0,
-      "nav_change_90d": 0.0,
-      "market_trend": "sideways",
-      "market_volatility": 0.15,
-      "cash_ratio": 0.19813326128758854,
-      "portfolio_return": -0.950502341378724
-    },
-    "decision": {
-      "action": "increase",
-      "amount_rmb": 500.0,
-      "amount_pct": 37.9089,
-      "reasoning": "中欧兴利债券C波动率低（6.71%），在震荡市中加仓可增强组合稳定性，历史经验显示BOND类加仓胜率70%且平均收益+2.82%。",
-      "confidence": 0.7,
-      "model": ""
-    },
-    "outcome": {
-      "return_7d": 3.11,
-      "return_30d": 1.81,
-      "return_90d": -1.07,
       "was_profitable": true,
       "relative_to_benchmark": 0.0
     },
