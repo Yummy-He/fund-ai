@@ -916,5 +916,107 @@
       "relative_to_benchmark": 0.0
     },
     "lesson": ""
+  },
+  {
+    "id": "ac1cb186-f1a",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-08-01T02:31:02.676984+08:00",
+    "scenario": {
+      "date": "2023-06-05",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "sideways",
+      "market_volatility": 0.0087,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "hold",
+      "amount_rmb": 0,
+      "amount_pct": 0.0,
+      "reasoning": "前海开源黄金ETF联接C净值为0，数据异常，历史案例多次显示此类情况不参与为佳。",
+      "confidence": 0.99,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 0.26,
+      "return_30d": 1.85,
+      "return_90d": -0.1,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "3134eacc-aab",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-08-01T02:31:02.723225+08:00",
+    "scenario": {
+      "date": "2023-06-08",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.529,
+      "nav_change_7d": 0.0,
+      "nav_change_30d": 0.0,
+      "nav_change_90d": 0.0,
+      "market_trend": "bear",
+      "market_volatility": 0.0081,
+      "cash_ratio": 1.0,
+      "portfolio_return": 0.0
+    },
+    "decision": {
+      "action": "buy",
+      "amount_rmb": 7000.0,
+      "amount_pct": 313.5569,
+      "reasoning": "前海开源黄金ETF联接C净值为0，数据异常，历史案例多次显示此类情况不参与为佳。",
+      "confidence": 0.95,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 3.54,
+      "return_30d": 1.6,
+      "return_90d": 0.88,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
+  },
+  {
+    "id": "4c28a87a-547",
+    "backtest_id": "bt_20220509_20230618",
+    "timestamp": "2026-08-01T02:31:02.770174+08:00",
+    "scenario": {
+      "date": "2023-06-13",
+      "fund_code": "040046",
+      "fund_type": "QDII",
+      "nav_current": 4.671,
+      "nav_change_7d": 2.89,
+      "nav_change_30d": 3.14,
+      "nav_change_90d": 3.14,
+      "market_trend": "sideways",
+      "market_volatility": 0.0078,
+      "cash_ratio": 0.29556914234246945,
+      "portfolio_return": 0.5686850948679057
+    },
+    "decision": {
+      "action": "decrease",
+      "amount_rmb": 2000.0,
+      "amount_pct": 88.0367,
+      "reasoning": "前海开源黄金ETF联接净值数据异常为零，历史经验多次显示此类情况不参与为佳。",
+      "confidence": 0.99,
+      "model": ""
+    },
+    "outcome": {
+      "return_7d": 1.93,
+      "return_30d": 1.94,
+      "return_90d": -1.59,
+      "was_profitable": true,
+      "relative_to_benchmark": 0.0
+    },
+    "lesson": ""
   }
 ]
