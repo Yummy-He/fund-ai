@@ -5,8 +5,9 @@
 name: Daily Scrape & Decision
 
 on:
-  schedule:
-    - cron: "30 16 * * 0-5"
+  # [WORKFLOW_PAUSED 2026-08-07] schedule 已注释暂停，取消注释即可恢复
+  # schedule:
+  #   - cron: "30 16 * * 0-5"
   workflow_dispatch:
   push:
     paths:

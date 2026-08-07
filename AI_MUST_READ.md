@@ -2,6 +2,76 @@
 
 > ⚠️ **给未来 AI 的关键信息。开始操作前请先读 CLAUDE.md 和本文件。**
 
+---
+
+## 🛑 WORKFLOW 暂停状态（2026-08-07）
+
+**所有 3 个 GitHub Actions workflow 的定时触发器已暂停**（schedule cron 已注释）。手动触发和 TRIGGER push 仍然可用。
+
+### 暂停的文件
+
+| 文件 | 暂停方式 | 说明 |
+|------|---------|------|
+| `.github/workflows/daily-decision.yml` | `schedule` 注释 | 每日抓取+实盘+回测 |
+| `.github/workflows/weekly-report.yml` | `schedule` 注释 | 每周学习+投资建议 |
+| `.github/workflows/monthly-report.yml` | `schedule` 注释 | 月度深度学习+报告 |
+
+### 暂停原因
+
+用户主动暂停自动化 workflow，停止在云端消耗 CI 额度和 API 费用。
+
+### 🔄 如何重启 workflow
+
+重启某个 workflow，只需取消对应文件中 `schedule` 的注释：
+
+**daily-decision.yml** — 找到这段，去掉 `#`：
+```yaml
+# [WORKFLOW_PAUSED] 去掉下面 2 行注释即可恢复
+# schedule:
+#   - cron: "30 16 * * 0-5"
+```
+
+**weekly-report.yml** — 找到这段，去掉 `#`：
+```yaml
+# [WORKFLOW_PAUSED] 去掉下面 2 行注释即可恢复
+# schedule:
+#   - cron: "0 17 * * 5"
+```
+
+**monthly-report.yml** — 找到这段，去掉 `#`：
+```yaml
+# [WORKFLOW_PAUSED] 去掉下面 2 行注释即可恢复
+# schedule:
+#   - cron: "0 19 28-31 * *"
+```
+
+改完后 commit + push 即可生效。
+
+### 🌐 从云端同步数据的步骤
+
+GitHub 在中国大陆需要代理/VPN 才能访问。同步数据前请确保代理已开启。
+
+**从云端拉取最新数据（pull）：**
+```bash
+# 1. 确保代理已开启（如 Clash Verge/V2Ray 等）
+# 2. 设置 git 代理（根据你的代理端口调整，常见端口 7890/10809）
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+# 3. 拉取云端数据
+cd h:/基金
+git pull --rebase -X theirs origin main
+
+# 4. 推送本地变更（含 workflow 暂停等修改）
+git push origin main
+```
+
+**推送完成后的清理（可选，关闭代理后 git 更快）：**
+```bash
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
 ## 项目本质
 
 **RAG 增强的 LLM 基金投资决策系统**。不是经典的回测框架：

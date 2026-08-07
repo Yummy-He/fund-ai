@@ -4,8 +4,9 @@
 name: Monthly Deep Report
 
 on:
-  schedule:
-    - cron: "0 19 28-31 * *"
+  # [WORKFLOW_PAUSED 2026-08-07] schedule 已注释暂停，取消注释即可恢复
+  # schedule:
+  #   - cron: "0 19 28-31 * *"
   workflow_dispatch:
     inputs:
       iterations:

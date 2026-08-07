@@ -4,8 +4,9 @@
 name: Weekly Learn & Report
 
 on:
-  schedule:
-    - cron: "0 17 * * 5"
+  # [WORKFLOW_PAUSED 2026-08-07] schedule 已注释暂停，取消注释即可恢复
+  # schedule:
+  #   - cron: "0 17 * * 5"
   workflow_dispatch:
     inputs:
       iterations:
